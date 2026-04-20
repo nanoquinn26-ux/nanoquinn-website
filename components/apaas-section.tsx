@@ -17,7 +17,7 @@ export function ApaasSection() {
 
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-20">
-          <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Category Creation
           </span>
 

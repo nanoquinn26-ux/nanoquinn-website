@@ -364,7 +364,7 @@ export function AssetProtectionSection() {
 
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Asset Protection
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
@@ -468,7 +468,7 @@ export function AssetProtectionSection() {
         {activeContent === "OEM" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">OEM</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">OEM</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{oemContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-3">{oemContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{oemContent.intro}</p>
@@ -506,7 +506,7 @@ export function AssetProtectionSection() {
         {activeContent === "Industrial" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">Industrial Maintenance</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Industrial Maintenance</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">{industrialContent.title}</h3>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{industrialContent.intro}</p>
             </div>
@@ -569,7 +569,7 @@ export function AssetProtectionSection() {
         {activeContent === "Plastic" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">Nanotech Plastic Protection</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Nanotech Plastic Protection</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{plasticContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-4">{plasticContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-3">{plasticContent.intro}</p>
@@ -618,7 +618,7 @@ export function AssetProtectionSection() {
         {activeContent === "Solar" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">Solar Nanotechnology</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Solar Nanotechnology</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{solarContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-4">{solarContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{solarContent.intro}</p>
@@ -643,7 +643,7 @@ export function AssetProtectionSection() {
         {activeContent === "Electrical" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">ElectroShield 5-in-1</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">ElectroShield 5-in-1</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{electricalContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-4">{electricalContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto">{electricalContent.intro}</p>
@@ -683,7 +683,7 @@ export function AssetProtectionSection() {
         {activeContent === "Floor" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">FloorGuard™</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">FloorGuard™</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{floorContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-4">{floorContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{floorContent.intro}</p>
@@ -737,7 +737,7 @@ export function AssetProtectionSection() {
         {activeContent === "Wall" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">WallGuard™</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">WallGuard™</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{wallContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-4">{wallContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{wallContent.intro}</p>
@@ -778,7 +778,7 @@ export function AssetProtectionSection() {
         {activeContent === "RustRemover" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">Rust Remover</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Rust Remover</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{rustRemoverContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-4">{rustRemoverContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{rustRemoverContent.intro}</p>
@@ -816,7 +816,7 @@ export function AssetProtectionSection() {
         {activeContent === "Carpet" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">Carpet &amp; Upholstery Protection</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Carpet &amp; Upholstery Protection</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">{carpetContent.title}</h3>
               <p className="text-lg font-medium text-[#D4A826] mb-4">{carpetContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto">{carpetContent.intro}</p>
@@ -885,7 +885,7 @@ export function AssetProtectionSection() {
           <div className="animate-fade-up">
             {/* Header */}
             <div className="text-center mb-12">
-              <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">Asset Health Audit</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Asset Health Audit</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-3">{auditContent.title}</h3>
               <p className="text-lg font-semibold text-[#D4A826] mb-4">{auditContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto">{auditContent.intro}</p>
