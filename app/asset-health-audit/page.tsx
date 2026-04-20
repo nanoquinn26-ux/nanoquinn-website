@@ -71,7 +71,7 @@ export default function AssetHealthAuditPage() {
 
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-lg font-medium mb-8 shadow-md">
+            <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">
               Asset Health Audit
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-balance">

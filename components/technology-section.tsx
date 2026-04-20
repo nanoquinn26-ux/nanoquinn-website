@@ -48,7 +48,7 @@ export function TechnologySection() {
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-lg font-medium mb-8 shadow-md">
+            <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-sm font-bold mb-8 shadow-md uppercase tracking-widest">
               Technology Excellence
             </span>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-balance">
