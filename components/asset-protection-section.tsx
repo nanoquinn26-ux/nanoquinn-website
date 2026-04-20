@@ -527,7 +527,7 @@ export function AssetProtectionSection() {
               <h4 className="text-lg font-bold text-foreground mb-4">Eliminates:</h4>
               <div className="flex flex-wrap gap-3">
                 {industrialContent.eliminates.map((item, i) => (
-                  <span key={i} className="px-4 py-2 rounded-full bg-foreground text-background text-sm font-medium line-through decoration-[#D4A826]">{item}</span>
+                  <span key={i} className="px-4 py-2 rounded-full bg-foreground text-background text-sm font-medium line-through decoration-[#D4A826] decoration-[3px]">{item}</span>
                 ))}
               </div>
             </div>
