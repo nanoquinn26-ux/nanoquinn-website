@@ -29,7 +29,7 @@ export function ApaasSection() {
             NanoQuinn defines APaaS (Asset Protection as a Service) through a disruptive <span className="text-foreground font-semibold">Supply + Apply + Unconditional Warranty</span> model, where customers do not buy coatings or maintenance products — they secure long-term protection, preservation, and performance of assets.
           </p>
 
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-8 font-bold">
             Through advanced sustainable nanotechnology, NanoQuinn protects metal, plastic, FRP, concrete, electrical and critical infrastructure assets against corrosion, degradation, UV, wear and tear — keeping assets newer for longer with reduced or eliminated maintenance.
           </p>
 
