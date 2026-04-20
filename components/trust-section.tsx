@@ -1,90 +1,20 @@
 "use client"
 
 const clients = [
-  {
-    name: "TATA Motors",
-    sector: "Automotive",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-POafQCO3wsWt5jWlTjaLiC0s9MKO9j.png",
-    logoAlt: "TATA Motors logo",
-  },
-  {
-    name: "KONE Elevators",
-    sector: "Elevators & Escalators",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-kVhGI9hyKgoVJQ3zjOmLRgfMKI4ftY.png",
-    logoAlt: "KONE Elevators logo",
-  },
-  {
-    name: "Indian Railway",
-    sector: "Rail & Infrastructure",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-GWsdQMG1dg0qx06KNmYpJeVfyTe93Y.png",
-    logoAlt: "Indian Railway logo",
-  },
-  {
-    name: "Indian Navy",
-    sector: "Defence",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-eiWoZu70t7owKs6SOoctph3zNvORFC.png",
-    logoAlt: "Indian Navy logo",
-  },
-  {
-    name: "Indian Defence",
-    sector: "Defence",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-iWxkYSWqSCzV0ipLKTMOw3jLIHOc8h.png",
-    logoAlt: "Indian Defence logo",
-  },
-  {
-    name: "Ohmium",
-    sector: "Clean Energy",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xxkHIS640PEYYszeDcwPOfmFWL38a1.png",
-    logoAlt: "Ohmium logo",
-  },
-  {
-    name: "Bry-Air",
-    sector: "Industrial",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-CqmekSkGvdbtKFf674AP3EwDlBdtQs.png",
-    logoAlt: "Bry-Air logo",
-  },
-  {
-    name: "Chalet Hotels",
-    sector: "Hospitality",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hmaDBdOMcsaH90Qvbibf3VoFvJHxyg.png",
-    logoAlt: "Chalet Hotels logo",
-  },
-  {
-    name: "Gudel",
-    sector: "Automation",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lyT5hfnKrhH8EyxNZQoWkiCQOSqjQH.png",
-    logoAlt: "Gudel logo",
-  },
-  {
-    name: "Schindler",
-    sector: "Elevators & Escalators",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-88YGLCPFMx5Oa2eVAVifcS7y3A732b.png",
-    logoAlt: "Schindler logo",
-  },
-  {
-    name: "Sun Pharma",
-    sector: "Pharmaceuticals",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vefJ7bMiPuNvt00tPssZNnirnyL24X.png",
-    logoAlt: "Sun Pharma logo",
-  },
-  {
-    name: "Aditya Birla Fashion & Retail",
-    sector: "Fashion & Retail",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-d5hRYyj10J9UQ6ZwNha9e5grjHETwI.png",
-    logoAlt: "Aditya Birla logo",
-  },
-  {
-    name: "JCB",
-    sector: "Heavy Equipment",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-DodcF3mALWmWU0mJkaiXchoL9jvAVv.png",
-    logoAlt: "JCB logo",
-  },
-  {
-    name: "Marriott",
-    sector: "Hospitality",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VVNLDL1fncO9aasuag3N3hNF0kMhe7.png",
-    logoAlt: "Marriott logo",
-  },
+  { name: "TATA Motors",                sector: "Automotive",              logo: "/clients/tata.png",           logoAlt: "TATA Motors logo" },
+  { name: "KONE Elevators",             sector: "Elevators & Escalators",  logo: "/clients/kone.png",           logoAlt: "KONE Elevators logo" },
+  { name: "Indian Railway",             sector: "Rail & Infrastructure",    logo: "/clients/indian-railway.png", logoAlt: "Indian Railway logo" },
+  { name: "Indian Navy",                sector: "Defence",                  logo: "/clients/indian-navy.png",    logoAlt: "Indian Navy logo" },
+  { name: "Indian Defence",             sector: "Defence",                  logo: "/clients/indian-defence.png", logoAlt: "Indian Defence logo" },
+  { name: "Ohmium",                     sector: "Clean Energy",             logo: "/clients/ohmium.png",         logoAlt: "Ohmium logo" },
+  { name: "Bry-Air",                    sector: "Industrial",               logo: "/clients/bry-air.png",        logoAlt: "Bry-Air logo" },
+  { name: "Chalet Hotels",              sector: "Hospitality",              logo: "/clients/chalet.png",         logoAlt: "Chalet Hotels logo" },
+  { name: "Gudel",                      sector: "Automation",               logo: "/clients/gudel.png",          logoAlt: "Gudel logo" },
+  { name: "Schindler",                  sector: "Elevators & Escalators",   logo: "/clients/schindler.png",      logoAlt: "Schindler logo" },
+  { name: "Sun Pharma",                 sector: "Pharmaceuticals",          logo: "/clients/sun-pharma.png",     logoAlt: "Sun Pharma logo" },
+  { name: "Aditya Birla Fashion & Retail", sector: "Fashion & Retail",     logo: "/clients/aditya-birla.png",   logoAlt: "Aditya Birla logo" },
+  { name: "JCB",                        sector: "Heavy Equipment",          logo: "/clients/jcb.png",            logoAlt: "JCB logo" },
+  { name: "Marriott",                   sector: "Hospitality",              logo: "/clients/marriott.png",       logoAlt: "Marriott logo" },
 ]
 
 export function TrustSection() {
