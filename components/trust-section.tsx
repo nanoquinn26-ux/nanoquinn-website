@@ -4,85 +4,91 @@ const clients = [
   {
     name: "TATA Motors",
     sector: "Automotive",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/320px-Tata_logo.svg.png",
+    logo: "https://logo.clearbit.com/tatamotors.com",
     logoAlt: "TATA Motors logo",
   },
   {
     name: "KONE Elevators",
     sector: "Elevators & Escalators",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/KONE_logo.svg/320px-KONE_logo.svg.png",
+    logo: "https://logo.clearbit.com/kone.com",
     logoAlt: "KONE Elevators logo",
   },
   {
     name: "Indian Railway",
     sector: "Rail & Infrastructure",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Indian_Railways.svg/200px-Indian_Railways.svg.png",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-04-20%20at%204.37.19%20PM-0XBiJTvHbfpSyrbpdpbne1KVBmdpKE.jpeg",
     logoAlt: "Indian Railway logo",
+    useInitial: true,
+    initial: "IR",
   },
   {
     name: "Indian Navy",
     sector: "Defence",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Indian_Navy_Ensign.svg/200px-Indian_Navy_Ensign.svg.png",
+    logo: "",
     logoAlt: "Indian Navy logo",
+    useInitial: true,
+    initial: "IN",
   },
   {
     name: "Indian Defence",
     sector: "Defence",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Emblem_of_India.svg/200px-Emblem_of_India.svg.png",
+    logo: "",
     logoAlt: "Indian Defence logo",
+    useInitial: true,
+    initial: "ID",
   },
   {
     name: "Ohmium",
     sector: "Clean Energy",
-    logo: "https://ohmium.com/wp-content/uploads/2022/09/Ohmium-Logo.png",
+    logo: "https://logo.clearbit.com/ohmium.com",
     logoAlt: "Ohmium logo",
   },
   {
     name: "Bry-Air",
     sector: "Industrial",
-    logo: "https://www.bry-air.com/wp-content/themes/bryair/images/logo.png",
+    logo: "https://logo.clearbit.com/bry-air.com",
     logoAlt: "Bry-Air logo",
   },
   {
     name: "Chalet Hotels",
     sector: "Hospitality",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Chalet_Hotels_logo.svg/320px-Chalet_Hotels_logo.svg.png",
+    logo: "https://logo.clearbit.com/chalethotels.com",
     logoAlt: "Chalet Hotels logo",
   },
   {
     name: "Gudel",
     sector: "Automation",
-    logo: "https://www.gudel.com/hubfs/gudel-logo.svg",
+    logo: "https://logo.clearbit.com/gudel.com",
     logoAlt: "Gudel logo",
   },
   {
     name: "Schindler",
     sector: "Elevators & Escalators",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Schindler_logo.svg/320px-Schindler_logo.svg.png",
+    logo: "https://logo.clearbit.com/schindler.com",
     logoAlt: "Schindler logo",
   },
   {
     name: "Sun Pharma",
     sector: "Pharmaceuticals",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Sun_Pharma_logo.svg/320px-Sun_Pharma_logo.svg.png",
+    logo: "https://logo.clearbit.com/sunpharma.com",
     logoAlt: "Sun Pharma logo",
   },
   {
     name: "Aditya Birla Fashion & Retail",
     sector: "Fashion & Retail",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Aditya_Birla_Group_Logo.svg/320px-Aditya_Birla_Group_Logo.svg.png",
+    logo: "https://logo.clearbit.com/adityabirla.com",
     logoAlt: "Aditya Birla logo",
   },
   {
     name: "JCB",
     sector: "Heavy Equipment",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/JCB-Logo.svg/320px-JCB-Logo.svg.png",
+    logo: "https://logo.clearbit.com/jcb.com",
     logoAlt: "JCB logo",
   },
   {
     name: "Marriott",
     sector: "Hospitality",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Marriott_International_Logo.svg/320px-Marriott_International_Logo.svg.png",
+    logo: "https://logo.clearbit.com/marriott.com",
     logoAlt: "Marriott logo",
   },
 ]
@@ -110,22 +116,28 @@ export function TrustSection() {
               className="bg-background border border-border rounded-2xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#D4A826]/60 hover:shadow-md transition-all duration-200 min-h-[160px]"
             >
               <div className="w-full h-16 flex items-center justify-center">
-                <img
-                  src={client.logo}
-                  alt={client.logoAlt}
-                  className="max-h-14 max-w-full object-contain"
-                  onError={(e) => {
-                    const target = e.currentTarget
-                    target.style.display = "none"
-                    const fallback = target.nextElementSibling as HTMLElement
-                    if (fallback) fallback.style.display = "flex"
-                  }}
-                />
-                <div
-                  className="hidden w-14 h-14 rounded-full bg-[#D4A826] items-center justify-center"
-                >
-                  <span className="text-black font-bold text-xl">{client.name[0]}</span>
-                </div>
+                {(client as any).useInitial ? (
+                  <div className="w-14 h-14 rounded-full bg-[#D4A826] flex items-center justify-center shrink-0">
+                    <span className="text-black font-bold text-sm">{(client as any).initial}</span>
+                  </div>
+                ) : (
+                  <>
+                    <img
+                      src={client.logo}
+                      alt={client.logoAlt}
+                      className="max-h-14 max-w-[120px] object-contain"
+                      onError={(e) => {
+                        const target = e.currentTarget
+                        target.style.display = "none"
+                        const fallback = target.nextElementSibling as HTMLElement
+                        if (fallback) fallback.style.display = "flex"
+                      }}
+                    />
+                    <div className="hidden w-14 h-14 rounded-full bg-[#D4A826] items-center justify-center shrink-0">
+                      <span className="text-black font-bold text-xl">{client.name[0]}</span>
+                    </div>
+                  </>
+                )}
               </div>
               <div className="text-center">
                 <p className="font-bold text-sm text-foreground leading-tight">{client.name}</p>
