@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, ChevronRight, Shield, Wrench, Factory, Sun, Package, Zap, FlameKindling, Layers, Trash2, Sofa } from "lucide-react"
+import { ChevronDown, ChevronRight, Shield, Wrench, Factory, Sun, Package, Zap, FlameKindling, Layers, Sofa } from "lucide-react"
 
 /* ─── DATA ─────────────────────────────────────────────────────────────── */
 
@@ -349,13 +349,13 @@ export function AssetProtectionSection() {
   }
 
   const navItems = [
-    { id: "Plastic" as const, label: "2. Nanotech Plastic Protection", icon: Package },
-    { id: "Solar" as const, label: "3. Solar Nanotechnology Coating", icon: Sun },
-    { id: "Electrical" as const, label: "4. ElectroShield 5-in-1", icon: Zap },
-    { id: "Floor" as const, label: "5. FloorGuard™", icon: Layers },
-    { id: "Wall" as const, label: "6. WallGuard™", icon: FlameKindling },
-    { id: "RustRemover" as const, label: "7. Rust Remover", icon: Trash2 },
-    { id: "Carpet" as const, label: "8. Carpet & Upholstery Protection", icon: Sofa },
+    { id: "Plastic" as const, label: "Nanotech Plastic Protection", icon: Package },
+    { id: "Solar" as const, label: "Solar Nanotechnology Coating", icon: Sun },
+    { id: "Electrical" as const, label: "ElectroShield 5-in-1", icon: Zap },
+    { id: "Floor" as const, label: "FloorGuard™", icon: Layers },
+    { id: "Wall" as const, label: "WallGuard™", icon: FlameKindling },
+    { id: "RustRemover" as const, label: "Bio Rust Remover", icon: Wrench },
+    { id: "Carpet" as const, label: "Carpet & Upholstery Protection", icon: Sofa },
   ]
 
   return (
@@ -385,7 +385,7 @@ export function AssetProtectionSection() {
               className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-colors shadow-lg ${activeContent === "OEM" || activeContent === "Industrial" ? "bg-[#D4A826] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
             >
               <Shield className="w-4 h-4" />
-              1. Rust &amp; Corrosion
+              Rust &amp; Corrosion
               <ChevronDown className={`w-4 h-4 transition-transform ${activeDropdown === "rust" ? "rotate-180" : ""}`} />
             </button>
 
