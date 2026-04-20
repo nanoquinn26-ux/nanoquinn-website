@@ -14,9 +14,16 @@ export function BreakthroughSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col gap-16 lg:gap-20 items-center">
 
+          {/* Tagline */}
+          <div className="text-center w-full">
+            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-foreground text-balance leading-tight">
+              Time to say goodbye to galvanizing,<br className="hidden sm:block" /> powder coating, etc.
+            </h2>
+          </div>
+
           {/* Content */}
           <div className="text-center max-w-4xl w-full">
-            <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-lg font-medium mb-8">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               The Breakthrough
             </span>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-balance">
