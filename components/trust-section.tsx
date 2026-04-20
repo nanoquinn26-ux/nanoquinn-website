@@ -37,13 +37,13 @@ export function TrustSection() {
           {clients.map((client) => (
             <div
               key={client.name}
-              className="bg-background border border-border rounded-2xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#D4A826]/60 hover:shadow-md transition-all duration-200 min-h-[160px]"
+              className="bg-background border border-border rounded-2xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#D4A826]/60 hover:shadow-md transition-all duration-200 min-h-[200px]"
             >
-              <div className="w-full h-16 flex items-center justify-center">
+              <div className="w-full h-24 flex items-center justify-center">
                 <img
                   src={client.logo}
                   alt={client.logoAlt}
-                  className="max-h-14 max-w-[130px] object-contain"
+                  className="max-h-20 max-w-[160px] object-contain"
                   onError={(e) => {
                     const target = e.currentTarget
                     target.style.display = "none"
