@@ -1,3 +1,5 @@
+"use client"
+
 const clients = [
   {
     name: "TATA Motors",
