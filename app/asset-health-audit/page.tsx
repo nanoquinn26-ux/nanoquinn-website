@@ -197,7 +197,7 @@ export default function AssetHealthAuditPage() {
                 href="https://wa.me/918608604817"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#25D366] text-white font-semibold hover:bg-[#1ebe5d] transition-colors"
+                className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#25D366] text-black font-semibold hover:bg-[#1ebe5d] transition-colors"
               >
                 <WhatsAppIcon />
                 Request an Audit on WhatsApp

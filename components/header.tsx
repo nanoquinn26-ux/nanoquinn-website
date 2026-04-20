@@ -77,7 +77,7 @@ export function Header() {
               href="https://wa.me/918608604817"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#25D366] text-white text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
+              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#25D366] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
             >
               <WhatsAppIcon />
               Chat on WhatsApp
@@ -119,7 +119,7 @@ export function Header() {
                   href="https://wa.me/918608604817"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#25D366] text-white text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
+                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#25D366] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
                 >
                   <WhatsAppIcon />
                   Chat on WhatsApp
