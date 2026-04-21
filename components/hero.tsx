@@ -44,7 +44,7 @@ export function Hero() {
             <span className="underline text-[#fdfefe] decoration-[#D4A826] decoration-2 underline-offset-4">
               The World&apos;s first ESG & EHS-driven APaaS (Asset Protection as a Service) ecosystem
             </span>{" "}
-            — eliminating chemicals, reducing maintenance costs by up to 80%, and preserving every asset in &quot;as-new&quot; condition.
+            — eliminating chemicals, reducing maintenance costs by up to 80%, and preserving every asset in <span className="underline decoration-[#D4A826] decoration-[3px] underline-offset-4">&quot;as-new&quot;</span> condition.
           </p>
 
           {/* Key Highlights */}
