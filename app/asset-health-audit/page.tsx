@@ -17,7 +17,7 @@ const auditContent = {
     { label: "OEMs and Fabricated Equipment Manufacturers", desc: "Original equipment manufacturers requiring surface and structural integrity assurance." },
     { label: "Industrial Process Plants", desc: "Complex process environments exposed to chemical, thermal, and mechanical stressors." },
     { label: "Central & State Government Infrastructure", desc: "Public assets requiring long-term protection and lifecycle cost management." },
-    { label: "Rail, Defense & Commercial Facilities", desc: "High-stakes assets in rail, defense, public works, and institutional facilities." },
+    { label: "Rail, Defence & Commercial Facilities", desc: "High-stakes assets in rail, defence, public works, and institutional facilities." },
   ],
   whatWeAudit: [
     { label: "Metal Assets", desc: "Corrosion, coating failure, structural exposure" },
@@ -71,7 +71,7 @@ export default function AssetHealthAuditPage() {
 
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-lg font-medium mb-8 shadow-md">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               Asset Health Audit
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-balance">
@@ -197,7 +197,7 @@ export default function AssetHealthAuditPage() {
                 href="https://wa.me/918608604817"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#25D366] text-white font-semibold hover:bg-[#1ebe5d] transition-colors"
+                className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#25D366] text-black font-semibold hover:bg-[#1ebe5d] transition-colors"
               >
                 <WhatsAppIcon />
                 Request an Audit on WhatsApp

@@ -65,7 +65,7 @@ export function EsgSection() {
 
         {/* Header */}
         <div className="text-center mb-20">
-          <span className="inline-block px-8 py-3 rounded-full bg-[#D4A826] text-black text-lg font-medium mb-8 shadow-md">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             ESG &amp; EHS Leadership
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-balance mb-6">
