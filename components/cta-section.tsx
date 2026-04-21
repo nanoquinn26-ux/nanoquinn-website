@@ -22,9 +22,9 @@ export function CtaSection() {
           </div>
 
           {/* Contact Info */}
-          <div className="mt-20 pt-12 border-t border-background/10">
-            <p className="text-background/40 mb-3">Have questions?</p>
-            <a href="mailto:business@nanoquinn.com" className="text-2xl font-semibold text-gold hover:underline">
+          <div className="mt-16 pt-8 border-t border-background/10 flex items-center justify-center gap-2">
+            <span className="text-background/40 text-sm">Have questions?</span>
+            <a href="mailto:business@nanoquinn.com" className="text-sm font-medium text-gold hover:underline tracking-wide">
               business@nanoquinn.com
             </a>
           </div>
