@@ -34,7 +34,8 @@ const esgPillars = [
     textColor: "text-black",
     points: [
       "Supports global ESG reporting frameworks",
-      "ISO 45001:2018 & ISO 9001:2015 certified | D-U-N-S Registered",
+      "ISO 45001:2018 & ISO 9001:2015 certified | ",
+      "D-U-N-S Registered",
       "Unconditional Warranty = accountability in performance",
       "Transparent supply chain with certified inputs",
     ],
