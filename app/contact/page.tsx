@@ -30,7 +30,7 @@ export default function ContactPage() {
               {
                 icon: Phone,
                 label: "Phone",
-                value: "+91 86086 04817",
+                value: "+91 860 860 4817",
                 href: "tel:+918608604817",
               },
               {
