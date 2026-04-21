@@ -34,7 +34,7 @@ const oemContent = {
       "A new alternative to traditional metal protection systems",
     ],
   },
-  footer: "A true shift from coating metal… to preserving metal.",
+  footer: "Time to say goodbye to galvanizing, powder coating, etc.",
 }
 
 const industrialContent = {
@@ -495,8 +495,8 @@ export function AssetProtectionSection() {
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#D4A826]/10 border border-[#D4A826]/30 rounded-3xl p-8 flex items-center justify-center">
-                <p className="text-2xl font-bold text-foreground leading-snug italic">&ldquo;{oemContent.footer}&rdquo;</p>
+              <div className="bg-black rounded-3xl p-8 flex items-center justify-center">
+                <p className="text-2xl sm:text-3xl font-black text-[#00BFA5] leading-snug text-balance text-center">{oemContent.footer}</p>
               </div>
             </div>
           </div>

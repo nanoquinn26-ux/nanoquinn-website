@@ -15,9 +15,9 @@ export function BreakthroughSection() {
         <div className="flex flex-col gap-16 lg:gap-20 items-center">
 
           {/* Tagline */}
-          <div className="text-center w-full">
-            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-foreground text-balance leading-tight">
-              Time to say goodbye to galvanizing,<br className="hidden sm:block" /> powder coating, etc.
+          <div className="w-full text-center py-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-balance leading-tight uppercase italic" style={{ color: "#00BFA5" }}>
+              <span className="text-black not-italic">&ldquo;</span>Time to say goodbye to galvanizing,<br className="hidden sm:block" /> powder coating, etc.<span className="text-black not-italic">&rdquo;</span>
             </h2>
           </div>
 
