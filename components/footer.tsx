@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Linkedin, Twitter, Youtube } from "lucide-react"
+import { Linkedin, Youtube } from "lucide-react"
 
 const footerLinks = {
   company: [
@@ -23,9 +23,8 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Youtube, href: "#", label: "YouTube" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/nanoquinn/", label: "LinkedIn" },
+  { icon: Youtube, href: "https://youtube.com/@nanoquinn?si=1Qh999ftnlD1Z1FC", label: "YouTube" },
 ]
 
 export function Footer() {
@@ -54,6 +53,8 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-background border border-border flex items-center justify-center hover:bg-foreground hover:text-background transition-colors"
                   aria-label={social.label}
                 >
