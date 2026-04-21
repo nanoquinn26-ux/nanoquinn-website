@@ -268,9 +268,9 @@ const carpetContent = {
 }
 
 const auditContent = {
-  title: "Asset Health Audit",
+  title: '"Asset Health" Audit',
   subtitle: "Know Your Degradation. Protect Before Failure.",
-  intro: "Our Asset Health Audit helps identify critical vulnerabilities across your most important assets — before failures, shutdowns, or rising lifecycle costs take hold.",
+  intro: 'Our "Asset Health" Audit helps identify critical vulnerabilities across your most important assets — before failures, shutdowns, or rising lifecycle costs take hold.',
   overview: [
     { label: "Hidden Degradation", desc: "Uncover damage invisible to routine inspection" },
     { label: "Performance Loss", desc: "Quantify efficiency and output decline" },
@@ -885,7 +885,7 @@ export function AssetProtectionSection() {
           <div className="animate-fade-up">
             {/* Header */}
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Asset Health Audit</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">&quot;Asset Health&quot; Audit</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-3">{auditContent.title}</h3>
               <p className="text-lg font-semibold text-[#D4A826] mb-4">{auditContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto">{auditContent.intro}</p>
