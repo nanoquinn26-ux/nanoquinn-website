@@ -229,8 +229,8 @@ const rustRemoverContent = {
   ],
   shift: "From Chemical Attack to Sustainable Restoration.",
   shiftDesc: "Traditional rust removers can damage substrates and expose humans to hazardous chemistry. This innovation changes the model.",
-  promise: "Save Assets from Chemical Damage. Protect Humans Too.",
-  benchmark: "A new global benchmark in rust removal.",
+  promise: "Certified 10E RoHS purity by SGS, ensuring industrial-grade safety and compliance.",
+  benchmark: "",
   tagline: "Clean Rust. Preserve Metal. Protect People. Sustain the Planet.",
 }
 
@@ -802,7 +802,7 @@ export function AssetProtectionSection() {
                 </div>
                 <div className="border-t border-border pt-6">
                   <p className="text-base font-semibold text-foreground mb-1">{rustRemoverContent.promise}</p>
-                  <p className="text-sm text-muted-foreground">{rustRemoverContent.benchmark}</p>
+                  {rustRemoverContent.benchmark && <p className="text-sm text-muted-foreground">{rustRemoverContent.benchmark}</p>}
                 </div>
               </div>
             </div>
