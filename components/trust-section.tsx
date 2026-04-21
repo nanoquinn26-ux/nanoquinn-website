@@ -37,13 +37,13 @@ export function TrustSection() {
           {clients.map((client) => (
             <div
               key={client.name}
-              className="bg-background border border-border rounded-2xl p-6 flex flex-col items-center justify-center gap-4 hover:border-[#D4A826]/60 hover:shadow-md transition-all duration-200 min-h-[200px]"
+              className="bg-background border border-border rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center gap-3 hover:border-[#D4A826]/60 hover:shadow-md transition-all duration-200 min-h-[160px] sm:min-h-[200px] overflow-hidden"
             >
-              <div className="w-full h-24 flex items-center justify-center">
+              <div className="w-full flex items-center justify-center px-2">
                 <img
                   src={client.logo}
                   alt={client.logoAlt}
-                  className="max-h-20 max-w-[160px] object-contain"
+                  className="w-full h-auto max-h-16 sm:max-h-20 object-contain"
                   onError={(e) => {
                     const target = e.currentTarget
                     target.style.display = "none"
@@ -51,12 +51,12 @@ export function TrustSection() {
                     if (fallback) fallback.style.display = "flex"
                   }}
                 />
-                <div className="hidden w-14 h-14 rounded-full bg-[#D4A826] items-center justify-center shrink-0">
-                  <span className="text-black font-bold text-xl">{client.name[0]}</span>
+                <div className="hidden w-12 h-12 rounded-full bg-[#D4A826] items-center justify-center shrink-0">
+                  <span className="text-black font-bold text-lg">{client.name[0]}</span>
                 </div>
               </div>
-              <div className="text-center">
-                <p className="font-bold text-sm text-foreground leading-tight">{client.name}</p>
+              <div className="text-center w-full px-1">
+                <p className="font-bold text-xs sm:text-sm text-foreground leading-tight break-words">{client.name}</p>
                 <p className="text-xs text-muted-foreground mt-1">{client.sector}</p>
               </div>
             </div>
