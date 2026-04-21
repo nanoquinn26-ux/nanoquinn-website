@@ -138,7 +138,7 @@ const solarContent = {
 }
 
 const electricalContent = {
-  title: "NanoQuinn 5-in-1 Revolution for Electrical & Electronics Protection",
+  title: 'NanoQuinn 5-in-1 Revolution for "Electrical & Electronics" Protection',
   subtitle: "A Breakthrough Disaster Management Innovation",
   intro: "A next-generation breathable oil-based nanotechnology coating engineered to create a protective shield that safeguards critical systems from the most common causes of failure, breakdown, fire, and asset degradation.",
   protections: [
