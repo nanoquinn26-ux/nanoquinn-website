@@ -2,9 +2,9 @@ import { Footer } from "@/components/footer"
 import { ChevronRight, ClipboardList } from "lucide-react"
 
 const auditContent = {
-  title: "Asset Health Audit",
+  title: '"Asset Health" Audit',
   subtitle: "Know Your Degradation. Protect Before Failure.",
-  intro: "Our Asset Health Audit helps identify critical vulnerabilities across your most important assets — before failures, shutdowns, or rising lifecycle costs take hold.",
+  intro: 'Our "Asset Health" Audit helps identify critical vulnerabilities across your most important assets — before failures, shutdowns, or rising lifecycle costs take hold.',
   overview: [
     { label: "Hidden Degradation", desc: "Uncover damage invisible to routine inspection" },
     { label: "Performance Loss", desc: "Quantify efficiency and output decline" },
@@ -72,7 +72,7 @@ export default function AssetHealthAuditPage() {
           {/* Header */}
           <div className="text-center mb-16">
             <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
-              Asset Health Audit
+              &quot;Asset Health&quot; Audit
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-balance">
               {auditContent.title}
