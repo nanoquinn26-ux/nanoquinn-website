@@ -17,7 +17,7 @@ const auditContent = {
     { label: "OEMs and Fabricated Equipment Manufacturers", desc: "Original equipment manufacturers requiring surface and structural integrity assurance." },
     { label: "Industrial Process Plants", desc: "Complex process environments exposed to chemical, thermal, and mechanical stressors." },
     { label: "Central & State Government Infrastructure", desc: "Public assets requiring long-term protection and lifecycle cost management." },
-    { label: "Rail, Defense & Commercial Facilities", desc: "High-stakes assets in rail, defense, public works, and institutional facilities." },
+    { label: "Rail, Defence & Commercial Facilities", desc: "High-stakes assets in rail, defence, public works, and institutional facilities." },
   ],
   whatWeAudit: [
     { label: "Metal Assets", desc: "Corrosion, coating failure, structural exposure" },

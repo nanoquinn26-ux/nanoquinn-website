@@ -13,7 +13,7 @@ const b2bIndustries = [
 
 const b2gIndustries = [
   { icon: Train, label: "Railways" },
-  { icon: Shield, label: "Defense" },
+  { icon: Shield, label: "Defence" },
   { icon: Building, label: "Smart Cities" },
   { icon: Landmark, label: "PSUs" },
   { icon: Construction, label: "Public Infrastructure" },
