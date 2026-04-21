@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 
 const navItems = [
-  { label: "APaaS Model", href: "/apaas" },
+  { label: '"APaaS Model"', href: "/apaas" },
   { label: "Asset Protection", href: "/asset-protection" },
   { label: "Asset Health Audit", href: "/asset-health-audit" },
   { label: "Technology", href: "/technology" },

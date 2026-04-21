@@ -10,7 +10,7 @@ const footerLinks = {
     { label: "Press", href: "#" },
   ],
   solutions: [
-    { label: "APaaS Model", href: "/apaas" },
+    { label: '"APaaS Model"', href: "/apaas" },
     { label: "Asset Protection", href: "/asset-protection" },
     { label: "Technology", href: "/technology" },
     { label: "Industries", href: "/industries" },
