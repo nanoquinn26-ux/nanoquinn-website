@@ -47,17 +47,17 @@ const leaders = [
     name: "Rajesh Dholakia",
     photo: "/team/rajesh-dholakia.jpeg",
     role: "Director : Operations & NPD",
-    tags: ["Innovation", "Quality and Category Leadership"],
+    tags: ["Operations", "NPD", "Quality Leadership"],
     bio: [
-      "Mr. Rajesh Dholakia brings senior leadership, deep domain expertise, and a strong conviction-led approach to New Product Development (NPD) and the Application vertical.",
-      "With a sharp focus on innovation, multi-fold quality enhancement, and application excellence, he plays a pivotal role in creating differentiated solutions that strengthen category leadership and deliver a competitive edge.",
-      "Known for his persuasive character, mature judgment, and solution-oriented approach, he combines technical depth with strategic thinking — helping transform ideas into scalable, high-performance offerings.",
-      "His contribution extends beyond product and process; he is instrumental in reinforcing a culture of quality, credibility, and innovation-led growth.",
+      "Mr. Rajesh Dholakia brings senior leadership, deep operational expertise, and a strong conviction-led approach to both Operations and New Product Development (NPD).",
+      "With a sharp focus on process excellence, quality enhancement, and execution discipline, he ensures that NanoQuinn's products and operations meet the highest standards of performance and reliability.",
+      "Known for his persuasive character, mature judgment, and solution-oriented mindset, he combines operational depth with strategic thinking — bridging the gap between innovation and flawless delivery.",
+      "His contribution extends across product, process, and people; he is instrumental in building a culture of operational credibility, quality ownership, and innovation-led growth.",
     ],
     statements: [],
     closing:
       "Beyond NanoQuinn, he is equally passionate about advancing a healthier world through the benefits of protein and wellness — reflecting a broader commitment to performance, well-being, and purposeful impact.",
-    skills: null,
+    skills: "Operations Leadership | New Product Development | Quality Excellence | Process Execution",
   },
 ]
 
