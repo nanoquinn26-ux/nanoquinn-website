@@ -46,7 +46,7 @@ const leaders = [
   {
     name: "Rajesh Dholakia",
     photo: "/team/rajesh-dholakia.jpeg",
-    role: "Director – NPD & Application",
+    role: "Director : Operations & NPD",
     tags: ["Innovation", "Quality and Category Leadership"],
     bio: [
       "Mr. Rajesh Dholakia brings senior leadership, deep domain expertise, and a strong conviction-led approach to New Product Development (NPD) and the Application vertical.",
@@ -146,7 +146,16 @@ export default function LeadershipPage() {
                 {/* Bio column */}
                 <div className="flex-1 px-6 sm:px-8 py-8 flex flex-col gap-4">
                   {leader.bio.map((para, i) => (
-                    <p key={i} className="text-muted-foreground leading-relaxed">{para}</p>
+                    <p key={i} className="text-muted-foreground leading-relaxed">
+                      {leader.name === "Rajiv Sanghvi" && i === 0 ? (
+                        <>
+                          For 30 years, he has believed in creating{" "}
+                          <span className="font-black text-foreground" style={{ color: "#D4A826" }}>
+                            Only Me, never Me Too.
+                          </span>
+                        </>
+                      ) : para}
+                    </p>
                   ))}
 
                   {leader.statements.length > 0 && (
