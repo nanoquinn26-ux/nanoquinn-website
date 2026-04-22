@@ -359,30 +359,30 @@ export function AssetProtectionSection() {
   ]
 
   return (
-    <section id="asset-protection" className="py-24 bg-background border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="asset-protection" className="py-16 sm:py-24 bg-background border-t border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 sm:mb-16">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Asset Protection
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
             Surface &amp; Asset Protection
           </h2>
-          <p className="mt-6 text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="mt-4 sm:mt-6 text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Industry-specific nanotechnology solutions engineered for permanent protection, preservation, and performance.
           </p>
         </div>
 
         {/* Dropdown Navigation */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 sm:mb-16">
 
           {/* 1. Rust & Corrosion dropdown */}
           <div className="relative">
             <button
               onClick={toggleDropdown}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-colors shadow-lg ${activeContent === "OEM" || activeContent === "Industrial" ? "bg-[#D4A826] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
+              className={`flex items-center gap-1.5 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm transition-colors shadow-lg ${activeContent === "OEM" || activeContent === "Industrial" ? "bg-[#D4A826] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
             >
               <Shield className="w-4 h-4" />
               Rust &amp; Corrosion
@@ -454,7 +454,7 @@ export function AssetProtectionSection() {
             <button
               key={id}
               onClick={() => handleDirectClick(id)}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-sm transition-colors shadow-lg ${activeContent === id ? "bg-[#D4A826] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
+              className={`flex items-center gap-1.5 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm transition-colors shadow-lg ${activeContent === id ? "bg-[#D4A826] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
             >
               <Icon className="w-4 h-4" />
               {label}
@@ -473,9 +473,9 @@ export function AssetProtectionSection() {
               <p className="text-lg font-medium text-[#D4A826] mb-3">{oemContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{oemContent.intro}</p>
             </div>
-            <div className="grid md:grid-cols-2 gap-6 mb-10">
+            <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-10">
               {oemContent.variants.map((v) => (
-                <div key={v.number} className="rounded-3xl p-8 bg-muted">
+                <div key={v.number} className="rounded-3xl p-5 sm:p-8 bg-muted">
                   <span className="text-4xl font-bold text-[#D4A826] mb-4 block">{v.number}</span>
                   <h4 className="text-xl font-bold mb-3">{v.title}</h4>
                   <p className="text-sm leading-relaxed text-muted-foreground">{v.description}</p>

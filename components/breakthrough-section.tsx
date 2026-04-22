@@ -10,13 +10,13 @@ const benefits = [
 
 export function BreakthroughSection() {
   return (
-    <section className="py-32 lg:py-40 bg-background overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex flex-col gap-16 lg:gap-20 items-center">
+    <section className="py-20 sm:py-32 lg:py-40 bg-background overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-12 sm:gap-16 lg:gap-20 items-center">
 
           {/* Tagline */}
           <div className="w-full text-center py-4">
-            <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black tracking-tight text-balance leading-tight uppercase italic" style={{ color: "#00BFA5" }}>
+            <h2 className="text-3xl sm:text-5xl lg:text-7xl font-black tracking-tight text-balance leading-tight uppercase italic" style={{ color: "#00BFA5" }}>
               <span className="text-black not-italic">&ldquo;</span>Time to say goodbye to galvanizing,<br className="hidden sm:block" /> powder coating, etc.<span className="text-black not-italic">&rdquo;</span>
             </h2>
           </div>
@@ -26,14 +26,14 @@ export function BreakthroughSection() {
             <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               The Breakthrough
             </span>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-balance">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
               One Layer. Total Transformation.
             </h2>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-10">
+            <p className="text-base sm:text-xl text-muted-foreground leading-relaxed mb-8 sm:mb-10">
               A revolutionary 8–10 micron nanotechnology layer fundamentally changes surface behavior:
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8 sm:mb-10">
               {benefits.map((item) => (
                 <div
                   key={item.label}

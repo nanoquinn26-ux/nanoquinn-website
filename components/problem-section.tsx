@@ -17,17 +17,17 @@ const results = [
 
 export function ProblemSection() {
   return (
-    <section className="py-32 lg:py-40 bg-foreground text-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center mb-20">
+    <section className="py-20 sm:py-32 lg:py-40 bg-foreground text-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-20">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             The Problem
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-balance">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
             A ₹20 Lakh Crore Problem.<br />
             <span className="text-background/50">Ignored for Decades.</span>
           </h2>
-          <p className="text-xl text-background/60 leading-relaxed">
+          <p className="text-base sm:text-xl text-background/60 leading-relaxed">
             ₹300 Lakh Crore Globally — Driven by Traditional Paint Systems
           </p>
         </div>
@@ -53,7 +53,7 @@ export function ProblemSection() {
         </div>
         {/* Result */}
         <div className="max-w-3xl mx-auto">
-          <div className="bg-background/5 border border-background/10 rounded-3xl p-10 lg:p-12">
+          <div className="bg-background/5 border border-background/10 rounded-3xl p-6 sm:p-10 lg:p-12">
             <h3 className="text-lg font-semibold mb-6 text-accent">Result:</h3>
             <ul className="space-y-4 text-background/80 mb-8">
               {results.map((result) => (
@@ -64,7 +64,7 @@ export function ProblemSection() {
               ))}
             </ul>
             <div className="pt-8 border-t border-background/10">
-              <p className="text-2xl lg:text-3xl font-semibold text-balance">
+              <p className="text-xl sm:text-2xl lg:text-3xl font-semibold text-balance">
                 The world accepted this as normal. <span className="text-accent">We didn&apos;t.</span>
               </p>
             </div>

@@ -61,24 +61,24 @@ const certifications = [
 
 export function EsgSection() {
   return (
-    <section id="esg" className="py-32 lg:py-40 bg-[#0A0A0A] text-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="esg" className="py-20 sm:py-32 lg:py-40 bg-[#0A0A0A] text-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-20">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             ESG &amp; EHS Leadership
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-balance mb-6">
+          <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-balance mb-6">
             Built for the Future<br />of Compliance.
           </h2>
-          <p className="text-xl text-white/60 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-xl text-white/60 max-w-3xl mx-auto leading-relaxed">
             NanoQuinn is the only asset protection platform where sustainability is not a feature — it is the foundation. Every application eliminates chemicals, protects people, and supports governance.
           </p>
         </div>
 
         {/* ESG Pillars */}
-        <div className="grid md:grid-cols-3 gap-6 mb-20">
+        <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20">
           {esgPillars.map((pillar) => (
             <div key={pillar.letter} className="relative rounded-3xl overflow-hidden">
               {/* Letter Badge */}
@@ -119,7 +119,7 @@ export function EsgSection() {
         {/* Bottom Row: Certifications + Statement */}
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Certifications */}
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-10">
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-10">
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 rounded-xl bg-[#D4A826] flex items-center justify-center">
                 <Award className="w-6 h-6 text-black" />
@@ -137,10 +137,10 @@ export function EsgSection() {
           </div>
 
           {/* Statement */}
-          <div className="bg-[#D4A826] rounded-3xl p-10 flex flex-col justify-between">
+          <div className="bg-[#D4A826] rounded-3xl p-6 sm:p-10 flex flex-col justify-between">
             <div>
               <Zap className="w-10 h-10 text-black mb-6" />
-              <h3 className="text-3xl sm:text-4xl font-black text-black leading-snug mb-6">
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-black leading-snug mb-6">
                 Not just protecting assets &mdash; protecting the planet.
               </h3>
               <p className="text-black/70 text-lg leading-relaxed">

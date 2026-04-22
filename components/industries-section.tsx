@@ -22,20 +22,20 @@ const b2gIndustries = [
 
 export function IndustriesSection() {
   return (
-    <section id="industries" className="py-32 lg:py-40 bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-20">
+    <section id="industries" className="py-20 sm:py-32 lg:py-40 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-20">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Industry Solutions
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
             Built for Every Critical Surface.
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
           {/* B2B */}
-          <div className="bg-muted rounded-3xl p-10">
+          <div className="bg-muted rounded-3xl p-6 sm:p-10">
             <div className="flex items-center gap-4 mb-8">
               <div className="px-4 py-2 bg-foreground text-background text-sm font-bold rounded-full">
                 B2B
@@ -53,7 +53,7 @@ export function IndustriesSection() {
           </div>
 
           {/* B2G */}
-          <div className="bg-muted rounded-3xl p-10">
+          <div className="bg-muted rounded-3xl p-6 sm:p-10">
             <div className="flex items-center gap-4 mb-8">
               <div className="px-4 py-2 bg-accent text-accent-foreground text-sm font-bold rounded-full">
                 B2G
