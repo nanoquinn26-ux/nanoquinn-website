@@ -61,10 +61,16 @@ export function Hero() {
 
           {/* CTA */}
           <div className="animate-fade-up delay-400">
-            <Button size="lg" className="w-full sm:w-auto text-base px-10 py-6 h-auto rounded-full bg-[#D4A826] text-[#0A0A0A] hover:bg-[#F0C850]">
-              Request Industrial Demo
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
+            <a
+              href="https://wa.me/918608604817"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="w-full sm:w-auto text-base px-10 py-6 h-auto rounded-full bg-[#D4A826] text-[#0A0A0A] hover:bg-[#F0C850]">
+                Request Industrial Demo
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
           </div>
         </div>
 
