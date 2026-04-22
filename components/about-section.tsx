@@ -176,33 +176,52 @@ export function AboutSection() {
               key={leader.name}
               className="bg-background border border-border rounded-3xl overflow-hidden hover:border-[#D4A826]/60 hover:shadow-lg transition-all duration-200"
             >
-              {/* Header bar */}
-              <div className="bg-foreground px-8 py-6 flex flex-col sm:flex-row sm:items-center gap-3">
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-1">
-                    <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#D4A826" }}>
-                      {String(idx + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="text-xl sm:text-2xl font-black text-background">{leader.name}</h3>
-                  </div>
-                  <p className="text-background/60 text-sm font-medium">{leader.role}</p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {leader.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="px-3 py-1 rounded-full text-xs font-semibold text-black"
-                      style={{ backgroundColor: "#00BFA5" }}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
+              {/* Top index strip */}
+              <div className="bg-foreground px-8 py-3 flex items-center gap-3">
+                <span className="text-sm font-black uppercase tracking-widest" style={{ color: "#D4A826" }}>
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <div className="h-px flex-1 bg-background/10" />
               </div>
 
-              {/* Body */}
-              <div className="px-8 py-8">
-                <div className="flex flex-col gap-4">
+              {/* Main content: photo + text */}
+              <div className="flex flex-col lg:flex-row gap-0">
+
+                {/* Photo column */}
+                <div className="lg:w-72 shrink-0 bg-muted flex flex-col items-center justify-start p-8 gap-6 border-b lg:border-b-0 lg:border-r border-border">
+                  {/* Photo placeholder */}
+                  <div
+                    className="w-44 h-52 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed"
+                    style={{ borderColor: "#D4A826", backgroundColor: "#D4A82610" }}
+                  >
+                    <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#D4A82630" }} />
+                    <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#D4A826" }}>
+                      Photo
+                    </span>
+                  </div>
+
+                  {/* Name & role */}
+                  <div className="text-center">
+                    <h3 className="text-xl font-black text-foreground leading-tight">{leader.name}</h3>
+                    <p className="text-muted-foreground text-sm font-medium mt-1">{leader.role}</p>
+                  </div>
+
+                  {/* Tag badges */}
+                  <div className="flex flex-wrap justify-center gap-2">
+                    {leader.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="px-4 py-2 rounded-full text-sm font-bold text-black text-center leading-snug"
+                        style={{ backgroundColor: "#00BFA5" }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Bio column */}
+                <div className="flex-1 px-8 py-8 flex flex-col gap-4">
                   {leader.bio.map((para, i) => (
                     <p key={i} className="text-muted-foreground leading-relaxed">{para}</p>
                   ))}
@@ -218,11 +237,12 @@ export function AboutSection() {
                   <p className="text-muted-foreground leading-relaxed">{leader.closing}</p>
 
                   {"skills" in leader && leader.skills && (
-                    <p className="text-sm font-semibold mt-2" style={{ color: "#00BFA5" }}>
+                    <p className="text-sm font-bold mt-2 pt-4 border-t border-border" style={{ color: "#00BFA5" }}>
                       {leader.skills}
                     </p>
                   )}
                 </div>
+
               </div>
             </div>
           ))}
