@@ -1,5 +1,51 @@
 import { Leaf, Shield, Zap, Globe, BarChart3, Lightbulb } from "lucide-react"
 
+const leaders = [
+  {
+    name: "Rajiv Sanghvi",
+    role: "Founder",
+    tags: ["Category Creator", "Building a Global Asset Protection Revolution"],
+    bio: [
+      "For 30 years, he has believed in creating Only Me, never Me Too.",
+      "While others pursued competition, he pursued category creation. While others improved existing products, he focused on disrupting industries.",
+      "Sustainable innovations, disruptive technologies, and building globally uncompetitive, unmatched solutions have been his lifelong driving force.",
+      "His vision is bold: to create a new global Asset Protection vertical — protecting every surface, every asset, across every country — while redefining preservation, durability, maintenance, and sustainability.",
+    ],
+    statements: [
+      "Not building another company. Building a new industrial category.",
+      "Not competing in markets. Creating markets.",
+    ],
+    closing: "Driven by one burning desire — to leave behind a global legacy of transformative innovations that challenge century-old methods and replace them with a more sustainable future.",
+  },
+  {
+    name: "Jeevika Sanghvi",
+    role: "Co-Founder",
+    tags: ["Sales & Business Development", "Growth Strategist"],
+    bio: [
+      "A silent force with a sharp commercial instinct, Jeevika Sanghvi brings focus, discipline, and execution-driven energy to sales and business development.",
+      "Known for vision clarity, humility, and a straightforward approach, she combines relationship-building with strong conviction — persuasive when it matters, grounded in trust always.",
+      "Her strength lies in identifying opportunities, building strategic partnerships, and converting ideas into business growth through focused execution.",
+      "Calm in approach, firm in negotiations, and relentless in follow-through, she represents a rare blend of humility and hard convincing — a quiet go-getter who lets outcomes speak louder than words.",
+    ],
+    statements: [],
+    closing: "Driven by purpose and growth, she contributes to building scalable, sustainable business opportunities with long-term value creation at the core.",
+    skills: "Sales Growth | Business Development | Strategic Partnerships | Execution Focused Leadership",
+  },
+  {
+    name: "Rajesh Dholakia",
+    role: "Director – NPD & Application",
+    tags: ["Innovation", "Quality and Category Leadership"],
+    bio: [
+      "Mr. Rajesh Dholakia brings senior leadership, deep domain expertise, and a strong conviction-led approach to New Product Development (NPD) and the Application vertical.",
+      "With a sharp focus on innovation, multi-fold quality enhancement, and application excellence, he plays a pivotal role in creating differentiated solutions that strengthen category leadership and deliver a competitive edge.",
+      "Known for his persuasive character, mature judgment, and solution-oriented approach, he combines technical depth with strategic thinking — helping transform ideas into scalable, high-performance offerings.",
+      "His contribution extends beyond product and process; he is instrumental in reinforcing a culture of quality, credibility, and innovation-led growth.",
+    ],
+    statements: [],
+    closing: "Beyond NanoQuinn, he is equally passionate about advancing a healthier world through the benefits of protein and wellness — reflecting a broader commitment to performance, well-being, and purposeful impact.",
+  },
+]
+
 const pillars = [
   {
     icon: Lightbulb,
@@ -110,6 +156,76 @@ export function AboutSection() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* Leadership */}
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+        <div className="text-center mb-16">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            Leadership
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground text-balance">
+            The Minds Behind NanoQuinn
+          </h2>
+        </div>
+
+        <div className="flex flex-col gap-12">
+          {leaders.map((leader, idx) => (
+            <div
+              key={leader.name}
+              className="bg-background border border-border rounded-3xl overflow-hidden hover:border-[#D4A826]/60 hover:shadow-lg transition-all duration-200"
+            >
+              {/* Header bar */}
+              <div className="bg-foreground px-8 py-6 flex flex-col sm:flex-row sm:items-center gap-3">
+                <div className="flex-1">
+                  <div className="flex items-center gap-3 mb-1">
+                    <span className="text-xs font-bold uppercase tracking-widest" style={{ color: "#D4A826" }}>
+                      {String(idx + 1).padStart(2, "0")}
+                    </span>
+                    <h3 className="text-xl sm:text-2xl font-black text-background">{leader.name}</h3>
+                  </div>
+                  <p className="text-background/60 text-sm font-medium">{leader.role}</p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {leader.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="px-3 py-1 rounded-full text-xs font-semibold text-black"
+                      style={{ backgroundColor: "#00BFA5" }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Body */}
+              <div className="px-8 py-8">
+                <div className="flex flex-col gap-4">
+                  {leader.bio.map((para, i) => (
+                    <p key={i} className="text-muted-foreground leading-relaxed">{para}</p>
+                  ))}
+
+                  {leader.statements.length > 0 && (
+                    <div className="my-2 border-l-4 pl-5 flex flex-col gap-2" style={{ borderColor: "#D4A826" }}>
+                      {leader.statements.map((s, i) => (
+                        <p key={i} className="font-bold text-foreground italic">{s}</p>
+                      ))}
+                    </div>
+                  )}
+
+                  <p className="text-muted-foreground leading-relaxed">{leader.closing}</p>
+
+                  {"skills" in leader && leader.skills && (
+                    <p className="text-sm font-semibold mt-2" style={{ color: "#00BFA5" }}>
+                      {leader.skills}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
