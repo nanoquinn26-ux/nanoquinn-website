@@ -14,6 +14,7 @@ const navItems = [
   { label: "Technology", href: "/technology" },
   { label: "Industries", href: "/industries" },
   { label: "ESG", href: "/esg" },
+  { label: "Leadership", href: "/leadership" },
   { label: "Contact", href: "/contact" },
 ]
 
