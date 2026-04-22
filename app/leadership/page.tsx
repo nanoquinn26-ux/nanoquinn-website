@@ -102,17 +102,18 @@ export default function LeadershipPage() {
               <div className="flex flex-col lg:flex-row">
 
                 {/* Photo column */}
-                <div className="lg:w-72 shrink-0 bg-muted flex flex-col items-center justify-start p-8 gap-6 border-b lg:border-b-0 lg:border-r border-border">
+                <div className="lg:w-80 shrink-0 bg-muted flex flex-col items-center justify-start p-6 gap-6 border-b lg:border-b-0 lg:border-r border-border">
                   {/* Photo */}
                   {leader.photo ? (
                     <img
                       src={leader.photo}
                       alt={`${leader.name} photo`}
-                      className="w-44 h-52 rounded-2xl object-cover object-top shadow-lg"
+                      className="w-full h-72 lg:h-80 rounded-2xl object-cover object-center shadow-xl"
+                      style={{ imageRendering: "auto" }}
                     />
                   ) : (
                     <div
-                      className="w-44 h-52 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed"
+                      className="w-full h-72 lg:h-80 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed"
                       style={{ borderColor: "#D4A826", backgroundColor: "#D4A82610" }}
                     >
                       <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#D4A82630" }} />
