@@ -8,12 +8,12 @@ const features = [
 
 export function TechnologySection() {
   return (
-    <section id="technology" className="py-32 lg:py-40 bg-foreground text-background overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+    <section id="technology" className="py-20 sm:py-32 lg:py-40 bg-foreground text-background overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-10 sm:gap-16 lg:gap-24 items-center">
           {/* Visual */}
           <div className="relative order-2 lg:order-1">
-            <div className="relative aspect-square max-w-lg mx-auto">
+            <div className="relative aspect-square max-w-xs sm:max-w-lg mx-auto">
               {/* Outer Ring */}
               <div className="absolute inset-0 border border-background/10 rounded-full animate-[spin_30s_linear_infinite]">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-accent" />
@@ -31,16 +31,16 @@ export function TechnologySection() {
               
               {/* Center */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-40 h-40 rounded-full bg-background/10 backdrop-blur-sm flex items-center justify-center">
-                  <Globe className="w-20 h-20 text-accent" />
+                <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-background/10 backdrop-blur-sm flex items-center justify-center">
+                  <Globe className="w-16 h-16 sm:w-20 sm:h-20 text-accent" />
                 </div>
               </div>
 
-              {/* Floating Badges */}
-              <div className="absolute top-8 right-8 px-4 py-2.5 bg-background/10 backdrop-blur-sm rounded-xl border border-background/20">
+              {/* Floating Badges — hidden on mobile to prevent overlap */}
+              <div className="hidden sm:block absolute top-8 right-8 px-4 py-2.5 bg-background/10 backdrop-blur-sm rounded-xl border border-background/20">
                 <span className="text-sm font-semibold">German Tech</span>
               </div>
-              <div className="absolute bottom-8 left-8 px-4 py-2.5 bg-background/10 backdrop-blur-sm rounded-xl border border-background/20">
+              <div className="hidden sm:block absolute bottom-8 left-8 px-4 py-2.5 bg-background/10 backdrop-blur-sm rounded-xl border border-background/20">
                 <span className="text-sm font-semibold">Made in India</span>
               </div>
             </div>
@@ -51,7 +51,7 @@ export function TechnologySection() {
             <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               Technology Excellence
             </span>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8 text-balance">
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
               German Precision.<br />Indian Scale.<br />Global Impact.
             </h2>
             

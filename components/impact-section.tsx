@@ -50,14 +50,14 @@ function AnimatedNumber({ value, suffix, prefix }: { value: number; suffix: stri
 
   if (prefix) {
     return (
-      <div ref={ref} className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight">
+      <div ref={ref} className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight">
         {prefix}
       </div>
     )
   }
 
   return (
-    <div ref={ref} className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight">
+    <div ref={ref} className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight">
       {current}{suffix}
     </div>
   )
@@ -65,20 +65,20 @@ function AnimatedNumber({ value, suffix, prefix }: { value: number; suffix: stri
 
 export function ImpactSection() {
   return (
-    <section className="py-32 lg:py-40 bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-20">
+    <section className="py-20 sm:py-32 lg:py-40 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-20">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Measurable Impact
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
             Transforming Economics.<br />Transforming Sustainability.
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-4 mb-12 sm:mb-20">
           {metrics.map((metric) => (
-            <div key={metric.label} className="text-center p-8 lg:p-10 bg-muted rounded-3xl">
+            <div key={metric.label} className="text-center p-5 sm:p-8 lg:p-10 bg-muted rounded-3xl">
               <AnimatedNumber value={metric.value} suffix={metric.suffix} prefix={metric.prefix} />
               <p className="mt-4 text-base font-medium text-muted-foreground">{metric.label}</p>
             </div>

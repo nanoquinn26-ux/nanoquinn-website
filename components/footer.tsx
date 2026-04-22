@@ -5,7 +5,7 @@ import { Linkedin, Youtube } from "lucide-react"
 const footerLinks = {
   company: [
     { label: "About NanoQuinn", href: "/about" },
-    { label: "Leadership", href: "#" },
+    { label: "Leadership", href: "/leadership" },
     { label: "Careers", href: "/careers" },
     { label: "Press", href: "#" },
   ],
@@ -29,11 +29,11 @@ const socialLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-muted py-20 lg:py-24">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12 mb-16">
+    <footer className="bg-muted py-16 sm:py-20 lg:py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-4 lg:col-span-1 mb-6 lg:mb-0 lg:col-span-1">
+          <div className="col-span-1 sm:col-span-2 lg:col-span-1 mb-2 lg:mb-0">
             <Link href="/" className="flex items-center mb-6">
               <div className="bg-white rounded-lg p-2">
                 <Image 

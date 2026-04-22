@@ -12,16 +12,16 @@ const steps = [
 
 export function ApaasSection() {
   return (
-    <section id="apaas" className="py-32 lg:py-40 bg-background">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="apaas" className="py-20 sm:py-32 lg:py-40 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
+        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-20">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Category Creator
           </span>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
+          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
             {"World's 1st APaaS Platform for Surface and Asset Protection"}
           </h2>
 
@@ -53,12 +53,12 @@ export function ApaasSection() {
           {/* Connection Line */}
           <div className="hidden lg:block absolute top-20 left-[10%] right-[10%] h-px bg-border" />
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-10">
             {steps.map((step, index) => (
               <div key={step.label} className="relative flex flex-col items-center text-center">
 
                 {/* Card */}
-                <div className="relative w-36 h-36 rounded-3xl bg-[#1a1a1a] flex items-center justify-center shadow-xl">
+                <div className="relative w-24 h-24 sm:w-36 sm:h-36 rounded-3xl bg-[#1a1a1a] flex items-center justify-center shadow-xl">
 
                   {/* Icon */}
                   <step.icon className="w-10 h-10 text-[#00BFA5]" />
@@ -86,8 +86,8 @@ export function ApaasSection() {
 
         {/* Key Differentiator (UNCHANGED as requested) */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-foreground text-background rounded-3xl p-10 lg:p-14 text-center">
-            <p className="text-2xl lg:text-4xl font-bold text-balance leading-tight">
+          <div className="bg-foreground text-background rounded-3xl p-6 sm:p-10 lg:p-14 text-center">
+            <p className="text-xl sm:text-2xl lg:text-4xl font-bold text-balance leading-tight">
               We don&apos;t sell coatings.<br />
               <span className="text-accent">We deliver performance with accountability.</span>
             </p>
