@@ -29,7 +29,7 @@ const leaders = [
   },
   {
     name: "Jeevika Sanghvi",
-    photo: null,
+    photo: "/team/jeevika-sanghvi.jpeg",
     role: "Co-Founder",
     tags: ["Sales & Business Development", "Growth Strategist"],
     bio: [
