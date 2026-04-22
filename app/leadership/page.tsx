@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const leaders = [
   {
     name: "Rajiv Sanghvi",
-    photo: null,
+    photo: "/team/rajiv-sanghvi.jpeg",
     role: "Founder",
     tags: ["Category Creator", "Building a Global Asset Protection Revolution"],
     bio: [
