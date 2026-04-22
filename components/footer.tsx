@@ -6,7 +6,7 @@ const footerLinks = {
   company: [
     { label: "About NanoQuinn", href: "#" },
     { label: "Leadership", href: "#" },
-    { label: "Careers", href: "#" },
+    { label: "Careers", href: "/careers" },
     { label: "Press", href: "#" },
   ],
   solutions: [
