@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 const leaders = [
   {
     name: "Rajiv Sanghvi",
+    photo: "/team/rajiv-sanghvi.jpeg",
     role: "Founder",
     tags: ["Category Creator", "Building a Global Asset Protection Revolution"],
     bio: [
@@ -28,6 +29,7 @@ const leaders = [
   },
   {
     name: "Jeevika Sanghvi",
+    photo: "/team/jeevika-sanghvi.jpeg",
     role: "Co-Founder",
     tags: ["Sales & Business Development", "Growth Strategist"],
     bio: [
@@ -43,6 +45,7 @@ const leaders = [
   },
   {
     name: "Rajesh Dholakia",
+    photo: "/team/rajesh-dholakia.jpeg",
     role: "Director – NPD & Application",
     tags: ["Innovation", "Quality and Category Leadership"],
     bio: [
@@ -99,17 +102,26 @@ export default function LeadershipPage() {
               <div className="flex flex-col lg:flex-row">
 
                 {/* Photo column */}
-                <div className="lg:w-72 shrink-0 bg-muted flex flex-col items-center justify-start p-8 gap-6 border-b lg:border-b-0 lg:border-r border-border">
-                  {/* Photo placeholder */}
-                  <div
-                    className="w-44 h-52 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed"
-                    style={{ borderColor: "#D4A826", backgroundColor: "#D4A82610" }}
-                  >
-                    <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#D4A82630" }} />
-                    <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#D4A826" }}>
-                      Photo
-                    </span>
-                  </div>
+                <div className="lg:w-80 shrink-0 bg-muted flex flex-col items-center justify-start p-6 gap-6 border-b lg:border-b-0 lg:border-r border-border">
+                  {/* Photo */}
+                  {leader.photo ? (
+                    <img
+                      src={leader.photo}
+                      alt={`${leader.name} photo`}
+                      className="w-full h-72 lg:h-80 rounded-2xl object-cover object-center shadow-xl"
+                      style={{ imageRendering: "auto" }}
+                    />
+                  ) : (
+                    <div
+                      className="w-full h-72 lg:h-80 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed"
+                      style={{ borderColor: "#D4A826", backgroundColor: "#D4A82610" }}
+                    >
+                      <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#D4A82630" }} />
+                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#D4A826" }}>
+                        Photo
+                      </span>
+                    </div>
+                  )}
 
                   {/* Name & role */}
                   <div className="text-center">
