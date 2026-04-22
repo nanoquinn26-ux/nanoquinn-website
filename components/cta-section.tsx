@@ -14,16 +14,21 @@ export function CtaSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-7 h-auto rounded-full bg-[#D4A826] text-foreground hover:bg-[#B8922A]">
-              <Building2 className="w-5 h-5 mr-3" />
-              Book a B2B Demo
-              <ArrowRight className="w-5 h-5 ml-3" />
-            </Button>
+            <a
+              href="https://wa.me/918608604817"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-7 h-auto rounded-full bg-[#D4A826] text-foreground hover:bg-[#B8922A]">
+                <Building2 className="w-5 h-5 mr-3" />
+                Book a B2B Demo
+                <ArrowRight className="w-5 h-5 ml-3" />
+              </Button>
+            </a>
           </div>
 
           {/* Contact Info */}
           <div className="mt-16 pt-8 border-t border-background/10 flex items-center justify-center gap-2">
-            <span className="text-background/40 text-sm">Have questions?</span>
             <a href="mailto:business@nanoquinn.com" className="text-sm font-medium text-gold hover:underline tracking-wide">
               business@nanoquinn.com
             </a>
