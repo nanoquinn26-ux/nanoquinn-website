@@ -4,7 +4,7 @@ import { Linkedin, Youtube } from "lucide-react"
 
 const footerLinks = {
   company: [
-    { label: "About NanoQuinn", href: "#" },
+    { label: "About NanoQuinn", href: "/about" },
     { label: "Leadership", href: "#" },
     { label: "Careers", href: "/careers" },
     { label: "Press", href: "#" },
