@@ -62,7 +62,7 @@ const leaders = [
   {
     name: "Punit Sanghvi",
     photo: "/team/punit-sanghvi.jpeg",
-    role: "Director (without liability + tons of responsibility)",
+    role: "Director",
     tags: ["Strategic Growth", "Sales", "Multi-Industry Entrepreneur"],
     bio: [
       "Mr. Punit Sanghvi is a seasoned entrepreneur with over 21 years of diverse, multi-industry experience, currently serving as Director at NanoQuinn. He plays a pivotal role in driving the company's strategic growth, spearheading sales, and building strong client relationships across sectors.",
