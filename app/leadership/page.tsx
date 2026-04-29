@@ -59,6 +59,21 @@ const leaders = [
       "Beyond NanoQuinn, he is equally passionate about advancing a healthier world through the benefits of protein and wellness — reflecting a broader commitment to performance, well-being, and purposeful impact.",
     skills: "Operations Leadership | New Product Development | Quality Excellence | Process Execution",
   },
+  {
+    name: "Punit Sanghvi",
+    photo: "/team/punit-sanghvi.jpeg",
+    role: "Director",
+    tags: ["Strategic Growth", "Sales", "Multi-Industry Entrepreneur"],
+    bio: [
+      "Mr. Punit Sanghvi is a seasoned entrepreneur with over 21 years of diverse, multi-industry experience, currently serving as Director at NanoQuinn. He plays a pivotal role in driving the company's strategic growth, spearheading sales, and building strong client relationships across sectors.",
+      "His professional journey spans the financial ecosystem, with extensive involvement in investment advisory, business consulting, private equity, venture capital, and fundraising. A startup investor and marketer at heart, he brings a sharp eye for opportunity and scalable growth. He has also successfully led multiple automobile dealership ventures and partnered on landmark real estate projects with reputed developers.",
+      "Known for his curiosity and relentless pursuit of knowledge, Mr. Sanghvi actively explores emerging domains such as AI, marketing, and public relations. His forward-thinking approach and dynamic leadership continue to open new business frontiers.",
+    ],
+    statements: [],
+    closing:
+      "With a vision to elevate NanoQuinn to global prominence, he remains committed to building a future driven by innovation, excellence, and impact.",
+    skills: "Strategic Growth | Sales Leadership | Investment Advisory | Business Development | Startup Ecosystem",
+  },
 ]
 
 export default function LeadershipPage() {
