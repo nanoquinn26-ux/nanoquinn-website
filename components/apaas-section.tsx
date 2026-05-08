@@ -84,6 +84,15 @@ export function ApaasSection() {
           </div>
         </div>
 
+        {/* Comparison Image */}
+        <div className="max-w-5xl mx-auto mb-12 sm:mb-16">
+          <img
+            src="/images/nano-comparison.png"
+            alt="Traditional Paints vs NanoQuinn Nanotechnology Protection — side by side comparison showing how nano-scale barrier blocks ions, oxygen and moisture"
+            className="w-full rounded-3xl shadow-xl"
+          />
+        </div>
+
         {/* Key Differentiator (UNCHANGED as requested) */}
         <div className="max-w-4xl mx-auto">
           <div className="bg-foreground text-background rounded-3xl p-6 sm:p-10 lg:p-14 text-center">
