@@ -11,9 +11,10 @@ export function VideoSection() {
           </h2>
         </div>
 
-        <div className="max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border border-background/10">
+        <div className="w-full rounded-3xl overflow-hidden shadow-2xl border border-background/10">
           <video
-            className="w-full h-auto"
+            className="w-full"
+            style={{ maxHeight: "80vh" }}
             controls
             playsInline
             preload="metadata"
