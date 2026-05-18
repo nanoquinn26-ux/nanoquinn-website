@@ -28,6 +28,21 @@ const leaders = [
     skills: null,
   },
   {
+    name: "Kailash Pathak",
+    photo: "/team/kailash-pathak.jpeg",
+    role: "CEO",
+    tags: ["Global Supply Chain", "Shipping & Logistics", "Business Transformation"],
+    bio: [
+      "Senior business and operations leader with 34+ years of global experience across supply chain management, shipping & logistics, infrastructure projects, freight strategy, multimodal transportation, and large-scale industrial operations.",
+      "Proven track record of leading complex global logistics ecosystems with multi-billion-dollar budgets across India, Africa, Europe, the Middle East, and Asia.",
+      "Held senior leadership positions with leading organizations including Reliance Industries, Reliance Retail, Dangote Industries, and Combi Lift GmbH, driving operational excellence, strategic sourcing, business growth, cost optimization, and end-to-end supply chain transformation.",
+    ],
+    statements: [],
+    closing:
+      "Recognized for delivering measurable business impact through cost reduction, logistics efficiency, freight optimization, claims recovery, and successful execution of high-value industrial and infrastructure projects globally.",
+    skills: "Global Supply Chain | Shipping & Logistics | Infrastructure Projects | Business Transformation",
+  },
+  {
     name: "Jeevika Sanghvi",
     photo: "/team/jeevika-sanghvi.jpeg",
     role: "Co-Founder",
