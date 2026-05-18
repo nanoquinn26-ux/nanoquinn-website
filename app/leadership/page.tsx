@@ -30,7 +30,7 @@ const leaders = [
   {
     name: "Kailash Pathak",
     photo: "/team/kailash-pathak.jpeg",
-    role: "Advisor",
+    role: "CEO",
     tags: ["Global Supply Chain", "Shipping & Logistics", "Business Transformation"],
     bio: [
       "Senior business and operations leader with 34+ years of global experience across supply chain management, shipping & logistics, infrastructure projects, freight strategy, multimodal transportation, and large-scale industrial operations.",
