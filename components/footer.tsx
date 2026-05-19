@@ -32,7 +32,7 @@ export function Footer() {
           <div className="col-span-1 sm:col-span-2 lg:col-span-1 mb-2 lg:mb-0">
             <Link href="/" className="flex items-center mb-6">
               <Image 
-                src="/images/nanoquinn-logo-apaas.png" 
+                src="/images/nanoquinn-logo.png" 
                 alt="NanoQuinn APaaS Platform" 
                 width={200} 
                 height={100} 

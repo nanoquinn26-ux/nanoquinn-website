@@ -40,15 +40,13 @@ export function Header() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="bg-white rounded-lg p-2">
-              <Image
-                src="/images/nanoquinn-logo.png"
-                alt="NanoQuinn"
-                width={200}
-                height={70}
-                className="h-12 w-auto object-contain"
-              />
-            </div>
+            <Image
+              src="/images/nanoquinn-logo.png"
+              alt="NanoQuinn APaaS Platform"
+              width={200}
+              height={80}
+              className="h-16 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
