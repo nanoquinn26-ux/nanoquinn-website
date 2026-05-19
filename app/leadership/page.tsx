@@ -138,7 +138,11 @@ export default function LeadershipPage() {
                     <img
                       src={leader.photo}
                       alt={`${leader.name} photo`}
-                      className="w-full h-72 lg:h-80 rounded-2xl object-cover object-top shadow-xl"
+                      className={`w-full rounded-2xl object-cover shadow-xl ${
+                        leader.name === "Punit Sanghvi" 
+                          ? "h-96 sm:h-[28rem] lg:h-80 object-[50%_15%]" 
+                          : "h-72 lg:h-80 object-top"
+                      }`}
                       style={{ imageRendering: "auto" }}
                     />
                   ) : (
