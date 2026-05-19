@@ -40,12 +40,16 @@ export function Hero() {
           </h1>
 
           {/* Sub-headline */}
-          <p className="text-base sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto mb-10 sm:mb-12 text-pretty leading-relaxed animate-fade-up delay-200">
-            <span className="underline text-[#fdfefe] decoration-[#D4A826] decoration-2 underline-offset-4">
-              The World&apos;s first ESG & EHS-driven APaaS (Asset Protection as a Service) ecosystem
-            </span>{" "}
-            — eliminating chemicals, reducing maintenance costs by up to 80%, and preserving every asset in <span className="underline decoration-[#D4A826] decoration-[3px] underline-offset-4">&quot;as-new&quot;</span> condition.
-          </p>
+          <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
+            <p className="text-base sm:text-lg text-[#D4A826] font-semibold mb-4 uppercase tracking-wider">Never Before In Industrial History</p>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
+              An End-to-End Asset Protection Platform
+            </h2>
+            <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed">
+              Combining Sustainable Nanotechnology,<br className="hidden sm:block" />
+              Lifecycle Preservation & Unconditional Warranty
+            </p>
+          </div>
 
           {/* Key Highlights */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-8 mb-10 sm:mb-12 animate-fade-up delay-300">
