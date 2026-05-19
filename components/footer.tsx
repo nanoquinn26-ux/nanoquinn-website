@@ -16,10 +16,6 @@ const footerLinks = {
     { label: "Industries", href: "/industries" },
     { label: "ESG Commitment", href: "/esg" },
   ],
-  resources: [
-    { label: "Case Studies", href: "#" },
-    { label: "Support", href: "#" },
-  ],
 }
 
 const socialLinks = [
@@ -31,19 +27,17 @@ export function Footer() {
   return (
     <footer className="bg-muted py-16 sm:py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16">
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-1 mb-2 lg:mb-0">
             <Link href="/" className="flex items-center mb-6">
-              <div className="bg-white rounded-lg p-2">
-                <Image 
-                  src="/images/nanoquinn-logo.png" 
-                  alt="NanoQuinn" 
-                  width={200} 
-                  height={70} 
-                  className="h-12 w-auto object-contain"
-                />
-              </div>
+              <Image 
+                src="/images/nanoquinn-logo-apaas.png" 
+                alt="NanoQuinn APaaS Platform" 
+                width={200} 
+                height={100} 
+                className="h-24 w-auto object-contain"
+              />
             </Link>
             <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
               The world&apos;s first APaaS ecosystem for sustainable asset protection.
@@ -90,21 +84,6 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
-          <div>
-            <h3 className="font-bold mb-5">Resources</h3>
-            <ul className="space-y-3">
-              {footerLinks.resources.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-
         </div>
 
         {/* Bottom */}
