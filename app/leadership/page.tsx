@@ -138,7 +138,7 @@ export default function LeadershipPage() {
                     <img
                       src={leader.photo}
                       alt={`${leader.name} photo`}
-                      className="w-full h-72 lg:h-80 rounded-2xl object-cover object-center shadow-xl"
+                      className="w-full h-72 lg:h-80 rounded-2xl object-cover object-top shadow-xl"
                       style={{ imageRendering: "auto" }}
                     />
                   ) : (
