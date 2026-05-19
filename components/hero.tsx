@@ -40,16 +40,14 @@ export function Hero() {
           </h1>
 
           {/* Sub-headline */}
-          <div className="text-base sm:text-xl lg:text-2xl text-white/70 max-w-3xl mx-auto mb-10 sm:mb-12 leading-relaxed animate-fade-up delay-200">
-            <p className="text-[#D4A826] font-semibold mb-3">Never Before In Industrial History</p>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">
-              An End-to-End Asset Protection<br />
-              Platform
+          <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
+            <p className="text-base sm:text-lg text-[#D4A826] font-semibold mb-4 uppercase tracking-wider">Never Before In Industrial History</p>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
+              An End-to-End Asset Protection Platform
             </h2>
-            <p className="text-lg sm:text-xl text-white/80">
-              Combining Sustainable Nanotechnology,<br />
-              Lifecycle Preservation & Unconditional<br />
-              Warranty
+            <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed">
+              Combining Sustainable Nanotechnology,<br className="hidden sm:block" />
+              Lifecycle Preservation & Unconditional Warranty
             </p>
           </div>
 
