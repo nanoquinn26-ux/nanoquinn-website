@@ -141,6 +141,8 @@ export default function LeadershipPage() {
                       className={`w-full rounded-2xl object-cover shadow-xl ${
                         leader.name === "Punit Sanghvi" 
                           ? "h-96 sm:h-[28rem] lg:h-80 object-[50%_15%]" 
+                          : leader.name === "Jeevika Sanghvi"
+                          ? "h-96 sm:h-[28rem] lg:h-80 object-[50%_20%]"
                           : "h-72 lg:h-80 object-top"
                       }`}
                       style={{ imageRendering: "auto" }}
