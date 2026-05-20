@@ -179,7 +179,7 @@ export function ApaasSection() {
                   <div className="w-12 h-12 rounded-xl bg-[#D4A826]/10 flex items-center justify-center shrink-0">
                     <benefit.icon className="w-6 h-6 text-[#D4A826]" />
                   </div>
-                  <span className="text-sm font-medium">{benefit.text}</span>
+                  <span className="text-sm font-bold">{benefit.text}</span>
                 </div>
               ))}
             </div>
