@@ -41,7 +41,7 @@ export function Hero() {
 
           {/* Sub-headline */}
           <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
-            <p className="text-base sm:text-lg text-[#D4A826] font-semibold mb-4 uppercase tracking-wider">Never Before In Industrial History</p>
+            <p className="text-base sm:text-lg text-[#ffffff] font-semibold mb-4 uppercase tracking-wider">Never Before In Industrial History</p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
               An End-to-End Asset Protection Platform
             </h2>
