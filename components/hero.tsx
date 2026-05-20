@@ -30,7 +30,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/20 bg-white/5 mb-8 sm:mb-10 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-[#D4A826] animate-pulse" />
-            <span className="text-xs sm:text-sm font-medium text-[#00BFA5]">World&apos;s First APaaS Platform</span>
+            <span className="text-xs sm:text-sm font-medium text-[#00BFA5]">WORLD&apos;s FIRST APAAS PLATFORM</span>
           </div>
 
           {/* Headline */}
