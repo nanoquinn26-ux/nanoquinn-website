@@ -1,5 +1,7 @@
 "use client"
 
+import Image from "next/image"
+
 const clients = [
   { name: "TATA Motors",                sector: "Automotive",              logo: "/clients/tata.png",           logoAlt: "TATA Motors logo" },
   { name: "KONE Elevators",             sector: "Elevators & Escalators",  logo: "/clients/kone.png",           logoAlt: "KONE Elevators logo" },
@@ -19,45 +21,44 @@ const clients = [
 
 export function TrustSection() {
   return (
-    <section className="py-32 lg:py-40 bg-muted">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-20">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
-            Trusted Partners
-          </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
-            Our Prestigious Clients
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Trusted by industry leaders across manufacturing, defence, infrastructure, and hospitality.
-          </p>
+    <section className="py-24 sm:py-32 lg:py-40 bg-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 mb-16 items-end">
+          <div>
+            <span className="text-6xl sm:text-7xl lg:text-8xl font-bold text-navy/5 block mb-4">
+              CLIENTS
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy leading-tight">
+              Trusted by Industry Leaders
+            </h2>
+          </div>
+          <div>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              From manufacturing giants to defence organizations, leading enterprises trust NanoQuinn for their critical asset protection needs.
+            </p>
+          </div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+        {/* Client Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {clients.map((client) => (
             <div
               key={client.name}
-              className="bg-background border border-border rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center gap-3 hover:border-[#D4A826]/60 hover:shadow-md transition-all duration-200 min-h-[160px] sm:min-h-[200px] overflow-hidden"
+              className="group bg-sage rounded-xl p-6 flex flex-col items-center justify-center gap-4 hover:bg-lime/10 border border-transparent hover:border-lime/30 transition-all duration-300 min-h-[140px]"
             >
-              <div className="w-full flex items-center justify-center px-2">
-                <img
+              <div className="w-full flex items-center justify-center h-12">
+                <Image
                   src={client.logo}
                   alt={client.logoAlt}
-                  className="w-full h-auto max-h-16 sm:max-h-20 object-contain"
-                  onError={(e) => {
-                    const target = e.currentTarget
-                    target.style.display = "none"
-                    const fallback = target.nextElementSibling as HTMLElement
-                    if (fallback) fallback.style.display = "flex"
-                  }}
+                  width={120}
+                  height={48}
+                  className="max-w-full max-h-12 object-contain opacity-60 group-hover:opacity-100 transition-opacity"
                 />
-                <div className="hidden w-12 h-12 rounded-full bg-[#D4A826] items-center justify-center shrink-0">
-                  <span className="text-black font-bold text-lg">{client.name[0]}</span>
-                </div>
               </div>
-              <div className="text-center w-full px-1">
-                <p className="font-bold text-xs sm:text-sm text-foreground leading-tight break-words">{client.name}</p>
-                <p className="text-xs text-muted-foreground mt-1">{client.sector}</p>
+              <div className="text-center">
+                <p className="font-semibold text-sm text-navy">{client.name}</p>
+                <p className="text-xs text-muted-foreground">{client.sector}</p>
               </div>
             </div>
           ))}

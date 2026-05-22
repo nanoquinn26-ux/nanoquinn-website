@@ -1,20 +1,20 @@
 "use client"
 
 import { useState, useEffect } from "react"
-
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
-import { Menu, X } from "lucide-react"
+import { Phone } from "lucide-react"
 
 const navItems = [
-  { label: "APaaS Model", href: "/apaas" },
-  { label: "Asset Protection", href: "/asset-protection" },
-  { label: "Asset Health Audit", href: "/asset-health-audit" },
-  { label: "Technology", href: "/technology" },
-  { label: "Industries", href: "/industries" },
+  { label: "HOME", href: "/" },
+  { label: "APAAS MODEL", href: "/apaas" },
+  { label: "ASSET PROTECTION", href: "/asset-protection" },
+  { label: "TECHNOLOGY", href: "/technology" },
+  { label: "INDUSTRIES", href: "/industries" },
   { label: "ESG", href: "/esg" },
-  { label: "Contact", href: "/contact" },
+  { label: "ABOUT", href: "/about" },
+  { label: "CONTACT", href: "/contact" },
 ]
 
 const WhatsAppIcon = () => (
@@ -26,6 +26,7 @@ const WhatsAppIcon = () => (
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
 
   // Close mobile menu on route change
@@ -33,100 +34,161 @@ export function Header() {
     setIsOpen(false)
   }, [pathname])
 
+  // Handle scroll for header transparency
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [isOpen])
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/images/nanoquinn-logo.png"
-              alt="NanoQuinn APaaS Platform"
-              width={200}
-              height={80}
-              className="h-16 w-auto object-contain"
-            />
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navItems.map((item) => {
-              const isActive = pathname === item.href
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`text-sm font-medium transition-colors ${
-                    isActive
-                      ? "text-[#D4A826] border-b-2 border-[#D4A826] pb-0.5"
-                      : "text-foreground hover:text-[#D4A826]"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            })}
-          </nav>
-
-          {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a
-              href="https://wa.me/918608604817"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#25D366] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
+    <>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-navy/95 backdrop-blur-md" : "bg-navy"}`}>
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 sm:h-20">
+            {/* Menu Button */}
+            <button
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-lime flex items-center justify-center hover:bg-lime-light transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
             >
-              <WhatsAppIcon />
-              Chat on WhatsApp
-            </a>
+              <div className="w-5 h-5 flex flex-col justify-center items-center gap-1">
+                <span className={`block h-0.5 w-5 bg-navy transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1.5" : ""}`} />
+                <span className={`block h-0.5 w-5 bg-navy transition-all duration-300 ${isOpen ? "opacity-0" : ""}`} />
+                <span className={`block h-0.5 w-5 bg-navy transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-1.5" : ""}`} />
+              </div>
+            </button>
+
+            {/* Logo */}
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/nanoquinn-logo.png"
+                alt="NanoQuinn APaaS Platform"
+                width={160}
+                height={64}
+                className="h-10 sm:h-14 w-auto object-contain"
+                priority
+              />
+            </Link>
+
+            {/* Right Side */}
+            <div className="flex items-center gap-3 sm:gap-6">
+              <div className="hidden md:flex items-center gap-2 text-white/80 text-sm">
+                <span>OR CALL US</span>
+                <span className="text-white/40">:</span>
+                <a href="tel:+918608604817" className="text-white font-semibold hover:text-lime transition-colors">
+                  +91 860 860 4817
+                </a>
+              </div>
+              <a
+                href="https://wa.me/918608604817"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-lime flex items-center justify-center hover:bg-lime-light transition-colors"
+                aria-label="Chat on WhatsApp"
+              >
+                <WhatsAppIcon />
+              </a>
+            </div>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
         </div>
+      </header>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="lg:hidden py-6 border-t border-border bg-background">
-            <nav className="flex flex-col gap-2">
-              {navItems.map((item) => {
+      {/* Full Screen Menu Overlay */}
+      <div 
+        className={`fixed inset-0 z-40 bg-navy transition-all duration-500 ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <div className="h-full flex flex-col pt-20 sm:pt-24">
+          {/* Navigation Links */}
+          <nav className="flex-1 flex flex-col justify-center px-6 sm:px-12 lg:px-20">
+            <div className="grid lg:grid-cols-2 gap-4 sm:gap-6 max-w-5xl">
+              {navItems.map((item, index) => {
                 const isActive = pathname === item.href
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-base font-medium py-3 px-4 rounded-xl transition-colors ${
-                      isActive
-                        ? "bg-[#D4A826]/10 text-[#D4A826]"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    onClick={() => setIsOpen(false)}
+                    className={`group flex items-center gap-4 py-3 sm:py-4 transition-all duration-300 ${
+                      isOpen ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
                     }`}
+                    style={{ transitionDelay: `${index * 50}ms` }}
                   >
-                    {item.label}
+                    <span className={`text-2xl sm:text-3xl lg:text-4xl font-bold transition-colors ${
+                      isActive ? "text-lime" : "text-white group-hover:text-lime"
+                    }`}>
+                      {item.label}
+                    </span>
+                    <div className={`h-px flex-1 max-w-20 transition-all duration-300 ${
+                      isActive ? "bg-lime" : "bg-white/20 group-hover:bg-lime/50"
+                    }`} />
                   </Link>
                 )
               })}
-              <div className="flex flex-col gap-3 pt-6 border-t border-border mt-2">
+            </div>
+          </nav>
+
+          {/* Contact Info */}
+          <div className="px-6 sm:px-12 lg:px-20 py-8 sm:py-12 border-t border-white/10">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+              <div className="flex flex-col sm:flex-row gap-6 sm:gap-12">
+                <div>
+                  <p className="text-white/50 text-xs uppercase tracking-wider mb-2">Call Us</p>
+                  <a href="tel:+918608604817" className="text-white font-semibold text-lg hover:text-lime transition-colors">
+                    +91 860 860 4817
+                  </a>
+                </div>
+                <div>
+                  <p className="text-white/50 text-xs uppercase tracking-wider mb-2">Email Us</p>
+                  <a href="mailto:business@nanoquinn.com" className="text-white font-semibold text-lg hover:text-lime transition-colors">
+                    business@nanoquinn.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
                 <a
-                  href="https://wa.me/918608604817"
+                  href="https://www.linkedin.com/company/nanoquinn/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#25D366] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
+                  className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-lime hover:border-lime hover:text-navy transition-all"
+                  aria-label="LinkedIn"
                 >
-                  <WhatsAppIcon />
-                  Chat on WhatsApp
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </a>
+                <a
+                  href="https://www.youtube.com/UCA6Dd3NUf_6Ak19HrwxoXsA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-lime hover:border-lime hover:text-navy transition-all"
+                  aria-label="YouTube"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                  </svg>
                 </a>
               </div>
-            </nav>
+            </div>
           </div>
-        )}
+        </div>
       </div>
-    </header>
+    </>
   )
 }
