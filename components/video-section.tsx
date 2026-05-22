@@ -1,32 +1,6 @@
-"use client"
-
-import { useRef, useState } from "react"
-import { Play, Pause, Volume2, VolumeX } from "lucide-react"
 import Image from "next/image"
 
 export function VideoSection() {
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [isMuted, setIsMuted] = useState(true)
-
-  const togglePlay = () => {
-    if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause()
-      } else {
-        videoRef.current.play()
-      }
-      setIsPlaying(!isPlaying)
-    }
-  }
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !isMuted
-      setIsMuted(!isMuted)
-    }
-  }
-
   return (
     <section className="py-24 sm:py-32 lg:py-40 bg-navy relative overflow-hidden">
       {/* Background Pattern */}
@@ -52,117 +26,68 @@ export function VideoSection() {
           </div>
         </div>
 
-        {/* Video Container with Side Images */}
-        <div className="grid lg:grid-cols-4 gap-6">
-          {/* Left Image Column */}
-          <div className="hidden lg:flex flex-col gap-6">
-            <div className="rounded-xl overflow-hidden flex-1">
-              <Image
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=500&fit=crop"
-                alt="Industrial manufacturing"
-                width={400}
-                height={500}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden flex-1">
-              <Image
-                src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=400&h=500&fit=crop"
-                alt="Industrial plant"
-                width={400}
-                height={500}
-                className="w-full h-full object-cover"
-              />
-            </div>
+        {/* Image Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="rounded-2xl overflow-hidden aspect-[4/5]">
+            <Image
+              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=500&fit=crop"
+              alt="Industrial manufacturing"
+              width={400}
+              height={500}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
           </div>
-
-          {/* Main Video */}
-          <div className="lg:col-span-2 relative rounded-2xl overflow-hidden bg-navy-light group">
-            <video
-              ref={videoRef}
-              className="w-full aspect-video object-cover"
-              playsInline
-              preload="metadata"
-              muted={isMuted}
-              poster="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&h=450&fit=crop"
-            >
-              <source src="/videos/nanoquinn-intro.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-
-            {/* Overlay */}
-            <div className={`absolute inset-0 bg-navy/40 flex items-center justify-center transition-opacity duration-300 ${isPlaying ? "opacity-0 group-hover:opacity-100" : "opacity-100"}`}>
-              <button
-                onClick={togglePlay}
-                className="w-20 h-20 rounded-full bg-lime flex items-center justify-center hover:bg-lime-light hover:scale-105 transition-all shadow-lg"
-                aria-label={isPlaying ? "Pause video" : "Play video"}
-              >
-                {isPlaying ? (
-                  <Pause className="w-8 h-8 text-navy" />
-                ) : (
-                  <Play className="w-8 h-8 text-navy ml-1" />
-                )}
-              </button>
-            </div>
-
-            {/* Controls */}
-            <div className="absolute bottom-4 right-4 flex items-center gap-2">
-              <button
-                onClick={toggleMute}
-                className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-white/20 transition-colors"
-                aria-label={isMuted ? "Unmute" : "Mute"}
-              >
-                {isMuted ? (
-                  <VolumeX className="w-5 h-5 text-white" />
-                ) : (
-                  <Volume2 className="w-5 h-5 text-white" />
-                )}
-              </button>
-            </div>
+          <div className="rounded-2xl overflow-hidden aspect-[4/5]">
+            <Image
+              src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=400&h=500&fit=crop"
+              alt="Industrial plant"
+              width={400}
+              height={500}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
           </div>
-
-          {/* Right Image Column */}
-          <div className="hidden lg:flex flex-col gap-6">
-            <div className="rounded-xl overflow-hidden flex-1">
-              <Image
-                src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=500&fit=crop"
-                alt="Lab research"
-                width={400}
-                height={500}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="rounded-xl overflow-hidden flex-1">
-              <Image
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=500&fit=crop"
-                alt="Solar panels"
-                width={400}
-                height={500}
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="rounded-2xl overflow-hidden aspect-[4/5]">
+            <Image
+              src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=500&fit=crop"
+              alt="Lab research"
+              width={400}
+              height={500}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+          <div className="rounded-2xl overflow-hidden aspect-[4/5]">
+            <Image
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=500&fit=crop"
+              alt="Solar panels"
+              width={400}
+              height={500}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+            />
           </div>
         </div>
 
-        {/* Mobile Images */}
-        <div className="grid grid-cols-2 gap-4 mt-6 lg:hidden">
-          <div className="rounded-xl overflow-hidden aspect-[4/3]">
-            <Image
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop"
-              alt="Industrial manufacturing"
-              width={400}
-              height={300}
-              className="w-full h-full object-cover"
-            />
+        {/* Feature Cards */}
+        <div className="grid md:grid-cols-3 gap-6 mt-12">
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <div className="w-12 h-12 rounded-xl bg-lime/20 flex items-center justify-center mb-6">
+              <span className="text-lime text-2xl font-bold">01</span>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-3">Corrosion Protection</h3>
+            <p className="text-white/60">Advanced nano-coatings that prevent rust and degradation on any surface.</p>
           </div>
-          <div className="rounded-xl overflow-hidden aspect-[4/3]">
-            <Image
-              src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&h=300&fit=crop"
-              alt="Lab research"
-              width={400}
-              height={300}
-              className="w-full h-full object-cover"
-            />
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <div className="w-12 h-12 rounded-xl bg-lime/20 flex items-center justify-center mb-6">
+              <span className="text-lime text-2xl font-bold">02</span>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-3">Environmental Safety</h3>
+            <p className="text-white/60">Eco-friendly formulations that meet the strictest environmental standards.</p>
+          </div>
+          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <div className="w-12 h-12 rounded-xl bg-lime/20 flex items-center justify-center mb-6">
+              <span className="text-lime text-2xl font-bold">03</span>
+            </div>
+            <h3 className="text-xl font-semibold text-white mb-3">Cost Efficiency</h3>
+            <p className="text-white/60">Reduce maintenance costs by up to 80% with long-lasting protection.</p>
           </div>
         </div>
       </div>
