@@ -20,7 +20,7 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/company/nanoquinn/", label: "LinkedIn" },
-  { icon: Youtube, href: "https://youtube.com/@nanoquinn?si=1Qh999ftnlD1Z1FC", label: "YouTube" },
+  { icon: Youtube, href: "https://www.youtube.com/channel/UCA6Dd3NUf_6Ak19HrwxoXsA", label: "YouTube" },
 ]
 
 export function Footer() {
