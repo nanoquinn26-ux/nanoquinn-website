@@ -11,9 +11,9 @@ const steps = [
 ]
 
 const industryPains = [
-  "Asset degradation & reduced lifecycle",
   "Rising maintenance OPEX",
   "Early replacement CAPEX",
+  "Asset degradation & reduced lifecycle",
   "Shutdown & productivity losses",
   "Environmental & ESG compliance pressure",
   "Unsafe chemical-heavy maintenance systems",
