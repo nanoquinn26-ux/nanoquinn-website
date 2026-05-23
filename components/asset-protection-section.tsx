@@ -6,10 +6,10 @@ import { ChevronDown, ChevronRight, Shield, Wrench, Factory, Sun, Package, Zap, 
 /* ─── DATA ─────────────────────────────────────────────────────────────── */
 
 const oemContent = {
-  title: "Rust & Corrosion Protection Revolution for OEMs",
+  title: "RustShield — Rust & Corrosion Protection",
   badge: "OEM",
-  subtitle: "Transparent Nanotechnology Protection Coating | 10-Year Life",
-  intro: "For metal, stainless steel, machinery, automotive, fabricated components and industrial OEM applications.",
+  subtitle: "Transparent Polysilazane Nanotechnology Solution | 10-Year Life",
+  intro: "A globally uncompetitive, sustainable nanotechnology system for long-term metal protection. Applied over any painted metal surface to protect metal at a molecular level.",
   variants: [
     {
       number: "01",
@@ -22,12 +22,19 @@ const oemContent = {
       description: "No galvanizing. No powder coating. Use standard PU or epoxy base paint, then apply Nano transparent top coat for 10-year preservation against rust and corrosion. Protects assets without harsh chemical damage, heavy process dependency, or conventional maintenance cycles.",
     },
   ],
+  certifications: [
+    { title: "Salt Spray Test", value: "10,000+ HRS", desc: "Exceptional corrosion resistance verified under accelerated ASTM B117 conditions" },
+    { title: "Eco Compliance", value: "ZERO VOC", desc: "Environmentally safe, sustainable, and compliant with global emission standards" },
+    { title: "Non-Leaching", value: "FOOD SAFE", desc: "Certified suitable for sensitive applications with no chemical migration" },
+    { title: "Thermal Range", value: "-50° TO 850°C", desc: "Maintains structural and protective integrity across extreme temperatures" },
+  ],
+  worksOn: ["Stainless Steel", "New Painted Metal", "Rusted Metal Restoration"],
   revolution: {
     title: "A Revolution for Exporters and OEMs",
     description: "Ideal for machinery, automotive, components and hundreds of metal-intensive industries.",
     points: [
       "Zero VOC Sustainable Technology",
-      "Certified Performance",
+      "Certified Performance — SGS, ASTM B117, RoHS 10E",
       "Temperature Resistance: -50°C to 850°C",
       "Long-Term Asset Preservation",
       "No harsh chemical process damage",
@@ -38,9 +45,16 @@ const oemContent = {
 }
 
 const industrialContent = {
-  title: "Global Disruption in Aftermarket Metal Preservation",
+  title: "5-Layer Sustainable Protection System",
   badge: "Industrial",
-  intro: "A new category in restoration, preservation and long-life protection for existing metal assets.",
+  intro: "End-to-end bio & low/zero VOC anti-rust solution for restoration, preservation and long-life protection of existing metal assets.",
+  fiveSteps: [
+    { step: "1", title: "Manual Hand Tooling", desc: "Removal of loose rust, scale, dirt & contaminants by manual hand tooling. Safe + No Dust + No Damage." },
+    { step: "2", title: "Bio Rust Remover", desc: "Plant based rust remover dissolves rust gently. No acid. No harm. Biodegradable & safe." },
+    { step: "3", title: "Water Based Rust Converter", desc: "Converts active rust into dissociable protective layer. Water based. Zero harsh chemicals." },
+    { step: "4", title: "Low VOC Epoxy Coating", desc: "High built, surface tolerant epoxy for long term corrosion protection. 160 microns DFT. Low VOC & environment friendly." },
+    { step: "5", title: "Nano Top Coat Zero VOC", desc: "Nanotechnology transparent top coat provides UV protection, gloss retention & long lasting durability. 10 microns DFT. Zero VOC." },
+  ],
   variants: [
     {
       number: "01",
@@ -65,6 +79,10 @@ const industrialContent = {
     "Acid Pickling",
     "Hazardous rust removal methods",
   ],
+  savings: {
+    nanoquinn: { price: "₹1599 + GST", duration: "ONE TIME APPLICATION • 10 YEAR PROTECTION", benefits: ["SAFE", "SUSTAINABLE", "COST EFFECTIVE"] },
+    traditional: { price: "₹2500 + GST", duration: "TWICE IN 10 YEARS", problems: ["HIGH COST", "HIGH RISK", "SHORT LIFE", "ENVIRONMENT & HEALTH DAMAGE"] },
+  },
   system: {
     title: "NanoQuinn Restoration System",
     steps: [
@@ -88,23 +106,44 @@ const industrialContent = {
       "Creates a new alternative to conventional rust removal-to-protection systems",
     ],
   },
-  footer: "From rust treatment to metal preservation — a global disruption in aftermarket maintenance.",
+  footer: "SAVE METAL • SAVE MONEY • SAVE PEOPLE • SAVE PLANET",
 }
 
 const plasticContent = {
-  title: "Hard Plastic & FRP Protection Preservation",
-  subtitle: "A Nanotechnology Innovation",
-  intro: "A breakthrough transparent nanotechnology designed to protect, preserve and extend the life of hard plastics, FRP, composites, tanks, pipes, pipelines, panels and engineered polymer assets exposed to harsh operating and environmental conditions.",
-  description: "This advanced protective technology forms an ultra-thin invisible barrier that shields surfaces against UV degradation, heat stress, IR exposure, oxidation, corrosion, chalking, brittleness, wear and tear, fading and surface ageing — keeping assets new, stable and performance-ready for years.",
-  note: "Unlike conventional coatings that alter appearance, crack, peel or degrade, this transparent preservation technology becomes a preventive asset-maintenance innovation, helping eliminate premature replacement, reduce maintenance costs and improve lifecycle performance.",
+  title: "Transparent Nanotechnology for Polymers",
+  subtitle: "Invisible Shield. Powerful Protection.",
+  intro: "Advanced nanotechnology creates an ultra-thin, invisible layer that bonds at the molecular level with polymer surfaces, delivering long term performance and maintaining newness for years.",
+  protection: [
+    { title: "UV Protection", desc: "Ceramic matrix absorbs and scatters UV radiation, preventing fading, chalking & brittleness" },
+    { title: "Heat & IR Protection", desc: "Inorganic Si–N / Si–O ceramic network exhibits high thermal stability and IR resistance" },
+    { title: "Hydrophobic Protection", desc: "Low surface energy nano-structure repels water and prevents moisture penetration" },
+    { title: "Chemical Protection", desc: "Dense crosslinked nano barrier limits diffusion of oils, solvents, oxygen & contaminants" },
+    { title: "Abrasion Resistance", desc: "High-density ceramic nano matrix increases surface hardness up to 8–9H" },
+    { title: "Anti-Stain / Easy Clean", desc: "Oleophobic nano surface lowers adhesion force of dirt, grease & contaminants" },
+  ],
+  features: [
+    { title: "Transparent & Invisible", desc: "Does not alter color, gloss or texture" },
+    { title: "High Chemical Resistance", desc: "Protects against everyday chemicals" },
+    { title: "Scratch Resistant", desc: "Minimizes micro scratches and scuffs" },
+    { title: "Easy to Clean", desc: "Dust, dirt & stains don't stick" },
+    { title: "Long Lasting Performance", desc: "Protection that stays for years" },
+    { title: "Environment Friendly", desc: "Low VOC. Safe for you and the environment" },
+  ],
+  noWearAndTear: [
+    { title: "UV Rays", desc: "Protects from harmful UV radiation. No fading. No yellowing." },
+    { title: "Heat", desc: "Withstands high temperatures. No damage. No distortion." },
+    { title: "Oleophobic", desc: "Repels oil, grease and chemicals. Easy to clean." },
+    { title: "Hydrophobic", desc: "Water beads up and rolls off. Stain and spot resistant." },
+  ],
   applications: {
-    title: "Disruptive Applications",
+    title: "Perfect For FRP / Plastic Surfaces",
     items: [
-      { label: "OEM Protection", desc: "Protect plastic and FRP components from day one of manufacturing." },
-      { label: "Asset Maintenance & Restoration", desc: "Preserve ageing installed assets and arrest degradation." },
-      { label: "Industrial Infrastructure", desc: "Pipelines, cooling towers, chemical tanks, ducts, cable trays, process equipment." },
-      { label: "Commercial & Utility Assets", desc: "Water tanks, rooftop installations, outdoor equipment, solar-related polymer components." },
-      { label: "Pan-India Use Across Harsh Climates", desc: "High UV, coastal exposure, heat, humidity and industrial environments." },
+      { label: "FRP Water Tanks", desc: "Prevents UV damage & discoloration" },
+      { label: "Rooftop Sheets", desc: "Protects from sunlight, heat & weathering" },
+      { label: "Plastic Panels", desc: "Maintains color & shine. Prevents brittleness" },
+      { label: "Outdoor Furniture", desc: "Resists fading & aging. Keeps like new" },
+      { label: "Signs & Displays", desc: "High protection for long lasting clarity" },
+      { label: "Pipes & Conduits", desc: "Prevents degradation. Extends service life" },
     ],
   },
   disruption: {
@@ -117,30 +156,61 @@ const plasticContent = {
       "A potentially revolutionary category creation in surface engineering and asset protection",
     ],
   },
-  footer: "From OEM production lines to maintenance of installed assets across India, this is a revolutionary transparent technology for protecting non-metal assets and keeping them new.",
+  footer: "MAINTAINS NEWNESS. KEEPS SURFACES LOOKING NEW FOR YEARS.",
+  tagline: "Innovate Today. Protect Forever. Preserve Newness.",
 }
 
 const solarContent = {
-  title: "NanoQuinn Solar Nanotechnology Coating",
-  subtitle: "Protection + Performance + Preservation",
-  intro: "A breakthrough transparent nanotechnology coating for solar assets delivering protection, performance and preservation.",
+  title: "Solar Anti-Dust / Anti-Soiling Coating",
+  subtitle: "Efficiency Booster | Self-Cleaning | Water Repellent",
+  intro: "The ultimate solution to the biggest pain in solar performance. Revolutionary aftermarket solution that eliminates dust and soiling — the main causes of solar output reduction.",
+  stats: [
+    { value: "12%", label: "Efficiency Booster", desc: "Generate more power with clean sunlight" },
+    { value: "50%", label: "Maintenance Reduction", desc: "Spend less on cleaning & maintenance" },
+    { value: "90%", label: "Water Wastage Reduction", desc: "Save millions of gallons of water" },
+  ],
   benefits: [
     { title: "Anti-Dust & Anti-Soiling Shield", desc: "Reduces dirt accumulation and keeps panels cleaner for longer." },
-    { title: "Wear & Tear Protection", desc: "Protects against environmental degradation, UV, moisture, and surface aging." },
-    { title: "Self-Cleaning Hydrophobic Effect", desc: "Water rolls off carrying dust and contaminants, reducing manual cleaning." },
-    { title: "Performance Enhancement", desc: "Supports 8–10% efficiency improvement through cleaner, optimized panel surfaces." },
-    { title: "Maintenance Cost Reduction", desc: "Lowers O&M costs by 50% and above." },
-    { title: "Water Conservation", desc: "Reduces cleaning water consumption by up to 75%." },
-    { title: "Surface Newness Preservation", desc: "Helps solar panels retain original clarity and performance over time." },
+    { title: "Self-Cleaning Hydrophobic Effect", desc: "Rainwater rolls off carrying dust and dirt effectively." },
+    { title: "UV Resistant", desc: "Withstands extreme sunlight & weather conditions." },
+    { title: "Chemical Free", desc: "Safe for panels & the environment." },
+    { title: "Long Lasting", desc: "Durable protection for years of performance." },
+    { title: "Protects Panels", desc: "Extends life & maintains high performance." },
   ],
-  footer: "NanoQuinn transforms solar maintenance from reactive cleaning to proactive asset protection.",
-  tagline: "Protect. Preserve. Perform.",
+  howItWorks: [
+    { title: "Anti-Reflective Nano Layer", desc: "Refractive index matching reduces Fresnel reflection losses" },
+    { title: "Nano Surface Structuring", desc: "Nano-scale SiO₂ particles minimize light scattering & improve optical clarity" },
+    { title: "Hydrophobic Effect", desc: "Low surface energy creates water beading & moisture repellency" },
+    { title: "Anti-Soiling Property", desc: "Prevents strong bonding of contaminants, bird droppings & pollution" },
+    { title: "Self-Cleaning Action", desc: "Rainwater easily removes loose contaminants from the surface" },
+    { title: "UV & Environmental Stability", desc: "SiO₂ nano matrix remains optically stable under UV & outdoor exposure" },
+  ],
+  idealFor: [
+    "Utility-scale solar parks",
+    "Industrial rooftops",
+    "High dust zones — India, Middle East, Africa",
+  ],
+  footer: "CLEAN TODAY. POWER TOMORROW. BOOST YIELD. CUT COSTS. SAVE WATER. SAVE PLANET.",
+  tagline: "Sustainable Solution for a Brighter Future.",
 }
 
 const electricalContent = {
-  title: 'NanoQuinn 5-in-1 Revolution for "Electrical & Electronics" Protection',
-  subtitle: "A Breakthrough Disaster Management Innovation",
-  intro: "A next-generation breathable oil-based nanotechnology coating engineered to create a protective shield that safeguards critical systems from the most common causes of failure, breakdown, fire, and asset degradation.",
+  title: "ElectroShield — 5-in-1 Protection",
+  subtitle: "Advanced Nano Polymer Protection Technology",
+  intro: "A transparent nano-coating that forms a strong, ultra-thin, breathable protective layer on electrical & electronic components without affecting performance or conductivity. Disaster management innovation designed for prevention, protection, and resilience.",
+  specs: [
+    { label: "Temperature Range", value: "-20°C to 130°C" },
+    { label: "Dielectric Strength", value: "256 kV/cm" },
+    { label: "Warranty Coverage", value: "18 Months" },
+    { label: "Max Operational Range", value: "10,000 Volts" },
+    { label: "Certification", value: "IPX8 Certified" },
+  ],
+  howItWorks: [
+    { step: "1", title: "Application", desc: "ElectroShield is easily applied by spraying or brushing on clean electrical components." },
+    { step: "2", title: "Nano Coating Activation", desc: "The nano particles spread uniformly and bond with the surface, penetrating micro-pores, crevices & hidden areas." },
+    { step: "3", title: "Protective Shield Formation", desc: "It forms a transparent, breathable, hydrophobic nano layer that shields components from external threats." },
+    { step: "4", title: "5-in-1 Protection", desc: "The nano shield works 24/7 to prevent damage from moisture, corrosion, dust, heat, and short circuits." },
+  ],
   protections: [
     {
       number: "1",
@@ -168,6 +238,17 @@ const electricalContent = {
       desc: "Protects electrical components, panels, connectors, terminals, and systems from corrosion, oxidation, and long-term degradation.",
     },
   ],
+  worksOn: [
+    "Connectors & Wiring", "Battery Pack & BMS", "ECU / ECM", "Fuse Box", "Sensors",
+    "Power Electronics", "Infotainment & Displays", "ADAS Modules", "PC & Circuit Boards",
+    "Control Panels", "Industrial Electronics", "LED & Lighting Systems",
+  ],
+  idealFor: [
+    "Flood & Water Damage Prevention",
+    "Cyclone & Storm Resistant Protection",
+    "Fire & Heat Resistant Shielding",
+    "Anti Moisture & Short Circuit",
+  ],
   revolution: [
     "Breathable Protection Technology — protects without sealing the surface into failure.",
     "Disaster Management Innovation — designed for prevention, protection, and resilience.",
@@ -175,7 +256,7 @@ const electricalContent = {
     "Extends Asset Life — reducing breakdowns, failures, and replacement costs.",
     "From OEM to Maintenance — applicable across manufacturing, utilities, power, defense, railways, marine, telecom, and infrastructure.",
   ],
-  footer: "This is not just a coating. This is a new category in electrical asset protection — a global revolution aimed at preventing fires, eliminating failures, and protecting critical systems when it matters most.",
+  footer: "PROTECTS TODAY. PREVENTS TOMORROW. ENHANCES RELIABILITY. ENSURES CONTINUITY.",
 }
 
 const floorContent = {
@@ -217,9 +298,21 @@ const wallContent = {
 }
 
 const rustRemoverContent = {
-  title: "Rust Removal Reimagined — A Global Innovation",
-  subtitle: "A breakthrough in sustainable asset maintenance.",
-  intro: "A plant-based, 100% sustainable rust remover, certified by SGS, compliant with RoHS, and engineered at exceptional purity standards. For the first time, rust removal without harsh chemicals is a reality.",
+  title: "Bio Degradable Rust Remover",
+  subtitle: "Zero Chemical • Plant Based • RoHS 10E Certified",
+  intro: "A plant-based, 100% sustainable rust remover, certified by SGS, compliant with RoHS, and engineered at exceptional purity standards. The only technology to get 10E RoHS Certification — the highest level of compliance, globally recognized.",
+  features: [
+    { title: "Fast Acting", desc: "Powerful removal that works quickly" },
+    { title: "Versatile Application", desc: "Works in immersion, spray, wipe or brush" },
+    { title: "No Fumes, No Hazard", desc: "Safe for workers and environment" },
+    { title: "Safe for All Metals", desc: "Works on all surfaces without damage" },
+    { title: "Non Hazardous Residue", desc: "Disposes safely and naturally" },
+  ],
+  zeroRisk: [
+    { title: "Zero Risk to Metal", desc: "Safe on all metals. No damage. No hitting." },
+    { title: "Zero Risk to Environment", desc: "Biodegradable. 100% planet friendly." },
+    { title: "Zero Risk to Workers", desc: "Non toxic. Non corrosive. Safe for all." },
+  ],
   points: [
     "Removes rust without corrosive acids or aggressive chemicals",
     "Protects assets from chemical-induced surface damage",
@@ -227,11 +320,17 @@ const rustRemoverContent = {
     "Supports sustainable maintenance and green industry goals",
     "Ideal for industrial assets, infrastructure, equipment, and restoration",
   ],
+  benefits: [
+    { title: "Longer Asset Life", desc: "Removes rust effectively without harming metal" },
+    { title: "Lower Maintenance Cost", desc: "Reduces downtime and repair expenses" },
+    { title: "Safe for People", desc: "Non toxic, safe for workers & communities" },
+    { title: "Eco Friendly", desc: "Sustainable solutions for a better tomorrow" },
+    { title: "Compliant & Future Ready", desc: "Meets global standards, built for the future" },
+  ],
   shift: "From Chemical Attack to Sustainable Restoration.",
   shiftDesc: "Traditional rust removers can damage substrates and expose humans to hazardous chemistry. This innovation changes the model.",
   promise: "Certified 10E RoHS purity by SGS, ensuring industrial-grade safety and compliance.",
-  benchmark: "",
-  tagline: "Clean Rust. Preserve Metal. Protect People. Sustain the Planet.",
+  tagline: "Innovate today. Protect tomorrow. Preserve forever.",
 }
 
 const carpetContent = {
@@ -365,10 +464,10 @@ export function AssetProtectionSection() {
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-16">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
-            Asset Protection
+            Product/Service Range
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-            Surface &amp; Asset Protection
+            Sustainable Nanotechnology Solutions
           </h2>
           <p className="mt-4 sm:mt-6 text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Industry-specific nanotechnology solutions engineered for permanent protection, preservation, and performance.
