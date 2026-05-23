@@ -16,14 +16,14 @@ export function BreakthroughSection() {
 
           {/* Tagline */}
           <div className="w-full text-center py-4">
-            <h2 className="text-3xl sm:text-5xl lg:text-7xl font-black tracking-tight text-balance leading-tight uppercase italic" style={{ color: "#00BFA5" }}>
+            <h2 className="text-3xl sm:text-5xl lg:text-7xl font-black tracking-tight text-balance leading-tight uppercase italic" style={{ color: "#25D366" }}>
               <span className="text-black not-italic">&ldquo;</span>Time to say goodbye to galvanizing,<br className="hidden sm:block" /> powder coating, etc.<span className="text-black not-italic">&rdquo;</span>
             </h2>
           </div>
 
           {/* Content */}
           <div className="text-center max-w-4xl w-full">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               The Breakthrough
             </span>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
@@ -39,8 +39,8 @@ export function BreakthroughSection() {
                   key={item.label}
                   className="flex flex-col items-center gap-3 p-5 bg-[#1E1E1E] rounded-2xl text-white"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#00BFA5]/10 flex items-center justify-center shrink-0">
-                    <item.icon className="w-6 h-6 text-[#00BFA5]" />
+                  <div className="w-12 h-12 rounded-xl bg-[#25D366]/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-6 h-6 text-[#25D366]" />
                   </div>
                   <span className="font-semibold text-sm text-center text-white">
                     {item.label}
