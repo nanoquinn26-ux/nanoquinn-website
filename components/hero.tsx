@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Shield, Leaf, Award, Check } from "lucide-react"
 
@@ -18,6 +19,120 @@ const apaasFeatures = [
   "Unconditional warranty with end-to-end execution",
   "Global technologies with zero environmental harm",
 ]
+
+function APaaSRevolutionAnimation() {
+  const [phase, setPhase] = useState(0) // 0: initial, 1: showing features, 2: merging, 3: final
+  const [visibleFeatures, setVisibleFeatures] = useState(0)
+  
+  useEffect(() => {
+    // Start animation after a short delay
+    const startTimer = setTimeout(() => setPhase(1), 500)
+    return () => clearTimeout(startTimer)
+  }, [])
+  
+  useEffect(() => {
+    if (phase === 1 && visibleFeatures < apaasFeatures.length) {
+      const timer = setTimeout(() => {
+        setVisibleFeatures(prev => prev + 1)
+      }, 400)
+      return () => clearTimeout(timer)
+    } else if (phase === 1 && visibleFeatures === apaasFeatures.length) {
+      // All features shown, start merge phase
+      const mergeTimer = setTimeout(() => setPhase(2), 800)
+      return () => clearTimeout(mergeTimer)
+    }
+  }, [phase, visibleFeatures])
+  
+  useEffect(() => {
+    if (phase === 2) {
+      // After merge animation, show final
+      const finalTimer = setTimeout(() => setPhase(3), 1200)
+      return () => clearTimeout(finalTimer)
+    }
+  }, [phase])
+
+  return (
+    <div className="max-w-4xl mx-auto">
+      <div className="relative p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm overflow-hidden min-h-[400px]">
+        {/* Decorative corner accent */}
+        <div className="absolute top-0 right-0 w-32 h-32 bg-[#00BFA5]/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+        
+        <div className="relative">
+          {/* Header - always visible */}
+          <h3 className={`text-xl sm:text-2xl font-bold text-white mb-3 transition-all duration-500 ${phase >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            Welcome to the <span className="text-[#00BFA5]">APaaS Revolution</span>
+          </h3>
+          <p className={`text-white/60 mb-8 text-sm sm:text-base transition-all duration-500 delay-100 ${phase >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            For the first time, industries can move beyond repetitive maintenance, shutdowns, and asset deterioration.
+          </p>
+          
+          {/* Features list - phase 1 and 2 */}
+          <div className={`transition-all duration-700 ${phase === 2 ? 'opacity-0 scale-95' : phase >= 1 ? 'opacity-100' : 'opacity-0'}`}>
+            {phase < 3 && (
+              <>
+                <p className={`text-[#D4A826] font-semibold text-sm uppercase tracking-wider mb-5 transition-all duration-300 ${phase >= 1 ? 'opacity-100' : 'opacity-0'}`}>
+                  NanoQuinn APaaS Platform delivers:
+                </p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  {apaasFeatures.map((feature, index) => (
+                    <div 
+                      key={feature}
+                      className={`flex items-start gap-3 transition-all duration-500 ${
+                        index < visibleFeatures 
+                          ? 'opacity-100 translate-x-0' 
+                          : 'opacity-0 -translate-x-8'
+                      }`}
+                    >
+                      <div className="w-5 h-5 rounded-full bg-[#00BFA5]/20 flex items-center justify-center shrink-0 mt-0.5">
+                        <Check className="w-3 h-3 text-[#00BFA5]" />
+                      </div>
+                      <span className="text-white/80 text-sm sm:text-base font-medium">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+          
+          {/* Final merged state - phase 3 */}
+          <div className={`absolute inset-0 flex flex-col items-center justify-center p-8 transition-all duration-700 ${phase === 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-110 pointer-events-none'}`}>
+            <div className="text-center">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-[#00BFA5] to-[#00BFA5]/50 mb-6 animate-pulse">
+                <Check className="w-10 h-10 text-white" />
+              </div>
+              <h4 className="text-2xl sm:text-3xl font-bold text-white mb-4">
+                All-in-One Solution
+              </h4>
+              <p className="text-white/70 mb-6 max-w-md">
+                Every promise. Every protection. Every benefit. Delivered through one revolutionary platform.
+              </p>
+              <div className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-[#D4A826] to-[#F0C850] animate-[shimmer_2s_infinite]">
+                <span className="text-xl sm:text-2xl font-bold text-[#0A0A0A]">
+                  NanoQuinn APaaS
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          {/* Restart button */}
+          {phase === 3 && (
+            <button 
+              onClick={() => {
+                setPhase(0)
+                setVisibleFeatures(0)
+                setTimeout(() => setPhase(1), 300)
+              }}
+              className="absolute bottom-4 right-4 text-xs text-white/40 hover:text-white/70 transition-colors"
+            >
+              Replay
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
 
 export function Hero() {
   return (
@@ -87,41 +202,8 @@ export function Hero() {
             </a>
           </div>
 
-          {/* APaaS Revolution Section */}
-          <div className="max-w-4xl mx-auto animate-fade-up delay-500">
-            <div className="relative p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm overflow-hidden">
-              {/* Decorative corner accent */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#00BFA5]/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
-              
-              <div className="relative">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
-                  Welcome to the <span className="text-[#00BFA5] animate-pulse">APaaS Revolution</span>
-                </h3>
-                <p className="text-white/60 mb-8 text-sm sm:text-base">
-                  For the first time, industries can move beyond repetitive maintenance, shutdowns, and asset deterioration.
-                </p>
-                
-                <p className="text-[#D4A826] font-semibold text-sm uppercase tracking-wider mb-5">
-                  NanoQuinn APaaS Platform delivers:
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  {apaasFeatures.map((feature, index) => (
-                    <div 
-                      key={feature}
-                      className="flex items-start gap-3 group opacity-0 animate-[fadeSlideIn_0.6s_ease-out_forwards]"
-                      style={{ animationDelay: `${0.8 + 0.15 * index}s` }}
-                    >
-                      <div className="w-5 h-5 rounded-full bg-[#00BFA5]/20 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#00BFA5]/40 group-hover:scale-110 transition-all duration-300">
-                        <Check className="w-3 h-3 text-[#00BFA5]" />
-                      </div>
-                      <span className="text-white/80 text-sm sm:text-base font-medium group-hover:text-white transition-colors">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* APaaS Revolution Section - Animated */}
+          <APaaSRevolutionAnimation />
         </div>
 
         {/* Scroll Indicator */}
