@@ -1,15 +1,15 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronDown, ChevronRight, Shield, Wrench, Factory, Sun, Package, Zap, FlameKindling, Layers, Sofa } from "lucide-react"
+import { ChevronDown, ChevronRight, Shield, Wrench, Factory, Sun, Package, Zap, FlameKindling, Layers, Sofa, Droplets, HardHat, Building2 } from "lucide-react"
 
 /* ─── DATA ─────────────────────────────────────────────────────────────── */
 
 const oemContent = {
-  title: "Rust & Corrosion Protection Revolution for OEMs",
+  title: "RustShield — Rust & Corrosion Protection",
   badge: "OEM",
-  subtitle: "Transparent Nanotechnology Protection Coating | 10-Year Life",
-  intro: "For metal, stainless steel, machinery, automotive, fabricated components and industrial OEM applications.",
+  subtitle: "Transparent Polysilazane Nanotechnology Solution | 10-Year Life",
+  intro: "A globally uncompetitive, sustainable nanotechnology system for long-term metal protection. Applied over any painted metal surface to protect metal at a molecular level.",
   variants: [
     {
       number: "01",
@@ -22,12 +22,19 @@ const oemContent = {
       description: "No galvanizing. No powder coating. Use standard PU or epoxy base paint, then apply Nano transparent top coat for 10-year preservation against rust and corrosion. Protects assets without harsh chemical damage, heavy process dependency, or conventional maintenance cycles.",
     },
   ],
+  certifications: [
+    { title: "Salt Spray Test", value: "10,000+ HRS", desc: "Exceptional corrosion resistance verified under accelerated ASTM B117 conditions" },
+    { title: "Eco Compliance", value: "ZERO VOC", desc: "Environmentally safe, sustainable, and compliant with global emission standards" },
+    { title: "Non-Leaching", value: "FOOD SAFE", desc: "Certified suitable for sensitive applications with no chemical migration" },
+    { title: "Thermal Range", value: "-50° TO 850°C", desc: "Maintains structural and protective integrity across extreme temperatures" },
+  ],
+  worksOn: ["Stainless Steel", "New Painted Metal", "Rusted Metal Restoration"],
   revolution: {
     title: "A Revolution for Exporters and OEMs",
     description: "Ideal for machinery, automotive, components and hundreds of metal-intensive industries.",
     points: [
       "Zero VOC Sustainable Technology",
-      "Certified Performance",
+      "Certified Performance — SGS, ASTM B117, RoHS 10E",
       "Temperature Resistance: -50°C to 850°C",
       "Long-Term Asset Preservation",
       "No harsh chemical process damage",
@@ -38,9 +45,16 @@ const oemContent = {
 }
 
 const industrialContent = {
-  title: "Global Disruption in Aftermarket Metal Preservation",
+  title: "5-Layer Sustainable Protection System",
   badge: "Industrial",
-  intro: "A new category in restoration, preservation and long-life protection for existing metal assets.",
+  intro: "End-to-end bio & low/zero VOC anti-rust solution for restoration, preservation and long-life protection of existing metal assets.",
+  fiveSteps: [
+    { step: "1", title: "Manual Hand Tooling", desc: "Removal of loose rust, scale, dirt & contaminants by manual hand tooling. Safe + No Dust + No Damage." },
+    { step: "2", title: "Bio Rust Remover", desc: "Plant based rust remover dissolves rust gently. No acid. No harm. Biodegradable & safe." },
+    { step: "3", title: "Water Based Rust Converter", desc: "Converts active rust into dissociable protective layer. Water based. Zero harsh chemicals." },
+    { step: "4", title: "Low VOC Epoxy Coating", desc: "High built, surface tolerant epoxy for long term corrosion protection. 160 microns DFT. Low VOC & environment friendly." },
+    { step: "5", title: "Nano Top Coat Zero VOC", desc: "Nanotechnology transparent top coat provides UV protection, gloss retention & long lasting durability. 10 microns DFT. Zero VOC." },
+  ],
   variants: [
     {
       number: "01",
@@ -65,6 +79,10 @@ const industrialContent = {
     "Acid Pickling",
     "Hazardous rust removal methods",
   ],
+  savings: {
+    nanoquinn: { price: "₹1599 + GST", duration: "ONE TIME APPLICATION • 10 YEAR PROTECTION", benefits: ["SAFE", "SUSTAINABLE", "COST EFFECTIVE"] },
+    traditional: { price: "₹2500 + GST", duration: "TWICE IN 10 YEARS", problems: ["HIGH COST", "HIGH RISK", "SHORT LIFE", "ENVIRONMENT & HEALTH DAMAGE"] },
+  },
   system: {
     title: "NanoQuinn Restoration System",
     steps: [
@@ -88,23 +106,44 @@ const industrialContent = {
       "Creates a new alternative to conventional rust removal-to-protection systems",
     ],
   },
-  footer: "From rust treatment to metal preservation — a global disruption in aftermarket maintenance.",
+  footer: "SAVE METAL • SAVE MONEY • SAVE PEOPLE • SAVE PLANET",
 }
 
 const plasticContent = {
-  title: "Hard Plastic & FRP Protection Preservation",
-  subtitle: "A Nanotechnology Innovation",
-  intro: "A breakthrough transparent nanotechnology designed to protect, preserve and extend the life of hard plastics, FRP, composites, tanks, pipes, pipelines, panels and engineered polymer assets exposed to harsh operating and environmental conditions.",
-  description: "This advanced protective technology forms an ultra-thin invisible barrier that shields surfaces against UV degradation, heat stress, IR exposure, oxidation, corrosion, chalking, brittleness, wear and tear, fading and surface ageing — keeping assets new, stable and performance-ready for years.",
-  note: "Unlike conventional coatings that alter appearance, crack, peel or degrade, this transparent preservation technology becomes a preventive asset-maintenance innovation, helping eliminate premature replacement, reduce maintenance costs and improve lifecycle performance.",
+  title: "Transparent Nanotechnology for Polymers",
+  subtitle: "Invisible Shield. Powerful Protection.",
+  intro: "Advanced nanotechnology creates an ultra-thin, invisible layer that bonds at the molecular level with polymer surfaces, delivering long term performance and maintaining newness for years.",
+  protection: [
+    { title: "UV Protection", desc: "Ceramic matrix absorbs and scatters UV radiation, preventing fading, chalking & brittleness" },
+    { title: "Heat & IR Protection", desc: "Inorganic Si–N / Si–O ceramic network exhibits high thermal stability and IR resistance" },
+    { title: "Hydrophobic Protection", desc: "Low surface energy nano-structure repels water and prevents moisture penetration" },
+    { title: "Chemical Protection", desc: "Dense crosslinked nano barrier limits diffusion of oils, solvents, oxygen & contaminants" },
+    { title: "Abrasion Resistance", desc: "High-density ceramic nano matrix increases surface hardness up to 8–9H" },
+    { title: "Anti-Stain / Easy Clean", desc: "Oleophobic nano surface lowers adhesion force of dirt, grease & contaminants" },
+  ],
+  features: [
+    { title: "Transparent & Invisible", desc: "Does not alter color, gloss or texture" },
+    { title: "High Chemical Resistance", desc: "Protects against everyday chemicals" },
+    { title: "Scratch Resistant", desc: "Minimizes micro scratches and scuffs" },
+    { title: "Easy to Clean", desc: "Dust, dirt & stains don't stick" },
+    { title: "Long Lasting Performance", desc: "Protection that stays for years" },
+    { title: "Environment Friendly", desc: "Low VOC. Safe for you and the environment" },
+  ],
+  noWearAndTear: [
+    { title: "UV Rays", desc: "Protects from harmful UV radiation. No fading. No yellowing." },
+    { title: "Heat", desc: "Withstands high temperatures. No damage. No distortion." },
+    { title: "Oleophobic", desc: "Repels oil, grease and chemicals. Easy to clean." },
+    { title: "Hydrophobic", desc: "Water beads up and rolls off. Stain and spot resistant." },
+  ],
   applications: {
-    title: "Disruptive Applications",
+    title: "Perfect For FRP / Plastic Surfaces",
     items: [
-      { label: "OEM Protection", desc: "Protect plastic and FRP components from day one of manufacturing." },
-      { label: "Asset Maintenance & Restoration", desc: "Preserve ageing installed assets and arrest degradation." },
-      { label: "Industrial Infrastructure", desc: "Pipelines, cooling towers, chemical tanks, ducts, cable trays, process equipment." },
-      { label: "Commercial & Utility Assets", desc: "Water tanks, rooftop installations, outdoor equipment, solar-related polymer components." },
-      { label: "Pan-India Use Across Harsh Climates", desc: "High UV, coastal exposure, heat, humidity and industrial environments." },
+      { label: "FRP Water Tanks", desc: "Prevents UV damage & discoloration" },
+      { label: "Rooftop Sheets", desc: "Protects from sunlight, heat & weathering" },
+      { label: "Plastic Panels", desc: "Maintains color & shine. Prevents brittleness" },
+      { label: "Outdoor Furniture", desc: "Resists fading & aging. Keeps like new" },
+      { label: "Signs & Displays", desc: "High protection for long lasting clarity" },
+      { label: "Pipes & Conduits", desc: "Prevents degradation. Extends service life" },
     ],
   },
   disruption: {
@@ -117,30 +156,61 @@ const plasticContent = {
       "A potentially revolutionary category creation in surface engineering and asset protection",
     ],
   },
-  footer: "From OEM production lines to maintenance of installed assets across India, this is a revolutionary transparent technology for protecting non-metal assets and keeping them new.",
+  footer: "MAINTAINS NEWNESS. KEEPS SURFACES LOOKING NEW FOR YEARS.",
+  tagline: "Innovate Today. Protect Forever. Preserve Newness.",
 }
 
 const solarContent = {
-  title: "NanoQuinn Solar Nanotechnology Coating",
-  subtitle: "Protection + Performance + Preservation",
-  intro: "A breakthrough transparent nanotechnology coating for solar assets delivering protection, performance and preservation.",
+  title: "Solar Anti-Dust / Anti-Soiling Coating",
+  subtitle: "Efficiency Booster | Self-Cleaning | Water Repellent",
+  intro: "The ultimate solution to the biggest pain in solar performance. Revolutionary aftermarket solution that eliminates dust and soiling — the main causes of solar output reduction.",
+  stats: [
+    { value: "12%", label: "Efficiency Booster", desc: "Generate more power with clean sunlight" },
+    { value: "50%", label: "Maintenance Reduction", desc: "Spend less on cleaning & maintenance" },
+    { value: "90%", label: "Water Wastage Reduction", desc: "Save millions of gallons of water" },
+  ],
   benefits: [
     { title: "Anti-Dust & Anti-Soiling Shield", desc: "Reduces dirt accumulation and keeps panels cleaner for longer." },
-    { title: "Wear & Tear Protection", desc: "Protects against environmental degradation, UV, moisture, and surface aging." },
-    { title: "Self-Cleaning Hydrophobic Effect", desc: "Water rolls off carrying dust and contaminants, reducing manual cleaning." },
-    { title: "Performance Enhancement", desc: "Supports 8–10% efficiency improvement through cleaner, optimized panel surfaces." },
-    { title: "Maintenance Cost Reduction", desc: "Lowers O&M costs by 50% and above." },
-    { title: "Water Conservation", desc: "Reduces cleaning water consumption by up to 75%." },
-    { title: "Surface Newness Preservation", desc: "Helps solar panels retain original clarity and performance over time." },
+    { title: "Self-Cleaning Hydrophobic Effect", desc: "Rainwater rolls off carrying dust and dirt effectively." },
+    { title: "UV Resistant", desc: "Withstands extreme sunlight & weather conditions." },
+    { title: "Chemical Free", desc: "Safe for panels & the environment." },
+    { title: "Long Lasting", desc: "Durable protection for years of performance." },
+    { title: "Protects Panels", desc: "Extends life & maintains high performance." },
   ],
-  footer: "NanoQuinn transforms solar maintenance from reactive cleaning to proactive asset protection.",
-  tagline: "Protect. Preserve. Perform.",
+  howItWorks: [
+    { title: "Anti-Reflective Nano Layer", desc: "Refractive index matching reduces Fresnel reflection losses" },
+    { title: "Nano Surface Structuring", desc: "Nano-scale SiO₂ particles minimize light scattering & improve optical clarity" },
+    { title: "Hydrophobic Effect", desc: "Low surface energy creates water beading & moisture repellency" },
+    { title: "Anti-Soiling Property", desc: "Prevents strong bonding of contaminants, bird droppings & pollution" },
+    { title: "Self-Cleaning Action", desc: "Rainwater easily removes loose contaminants from the surface" },
+    { title: "UV & Environmental Stability", desc: "SiO₂ nano matrix remains optically stable under UV & outdoor exposure" },
+  ],
+  idealFor: [
+    "Utility-scale solar parks",
+    "Industrial rooftops",
+    "High dust zones — India, Middle East, Africa",
+  ],
+  footer: "CLEAN TODAY. POWER TOMORROW. BOOST YIELD. CUT COSTS. SAVE WATER. SAVE PLANET.",
+  tagline: "Sustainable Solution for a Brighter Future.",
 }
 
 const electricalContent = {
-  title: 'NanoQuinn 5-in-1 Revolution for "Electrical & Electronics" Protection',
-  subtitle: "A Breakthrough Disaster Management Innovation",
-  intro: "A next-generation breathable oil-based nanotechnology coating engineered to create a protective shield that safeguards critical systems from the most common causes of failure, breakdown, fire, and asset degradation.",
+  title: "ElectroShield — 5-in-1 Protection",
+  subtitle: "Advanced Nano Polymer Protection Technology",
+  intro: "A transparent nano-coating that forms a strong, ultra-thin, breathable protective layer on electrical & electronic components without affecting performance or conductivity. Disaster management innovation designed for prevention, protection, and resilience.",
+  specs: [
+    { label: "Temperature Range", value: "-20°C to 130°C" },
+    { label: "Dielectric Strength", value: "256 kV/cm" },
+    { label: "Warranty Coverage", value: "18 Months" },
+    { label: "Max Operational Range", value: "10,000 Volts" },
+    { label: "Certification", value: "IPX8 Certified" },
+  ],
+  howItWorks: [
+    { step: "1", title: "Application", desc: "ElectroShield is easily applied by spraying or brushing on clean electrical components." },
+    { step: "2", title: "Nano Coating Activation", desc: "The nano particles spread uniformly and bond with the surface, penetrating micro-pores, crevices & hidden areas." },
+    { step: "3", title: "Protective Shield Formation", desc: "It forms a transparent, breathable, hydrophobic nano layer that shields components from external threats." },
+    { step: "4", title: "5-in-1 Protection", desc: "The nano shield works 24/7 to prevent damage from moisture, corrosion, dust, heat, and short circuits." },
+  ],
   protections: [
     {
       number: "1",
@@ -168,6 +238,17 @@ const electricalContent = {
       desc: "Protects electrical components, panels, connectors, terminals, and systems from corrosion, oxidation, and long-term degradation.",
     },
   ],
+  worksOn: [
+    "Connectors & Wiring", "Battery Pack & BMS", "ECU / ECM", "Fuse Box", "Sensors",
+    "Power Electronics", "Infotainment & Displays", "ADAS Modules", "PC & Circuit Boards",
+    "Control Panels", "Industrial Electronics", "LED & Lighting Systems",
+  ],
+  idealFor: [
+    "Flood & Water Damage Prevention",
+    "Cyclone & Storm Resistant Protection",
+    "Fire & Heat Resistant Shielding",
+    "Anti Moisture & Short Circuit",
+  ],
   revolution: [
     "Breathable Protection Technology — protects without sealing the surface into failure.",
     "Disaster Management Innovation — designed for prevention, protection, and resilience.",
@@ -175,7 +256,7 @@ const electricalContent = {
     "Extends Asset Life — reducing breakdowns, failures, and replacement costs.",
     "From OEM to Maintenance — applicable across manufacturing, utilities, power, defense, railways, marine, telecom, and infrastructure.",
   ],
-  footer: "This is not just a coating. This is a new category in electrical asset protection — a global revolution aimed at preventing fires, eliminating failures, and protecting critical systems when it matters most.",
+  footer: "PROTECTS TODAY. PREVENTS TOMORROW. ENHANCES RELIABILITY. ENSURES CONTINUITY.",
 }
 
 const floorContent = {
@@ -217,9 +298,21 @@ const wallContent = {
 }
 
 const rustRemoverContent = {
-  title: "Rust Removal Reimagined — A Global Innovation",
-  subtitle: "A breakthrough in sustainable asset maintenance.",
-  intro: "A plant-based, 100% sustainable rust remover, certified by SGS, compliant with RoHS, and engineered at exceptional purity standards. For the first time, rust removal without harsh chemicals is a reality.",
+  title: "Bio Degradable Rust Remover",
+  subtitle: "Zero Chemical • Plant Based • RoHS 10E Certified",
+  intro: "A plant-based, 100% sustainable rust remover, certified by SGS, compliant with RoHS, and engineered at exceptional purity standards. The only technology to get 10E RoHS Certification — the highest level of compliance, globally recognized.",
+  features: [
+    { title: "Fast Acting", desc: "Powerful removal that works quickly" },
+    { title: "Versatile Application", desc: "Works in immersion, spray, wipe or brush" },
+    { title: "No Fumes, No Hazard", desc: "Safe for workers and environment" },
+    { title: "Safe for All Metals", desc: "Works on all surfaces without damage" },
+    { title: "Non Hazardous Residue", desc: "Disposes safely and naturally" },
+  ],
+  zeroRisk: [
+    { title: "Zero Risk to Metal", desc: "Safe on all metals. No damage. No hitting." },
+    { title: "Zero Risk to Environment", desc: "Biodegradable. 100% planet friendly." },
+    { title: "Zero Risk to Workers", desc: "Non toxic. Non corrosive. Safe for all." },
+  ],
   points: [
     "Removes rust without corrosive acids or aggressive chemicals",
     "Protects assets from chemical-induced surface damage",
@@ -227,11 +320,17 @@ const rustRemoverContent = {
     "Supports sustainable maintenance and green industry goals",
     "Ideal for industrial assets, infrastructure, equipment, and restoration",
   ],
+  benefits: [
+    { title: "Longer Asset Life", desc: "Removes rust effectively without harming metal" },
+    { title: "Lower Maintenance Cost", desc: "Reduces downtime and repair expenses" },
+    { title: "Safe for People", desc: "Non toxic, safe for workers & communities" },
+    { title: "Eco Friendly", desc: "Sustainable solutions for a better tomorrow" },
+    { title: "Compliant & Future Ready", desc: "Meets global standards, built for the future" },
+  ],
   shift: "From Chemical Attack to Sustainable Restoration.",
   shiftDesc: "Traditional rust removers can damage substrates and expose humans to hazardous chemistry. This innovation changes the model.",
   promise: "Certified 10E RoHS purity by SGS, ensuring industrial-grade safety and compliance.",
-  benchmark: "",
-  tagline: "Clean Rust. Preserve Metal. Protect People. Sustain the Planet.",
+  tagline: "Innovate today. Protect tomorrow. Preserve forever.",
 }
 
 const carpetContent = {
@@ -265,6 +364,162 @@ const carpetContent = {
   closing: "A major advantage for facilities where appearance, hygiene, and maintenance costs matter.",
   description: "From accidental spills to daily wear, NanoQuinn helps transform soft surfaces into anti-stain, low-maintenance, long-life assets.",
   tagline: "Keep It New. Keep It Protected. Keep Maintenance Low.",
+}
+
+const esdFlooringContent = {
+  title: "Flooring Services — ESD & Dielectric",
+  subtitle: "Advanced Flooring Solutions for Safety, Protection and Long-Term Performance",
+  intro: "Specialized flooring solutions engineered for environments where static control and electrical insulation are critical for safety, equipment protection, and operational continuity.",
+  types: [
+    {
+      name: "ESD Flooring",
+      description: "Controls static electricity and prevents electrostatic discharge. Ideal for sensitive electronics, clean rooms, pharma, semiconductor, labs, and precision manufacturing areas.",
+      color: "#00BFA5",
+    },
+    {
+      name: "Dielectric Flooring",
+      description: "Provides high electrical insulation and ensures operator safety in electrical areas, power rooms, HT/LT panels, substations, and transformer areas.",
+      color: "#D4A826",
+    },
+  ],
+  keyBenefits: [
+    { title: "Enhanced Safety", icon: "shield" },
+    { title: "Seamless & Easy Maintenance", icon: "tool" },
+    { title: "Static Control & Electrical Insulation", icon: "zap" },
+    { title: "Industrial Heavy-Duty Performance", icon: "factory" },
+    { title: "High Durability & Long Life", icon: "clock" },
+    { title: "Premium Finish", icon: "star" },
+    { title: "Chemical & Abrasion Resistance", icon: "shield" },
+    { title: "Sustainable & Reliable Solutions", icon: "leaf" },
+  ],
+  idealFor: [
+    "Electronics Manufacturing",
+    "Semiconductor Units",
+    "Pharmaceutical Plants",
+    "Clean Rooms & Labs",
+    "Data Centres & Server Rooms",
+    "EV Battery Manufacturing",
+    "Control Rooms",
+    "Electrical Rooms",
+    "Substations",
+    "Power Plants",
+    "Defence & Aerospace",
+  ],
+  apaasAdvantage: [
+    "Surface Evaluation",
+    "System Recommendation",
+    "Application Support",
+    "Long-Term Maintenance Guidance",
+    "Premium Industrial Finish",
+    "Sustainable Solution Approach",
+  ],
+  footer: "NANOQUINN APAAS — Long-Term Surface Protection & Performance Solutions",
+}
+
+const epoxyPUFlooringContent = {
+  title: "Premium High Strength Epoxy PU Flooring",
+  subtitle: "Next-Generation Industrial Flooring System",
+  intro: "Engineered high-performance Epoxy + PU hybrid system designed for the most demanding industrial environments requiring superior strength, durability, and performance.",
+  techEdge: "Epoxy + PU hybrid system",
+  advantages: [
+    { title: "Higher abrasion resistance", desc: "Withstands heavy wear and constant traffic" },
+    { title: "Superior load-bearing strength", desc: "Handles extreme loads up to 200 tons" },
+    { title: "Long lifecycle vs conventional epoxy", desc: "Outlasts traditional flooring systems" },
+    { title: "Chemical & thermal resistance", desc: "Resists spills, chemicals, and temperature extremes" },
+  ],
+  applications: [
+    "Heavy engineering industries",
+    "Warehouses & logistics parks",
+    "Automotive plants",
+    "Food & pharma industries",
+  ],
+  impact: [
+    { title: "Reduced repair cycles", desc: "Minimizes downtime and maintenance frequency" },
+    { title: "Higher operational safety", desc: "Non-slip, durable surface for worker safety" },
+    { title: "Long-term ROI with performance stability", desc: "Investment that pays back over years" },
+  ],
+  bottomFeatures: [
+    { title: "High Abrasion Resistance", desc: "Withstands heavy wear, impacts & constant traffic" },
+    { title: "Chemical & Spill Proof", desc: "Resists oils, chemicals & corrosive substances" },
+    { title: "High Load Capacity", desc: "Handles extreme loads up to 200 tons" },
+    { title: "Long Lasting Durability", desc: "Built to perform for years with minimal upkeep" },
+    { title: "Sustainable Solution", desc: "Low VOC, eco-friendly & safe for environments" },
+  ],
+  footer: "Premium Industrial Flooring by NanoQuinn",
+}
+
+const waterproofingContent = {
+  title: "Premium Zero Headache Waterproofing Service",
+  subtitle: "By NanoQuinn APaaS",
+  intro: "Not temporary waterproofing. A long-term Protection Responsibility Model. From identifying root causes to repairs, treatment, protection, audits, and warranty — NanoQuinn delivers complete peace of mind.",
+  features: [
+    "End-to-End Turnkey Responsibility",
+    "Repairs + Protection + Preservation",
+    "Premium Long-Term Waterproofing Solutions",
+    "Unconditional Warranty",
+    "Yearly Audit & Inspection Support",
+    "Sustainable & Advanced Protection Technologies",
+  ],
+  painPoints: [
+    "Continuous leakage & seepage",
+    "Repeated repair expenses",
+    "Production & operational disruptions",
+    "Structural deterioration",
+    "Damage to interiors, machinery & electrical systems",
+    "Temporary contractor-based patchwork failures",
+    "Rising maintenance pressure every monsoon",
+  ],
+  process: [
+    { step: "1", title: "Identify Root Causes", desc: "Comprehensive assessment of leakage sources" },
+    { step: "2", title: "Repairs & Treatment", desc: "Professional repair of damaged areas" },
+    { step: "3", title: "Protection That Lasts", desc: "Advanced waterproofing application" },
+    { step: "4", title: "Audits & Inspections", desc: "Regular monitoring and quality checks" },
+    { step: "5", title: "Unconditional Warranty", desc: "Complete peace of mind guarantee" },
+  ],
+  pillars: ["Repairs", "Unconditional Warranty", "Protection", "Audit & Inspections", "Preservation", "Sustainable Technologies"],
+  footer: "ZERO HEADACHE — Complete Protection. Complete Peace of Mind.",
+}
+
+const surfaceTolerantEpoxyContent = {
+  title: "Low VOC Surface Tolerant Epoxy",
+  subtitle: "Advanced Protection. Extended Life.",
+  intro: "High performance, low VOC epoxy coating for all metal surfaces, designed to tolerate less than ideal surface conditions and deliver long lasting protection. 10 Years Protection with Nano Layer Technology.",
+  specs: {
+    coats: "2 Coats",
+    thickness: "160 Microns",
+    protection: "10 Years",
+  },
+  features: [
+    { title: "Sustainable", desc: "Low VOC formula. Environment friendly." },
+    { title: "Fantastic Adhesion", desc: "Strong bonding on a wide range of surfaces including marginally prepared metal." },
+    { title: "Surface Tolerant", desc: "Tolerates rust, moisture, mill scale, and less than ideal surface preparation." },
+    { title: "Chemical & Corrosion Resistant", desc: "Excellent resistance to chemicals, corrosion and abrasion." },
+    { title: "Long Lasting Protection", desc: "Engineered to perform. Built to last." },
+  ],
+  nanoLayerBenefits: [
+    "Low VOC — Safe for environment & workers",
+    "Excellent adhesion & surface tolerance",
+    "High build coating — 2 coats, 160 microns",
+    "Superior chemical & corrosion resistance",
+    "Long lasting 10 years protection",
+  ],
+  idealFor: [
+    { label: "Industrial Structures", icon: "factory" },
+    { label: "Bridges & Infrastructure", icon: "bridge" },
+    { label: "Tanks & Pipelines", icon: "tank" },
+    { label: "Marine & Offshore", icon: "ship" },
+    { label: "Commercial & Facilities", icon: "building" },
+    { label: "Machinery & Equipment", icon: "cog" },
+    { label: "Power Plants & Utilities", icon: "zap" },
+  ],
+  bottomFeatures: [
+    { title: "Enhances Asset Life", desc: "Reduces corrosion & wear. Extends service life." },
+    { title: "Lower Maintenance Cost", desc: "Reduces downtime & maintenance frequency." },
+    { title: "High Performance", desc: "Delivers consistent, long term performance." },
+    { title: "Eco Friendly", desc: "Low VOC. Sustainable. Better for the future." },
+    { title: "Trusted Protection", desc: "Advanced technology. Proven results." },
+  ],
+  footer: "Sustainable Solutions. Lasting Impact.",
 }
 
 const auditContent = {
@@ -323,8 +578,8 @@ const auditContent = {
 }
 
 /* ─── TYPES ─────────────────────────────────────────────────────────────── */
-type ActiveContent = "OEM" | "Industrial" | "Plastic" | "Solar" | "Electrical" | "Floor" | "Wall" | "RustRemover" | "Carpet" | null
-type ActiveDropdown = "rust" | null
+type ActiveContent = "OEM" | "Industrial" | "Plastic" | "Solar" | "Electrical" | "Floor" | "Wall" | "RustRemover" | "Carpet" | "ESDFlooring" | "EpoxyPUFlooring" | "Waterproofing" | "SurfaceTolerantEpoxy" | null
+type ActiveDropdown = "rust" | "flooring" | null
 type SubMenu = "OEM" | "Industrial" | null
 
 /* ─── COMPONENT ���────────────────────────────────────────────────────────── */
@@ -352,10 +607,14 @@ export function AssetProtectionSection() {
     { id: "Plastic" as const, label: "Nanotech Plastic Protection", icon: Package },
     { id: "Solar" as const, label: "Solar Nanotechnology Coating", icon: Sun },
     { id: "Electrical" as const, label: "ElectroShield 5-in-1", icon: Zap },
-    { id: "Floor" as const, label: "FloorGuard™", icon: Layers },
-    { id: "Wall" as const, label: "WallGuard™", icon: FlameKindling },
+    { id: "Floor" as const, label: "FloorGuard", icon: Layers },
+    { id: "Wall" as const, label: "WallGuard", icon: FlameKindling },
     { id: "RustRemover" as const, label: "Bio Rust Remover", icon: Wrench },
-    { id: "Carpet" as const, label: "Carpet & Upholstery Protection", icon: Sofa },
+    { id: "Carpet" as const, label: "Carpet & Upholstery", icon: Sofa },
+    { id: "ESDFlooring" as const, label: "ESD & Dielectric Flooring", icon: HardHat },
+    { id: "EpoxyPUFlooring" as const, label: "Epoxy PU Flooring", icon: Building2 },
+    { id: "Waterproofing" as const, label: "Waterproofing Service", icon: Droplets },
+    { id: "SurfaceTolerantEpoxy" as const, label: "Surface Tolerant Epoxy", icon: Shield },
   ]
 
   return (
@@ -365,10 +624,10 @@ export function AssetProtectionSection() {
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-16">
           <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
-            Asset Protection
+            Product/Service Range
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-            Surface &amp; Asset Protection
+            Sustainable Nanotechnology Solutions
           </h2>
           <p className="mt-4 sm:mt-6 text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Industry-specific nanotechnology solutions engineered for permanent protection, preservation, and performance.
@@ -876,6 +1135,287 @@ export function AssetProtectionSection() {
 
             <div className="bg-[#D4A826] rounded-3xl p-8 text-center">
               <p className="text-2xl font-bold text-black">{carpetContent.tagline}</p>
+            </div>
+          </div>
+        )}
+
+        {/* ESD & Dielectric Flooring */}
+        {activeContent === "ESDFlooring" && (
+          <div className="animate-fade-up">
+            <div className="text-center mb-12">
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Flooring Services</span>
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{esdFlooringContent.title}</h3>
+              <p className="text-lg font-medium text-[#00BFA5] mb-4">{esdFlooringContent.subtitle}</p>
+              <p className="text-base text-muted-foreground max-w-2xl mx-auto">{esdFlooringContent.intro}</p>
+            </div>
+
+            {/* Two Flooring Types */}
+            <div className="grid md:grid-cols-2 gap-6 mb-10">
+              {esdFlooringContent.types.map((type, i) => (
+                <div key={i} className="rounded-3xl p-8" style={{ backgroundColor: type.color + '15', borderLeft: `4px solid ${type.color}` }}>
+                  <h4 className="text-xl font-bold mb-3" style={{ color: type.color }}>{type.name}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{type.description}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Key Benefits Grid */}
+            <div className="bg-muted rounded-3xl p-8 mb-10">
+              <h4 className="text-lg font-bold mb-6 flex items-center gap-2">
+                <span className="w-2 h-6 bg-[#00BFA5] rounded-full inline-block" />
+                Key Benefits
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {esdFlooringContent.keyBenefits.map((benefit, i) => (
+                  <div key={i} className="flex items-center gap-3 p-3 bg-background rounded-xl">
+                    <span className="w-2 h-2 rounded-full bg-[#00BFA5] shrink-0" />
+                    <span className="text-sm font-medium">{benefit.title}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Ideal For */}
+            <div className="bg-foreground text-background rounded-3xl p-8 mb-10">
+              <h4 className="text-lg font-bold text-[#00BFA5] mb-6">Ideal For</h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {esdFlooringContent.idealFor.map((item, i) => (
+                  <div key={i} className="flex items-center gap-2 text-sm text-background/70">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#00BFA5] shrink-0" />
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* APaaS Advantage */}
+            <div className="bg-gradient-to-r from-[#00BFA5] to-[#00897B] rounded-3xl p-8">
+              <p className="text-sm font-semibold text-white/80 uppercase tracking-wider mb-4">NanoQuinn APaaS Advantage</p>
+              <div className="flex flex-wrap gap-3">
+                {esdFlooringContent.apaasAdvantage.map((item, i) => (
+                  <span key={i} className="px-4 py-2 bg-white/20 rounded-full text-sm font-medium text-white">{item}</span>
+                ))}
+              </div>
+              <p className="mt-6 text-lg font-bold text-white">{esdFlooringContent.footer}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Epoxy PU Flooring */}
+        {activeContent === "EpoxyPUFlooring" && (
+          <div className="animate-fade-up">
+            <div className="text-center mb-12">
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Epoxy PU Flooring</span>
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{epoxyPUFlooringContent.title}</h3>
+              <p className="text-lg font-medium text-[#1E88E5] mb-4">{epoxyPUFlooringContent.subtitle}</p>
+              <p className="text-base text-muted-foreground max-w-2xl mx-auto">{epoxyPUFlooringContent.intro}</p>
+            </div>
+
+            {/* Technology Edge */}
+            <div className="bg-gradient-to-r from-[#1E88E5] to-[#1565C0] rounded-3xl p-8 mb-10 text-center">
+              <p className="text-sm font-semibold text-white/80 uppercase tracking-wider mb-2">Technology Edge</p>
+              <p className="text-3xl font-bold text-white">{epoxyPUFlooringContent.techEdge}</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-10">
+              {/* Advantages */}
+              <div className="bg-muted rounded-3xl p-8">
+                <h4 className="text-lg font-bold mb-5 flex items-center gap-2">
+                  <span className="w-2 h-6 bg-[#1E88E5] rounded-full inline-block" />
+                  Advantages Over Traditional
+                </h4>
+                <ul className="space-y-4">
+                  {epoxyPUFlooringContent.advantages.map((item, i) => (
+                    <li key={i}>
+                      <p className="font-semibold text-foreground text-sm">{item.title}</p>
+                      <p className="text-xs text-muted-foreground mt-0.5">{item.desc}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Applications */}
+              <div className="bg-foreground text-background rounded-3xl p-8">
+                <h4 className="text-lg font-bold text-[#1E88E5] mb-5">Applications</h4>
+                <ul className="space-y-3">
+                  {epoxyPUFlooringContent.applications.map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-sm text-background/70">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1E88E5] shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Impact */}
+              <div className="bg-muted rounded-3xl p-8">
+                <h4 className="text-lg font-bold mb-5 flex items-center gap-2">
+                  <span className="w-2 h-6 bg-[#1E88E5] rounded-full inline-block" />
+                  Impact
+                </h4>
+                <ul className="space-y-4">
+                  {epoxyPUFlooringContent.impact.map((item, i) => (
+                    <li key={i}>
+                      <p className="font-semibold text-foreground text-sm">{item.title}</p>
+                      <p className="text-xs text-muted-foreground mt-0.5">{item.desc}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Bottom Features */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+              {epoxyPUFlooringContent.bottomFeatures.map((item, i) => (
+                <div key={i} className="bg-[#1E88E5]/10 border border-[#1E88E5]/30 rounded-2xl p-4 text-center">
+                  <p className="font-bold text-sm text-[#1E88E5] mb-1">{item.title}</p>
+                  <p className="text-xs text-muted-foreground">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Waterproofing Service */}
+        {activeContent === "Waterproofing" && (
+          <div className="animate-fade-up">
+            <div className="text-center mb-12">
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Waterproofing Service</span>
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{waterproofingContent.title}</h3>
+              <p className="text-lg font-medium text-[#0288D1] mb-4">{waterproofingContent.subtitle}</p>
+              <p className="text-base text-muted-foreground max-w-2xl mx-auto">{waterproofingContent.intro}</p>
+            </div>
+
+            {/* Features */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+              {waterproofingContent.features.map((feature, i) => (
+                <div key={i} className="flex items-center gap-3 p-4 bg-[#0288D1]/10 border border-[#0288D1]/30 rounded-xl">
+                  <span className="w-2 h-2 rounded-full bg-[#0288D1] shrink-0" />
+                  <span className="text-sm font-medium">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-10">
+              {/* Pain Points */}
+              <div className="bg-red-500/10 border border-red-500/30 rounded-3xl p-8">
+                <h4 className="text-lg font-bold text-red-600 mb-5">A Big Pain for Industries</h4>
+                <ul className="space-y-3">
+                  {waterproofingContent.painPoints.map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 text-sm text-muted-foreground">
+                      <span className="text-red-500">x</span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* NanoQuinn Solution */}
+              <div className="bg-[#0288D1]/10 border border-[#0288D1]/30 rounded-3xl p-8">
+                <h4 className="text-lg font-bold text-[#0288D1] mb-5">NanoQuinn Changes The Game</h4>
+                <ul className="space-y-4">
+                  {waterproofingContent.process.map((item, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="w-6 h-6 rounded-full bg-[#0288D1] text-white text-xs font-bold flex items-center justify-center shrink-0">{item.step}</span>
+                      <div>
+                        <p className="font-semibold text-sm">{item.title}</p>
+                        <p className="text-xs text-muted-foreground">{item.desc}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Pillars */}
+            <div className="bg-gradient-to-r from-[#0288D1] to-[#01579B] rounded-3xl p-8 text-center">
+              <div className="flex flex-wrap justify-center gap-3 mb-4">
+                {waterproofingContent.pillars.map((pillar, i) => (
+                  <span key={i} className="px-4 py-2 bg-white/20 rounded-full text-sm font-medium text-white">{pillar}</span>
+                ))}
+              </div>
+              <p className="text-lg font-bold text-white">{waterproofingContent.footer}</p>
+            </div>
+          </div>
+        )}
+
+        {/* Surface Tolerant Epoxy */}
+        {activeContent === "SurfaceTolerantEpoxy" && (
+          <div className="animate-fade-up">
+            <div className="text-center mb-12">
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Surface Tolerant Epoxy</span>
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{surfaceTolerantEpoxyContent.title}</h3>
+              <p className="text-lg font-medium text-[#2E7D32] mb-4">{surfaceTolerantEpoxyContent.subtitle}</p>
+              <p className="text-base text-muted-foreground max-w-2xl mx-auto">{surfaceTolerantEpoxyContent.intro}</p>
+            </div>
+
+            {/* Specs */}
+            <div className="flex flex-wrap justify-center gap-4 mb-10">
+              <div className="px-6 py-4 bg-[#2E7D32]/10 border border-[#2E7D32]/30 rounded-2xl text-center">
+                <p className="text-2xl font-bold text-[#2E7D32]">{surfaceTolerantEpoxyContent.specs.coats}</p>
+                <p className="text-xs text-muted-foreground">Application</p>
+              </div>
+              <div className="px-6 py-4 bg-[#2E7D32]/10 border border-[#2E7D32]/30 rounded-2xl text-center">
+                <p className="text-2xl font-bold text-[#2E7D32]">{surfaceTolerantEpoxyContent.specs.thickness}</p>
+                <p className="text-xs text-muted-foreground">Thickness</p>
+              </div>
+              <div className="px-6 py-4 bg-[#2E7D32] rounded-2xl text-center">
+                <p className="text-2xl font-bold text-white">{surfaceTolerantEpoxyContent.specs.protection}</p>
+                <p className="text-xs text-white/80">Protection</p>
+              </div>
+            </div>
+
+            {/* Features */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
+              {surfaceTolerantEpoxyContent.features.map((feature, i) => (
+                <div key={i} className="bg-muted rounded-2xl p-6">
+                  <h4 className="font-bold text-[#2E7D32] mb-2">{feature.title}</h4>
+                  <p className="text-sm text-muted-foreground">{feature.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Nano Layer Benefits */}
+            <div className="bg-foreground text-background rounded-3xl p-8 mb-10">
+              <h4 className="text-lg font-bold text-[#2E7D32] mb-5">10 Years Protection with Nano Layer Technology</h4>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {surfaceTolerantEpoxyContent.nanoLayerBenefits.map((benefit, i) => (
+                  <div key={i} className="flex items-center gap-3 text-sm text-background/70">
+                    <span className="w-2 h-2 rounded-full bg-[#2E7D32] shrink-0" />
+                    {benefit}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Ideal For */}
+            <div className="bg-muted rounded-3xl p-8 mb-10">
+              <h4 className="text-lg font-bold mb-5 flex items-center gap-2">
+                <span className="w-2 h-6 bg-[#2E7D32] rounded-full inline-block" />
+                Ideal For
+              </h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {surfaceTolerantEpoxyContent.idealFor.map((item, i) => (
+                  <div key={i} className="flex items-center gap-2 p-3 bg-background rounded-xl">
+                    <span className="w-2 h-2 rounded-full bg-[#2E7D32] shrink-0" />
+                    <span className="text-sm font-medium">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Bottom Features */}
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
+              {surfaceTolerantEpoxyContent.bottomFeatures.map((item, i) => (
+                <div key={i} className="bg-[#2E7D32]/10 border border-[#2E7D32]/30 rounded-2xl p-4 text-center">
+                  <p className="font-bold text-sm text-[#2E7D32] mb-1">{item.title}</p>
+                  <p className="text-xs text-muted-foreground">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-gradient-to-r from-[#2E7D32] to-[#1B5E20] rounded-3xl p-8 text-center">
+              <p className="text-lg font-bold text-white">{surfaceTolerantEpoxyContent.footer}</p>
             </div>
           </div>
         )}

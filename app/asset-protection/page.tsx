@@ -3,8 +3,8 @@ import { CtaSection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Asset Protection | NanoQuinn",
-  description: "Comprehensive asset protection solutions — rust & corrosion, plastic, solar, electrical, floor, wall and sustainable rust removal.",
+  title: "Product/Service Range | NanoQuinn",
+  description: "Comprehensive sustainable nanotechnology solutions — RustShield, Bio Rust Remover, ElectroShield, Solar Coating, Polymer Protection, FloorGuard, WallGuard and more.",
 }
 
 export default function AssetProtectionPage() {

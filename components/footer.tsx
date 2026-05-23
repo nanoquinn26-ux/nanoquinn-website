@@ -11,7 +11,7 @@ const footerLinks = {
   ],
   solutions: [
     { label: '"APaaS Model"', href: "/apaas" },
-    { label: "Asset Protection", href: "/asset-protection" },
+    { label: "Product/Service Range", href: "/asset-protection" },
     { label: "Technology", href: "/technology" },
     { label: "Industries", href: "/industries" },
     { label: "ESG Commitment", href: "/esg" },
@@ -20,7 +20,7 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: Linkedin, href: "https://www.linkedin.com/company/nanoquinn/", label: "LinkedIn" },
-  { icon: Youtube, href: "https://www.youtube.com/UCA6Dd3NUf_6Ak19HrwxoXsA", label: "YouTube" },
+  { icon: Youtube, href: "https://youtube.com/@nanoquinn?si=1Qh999ftnlD1Z1FC", label: "YouTube" },
 ]
 
 export function Footer() {
