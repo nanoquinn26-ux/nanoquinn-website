@@ -627,7 +627,8 @@ export function AssetProtectionSection() {
             Product/Service Range
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-            Sustainable Nanotechnology Solutions
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Sustainable Nanotechnology</span>{" "}
+            <span className="text-foreground">Solutions</span>
           </h2>
           <p className="mt-4 sm:mt-6 text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Industry-specific nanotechnology solutions engineered for permanent protection, preservation, and performance.

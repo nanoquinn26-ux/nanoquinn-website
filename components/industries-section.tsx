@@ -29,7 +29,8 @@ export function IndustriesSection() {
             Industry Solutions
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
-            Built for Every Critical Surface.
+            <span className="text-foreground">Built for</span>{" "}
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Every Critical Surface.</span>
           </h2>
         </div>
 
@@ -71,10 +72,10 @@ export function IndustriesSection() {
           </div>
         </div>
 
-        {/* Tagline */}
         <div className="text-center">
           <p className="text-2xl lg:text-3xl font-bold text-foreground">
-            If it has a surface, <span className="text-accent">NanoQuinn can protect it.</span>
+            If it has a surface,{" "}
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">NanoQuinn can protect it.</span>
           </p>
         </div>
       </div>

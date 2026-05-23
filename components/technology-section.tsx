@@ -52,7 +52,9 @@ export function TechnologySection() {
               Technology Excellence
             </span>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
-              German Precision.<br />Indian Scale.<br />Global Impact.
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">German Precision.</span><br />
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Indian Scale.</span><br />
+              <span className="text-background">Global Impact.</span>
             </h2>
             
             <div className="space-y-5 mb-10">
