@@ -71,13 +71,13 @@ export default function AssetHealthAuditPage() {
 
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               &quot;Asset Health&quot; Audit
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-balance">
               {auditContent.title}
             </h1>
-            <p className="text-xl font-semibold text-[#D4A826] mb-6">{auditContent.subtitle}</p>
+            <p className="text-xl font-semibold text-[#25D366] mb-6">{auditContent.subtitle}</p>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">{auditContent.intro}</p>
           </div>
 
@@ -85,7 +85,7 @@ export default function AssetHealthAuditPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
             {auditContent.overview.map((item, i) => (
               <div key={i} className="bg-foreground text-background rounded-3xl p-8">
-                <h3 className="font-bold text-[#D4A826] mb-2">{item.label}</h3>
+                <h3 className="font-bold text-[#25D366] mb-2">{item.label}</h3>
                 <p className="text-sm text-background/70 leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -94,13 +94,13 @@ export default function AssetHealthAuditPage() {
           {/* What We Audit */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-8 flex items-center gap-3">
-              <span className="w-2 h-7 bg-[#D4A826] rounded-full inline-block" />
+              <span className="w-2 h-7 bg-[#25D366] rounded-full inline-block" />
               What We Audit
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {auditContent.whatWeAudit.map((item, i) => (
                 <div key={i} className="bg-muted rounded-2xl p-6 flex items-start gap-4">
-                  <span className="w-8 h-8 rounded-full bg-[#D4A826] text-black text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                  <span className="w-8 h-8 rounded-full bg-[#25D366] text-black text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-foreground">{item.label}</p>
                     <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
@@ -114,7 +114,7 @@ export default function AssetHealthAuditPage() {
           <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="bg-muted rounded-3xl p-8">
               <h2 className="text-xl font-bold mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 bg-[#D4A826] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
                 Who We Serve
               </h2>
               <ul className="space-y-5">
@@ -130,12 +130,12 @@ export default function AssetHealthAuditPage() {
             <div className="flex flex-col gap-6">
               {/* Methodology */}
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h2 className="text-xl font-bold text-[#D4A826] mb-6">Audit Methodology</h2>
+                <h2 className="text-xl font-bold text-[#25D366] mb-6">Audit Methodology</h2>
                 <div className="flex items-center gap-2 flex-wrap">
                   {auditContent.methodology.map((step, i) => (
                     <div key={i} className="flex items-center gap-2">
-                      <span className="px-4 py-2 rounded-full bg-[#D4A826] text-black text-sm font-bold">{step}</span>
-                      {i < auditContent.methodology.length - 1 && <ChevronRight className="w-4 h-4 text-[#D4A826]" />}
+                      <span className="px-4 py-2 rounded-full bg-[#25D366] text-black text-sm font-bold">{step}</span>
+                      {i < auditContent.methodology.length - 1 && <ChevronRight className="w-4 h-4 text-[#25D366]" />}
                     </div>
                   ))}
                 </div>
@@ -147,13 +147,13 @@ export default function AssetHealthAuditPage() {
               {/* Deliverables */}
               <div className="bg-muted rounded-3xl p-8">
                 <h2 className="text-xl font-bold mb-5 flex items-center gap-2">
-                  <span className="w-2 h-6 bg-[#D4A826] rounded-full inline-block" />
+                  <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
                   Audit Deliverables
                 </h2>
                 <ul className="space-y-2">
                   {auditContent.deliverables.map((d, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="text-[#D4A826] font-bold shrink-0">✔</span>
+                      <span className="text-[#25D366] font-bold shrink-0">✔</span>
                       {d}
                     </li>
                   ))}
@@ -165,7 +165,7 @@ export default function AssetHealthAuditPage() {
           {/* Objectives */}
           <div className="mb-16">
             <h2 className="text-2xl font-bold mb-8 flex items-center gap-3">
-              <span className="w-2 h-7 bg-[#D4A826] rounded-full inline-block" />
+              <span className="w-2 h-7 bg-[#25D366] rounded-full inline-block" />
               Audit Objectives
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -181,7 +181,7 @@ export default function AssetHealthAuditPage() {
           {/* CTA */}
           <div className="bg-foreground text-background rounded-3xl p-10">
             <div className="text-center mb-10">
-              <h2 className="text-2xl font-bold text-[#D4A826] mb-3">{auditContent.cta.heading}</h2>
+              <h2 className="text-2xl font-bold text-[#25D366] mb-3">{auditContent.cta.heading}</h2>
               <p className="text-background/70 text-sm max-w-2xl mx-auto leading-relaxed">{auditContent.cta.sub}</p>
             </div>
             <div className="grid sm:grid-cols-3 gap-5 mb-10">

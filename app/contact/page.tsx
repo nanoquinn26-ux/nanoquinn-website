@@ -11,10 +11,10 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Contact Hero */}
-      <section className="py-24 bg-[#0A0A0A]">
+      <section className="py-24 bg-[#1A2332]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               Get in Touch
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 text-balance">
@@ -49,10 +49,10 @@ export default function ContactPage() {
               <a
                 key={item.label}
                 href={item.href}
-                className="flex flex-col items-center gap-4 p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 hover:border-[#D4A826]/40 transition-all group"
+                className="flex flex-col items-center gap-4 p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 hover:border-[#25D366]/40 transition-all group"
               >
-                <div className="w-14 h-14 rounded-2xl bg-[#D4A826]/10 border border-[#D4A826]/30 flex items-center justify-center group-hover:bg-[#D4A826]/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-[#D4A826]" />
+                <div className="w-14 h-14 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/30 flex items-center justify-center group-hover:bg-[#25D366]/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-[#25D366]" />
                 </div>
                 <div className="text-center">
                   <p className="text-white/50 text-sm mb-1">{item.label}</p>
