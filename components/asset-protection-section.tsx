@@ -1143,7 +1143,7 @@ export function AssetProtectionSection() {
         {activeContent === "ESDFlooring" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#00BFA5] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">Flooring Services</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Flooring Services</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{esdFlooringContent.title}</h3>
               <p className="text-lg font-medium text-[#00BFA5] mb-4">{esdFlooringContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{esdFlooringContent.intro}</p>
@@ -1205,6 +1205,7 @@ export function AssetProtectionSection() {
         {activeContent === "EpoxyPUFlooring" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Epoxy PU Flooring</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{epoxyPUFlooringContent.title}</h3>
               <p className="text-lg font-medium text-[#1E88E5] mb-4">{epoxyPUFlooringContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{epoxyPUFlooringContent.intro}</p>
@@ -1279,7 +1280,7 @@ export function AssetProtectionSection() {
         {activeContent === "Waterproofing" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#0288D1] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">Premium Service</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Waterproofing Service</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{waterproofingContent.title}</h3>
               <p className="text-lg font-medium text-[#0288D1] mb-4">{waterproofingContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{waterproofingContent.intro}</p>
@@ -1342,6 +1343,7 @@ export function AssetProtectionSection() {
         {activeContent === "SurfaceTolerantEpoxy" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
+              <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Surface Tolerant Epoxy</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{surfaceTolerantEpoxyContent.title}</h3>
               <p className="text-lg font-medium text-[#2E7D32] mb-4">{surfaceTolerantEpoxyContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{surfaceTolerantEpoxyContent.intro}</p>
