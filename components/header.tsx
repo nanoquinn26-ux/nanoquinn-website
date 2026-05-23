@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react"
 
 const navItems = [
   { label: "APaaS Model", href: "/apaas" },
-  { label: "Solutions", href: "/asset-protection" },
+  { label: "Product/Service Range", href: "/asset-protection" },
   { label: "Asset Health Audit", href: "/asset-health-audit" },
   { label: "Technology", href: "/technology" },
   { label: "Industries", href: "/industries" },
@@ -59,8 +59,8 @@ export function Header() {
                   href={item.href}
                   className={`text-sm font-medium transition-colors ${
                     isActive
-                      ? "text-[#D4A826] border-b-2 border-[#D4A826] pb-0.5"
-                      : "text-foreground hover:text-[#D4A826]"
+                      ? "text-[#25D366] border-b-2 border-[#25D366] pb-0.5"
+                      : "text-foreground hover:text-[#25D366]"
                   }`}
                 >
                   {item.label}
@@ -104,7 +104,7 @@ export function Header() {
                     href={item.href}
                     className={`text-base font-medium py-3 px-4 rounded-xl transition-colors ${
                       isActive
-                        ? "bg-[#D4A826]/10 text-[#D4A826]"
+                        ? "bg-[#25D366]/10 text-[#25D366]"
                         : "text-muted-foreground hover:text-foreground hover:bg-muted"
                     }`}
                   >

@@ -82,7 +82,7 @@ export function ApaasSection() {
             <div className="grid sm:grid-cols-2 gap-4 mt-8">
               {industryPains.map((pain, index) => (
                 <div key={index} className="flex items-start gap-3 bg-background/10 rounded-xl p-4">
-                  <AlertTriangle className="w-5 h-5 text-[#D4A826] shrink-0 mt-0.5" />
+                  <AlertTriangle className="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" />
                   <span className="text-sm text-background/90">{pain}</span>
                 </div>
               ))}
@@ -91,7 +91,7 @@ export function ApaasSection() {
             <div className="mt-10 pt-8 border-t border-background/20">
               <p className="text-lg text-center italic text-background/80">
                 Traditional contractors and coating systems were never designed to preserve assets for the long term.
-                <span className="block mt-2 font-semibold text-[#D4A826]">They were built only to temporarily repair surfaces.</span>
+                <span className="block mt-2 font-semibold text-[#25D366]">They were built only to temporarily repair surfaces.</span>
               </p>
             </div>
           </div>
@@ -99,7 +99,7 @@ export function ApaasSection() {
 
         {/* The APaaS Revolution */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20">
-          <span className="inline-block px-8 py-3 rounded-full bg-[#00BFA5] text-white text-sm font-bold mb-8 uppercase tracking-widest">
+          <span className="inline-block px-8 py-3 rounded-full bg-[#25D366] text-white text-sm font-bold mb-8 uppercase tracking-widest">
             The Industry Shift
           </span>
 
@@ -127,8 +127,8 @@ export function ApaasSection() {
             {steps.map((step, index) => (
               <div key={step.label} className="relative flex flex-col items-center text-center">
                 <div className="relative w-24 h-24 sm:w-36 sm:h-36 rounded-3xl bg-[#1a1a1a] flex items-center justify-center shadow-xl">
-                  <step.icon className="w-10 h-10 text-[#00BFA5]" />
-                  <span className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-[#00BFA5] text-white text-sm font-bold flex items-center justify-center shadow-md">
+                  <step.icon className="w-10 h-10 text-[#25D366]" />
+                  <span className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-[#25D366] text-white text-sm font-bold flex items-center justify-center shadow-md">
                     {index + 1}
                   </span>
                 </div>
@@ -146,8 +146,8 @@ export function ApaasSection() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {ecosystemFeatures.map((feature, index) => (
-              <div key={index} className="flex items-center gap-3 bg-muted rounded-xl p-4 border border-border hover:border-[#00BFA5]/50 transition-colors">
-                <CheckCircle2 className="w-5 h-5 text-[#00BFA5] shrink-0" />
+              <div key={index} className="flex items-center gap-3 bg-muted rounded-xl p-4 border border-border hover:border-[#25D366]/50 transition-colors">
+                <CheckCircle2 className="w-5 h-5 text-[#25D366] shrink-0" />
                 <span className="text-sm font-medium">{feature}</span>
               </div>
             ))}
@@ -163,8 +163,8 @@ export function ApaasSection() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {managementBenefits.map((benefit, index) => (
                 <div key={index} className="flex items-center gap-4 bg-background rounded-2xl p-5 shadow-sm">
-                  <div className="w-12 h-12 rounded-xl bg-[#D4A826]/10 flex items-center justify-center shrink-0">
-                    <benefit.icon className="w-6 h-6 text-[#D4A826]" />
+                  <div className="w-12 h-12 rounded-xl bg-[#25D366]/10 flex items-center justify-center shrink-0">
+                    <benefit.icon className="w-6 h-6 text-[#25D366]" />
                   </div>
                   <span className="text-sm font-bold">{benefit.text}</span>
                 </div>
@@ -184,7 +184,7 @@ export function ApaasSection() {
           </p>
           <div className="bg-foreground text-background rounded-2xl p-6 sm:p-8">
             <p className="text-lg sm:text-xl font-medium">
-              This transforms the industry from a <span className="text-[#D4A826]">short-term contractor-driven ecosystem</span> into a <span className="text-[#00BFA5]">long-term preservation partnership model</span>.
+              This transforms the industry from a <span className="text-[#25D366]">short-term contractor-driven ecosystem</span> into a <span className="text-[#25D366]">long-term preservation partnership model</span>.
             </p>
           </div>
         </div>
@@ -196,9 +196,9 @@ export function ApaasSection() {
           
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
             {assetCategories.map((asset, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-6 bg-muted rounded-2xl border border-border hover:border-[#D4A826]/50 transition-colors">
-                <div className="w-14 h-14 rounded-xl bg-[#D4A826]/10 flex items-center justify-center mb-4">
-                  <asset.icon className="w-7 h-7 text-[#D4A826]" />
+              <div key={index} className="flex flex-col items-center text-center p-6 bg-muted rounded-2xl border border-border hover:border-[#25D366]/50 transition-colors">
+                <div className="w-14 h-14 rounded-xl bg-[#25D366]/10 flex items-center justify-center mb-4">
+                  <asset.icon className="w-7 h-7 text-[#25D366]" />
                 </div>
                 <span className="text-xs sm:text-sm font-medium leading-tight">{asset.label}</span>
               </div>
@@ -212,14 +212,14 @@ export function ApaasSection() {
             <p className="text-base sm:text-lg text-white/70 leading-relaxed mb-8">
               Backed by continuous R&D, advanced global technologies, future-focused Biochar innovation programs, and dedicated skilled manpower development through sister concern execution arms, NanoQuinn is not creating another coating company.
             </p>
-            <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#D4A826] mb-8">
+            <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#25D366] mb-8">
               NanoQuinn is building the future infrastructure of sustainable asset preservation.
             </p>
             <div className="border-t border-white/10 pt-8">
               <p className="text-lg sm:text-xl text-white/80 italic">
                 A future where industries no longer repeatedly repair assets…
               </p>
-              <p className="text-2xl sm:text-3xl font-bold text-[#00BFA5] mt-4">
+              <p className="text-2xl sm:text-3xl font-bold text-[#25D366] mt-4">
                 But finally preserve them.
               </p>
             </div>

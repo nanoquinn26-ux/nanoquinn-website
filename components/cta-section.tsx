@@ -19,7 +19,7 @@ export function CtaSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-7 h-auto rounded-full bg-[#D4A826] text-foreground hover:bg-[#B8922A]">
+              <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-7 h-auto rounded-full bg-[#25D366] text-foreground hover:bg-[#16A34A]">
                 <Building2 className="w-5 h-5 mr-3" />
                 Book a B2B Demo
                 <ArrowRight className="w-5 h-5 ml-3" />
