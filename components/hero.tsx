@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield, Leaf, Award, Check } from "lucide-react"
+import { ArrowRight, Shield, Leaf, Award } from "lucide-react"
 
 const highlights = [
   { icon: Leaf, label: "Zero VOC | Sustainable" },
@@ -10,123 +10,121 @@ const highlights = [
   { icon: Award, label: "German Nanotechnology | Made in India" },
 ]
 
-const apaasFeatures = [
+const morphTexts = [
+  "Welcome to the APaaS Revolution",
   "Long-lasting sustainable protection",
   "Zero recurring OPEX stress",
   "Asset newness for years",
   "Deferred replacement CAPEX",
   "One vendor. One responsibility.",
-  "Unconditional warranty with end-to-end execution",
-  "Global technologies with zero environmental harm",
+  "Unconditional warranty",
+  "Zero environmental harm",
+  "NanoQuinn APaaS Platform",
 ]
 
-function APaaSRevolutionAnimation() {
-  const [phase, setPhase] = useState(0) // 0: initial, 1: showing features, 2: merging, 3: final
-  const [visibleFeatures, setVisibleFeatures] = useState(0)
-  
+function TextMorphAnimation() {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isVisible, setIsVisible] = useState(true)
+  const [isComplete, setIsComplete] = useState(false)
+
   useEffect(() => {
-    // Start animation after a short delay
-    const startTimer = setTimeout(() => setPhase(1), 500)
-    return () => clearTimeout(startTimer)
-  }, [])
-  
-  useEffect(() => {
-    if (phase === 1 && visibleFeatures < apaasFeatures.length) {
-      const timer = setTimeout(() => {
-        setVisibleFeatures(prev => prev + 1)
-      }, 400)
-      return () => clearTimeout(timer)
-    } else if (phase === 1 && visibleFeatures === apaasFeatures.length) {
-      // All features shown, start merge phase
-      const mergeTimer = setTimeout(() => setPhase(2), 800)
-      return () => clearTimeout(mergeTimer)
+    if (isComplete) return
+
+    const cycleText = () => {
+      // Fade out
+      setIsVisible(false)
+      
+      setTimeout(() => {
+        // Move to next text
+        setCurrentIndex((prev) => {
+          const next = prev + 1
+          if (next >= morphTexts.length) {
+            setIsComplete(true)
+            return prev
+          }
+          return next
+        })
+        // Fade in
+        setIsVisible(true)
+      }, 500)
     }
-  }, [phase, visibleFeatures])
-  
-  useEffect(() => {
-    if (phase === 2) {
-      // After merge animation, show final
-      const finalTimer = setTimeout(() => setPhase(3), 1200)
-      return () => clearTimeout(finalTimer)
-    }
-  }, [phase])
+
+    const interval = setInterval(cycleText, 2000)
+    return () => clearInterval(interval)
+  }, [isComplete])
+
+  const currentText = morphTexts[currentIndex]
+  const isFinal = currentIndex === morphTexts.length - 1
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="relative p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm overflow-hidden min-h-[400px]">
-        {/* Decorative corner accent */}
-        <div className="absolute top-0 right-0 w-32 h-32 bg-[#00BFA5]/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm overflow-hidden">
+        {/* Animated background glow */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-r from-[#00BFA5]/0 via-[#00BFA5]/5 to-[#00BFA5]/0 transition-opacity duration-1000"
+          style={{ opacity: isVisible ? 1 : 0 }}
+        />
         
-        <div className="relative">
-          {/* Header - always visible */}
-          <h3 className={`text-xl sm:text-2xl font-bold text-white mb-3 transition-all duration-500 ${phase >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            Welcome to the <span className="text-[#00BFA5]">APaaS Revolution</span>
-          </h3>
-          <p className={`text-white/60 mb-8 text-sm sm:text-base transition-all duration-500 delay-100 ${phase >= 1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-            For the first time, industries can move beyond repetitive maintenance, shutdowns, and asset deterioration.
+        {/* Progress bar */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-white/10">
+          <div 
+            className="h-full bg-gradient-to-r from-[#00BFA5] to-[#D4A826] transition-all duration-300"
+            style={{ width: `${((currentIndex + 1) / morphTexts.length) * 100}%` }}
+          />
+        </div>
+
+        <div className="relative min-h-[200px] flex flex-col items-center justify-center text-center">
+          {/* Intro text */}
+          <p className="text-white/50 text-sm uppercase tracking-widest mb-6">
+            {isFinal ? "Introducing" : "NanoQuinn APaaS Platform delivers"}
           </p>
-          
-          {/* Features list - phase 1 and 2 */}
-          <div className={`transition-all duration-700 ${phase === 2 ? 'opacity-0 scale-95' : phase >= 1 ? 'opacity-100' : 'opacity-0'}`}>
-            {phase < 3 && (
-              <>
-                <p className={`text-[#D4A826] font-semibold text-sm uppercase tracking-wider mb-5 transition-all duration-300 ${phase >= 1 ? 'opacity-100' : 'opacity-0'}`}>
-                  NanoQuinn APaaS Platform delivers:
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                  {apaasFeatures.map((feature, index) => (
-                    <div 
-                      key={feature}
-                      className={`flex items-start gap-3 transition-all duration-500 ${
-                        index < visibleFeatures 
-                          ? 'opacity-100 translate-x-0' 
-                          : 'opacity-0 -translate-x-8'
-                      }`}
-                    >
-                      <div className="w-5 h-5 rounded-full bg-[#00BFA5]/20 flex items-center justify-center shrink-0 mt-0.5">
-                        <Check className="w-3 h-3 text-[#00BFA5]" />
-                      </div>
-                      <span className="text-white/80 text-sm sm:text-base font-medium">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-          
-          {/* Final merged state - phase 3 */}
-          <div className={`absolute inset-0 flex flex-col items-center justify-center p-8 transition-all duration-700 ${phase === 3 ? 'opacity-100 scale-100' : 'opacity-0 scale-110 pointer-events-none'}`}>
-            <div className="text-center">
-              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-[#00BFA5] to-[#00BFA5]/50 mb-6 animate-pulse">
-                <Check className="w-10 h-10 text-white" />
-              </div>
-              <h4 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-                All-in-One Solution
-              </h4>
-              <p className="text-white/70 mb-6 max-w-md">
-                Every promise. Every protection. Every benefit. Delivered through one revolutionary platform.
-              </p>
-              <div className="inline-block px-8 py-4 rounded-full bg-gradient-to-r from-[#D4A826] to-[#F0C850] animate-[shimmer_2s_infinite]">
-                <span className="text-xl sm:text-2xl font-bold text-[#0A0A0A]">
-                  NanoQuinn APaaS
-                </span>
-              </div>
-            </div>
-          </div>
-          
-          {/* Restart button */}
-          {phase === 3 && (
-            <button 
-              onClick={() => {
-                setPhase(0)
-                setVisibleFeatures(0)
-                setTimeout(() => setPhase(1), 300)
-              }}
-              className="absolute bottom-4 right-4 text-xs text-white/40 hover:text-white/70 transition-colors"
+
+          {/* Morphing text */}
+          <div className="relative h-24 flex items-center justify-center">
+            <h3 
+              className={`text-2xl sm:text-3xl lg:text-4xl font-bold transition-all duration-500 ease-out ${
+                isVisible 
+                  ? 'opacity-100 translate-y-0 scale-100' 
+                  : 'opacity-0 translate-y-4 scale-95'
+              } ${isFinal ? 'text-[#D4A826]' : 'text-white'}`}
             >
-              Replay
-            </button>
+              {currentText}
+            </h3>
+          </div>
+
+          {/* Counter */}
+          <div className="mt-8 flex items-center gap-2">
+            {morphTexts.map((_, index) => (
+              <div
+                key={index}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === currentIndex 
+                    ? 'bg-[#00BFA5] scale-125' 
+                    : index < currentIndex 
+                    ? 'bg-[#D4A826]' 
+                    : 'bg-white/20'
+                }`}
+              />
+            ))}
+          </div>
+
+          {/* Final CTA appears after complete */}
+          {isComplete && (
+            <div className="mt-8 animate-fade-up">
+              <p className="text-white/60 text-sm mb-4">
+                Every promise. Every protection. One revolutionary platform.
+              </p>
+              <button
+                onClick={() => {
+                  setCurrentIndex(0)
+                  setIsComplete(false)
+                  setIsVisible(true)
+                }}
+                className="text-xs text-[#00BFA5] hover:text-[#00BFA5]/80 transition-colors underline underline-offset-2"
+              >
+                Watch again
+              </button>
+            </div>
           )}
         </div>
       </div>
@@ -202,8 +200,8 @@ export function Hero() {
             </a>
           </div>
 
-          {/* APaaS Revolution Section - Animated */}
-          <APaaSRevolutionAnimation />
+          {/* APaaS Revolution Section - Text Morph Animation */}
+          <TextMorphAnimation />
         </div>
 
         {/* Scroll Indicator */}
