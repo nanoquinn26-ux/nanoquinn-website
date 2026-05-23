@@ -445,7 +445,7 @@ const epoxyPUFlooringContent = {
     { title: "Long Lasting Durability", desc: "Built to perform for years with minimal upkeep" },
     { title: "Sustainable Solution", desc: "Low VOC, eco-friendly & safe for environments" },
   ],
-  footer: "INNOVATION 11 — Premium Industrial Flooring by NanoQuinn",
+  footer: "Premium Industrial Flooring by NanoQuinn",
 }
 
 const waterproofingContent = {
@@ -519,7 +519,7 @@ const surfaceTolerantEpoxyContent = {
     { title: "Eco Friendly", desc: "Low VOC. Sustainable. Better for the future." },
     { title: "Trusted Protection", desc: "Advanced technology. Proven results." },
   ],
-  footer: "INNOVATION 5 — Sustainable Solutions. Lasting Impact.",
+  footer: "Sustainable Solutions. Lasting Impact.",
 }
 
 const auditContent = {
@@ -1205,7 +1205,6 @@ export function AssetProtectionSection() {
         {activeContent === "EpoxyPUFlooring" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#1E88E5] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">Innovation 11</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{epoxyPUFlooringContent.title}</h3>
               <p className="text-lg font-medium text-[#1E88E5] mb-4">{epoxyPUFlooringContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{epoxyPUFlooringContent.intro}</p>
@@ -1343,7 +1342,6 @@ export function AssetProtectionSection() {
         {activeContent === "SurfaceTolerantEpoxy" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#2E7D32] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">Innovation 5</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{surfaceTolerantEpoxyContent.title}</h3>
               <p className="text-lg font-medium text-[#2E7D32] mb-4">{surfaceTolerantEpoxyContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{surfaceTolerantEpoxyContent.intro}</p>
