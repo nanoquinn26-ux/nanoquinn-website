@@ -95,7 +95,7 @@ export function Hero() {
               
               <div className="relative">
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
-                  Welcome to the <span className="text-[#00BFA5]">APaaS Revolution</span>
+                  Welcome to the <span className="text-[#00BFA5] animate-pulse">APaaS Revolution</span>
                 </h3>
                 <p className="text-white/60 mb-8 text-sm sm:text-base">
                   For the first time, industries can move beyond repetitive maintenance, shutdowns, and asset deterioration.
@@ -109,15 +109,13 @@ export function Hero() {
                   {apaasFeatures.map((feature, index) => (
                     <div 
                       key={feature}
-                      className="flex items-start gap-3 group"
-                      style={{ 
-                        animation: `fadeSlideIn 0.5s ease-out ${0.1 * index}s both`
-                      }}
+                      className="flex items-start gap-3 group opacity-0 animate-[fadeSlideIn_0.6s_ease-out_forwards]"
+                      style={{ animationDelay: `${0.8 + 0.15 * index}s` }}
                     >
-                      <div className="w-5 h-5 rounded-full bg-[#00BFA5]/20 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#00BFA5]/40 transition-colors">
+                      <div className="w-5 h-5 rounded-full bg-[#00BFA5]/20 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#00BFA5]/40 group-hover:scale-110 transition-all duration-300">
                         <Check className="w-3 h-3 text-[#00BFA5]" />
                       </div>
-                      <span className="text-white/80 text-sm sm:text-base font-medium">{feature}</span>
+                      <span className="text-white/80 text-sm sm:text-base font-medium group-hover:text-white transition-colors">{feature}</span>
                     </div>
                   ))}
                 </div>
