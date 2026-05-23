@@ -278,15 +278,18 @@ export function Hero() {
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight text-balance mb-6 sm:mb-8 animate-fade-up delay-100">
-            <span className="bg-gradient-to-r from-[#25D366] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">The End of Asset</span><br />
-            <span className="bg-gradient-to-r from-[#25D366] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Degradation Has Begun.</span>
+            <span className="text-white">The End of</span>{" "}
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Asset Degradation</span><br />
+            <span className="text-white">Has Begun.</span>
           </h1>
 
           {/* Sub-headline */}
           <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
             <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#25D366]/20 border border-[#25D366]/40">Never Before In Industrial History</p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
-              An End-to-End Asset Protection Platform
+              An{" "}
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">End-to-End Asset Protection</span>{" "}
+              Platform
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed">
               Combining Sustainable Nanotechnology,<br className="hidden sm:block" />

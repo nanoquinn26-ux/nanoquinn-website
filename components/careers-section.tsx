@@ -39,7 +39,8 @@ export function CareersSection() {
             Careers
           </span>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight text-balance mb-6">
-            Build the Future of<br />Asset Protection
+            <span className="text-background">Build the Future of</span><br />
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Asset Protection</span>
           </h1>
           <p className="text-background/60 text-lg leading-relaxed max-w-2xl mx-auto">
             At NanoQuinn, we are not hiring for jobs.<br />
@@ -69,7 +70,7 @@ export function CareersSection() {
           </ul>
           <p className="mt-8 text-foreground font-bold text-lg">
             This is not incremental change.<br />
-            <span className="text-[#25D366]">This is industrial transformation.</span>
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">This is industrial transformation.</span>
           </p>
         </div>
       </div>
@@ -141,7 +142,8 @@ export function CareersSection() {
         <div className="max-w-2xl mx-auto">
           <p className="text-background/50 text-sm uppercase tracking-widest mb-4">Join Us</p>
           <h2 className="text-4xl sm:text-5xl font-black mb-4 text-balance">
-            Careers That<br /><span className="text-[#25D366]">Create Categories</span>
+            <span className="text-background">Careers That</span><br />
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Create Categories</span>
           </h2>
           <p className="text-background/60 text-base mb-2 leading-relaxed">
             Be part of a company that is not entering an industry —<br />but building one.

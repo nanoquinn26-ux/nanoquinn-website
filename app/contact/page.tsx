@@ -18,7 +18,9 @@ export default function ContactPage() {
               Get in Touch
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 text-balance">
-              Let&apos;s Protect Your Assets Together
+              <span className="text-white">Let&apos;s</span>{" "}
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Protect Your Assets</span>{" "}
+              <span className="text-white">Together</span>
             </h1>
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
               Reach out to us to book a B2B demo, explore partnership opportunities, or learn more about our APaaS model.

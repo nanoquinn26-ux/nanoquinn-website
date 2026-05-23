@@ -44,8 +44,8 @@ export function AboutSection() {
             About NanoQuinn
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-balance leading-tight mb-8">
-            Creating the Future of<br />
-            <span style={{ color: "#25D366" }}>Asset Protection</span>
+            <span className="text-background">Creating the Future of</span><br />
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Asset Protection</span>
           </h1>
           <p className="text-lg sm:text-xl text-background/70 max-w-3xl mx-auto leading-relaxed">
             A next-generation innovation company redefining how the world protects, preserves, and maintains assets.
@@ -58,8 +58,8 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground mb-6 leading-tight">
-              Built on a Foundation of<br />
-              <span className="italic" style={{ color: "#25D366" }}>&ldquo;Only Me&rdquo; Thinking</span>
+              <span className="text-foreground">Built on a Foundation of</span><br />
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent italic">&ldquo;Only Me&rdquo; Thinking</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               NanoQuinn is not here to compete in traditional markets — it is here to create entirely new categories through disruptive, sustainable technologies.
@@ -117,8 +117,8 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28 text-center">
         <p className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground text-balance leading-tight max-w-4xl mx-auto">
           Driven by a bold vision to protect{" "}
-          <span style={{ color: "#25D366" }}>every surface</span>,{" "}
-          <span style={{ color: "#25D366" }}>every asset</span>,{" "}
+          <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">every surface</span>,{" "}
+          <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">every asset</span>,{" "}
           in every country.
         </p>
       </div>

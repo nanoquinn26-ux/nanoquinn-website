@@ -1,55 +1,85 @@
 "use client"
 
-import { Search, Settings, Zap, Shield, FileCheck, AlertTriangle, TrendingDown, DollarSign, Factory, Leaf, Users, CheckCircle2, Building2, Cpu, Sun, Layers, Droplets } from "lucide-react"
+import { Building2, Cpu, Sun, Layers, Droplets, Settings, CheckCircle2, XCircle, Leaf, DollarSign, TrendingDown, Factory, Shield, Users, AlertTriangle, ArrowRight } from "lucide-react"
 
-const steps = [
-  { icon: Search, label: "Inspection", description: "Comprehensive analysis" },
-  { icon: Settings, label: "Preparation", description: "Surface conditioning" },
-  { icon: Zap, label: "Application", description: "Nano layer deployment" },
-  { icon: Shield, label: "Protection", description: "Active safeguarding" },
-  { icon: FileCheck, label: "Warranty", description: "Unconditional Warranty" },
-]
-
-const industryPains = [
-  "Rising maintenance OPEX",
-  "Early replacement CAPEX",
-  "Asset degradation & reduced lifecycle",
-  "Shutdown & productivity losses",
-  "Environmental & ESG compliance pressure",
-  "Unsafe chemical-heavy maintenance systems",
-  "Vendor dependency without accountability",
-  "Conditional warranties with no long-term responsibility",
-]
-
-const ecosystemFeatures = [
-  "Sustainable nanotechnology innovations",
-  "Zero / ultra-low VOC protection systems",
-  "Long-lasting preservation technologies",
-  "End-to-end execution responsibility",
-  "Unconditional warranty models",
-  "Annual asset health audits",
-  "Lifecycle-focused protection strategies",
-  "ESG & EHS aligned solutions",
-  "Future-ready Biochar + Nanotechnology R&D integration",
-]
-
-const managementBenefits = [
-  { icon: DollarSign, text: "Lower lifetime maintenance cost" },
-  { icon: TrendingDown, text: "Significant OPEX reduction" },
-  { icon: Factory, text: "Delayed CAPEX replacement cycles" },
-  { icon: Settings, text: "Reduced shutdown dependency" },
-  { icon: Leaf, text: "Cleaner and safer operations" },
-  { icon: CheckCircle2, text: "Improved sustainability compliance" },
-  { icon: Shield, text: "Long-term peace of mind through accountability" },
-]
-
-const assetCategories = [
-  { icon: Building2, label: "Civil Assets" },
+const protectedAssets = [
+  { icon: Building2, label: "Civil Infrastructure" },
   { icon: Settings, label: "Mechanical Assets" },
-  { icon: Cpu, label: "Electrical & Electronic Assets" },
-  { icon: Sun, label: "Solar Infrastructure" },
-  { icon: Layers, label: "Polymer & Composite Surfaces" },
-  { icon: Droplets, label: "Industrial Flooring & Waterproofing" },
+  { icon: Cpu, label: "Electrical & Electronics" },
+  { icon: Sun, label: "Solar Systems" },
+  { icon: Layers, label: "Metallic Structures" },
+  { icon: Droplets, label: "Polymers & Plastics" },
+  { icon: Factory, label: "Concrete & Industrial Surfaces" },
+]
+
+const managementPainPoints = [
+  { icon: AlertTriangle, text: "Repetitive Maintenance" },
+  { icon: Factory, text: "Shutdown Losses" },
+  { icon: TrendingDown, text: "Asset Degradation" },
+  { icon: DollarSign, text: "Early CAPEX Replacement" },
+  { icon: Leaf, text: "Environmental Damage" },
+  { icon: Users, text: "Vendor Coordination Stress" },
+  { icon: Settings, text: "Large Maintenance Team Dependency" },
+  { icon: Shield, text: "Lack of Long-Term Responsibility" },
+]
+
+const traditionalProblems = [
+  "Large maintenance departments",
+  "Frequent repair cycles",
+  "Repainting & shutdown expenses",
+  "Repetitive contractor dependency",
+  "Continuous yearly maintenance budgeting",
+]
+
+const apaasAdvantages = [
+  "Long lasting protection systems",
+  "Predictive preservation approach",
+  "Reduced maintenance frequency",
+  "Lower manpower dependency",
+  "Minimal shutdown requirements",
+  "One trusted responsible partner",
+]
+
+const traditionalEnvironmental = [
+  "Continuous environmental damage",
+  "High VOC emissions",
+  "Surface deterioration",
+  "Metal loss during blasting & repairs",
+  "Water & chemical wastage",
+  "Repetitive waste generation",
+]
+
+const sustainableAlternatives = [
+  "Low / Zero VOC technologies",
+  "Long lasting protection systems",
+  "Reduced repainting cycles",
+  "Lower shutdown requirements",
+  "Lower carbon & environmental impact",
+  "Preservation instead of repetitive replacement",
+]
+
+const traditionalAccepted = [
+  "Frequent repainting",
+  "Repetitive shutdowns",
+  "Annual repair budgets",
+  "Surface degradation",
+  "Early asset replacement",
+  "Rising manpower costs",
+]
+
+const focusAreas = [
+  "Protecting",
+  "Preserving",
+  "Extending Asset Life",
+]
+
+const achievements = [
+  { icon: DollarSign, text: "Huge OPEX Savings" },
+  { icon: Shield, text: "CAPEX Protection" },
+  { icon: Leaf, text: "Better ESG & EHS Compliance" },
+  { icon: CheckCircle2, text: "Higher Reliability" },
+  { icon: TrendingDown, text: "Reduced Operational Stress" },
+  { icon: Factory, text: "Sustainable Infrastructure Management" },
 ]
 
 export function ApaasSection() {
@@ -59,179 +89,251 @@ export function ApaasSection() {
 
         {/* Hero Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
-            NanoQuinn APaaS™ Platform
-          </h1>
-
-          <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed font-medium">
-            Redefining The Future Of Sustainable Asset Protection & Preservation
-          </p>
+          <div className="bg-gradient-to-br from-[#1A2332] via-[#1A2332] to-[#0F1419] rounded-3xl p-10 sm:p-16 lg:p-20">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance text-white">
+              NanoQuinn{" "}
+              <span className="bg-gradient-to-r from-[#4ADE80] via-[#25D366] to-[#16A34A] bg-clip-text text-transparent">
+                APaaS™
+              </span>{" "}
+              Platform
+            </h1>
+            <p className="text-xl sm:text-2xl leading-relaxed font-medium">
+              <span className="text-white/80">Your</span>{" "}
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-bold">
+                360° Sustainable Maintenance & Asset Protection
+              </span>{" "}
+              <span className="text-white/80">Partner</span>
+            </p>
+          </div>
         </div>
 
-        {/* The Hidden Reality */}
+        {/* Introduction */}
+        <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20">
+          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            NanoQuinn introduces a revolutionary concept in industrial asset management — a complete <span className="text-foreground font-semibold">APaaS™ (Asset Protection as a Service)</span> ecosystem built on advanced global technologies, sustainability, and long-term responsibility.
+          </p>
+          <div className="bg-muted rounded-2xl p-6 sm:p-8 mt-8">
+            <p className="text-base text-muted-foreground mb-2">Not just maintenance.</p>
+            <p className="text-base text-muted-foreground mb-2">Not just coatings.</p>
+            <p className="text-lg font-bold text-foreground">A complete protection & preservation platform for every asset surface.</p>
+          </div>
+        </div>
+
+        {/* One Partner Section */}
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
-          <div className="bg-foreground text-background rounded-3xl p-8 sm:p-12 lg:p-16">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">The Hidden Reality</h2>
-            <p className="text-lg leading-relaxed mb-8 text-center text-background/80">
-              For decades, industries across the world have silently accepted a massive hidden reality — repetitive maintenance, repetitive shutdowns, repetitive corrosion, repetitive repairs, repetitive repainting, and continuous asset deterioration.
-            </p>
-            <p className="text-base leading-relaxed text-center text-background/70">
-              Despite spending enormous yearly budgets on maintenance and restoration, industries still continue to suffer from:
-            </p>
+          <div className="bg-foreground text-background rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+              <span className="text-background">One Partner.</span>{" "}
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Every Surface.</span>{" "}
+              <span className="text-background">Total Responsibility.</span>
+            </h2>
+            <p className="text-lg text-background/70 mb-10">Protecting:</p>
             
-            <div className="grid sm:grid-cols-2 gap-4 mt-8">
-              {industryPains.map((pain, index) => (
-                <div key={index} className="flex items-start gap-3 bg-background/10 rounded-xl p-4">
-                  <AlertTriangle className="w-5 h-5 text-[#25D366] shrink-0 mt-0.5" />
-                  <span className="text-sm text-background/90">{pain}</span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              {protectedAssets.map((asset, index) => (
+                <div key={index} className="flex flex-col items-center text-center p-4 bg-background/10 rounded-xl">
+                  <div className="w-12 h-12 rounded-xl bg-[#25D366]/20 flex items-center justify-center mb-3">
+                    <asset.icon className="w-6 h-6 text-[#25D366]" />
+                  </div>
+                  <span className="text-sm font-medium text-background/90">{asset.label}</span>
                 </div>
               ))}
             </div>
-
+            
             <div className="mt-10 pt-8 border-t border-background/20">
-              <p className="text-lg text-center italic text-background/80">
-                Traditional contractors and coating systems were never designed to preserve assets for the long term.
-                <span className="block mt-2 font-semibold text-[#25D366]">They were built only to temporarily repair surfaces.</span>
+              <p className="text-xl sm:text-2xl font-bold text-[#25D366]">
+                A 360° Maintenance Partner For Industry
               </p>
             </div>
           </div>
         </div>
 
-        {/* The APaaS Revolution */}
-        <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-20">
-          <span className="inline-block px-8 py-3 rounded-full bg-[#25D366] text-white text-sm font-bold mb-8 uppercase tracking-widest">
-            The Industry Shift
-          </span>
-
-          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-8 text-balance">
-            {"World's First Sustainable APaaS™ Platform"}
-          </h2>
-
-          <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            NanoQuinn introduces the world&apos;s first Sustainable APaaS™ (Asset Protection as a Service) Platform — a revolutionary ecosystem designed not merely to coat assets, but to <span className="text-foreground font-semibold">protect, preserve, and extend the lifecycle</span> of every critical surface through advanced sustainable nanotechnology innovations, long-term responsibility models, and unconditional warranty-driven execution.
-          </p>
-
-          <p className="text-lg text-foreground leading-relaxed font-medium">
-            Unlike conventional systems, NanoQuinn focuses on stopping the root cause of deterioration by minimizing moisture, oxygen, chemical, UV, dust, and ion ingress — the core factors responsible for corrosion, degradation, electrical failures, surface damage, and accelerated CAPEX loss.
-          </p>
-        </div>
-
-        {/* Process Flow */}
-        <div className="relative max-w-5xl mx-auto mb-20 sm:mb-28">
-          <h3 className="text-xl sm:text-2xl font-bold text-center mb-12">The APaaS Process</h3>
-
-          {/* Connection Line */}
-          <div className="hidden lg:block absolute top-32 left-[10%] right-[10%] h-px bg-border" />
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-10">
-            {steps.map((step, index) => (
-              <div key={step.label} className="relative flex flex-col items-center text-center">
-                <div className="relative w-24 h-24 sm:w-36 sm:h-36 rounded-3xl bg-[#1a1a1a] flex items-center justify-center shadow-xl">
-                  <step.icon className="w-10 h-10 text-[#25D366]" />
-                  <span className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-[#25D366] text-white text-sm font-bold flex items-center justify-center shadow-md">
-                    {index + 1}
-                  </span>
-                </div>
-                <h3 className="font-semibold text-base mt-4 text-foreground">{step.label}</h3>
-                <p className="text-sm text-muted-foreground mt-1">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Ecosystem Features */}
+        {/* Pain Points Removal */}
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
-          <h3 className="text-xl sm:text-2xl font-bold text-center mb-4">The NanoQuinn APaaS™ Ecosystem</h3>
-          <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">A comprehensive platform combining technology, responsibility, and sustainability</p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">
+            <span className="text-foreground">Removing The</span>{" "}
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Biggest Pain Points</span>
+          </h2>
+          <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+            NanoQuinn APaaS™ is designed to remove the biggest pain points faced by management:
+          </p>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {ecosystemFeatures.map((feature, index) => (
-              <div key={index} className="flex items-center gap-3 bg-muted rounded-xl p-4 border border-border hover:border-[#25D366]/50 transition-colors">
-                <CheckCircle2 className="w-5 h-5 text-[#25D366] shrink-0" />
-                <span className="text-sm font-medium">{feature}</span>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {managementPainPoints.map((pain, index) => (
+              <div key={index} className="flex items-center gap-3 bg-red-500/10 border border-red-500/30 rounded-xl p-4">
+                <pain.icon className="w-5 h-5 text-red-500 shrink-0" />
+                <span className="text-sm font-medium">{pain.text}</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Management Benefits */}
+        {/* Massive Savings Advantage */}
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
           <div className="bg-muted rounded-3xl p-8 sm:p-12">
-            <h3 className="text-xl sm:text-2xl font-bold text-center mb-4">Results for Management</h3>
-            <p className="text-center text-muted-foreground mb-10">A first-of-its-kind industrial platform that helps management achieve:</p>
+            <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Massive Savings</span>{" "}
+              <span className="text-foreground">Advantage</span>
+            </h2>
             
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {managementBenefits.map((benefit, index) => (
-                <div key={index} className="flex items-center gap-4 bg-background rounded-2xl p-5 shadow-sm">
-                  <div className="w-12 h-12 rounded-xl bg-[#25D366]/10 flex items-center justify-center shrink-0">
-                    <benefit.icon className="w-6 h-6 text-[#25D366]" />
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Traditional */}
+              <div className="bg-background rounded-2xl p-6 border border-red-500/30">
+                <h3 className="text-lg font-bold text-red-500 mb-4 flex items-center gap-2">
+                  <XCircle className="w-5 h-5" />
+                  Traditional Industries Operate With:
+                </h3>
+                <ul className="space-y-3">
+                  {traditionalProblems.map((item, index) => (
+                    <li key={index} className="flex items-center gap-3 text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-red-500 shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              {/* APaaS */}
+              <div className="bg-background rounded-2xl p-6 border border-[#25D366]/30">
+                <h3 className="text-lg font-bold text-[#25D366] mb-4 flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5" />
+                  NanoQuinn APaaS™ Introduces:
+                </h3>
+                <ul className="space-y-3">
+                  {apaasAdvantages.map((item, index) => (
+                    <li key={index} className="flex items-center gap-3 text-sm text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-10 bg-[#25D366] rounded-2xl p-6 text-center">
+              <p className="text-lg sm:text-xl font-bold text-white">
+                Result: Huge OPEX Savings + CAPEX Protection + Operational Peace Of Mind
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Sustainability Section */}
+        <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
+          <span className="block text-center px-6 py-2 rounded-full bg-[#25D366] text-white text-sm font-bold mb-8 uppercase tracking-widest w-fit mx-auto">
+            Sustainability At The Core
+          </span>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Traditional Environmental */}
+            <div className="bg-foreground text-background rounded-2xl p-6">
+              <h3 className="text-lg font-bold text-red-400 mb-4">Traditional Maintenance Creates:</h3>
+              <ul className="space-y-3">
+                {traditionalEnvironmental.map((item, index) => (
+                  <li key={index} className="flex items-center gap-3 text-sm text-background/70">
+                    <XCircle className="w-4 h-4 text-red-400 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            {/* Sustainable Alternative */}
+            <div className="bg-[#25D366]/10 border border-[#25D366]/30 rounded-2xl p-6">
+              <h3 className="text-lg font-bold text-[#25D366] mb-4">NanoQuinn Introduces:</h3>
+              <ul className="space-y-3">
+                {sustainableAlternatives.map((item, index) => (
+                  <li key={index} className="flex items-center gap-3 text-sm text-foreground">
+                    <CheckCircle2 className="w-4 h-4 text-[#25D366] shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Stopping Traditional Cost Structure */}
+        <div className="max-w-4xl mx-auto mb-20 sm:mb-28">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6">
+            Stopping The Traditional Frequent Maintenance Cost Structure
+          </h2>
+          <p className="text-center text-muted-foreground mb-8">
+            For decades industries accepted:
+          </p>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-10">
+            {traditionalAccepted.map((item, index) => (
+              <div key={index} className="flex items-center gap-2 bg-muted rounded-xl p-4 text-sm">
+                <XCircle className="w-4 h-4 text-red-500 shrink-0" />
+                {item}
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-center text-muted-foreground mb-8 italic">
+            Because no real long-term preservation platform existed.
+          </p>
+          
+          <div className="bg-foreground text-background rounded-2xl p-8 text-center">
+            <p className="text-lg text-background/70 mb-2">NanoQuinn APaaS™ introduces a shift from:</p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-6">
+              <div className="bg-red-500/20 rounded-xl px-6 py-4">
+                <p className="text-red-400 font-semibold">{'"Frequent Temporary Maintenance"'}</p>
+              </div>
+              <ArrowRight className="w-6 h-6 text-[#25D366] rotate-90 sm:rotate-0" />
+              <div className="bg-[#25D366]/20 rounded-xl px-6 py-4">
+                <p className="text-[#25D366] font-semibold">{'"Long-Term Sustainable Asset Preservation"'}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* From Temporary to Long-Term */}
+        <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
+          <div className="bg-muted rounded-3xl p-8 sm:p-12 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6">
+            <span className="text-foreground">From</span>{" "}
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Temporary Maintenance</span>{" "}
+            <span className="text-foreground">To</span>{" "}
+            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Long-Term Preservation</span>
+          </h2>
+            
+            <p className="text-muted-foreground mb-8">NanoQuinn APaaS™ focuses on:</p>
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-10">
+              {focusAreas.map((area, index) => (
+                <span key={index} className="px-6 py-3 bg-[#25D366] text-white rounded-full font-bold">
+                  {area}
+                </span>
+              ))}
+            </div>
+            
+            <p className="text-muted-foreground mb-8">Helping industries achieve:</p>
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {achievements.map((item, index) => (
+                <div key={index} className="flex items-center gap-3 bg-background rounded-xl p-4 shadow-sm">
+                  <div className="w-10 h-10 rounded-lg bg-[#25D366]/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-5 h-5 text-[#25D366]" />
                   </div>
-                  <span className="text-sm font-bold">{benefit.text}</span>
+                  <span className="text-sm font-bold">{item.text}</span>
                 </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* The Difference */}
-        <div className="max-w-4xl mx-auto mb-20 sm:mb-28 text-center">
-          <h3 className="text-xl sm:text-2xl font-bold mb-6">What Makes NanoQuinn Fundamentally Different</h3>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            What makes NanoQuinn fundamentally different is not only the technology — but the <span className="text-foreground font-semibold">responsibility model</span> behind it.
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            While conventional vendors execute work and exit, NanoQuinn positions itself as a <span className="text-foreground font-semibold">long-term Asset Protection & Preservation Partner</span>, taking ownership of performance through continuous engagement, annual inspections, asset health reporting, and unconditional support.
-          </p>
-          <div className="bg-foreground text-background rounded-2xl p-6 sm:p-8">
-            <p className="text-lg sm:text-xl font-medium">
-              This transforms the industry from a <span className="text-[#25D366]">short-term contractor-driven ecosystem</span> into a <span className="text-[#25D366]">long-term preservation partnership model</span>.
-            </p>
-          </div>
-        </div>
-
-        {/* Asset Categories */}
-        <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
-          <h3 className="text-xl sm:text-2xl font-bold text-center mb-4">What NanoQuinn Protects</h3>
-          <p className="text-center text-muted-foreground mb-10">Today, NanoQuinn protects and preserves:</p>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
-            {assetCategories.map((asset, index) => (
-              <div key={index} className="flex flex-col items-center text-center p-6 bg-muted rounded-2xl border border-border hover:border-[#25D366]/50 transition-colors">
-                <div className="w-14 h-14 rounded-xl bg-[#25D366]/10 flex items-center justify-center mb-4">
-                  <asset.icon className="w-7 h-7 text-[#25D366]" />
-                </div>
-                <span className="text-xs sm:text-sm font-medium leading-tight">{asset.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Vision Statement */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-gradient-to-br from-[#1a1a1a] to-[#0a0a0a] text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
-            <p className="text-base sm:text-lg text-white/70 leading-relaxed mb-8">
-              Backed by continuous R&D, advanced global technologies, future-focused Biochar innovation programs, and dedicated skilled manpower development through sister concern execution arms, NanoQuinn is not creating another coating company.
-            </p>
-            <p className="text-xl sm:text-2xl lg:text-3xl font-bold text-[#25D366] mb-8">
-              NanoQuinn is building the future infrastructure of sustainable asset preservation.
-            </p>
-            <div className="border-t border-white/10 pt-8">
-              <p className="text-lg sm:text-xl text-white/80 italic">
-                A future where industries no longer repeatedly repair assets…
-              </p>
-              <p className="text-2xl sm:text-3xl font-bold text-[#25D366] mt-4">
-                But finally preserve them.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Key Differentiator */}
+        {/* Final Statement */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-foreground text-background rounded-3xl p-6 sm:p-10 lg:p-14 text-center">
-            <p className="text-xl sm:text-2xl lg:text-4xl font-bold text-balance leading-tight">
-              We don&apos;t sell coatings.<br />
-              <span className="text-accent">We deliver performance with accountability.</span>
+          <div className="bg-gradient-to-br from-[#1A2332] to-[#0F1419] text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
+              NanoQuinn APaaS™
+            </h2>
+            <p className="text-xl sm:text-2xl font-bold">
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">
+                The Future Of Sustainable Asset Protection & 360° Maintenance Management.
+              </span>
             </p>
           </div>
         </div>
