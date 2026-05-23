@@ -9,7 +9,7 @@ import { Menu, X } from "lucide-react"
 
 const navItems = [
   { label: "APaaS Model", href: "/apaas" },
-  { label: "Asset Protection", href: "/asset-protection" },
+  { label: "Product/Service Range", href: "/asset-protection" },
   { label: "Asset Health Audit", href: "/asset-health-audit" },
   { label: "Technology", href: "/technology" },
   { label: "Industries", href: "/industries" },

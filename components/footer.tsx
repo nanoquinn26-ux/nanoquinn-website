@@ -11,7 +11,7 @@ const footerLinks = {
   ],
   solutions: [
     { label: '"APaaS Model"', href: "/apaas" },
-    { label: "Asset Protection", href: "/asset-protection" },
+    { label: "Product/Service Range", href: "/asset-protection" },
     { label: "Technology", href: "/technology" },
     { label: "Industries", href: "/industries" },
     { label: "ESG Commitment", href: "/esg" },

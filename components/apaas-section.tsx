@@ -59,10 +59,6 @@ export function ApaasSection() {
 
         {/* Hero Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#D4A826] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
-            A White Paper Introduction
-          </span>
-
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
             NanoQuinn APaaS™ Platform
           </h1>
@@ -141,15 +137,6 @@ export function ApaasSection() {
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Comparison Image */}
-        <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
-          <img
-            src="/images/nano-comparison.png"
-            alt="Traditional Paints vs NanoQuinn Nanotechnology Protection — side by side comparison showing how nano-scale barrier blocks ions, oxygen and moisture"
-            className="w-full rounded-3xl shadow-xl"
-          />
         </div>
 
         {/* Ecosystem Features */}
