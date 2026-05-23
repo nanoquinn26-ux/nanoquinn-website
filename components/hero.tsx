@@ -95,7 +95,8 @@ function APaaSPlatformAnimation() {
               One Trusted Partner For
             </p>
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-              Complete Asset Maintenance
+              <span className="text-white">Complete</span>{" "}
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Asset Maintenance</span>
             </h3>
           </div>
 
@@ -190,9 +191,9 @@ function APaaSPlatformAnimation() {
 
             {/* Right Side - Protected Areas */}
             <div className="w-full lg:w-1/3">
-              <p className="text-xs text-white/50 uppercase tracking-wider mb-4 text-center lg:text-left">
-                Potential Areas We Protect
-              </p>
+            <p className="text-xs text-white/50 uppercase tracking-wider mb-4 text-center lg:text-left">
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-semibold">Potential Areas</span> We Protect
+            </p>
               <div className="grid grid-cols-4 lg:grid-cols-2 gap-2">
                 {protectedAreas.map((area, index) => (
                   <div 
@@ -213,7 +214,7 @@ function APaaSPlatformAnimation() {
           {/* Asset Categories Bar */}
           <div className="mt-8 pt-6 border-t border-white/10">
             <p className="text-xs text-white/50 uppercase tracking-wider mb-4 text-center">
-              Works on All Surfaces & Assets
+              Works on <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-semibold">All Surfaces</span> & Assets
             </p>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
               {assetCategories.map((category, index) => (
@@ -239,11 +240,11 @@ function APaaSPlatformAnimation() {
             }`}
           >
             <div className="inline-flex items-center gap-3 sm:gap-6 px-6 py-3 rounded-full bg-gradient-to-r from-[#25D366]/20 to-[#25D366]/20 border border-white/10">
-              <span className="text-sm sm:text-base font-bold text-[#25D366]">PROTECT</span>
+              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#67E8F9] to-[#4ADE80] bg-clip-text text-transparent">PROTECT</span>
               <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
               <span className="text-sm sm:text-base font-bold text-white">PRESERVE</span>
               <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
-              <span className="text-sm sm:text-base font-bold text-[#25D366]">PERFORM</span>
+              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">PERFORM</span>
             </div>
           </div>
         </div>
@@ -273,7 +274,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/20 bg-white/5 mb-8 sm:mb-10 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
-            <span className="text-xs sm:text-sm font-medium text-[#25D366]">WORLD&apos;s FIRST APAAS PLATFORM</span>
+            <span className="text-xs sm:text-sm font-medium bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">WORLD&apos;s FIRST APAAS PLATFORM</span>
           </div>
 
           {/* Headline */}
@@ -285,14 +286,18 @@ export function Hero() {
 
           {/* Sub-headline */}
           <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
-            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#25D366]/20 border border-[#25D366]/40">Never Before In Industrial History</p>
+            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#25D366]/20 border border-[#25D366]/40">
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Never Before</span>{" "}
+              <span className="text-white">In Industrial History</span>
+            </p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
               An{" "}
               <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">End-to-End Asset Protection</span>{" "}
               Platform
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed">
-              Combining Sustainable Nanotechnology,<br className="hidden sm:block" />
+              Combining{" "}
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-semibold">Sustainable Nanotechnology</span>,<br className="hidden sm:block" />
               Lifecycle Preservation & Unconditional Warranty
             </p>
           </div>
