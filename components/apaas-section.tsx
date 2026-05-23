@@ -89,12 +89,22 @@ export function ApaasSection() {
 
         {/* Hero Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
-            NanoQuinn APaaS™ Platform
-          </h1>
-          <p className="text-xl sm:text-2xl text-muted-foreground leading-relaxed font-medium">
-            Your 360° Sustainable Maintenance & Asset Protection Partner
-          </p>
+          <div className="bg-gradient-to-br from-[#1A2332] via-[#1A2332] to-[#0F1419] rounded-3xl p-10 sm:p-16 lg:p-20">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance text-white">
+              NanoQuinn{" "}
+              <span className="bg-gradient-to-r from-[#4ADE80] via-[#25D366] to-[#16A34A] bg-clip-text text-transparent">
+                APaaS™
+              </span>{" "}
+              Platform
+            </h1>
+            <p className="text-xl sm:text-2xl leading-relaxed font-medium">
+              <span className="text-white/80">Your</span>{" "}
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-bold">
+                360° Sustainable Maintenance & Asset Protection
+              </span>{" "}
+              <span className="text-white/80">Partner</span>
+            </p>
+          </div>
         </div>
 
         {/* Introduction */}
