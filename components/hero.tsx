@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Shield, Leaf, Award } from "lucide-react"
 
@@ -11,121 +11,122 @@ const highlights = [
 ]
 
 const morphTexts = [
-  "Welcome to the APaaS Revolution",
-  "Long-lasting sustainable protection",
-  "Zero recurring OPEX stress",
-  "Asset newness for years",
-  "Deferred replacement CAPEX",
-  "One vendor. One responsibility.",
-  "Unconditional warranty",
-  "Zero environmental harm",
-  "NanoQuinn APaaS Platform",
+  { text: "Welcome to APaaS Revolution", highlight: false },
+  { text: "Long-lasting sustainable protection", highlight: false },
+  { text: "Zero recurring OPEX stress", highlight: false },
+  { text: "Asset newness for years", highlight: false },
+  { text: "Deferred replacement CAPEX", highlight: false },
+  { text: "One vendor. One responsibility.", highlight: false },
+  { text: "Unconditional warranty", highlight: false },
+  { text: "Zero environmental harm", highlight: false },
+  { text: "NanoQuinn APaaS", highlight: true },
 ]
 
 function TextMorphAnimation() {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const [isVisible, setIsVisible] = useState(true)
-  const [isComplete, setIsComplete] = useState(false)
+  const [displayText, setDisplayText] = useState("")
+  const [isTyping, setIsTyping] = useState(true)
+  const [showCursor, setShowCursor] = useState(true)
+  
+  const currentItem = morphTexts[currentIndex]
+  const targetText = currentItem.text
 
+  // Cursor blink effect
   useEffect(() => {
-    if (isComplete) return
+    const cursorInterval = setInterval(() => {
+      setShowCursor(prev => !prev)
+    }, 530)
+    return () => clearInterval(cursorInterval)
+  }, [])
 
-    const cycleText = () => {
-      // Fade out
-      setIsVisible(false)
-      
-      setTimeout(() => {
-        // Move to next text
-        setCurrentIndex((prev) => {
-          const next = prev + 1
-          if (next >= morphTexts.length) {
-            setIsComplete(true)
-            return prev
-          }
-          return next
-        })
-        // Fade in
-        setIsVisible(true)
-      }, 500)
+  // Typing/erasing effect
+  useEffect(() => {
+    let timeout: NodeJS.Timeout
+
+    if (isTyping) {
+      if (displayText.length < targetText.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(targetText.slice(0, displayText.length + 1))
+        }, 50 + Math.random() * 30) // Slight randomness for natural feel
+      } else {
+        // Finished typing, wait then start erasing
+        timeout = setTimeout(() => {
+          setIsTyping(false)
+        }, currentItem.highlight ? 3000 : 1800) // Hold longer on highlight
+      }
+    } else {
+      if (displayText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1))
+        }, 25) // Faster erase
+      } else {
+        // Finished erasing, move to next
+        setCurrentIndex((prev) => (prev + 1) % morphTexts.length)
+        setIsTyping(true)
+      }
     }
 
-    const interval = setInterval(cycleText, 2000)
-    return () => clearInterval(interval)
-  }, [isComplete])
-
-  const currentText = morphTexts[currentIndex]
-  const isFinal = currentIndex === morphTexts.length - 1
+    return () => clearTimeout(timeout)
+  }, [displayText, isTyping, targetText, currentItem.highlight])
 
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="relative p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm overflow-hidden">
-        {/* Animated background glow */}
-        <div 
-          className="absolute inset-0 bg-gradient-to-r from-[#00BFA5]/0 via-[#00BFA5]/5 to-[#00BFA5]/0 transition-opacity duration-1000"
-          style={{ opacity: isVisible ? 1 : 0 }}
-        />
-        
-        {/* Progress bar */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-white/10">
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-md overflow-hidden">
+        {/* Animated gradient background */}
+        <div className="absolute inset-0 overflow-hidden">
           <div 
-            className="h-full bg-gradient-to-r from-[#00BFA5] to-[#D4A826] transition-all duration-300"
-            style={{ width: `${((currentIndex + 1) / morphTexts.length) * 100}%` }}
+            className="absolute -inset-[100%] animate-[spin_8s_linear_infinite] opacity-30"
+            style={{
+              background: `conic-gradient(from 0deg, transparent, #00BFA5 10%, transparent 20%, #D4A826 30%, transparent 40%)`
+            }}
           />
         </div>
+        
+        {/* Inner glow */}
+        <div className="absolute inset-[1px] rounded-3xl bg-[#0A0A0A]/90" />
 
-        <div className="relative min-h-[200px] flex flex-col items-center justify-center text-center">
-          {/* Intro text */}
-          <p className="text-white/50 text-sm uppercase tracking-widest mb-6">
-            {isFinal ? "Introducing" : "NanoQuinn APaaS Platform delivers"}
+        <div className="relative min-h-[180px] sm:min-h-[200px] flex flex-col items-center justify-center text-center">
+          {/* Label */}
+          <p className="text-white/40 text-xs sm:text-sm uppercase tracking-[0.2em] mb-6 font-medium">
+            NanoQuinn APaaS Platform delivers
           </p>
 
-          {/* Morphing text */}
-          <div className="relative h-24 flex items-center justify-center">
+          {/* Morphing text container */}
+          <div className="relative h-16 sm:h-20 lg:h-24 flex items-center justify-center w-full">
             <h3 
-              className={`text-2xl sm:text-3xl lg:text-4xl font-bold transition-all duration-500 ease-out ${
-                isVisible 
-                  ? 'opacity-100 translate-y-0 scale-100' 
-                  : 'opacity-0 translate-y-4 scale-95'
-              } ${isFinal ? 'text-[#D4A826]' : 'text-white'}`}
+              className={`text-xl sm:text-2xl lg:text-4xl font-bold tracking-tight transition-colors duration-300 ${
+                currentItem.highlight 
+                  ? 'bg-gradient-to-r from-[#D4A826] via-[#F0C850] to-[#D4A826] bg-clip-text text-transparent' 
+                  : 'text-white'
+              }`}
             >
-              {currentText}
+              {displayText}
+              <span 
+                className={`inline-block w-[3px] h-[1em] ml-1 align-middle transition-opacity duration-100 ${
+                  currentItem.highlight ? 'bg-[#D4A826]' : 'bg-[#00BFA5]'
+                } ${showCursor ? 'opacity-100' : 'opacity-0'}`}
+              />
             </h3>
           </div>
 
-          {/* Counter */}
-          <div className="mt-8 flex items-center gap-2">
-            {morphTexts.map((_, index) => (
+          {/* Progress indicators */}
+          <div className="mt-8 flex items-center gap-1.5">
+            {morphTexts.map((item, index) => (
               <div
                 key={index}
-                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                className={`h-1 rounded-full transition-all duration-500 ${
                   index === currentIndex 
-                    ? 'bg-[#00BFA5] scale-125' 
-                    : index < currentIndex 
-                    ? 'bg-[#D4A826]' 
-                    : 'bg-white/20'
+                    ? `w-8 ${item.highlight ? 'bg-[#D4A826]' : 'bg-[#00BFA5]'}` 
+                    : 'w-1.5 bg-white/20'
                 }`}
               />
             ))}
           </div>
 
-          {/* Final CTA appears after complete */}
-          {isComplete && (
-            <div className="mt-8 animate-fade-up">
-              <p className="text-white/60 text-sm mb-4">
-                Every promise. Every protection. One revolutionary platform.
-              </p>
-              <button
-                onClick={() => {
-                  setCurrentIndex(0)
-                  setIsComplete(false)
-                  setIsVisible(true)
-                }}
-                className="text-xs text-[#00BFA5] hover:text-[#00BFA5]/80 transition-colors underline underline-offset-2"
-              >
-                Watch again
-              </button>
-            </div>
-          )}
+          {/* Tagline */}
+          <p className="mt-6 text-white/50 text-xs sm:text-sm max-w-md">
+            Every promise. Every protection. One revolutionary platform.
+          </p>
         </div>
       </div>
     </div>
