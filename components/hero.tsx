@@ -1,12 +1,22 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield, Leaf, Award } from "lucide-react"
+import { ArrowRight, Shield, Leaf, Award, Check } from "lucide-react"
 
 const highlights = [
   { icon: Leaf, label: "Zero VOC | Sustainable" },
   { icon: Shield, label: "Turnkey with Unconditional Warranty" },
   { icon: Award, label: "German Nanotechnology | Made in India" },
+]
+
+const apaasFeatures = [
+  "Long-lasting sustainable protection",
+  "Zero recurring OPEX stress",
+  "Asset newness for years",
+  "Deferred replacement CAPEX",
+  "One vendor. One responsibility.",
+  "Unconditional warranty with end-to-end execution",
+  "Global technologies with zero environmental harm",
 ]
 
 export function Hero() {
@@ -64,7 +74,7 @@ export function Hero() {
           </div>
 
           {/* CTA */}
-          <div className="animate-fade-up delay-400">
+          <div className="animate-fade-up delay-400 mb-16 sm:mb-20">
             <a
               href="https://wa.me/918608604817"
               target="_blank"
@@ -75,6 +85,44 @@ export function Hero() {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
             </a>
+          </div>
+
+          {/* APaaS Revolution Section */}
+          <div className="max-w-4xl mx-auto animate-fade-up delay-500">
+            <div className="relative p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-white/5 to-white/[0.02] border border-white/10 backdrop-blur-sm overflow-hidden">
+              {/* Decorative corner accent */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#00BFA5]/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2" />
+              
+              <div className="relative">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
+                  Welcome to the <span className="text-[#00BFA5]">APaaS Revolution</span>
+                </h3>
+                <p className="text-white/60 mb-8 text-sm sm:text-base">
+                  For the first time, industries can move beyond repetitive maintenance, shutdowns, and asset deterioration.
+                </p>
+                
+                <p className="text-[#D4A826] font-semibold text-sm uppercase tracking-wider mb-5">
+                  NanoQuinn APaaS Platform delivers:
+                </p>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                  {apaasFeatures.map((feature, index) => (
+                    <div 
+                      key={feature}
+                      className="flex items-start gap-3 group"
+                      style={{ 
+                        animation: `fadeSlideIn 0.5s ease-out ${0.1 * index}s both`
+                      }}
+                    >
+                      <div className="w-5 h-5 rounded-full bg-[#00BFA5]/20 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-[#00BFA5]/40 transition-colors">
+                        <Check className="w-3 h-3 text-[#00BFA5]" />
+                      </div>
+                      <span className="text-white/80 text-sm sm:text-base font-medium">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
