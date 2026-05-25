@@ -104,7 +104,7 @@ export default function LeadershipPage() {
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-balance leading-tight mb-6">
             <span className="text-background">The Minds Behind</span>{" "}
-            <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">NanoQuinn</span>
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#1FA855] bg-clip-text text-transparent">NanoQuinn</span>
           </h1>
           <p className="text-base sm:text-xl text-background/70 max-w-2xl mx-auto leading-relaxed">
             Visionaries, builders, and strategists driving a global Asset Protection revolution.
