@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { 
   ArrowRight, Shield, Leaf, Award, Search, Paintbrush, Settings, 
   Eye, BadgeCheck, Handshake, Building2, Factory, Container, 
-  PipetteIcon, Zap, Ship, Wind,
+  PipetteIcon, Zap, Ship, Wind, Fuel,
   Train,
   Car,
   SolarPanel
