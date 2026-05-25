@@ -6,15 +6,15 @@
 :root {
   /* NanoQuinn Light Theme - White/Gray with Green accents */
   --background: #FFFFFF;
-  --foreground: #0B2545;
+  --foreground: #1E3A5F;
   --card: #F8FAFC;
-  --card-foreground: #0B2545;
+  --card-foreground: #1E3A5F;
   --popover: #FFFFFF;
-  --popover-foreground: #0B2545;
-  --primary: #0B2545;
+  --popover-foreground: #1E3A5F;
+  --primary: #1E3A5F;
   --primary-foreground: #FFFFFF;
   --secondary: #F1F5F9;
-  --secondary-foreground: #0B2545;
+  --secondary-foreground: #1E3A5F;
   --muted: #F1F5F9;
   --muted-foreground: #64748B;
   --accent: #1FA855;
@@ -24,10 +24,10 @@
   --green-dark: #0E7A45;
   --teal: #14B8A6;
   --teal-light: #5EEAD4;
-  --navy: #0B2545;
-  --navy-light: #13315C;
-  --navy-dark: #06182E;
-  --ink: #0B2545;
+  --navy: #1E3A5F;
+  --navy-light: #2D4A6F;
+  --navy-dark: #1E3A5F;
+  --ink: #1E3A5F;
   --paper: #FFFFFF;
   --paper-light: #F8FAFC;
   --coral: #FF6B35;
@@ -39,31 +39,31 @@
   --chart-1: #1FA855;
   --chart-2: #14B8A6;
   --chart-3: #FF6B35;
-  --chart-4: #0B2545;
+  --chart-4: #1E3A5F;
   --chart-5: #64748B;
   --radius: 0.625rem;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #0B2545;
+  --sidebar-foreground: #1E3A5F;
   --sidebar-primary: #1FA855;
   --sidebar-primary-foreground: #FFFFFF;
   --sidebar-accent: #F1F5F9;
-  --sidebar-accent-foreground: #0B2545;
+  --sidebar-accent-foreground: #1E3A5F;
   --sidebar-border: #E2E8F0;
   --sidebar-ring: #1FA855;
 }
 
 .dark {
-  --background: #0B2545;
+  --background: #1E3A5F;
   --foreground: #F8FAFC;
-  --card: #13315C;
+  --card: #2D4A6F;
   --card-foreground: #F8FAFC;
-  --popover: #13315C;
+  --popover: #2D4A6F;
   --popover-foreground: #F8FAFC;
   --primary: #F8FAFC;
-  --primary-foreground: #0B2545;
-  --secondary: #06182E;
+  --primary-foreground: #1E3A5F;
+  --secondary: #1E3A5F;
   --secondary-foreground: #F8FAFC;
-  --muted: #13315C;
+  --muted: #2D4A6F;
   --muted-foreground: #94A3B8;
   --accent: #1FA855;
   --accent-foreground: #FFFFFF;
@@ -72,17 +72,17 @@
   --green-dark: #0E7A45;
   --teal: #14B8A6;
   --teal-light: #5EEAD4;
-  --navy: #0B2545;
-  --navy-light: #13315C;
-  --navy-dark: #06182E;
-  --ink: #0B2545;
+  --navy: #1E3A5F;
+  --navy-light: #2D4A6F;
+  --navy-dark: #1E3A5F;
+  --ink: #1E3A5F;
   --paper: #FFFFFF;
   --paper-light: #F8FAFC;
   --coral: #FF6B35;
   --destructive: #EF4444;
   --destructive-foreground: #F8FAFC;
-  --border: #1E3A5F;
-  --input: #13315C;
+  --border: #3D5A7F;
+  --input: #2D4A6F;
   --ring: #1FA855;
 }
 
@@ -162,7 +162,7 @@
     background-clip: text;
   }
   .bg-grid-soft {
-    background-image: linear-gradient(rgba(11,37,69,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(11,37,69,.06) 1px, transparent 1px);
+    background-image: linear-gradient(rgba(30,58,95,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,95,.06) 1px, transparent 1px);
     background-size: 40px 40px;
   }
   .bg-grid-dark {

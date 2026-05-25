@@ -85,7 +85,7 @@ function APaaSPlatformAnimation() {
               background: `conic-gradient(from 0deg, transparent 0%, #1FA855 5%, transparent 10%, #1FA855 15%, transparent 20%, #1FA855 25%, transparent 30%)`
             }}
           />
-          <div className="absolute inset-[1px] rounded-3xl bg-[#0B2545]/95" />
+          <div className="absolute inset-[1px] rounded-3xl bg-gradient-to-br from-[#1E3A5F] to-[#2D4A6F]" />
         </div>
 
         <div className="relative p-6 sm:p-10">
@@ -255,7 +255,7 @@ function APaaSPlatformAnimation() {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0B2545]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1E3A5F] via-[#2D4A6F] to-[#1E3A5F] bg-grid-dark">
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
@@ -321,7 +321,7 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="w-full sm:w-auto text-base px-10 py-6 h-auto rounded-full bg-[#1FA855] text-[#0B2545] hover:bg-[#34C66E]">
+              <Button size="lg" className="w-full sm:w-auto text-base px-10 py-6 h-auto rounded-full bg-[#1FA855] text-[#1E3A5F] hover:bg-[#34C66E]">
                 Request Industrial Demo
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>

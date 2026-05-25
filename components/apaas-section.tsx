@@ -89,7 +89,7 @@ export function ApaasSection() {
 
         {/* Hero Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
-          <div className="bg-gradient-to-br from-[#0B2545] via-[#0B2545] to-[#06182E] rounded-3xl p-10 sm:p-16 lg:p-20">
+          <div className="bg-gradient-to-br from-[#1E3A5F] via-[#1E3A5F] to-[#1E3A5F] rounded-3xl p-10 sm:p-16 lg:p-20">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance text-white">
               NanoQuinn{" "}
               <span className="bg-gradient-to-r from-[#34C66E] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">
@@ -326,7 +326,7 @@ export function ApaasSection() {
 
         {/* Final Statement */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-[#0B2545] to-[#06182E] text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
+          <div className="bg-gradient-to-br from-[#1E3A5F] to-[#1E3A5F] text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
               NanoQuinn APaaS™
             </h2>

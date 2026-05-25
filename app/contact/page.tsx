@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Contact Hero */}
-      <section className="py-24 bg-[#0B2545]">
+      <section className="py-24 bg-[#1E3A5F]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
