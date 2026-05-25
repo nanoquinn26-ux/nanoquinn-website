@@ -143,7 +143,10 @@ function APaaSPlatformAnimation() {
                 {/* Orbiting items */}
                 {orbitItems.map((item, index) => {
                   const angle = (index / orbitItems.length) * 360
+                  const rotatedAngle = (angle + activeOrbitIndex * (360 / orbitItems.length)) % 360
                   const isActive = index === activeOrbitIndex
+                  // Determine if icon is in top half (label should go below) or bottom half (label should go above)
+                  const isInTopHalf = rotatedAngle > 180 && rotatedAngle < 360
                   return (
                     <div
                       key={item.label}
@@ -166,7 +169,11 @@ function APaaSPlatformAnimation() {
                         <item.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${isActive ? 'text-white' : 'text-white/60'}`} />
                       </div>
                       {isActive && (
-                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap z-50">
+                        <div 
+                          className={`absolute left-1/2 -translate-x-1/2 whitespace-nowrap z-50 ${
+                            isInTopHalf ? 'top-full mt-2' : 'bottom-full mb-2'
+                          }`}
+                        >
                           <span className="text-xs font-semibold text-white bg-[#1E3A5F]/90 px-3 py-1.5 rounded-full shadow-lg border border-white/20">
                             {item.label}
                           </span>
