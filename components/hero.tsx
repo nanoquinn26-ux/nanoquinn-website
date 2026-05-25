@@ -6,7 +6,9 @@ import {
   ArrowRight, Shield, Leaf, Award, Search, Paintbrush, Settings, 
   Eye, BadgeCheck, Handshake, Building2, Factory, Container, 
   PipetteIcon, Zap, Ship, Wind,
-  Train
+  Train,
+  Car,
+  SolarPanel
 } from "lucide-react"
 
 const highlights = [
@@ -40,11 +42,11 @@ const assetCategories = [
 const protectedAreas = [
   { icon: Building2, label: "Pharmaceuticals" },
   { icon: Factory, label: "Industrial Plants" },
-  { icon: Container, label: "Solar Plants" },
+  { icon: SolarPanel, label: "Solar Plants" },
   { icon: PipetteIcon, label: "Chemical" },
   { icon: Zap, label: "Infrastructure" },
   { icon: Train, label: "Railways" },
-  { icon: Wind, label: "Automotive" },
+  { icon: Car, label: "Automotive" },
 ]
 
 function APaaSPlatformAnimation() {
