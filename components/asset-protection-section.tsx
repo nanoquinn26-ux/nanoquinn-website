@@ -109,7 +109,7 @@ const industrialContent = {
   footer: "SAVE METAL • SAVE MONEY • SAVE PEOPLE • SAVE PLANET",
 }
 
-const plasticContent = {
+const polymersContent = {
   title: "Transparent Nanotechnology for Polymers",
   subtitle: "Invisible Shield. Powerful Protection.",
   intro: "Advanced nanotechnology creates an ultra-thin, invisible layer that bonds at the molecular level with polymer surfaces, delivering long term performance and maintaining newness for years.",
@@ -136,11 +136,11 @@ const plasticContent = {
     { title: "Hydrophobic", desc: "Water beads up and rolls off. Stain and spot resistant." },
   ],
   applications: {
-    title: "Perfect For FRP / Plastic Surfaces",
+    title: "Perfect For FRP / Polymers Surfaces",
     items: [
       { label: "FRP Water Tanks", desc: "Prevents UV damage & discoloration" },
       { label: "Rooftop Sheets", desc: "Protects from sunlight, heat & weathering" },
-      { label: "Plastic Panels", desc: "Maintains color & shine. Prevents brittleness" },
+      { label: "Polymers Panels", desc: "Maintains color & shine. Prevents brittleness" },
       { label: "Outdoor Furniture", desc: "Resists fading & aging. Keeps like new" },
       { label: "Signs & Displays", desc: "High protection for long lasting clarity" },
       { label: "Pipes & Conduits", desc: "Prevents degradation. Extends service life" },
@@ -149,7 +149,7 @@ const plasticContent = {
   disruption: {
     title: "Why It Is Disruptive",
     points: [
-      "Introduces the concept of Asset Preservation for Plastics & FRP, not just coating",
+      "Introduces the concept of Asset Preservation for Polymerss & FRP, not just coating",
       "Converts vulnerable polymer assets into long-life protected assets",
       "Bridges OEM + MRO (maintenance, repair and overhaul) in one technology",
       "Can challenge traditional replacement-driven maintenance practices",
@@ -544,7 +544,7 @@ const auditContent = {
     { label: "Metal Assets", desc: "Corrosion, coating failure, structural exposure" },
     { label: "Civil & Waterproofing", desc: "Concrete, cracks, seepage, joint failures" },
     { label: "Floor Systems", desc: "Epoxy, polyurethane, abrasion, delamination" },
-    { label: "Plastic & Polymers", desc: "UV degradation, brittleness, chemical exposure" },
+    { label: "Polymers & Polymers", desc: "UV degradation, brittleness, chemical exposure" },
     { label: "Solar Assets", desc: "Panel condition, soiling, efficiency loss" },
     { label: "Electrical Assets", desc: "Panels, busbars, insulation, corrosion risks" },
   ],
@@ -578,7 +578,7 @@ const auditContent = {
 }
 
 /* ─── TYPES ─────────────────────────────────────────────────────────────── */
-type ActiveContent = "OEM" | "Industrial" | "Plastic" | "Solar" | "Electrical" | "Floor" | "Wall" | "RustRemover" | "Carpet" | "ESDFlooring" | "EpoxyPUFlooring" | "Waterproofing" | "SurfaceTolerantEpoxy" | null
+type ActiveContent = "OEM" | "Industrial" | "Polymers" | "Solar" | "Electrical" | "Floor" | "Wall" | "RustRemover" | "Carpet" | "ESDFlooring" | "EpoxyPUFlooring" | "Waterproofing" | "SurfaceTolerantEpoxy" | null
 type ActiveDropdown = "rust" | "flooring" | null
 type SubMenu = "OEM" | "Industrial" | null
 
@@ -604,7 +604,7 @@ export function AssetProtectionSection() {
   }
 
   const navItems = [
-    { id: "Plastic" as const, label: "Nanotech Plastic Protection", icon: Package },
+    { id: "Polymers" as const, label: "Nanotech Polymers Protection", icon: Package },
     { id: "Solar" as const, label: "Solar Nanotechnology Coating", icon: Sun },
     { id: "Electrical" as const, label: "ElectroShield 5-in-1", icon: Zap },
     { id: "Floor" as const, label: "FloorGuard", icon: Layers },
@@ -825,24 +825,24 @@ export function AssetProtectionSection() {
           </div>
         )}
 
-        {/* Plastic */}
-        {activeContent === "Plastic" && (
+        {/* Polymers */}
+        {activeContent === "Polymers" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Nanotech Plastic Protection</span>
-              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{plasticContent.title}</h3>
-              <p className="text-lg font-medium text-[#1FA855] mb-4">{plasticContent.subtitle}</p>
-              <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-3">{plasticContent.intro}</p>
-              <p className="text-sm text-muted-foreground max-w-3xl mx-auto">{plasticContent.description}</p>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Nanotech Polymers Protection</span>
+              <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{polymersContent.title}</h3>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{polymersContent.subtitle}</p>
+              <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-3">{polymersContent.intro}</p>
+              <p className="text-sm text-muted-foreground max-w-3xl mx-auto">{polymersContent.description}</p>
             </div>
             <div className="bg-muted rounded-3xl p-8 mb-8">
-              <p className="text-base text-muted-foreground leading-relaxed italic">{plasticContent.note}</p>
+              <p className="text-base text-muted-foreground leading-relaxed italic">{polymersContent.note}</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="text-xl font-bold mb-6 text-[#1FA855]">{plasticContent.applications.title}</h4>
+                <h4 className="text-xl font-bold mb-6 text-[#1FA855]">{polymersContent.applications.title}</h4>
                 <ul className="space-y-4">
-                  {plasticContent.applications.items.map((item, i) => (
+                  {polymersContent.applications.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="w-6 h-6 rounded-full bg-[#1FA855] text-black text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
                       <div>
@@ -856,10 +856,10 @@ export function AssetProtectionSection() {
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
                   <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
-                  {plasticContent.disruption.title}
+                  {polymersContent.disruption.title}
                 </h4>
                 <ul className="space-y-3">
-                  {plasticContent.disruption.points.map((pt, i) => (
+                  {polymersContent.disruption.points.map((pt, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {pt}
@@ -869,7 +869,7 @@ export function AssetProtectionSection() {
               </div>
             </div>
             <div className="bg-[#1FA855]/10 border border-[#1FA855]/30 rounded-3xl p-8 text-center">
-              <p className="text-xl font-bold text-foreground italic">&ldquo;{plasticContent.footer}&rdquo;</p>
+              <p className="text-xl font-bold text-foreground italic">&ldquo;{polymersContent.footer}&rdquo;</p>
             </div>
           </div>
         )}

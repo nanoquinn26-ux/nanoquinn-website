@@ -65,7 +65,7 @@ export function AboutSection() {
               NanoQuinn is not here to compete in traditional markets — it is here to create entirely new categories through disruptive, sustainable technologies.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              From metals and infrastructure to electricals, plastics, floors, walls, and solar systems, our solutions are designed to eliminate degradation, reduce maintenance, and transform lifecycle economics.
+              From metals and infrastructure to electricals, polymerss, floors, walls, and solar systems, our solutions are designed to eliminate degradation, reduce maintenance, and transform lifecycle economics.
             </p>
             <p className="text-muted-foreground text-lg leading-relaxed">
               Through our forward-looking APaaS model, we are not just delivering products — we are delivering long-term performance guarantees, asset longevity, and maintenance-free ecosystems.

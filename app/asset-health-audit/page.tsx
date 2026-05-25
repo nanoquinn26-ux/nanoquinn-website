@@ -23,7 +23,7 @@ const auditContent = {
     { label: "Metal Assets", desc: "Corrosion, coating failure, structural exposure" },
     { label: "Civil & Waterproofing", desc: "Concrete, cracks, seepage, joint failures" },
     { label: "Floor Systems", desc: "Epoxy, polyurethane, abrasion, delamination" },
-    { label: "Plastic & Polymers", desc: "UV degradation, brittleness, chemical exposure" },
+    { label: "Polymers & Polymers", desc: "UV degradation, brittleness, chemical exposure" },
     { label: "Solar Assets", desc: "Panel condition, soiling, efficiency loss" },
     { label: "Electrical Assets", desc: "Panels, busbars, insulation, corrosion risks" },
   ],

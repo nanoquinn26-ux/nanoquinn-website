@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 
 export const metadata = {
   title: "Technology | NanoQuinn",
-  description: "Advanced sustainable nanotechnology — 8–10 micron transparent barrier protecting metal, plastic, FRP, concrete and critical infrastructure assets.",
+  description: "Advanced sustainable nanotechnology — 8–10 micron transparent barrier protecting metal, polymers, FRP, concrete and critical infrastructure assets.",
 }
 
 export default function TechnologyPage() {
