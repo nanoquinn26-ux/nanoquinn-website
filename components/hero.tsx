@@ -47,6 +47,7 @@ const protectedAreas = [
   { icon: Zap, label: "Infrastructure" },
   { icon: Train, label: "Railways" },
   { icon: Car, label: "Automotive" },
+   { icon: Fuel, label: "Oil & Gas" },
 ]
 
 function APaaSPlatformAnimation() {
