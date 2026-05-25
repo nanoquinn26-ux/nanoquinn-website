@@ -316,20 +316,6 @@ export function Hero() {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="animate-fade-up delay-400 mb-16 sm:mb-20">
-            <a
-              href="https://wa.me/918608604817"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="w-full sm:w-auto text-base px-10 py-6 h-auto rounded-full bg-[#1FA855] text-[#1E3A5F] hover:bg-[#34C66E]">
-                Request Industrial Demo
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-            </a>
-          </div>
-
           {/* APaaS Platform Visual Animation */}
           <APaaSPlatformAnimation />
         </div>

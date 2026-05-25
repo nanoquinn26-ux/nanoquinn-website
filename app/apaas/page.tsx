@@ -1,5 +1,4 @@
 import { ApaasSection } from "@/components/apaas-section"
-import { ProblemSection } from "@/components/problem-section"
 import { BreakthroughSection } from "@/components/breakthrough-section"
 import { CtaSection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
@@ -13,7 +12,6 @@ export default function ApaasPage() {
   return (
     <main className="min-h-screen pt-20">
       <ApaasSection />
-      <ProblemSection />
       <BreakthroughSection />
       <CtaSection />
       <Footer />
