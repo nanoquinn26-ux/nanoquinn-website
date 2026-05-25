@@ -255,20 +255,21 @@ function APaaSPlatformAnimation() {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1E3A5F] via-[#14B8A6]/20 to-[#22C55E]/30 bg-grid-dark">
-      {/* Subtle Grid Background */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `linear-gradient(to right, currentColor 1px, transparent 1px),
-                           linear-gradient(to bottom, currentColor 1px, transparent 1px)`,
-          backgroundSize: '80px 80px',
-        }} />
-      </div>
-
-      {/* Blue to Green Gradient Orbs */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#1E3A5F] via-transparent to-[#22C55E]/20 pointer-events-none" />
-      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#22C55E]/15 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#14B8A6]/15 rounded-full blur-3xl" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Main Background - Dark Navy to Green Gradient */}
+      <div className="absolute inset-0 bg-[#0F2744]" />
+      
+      {/* Green Gradient Glow on Right */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#22C55E]/25 via-[#14B8A6]/15 to-transparent" />
+      
+      {/* Light Blue Accent Glow */}
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#5EEAD4]/10 rounded-full blur-3xl" />
+      
+      {/* Subtle Grid Pattern */}
+      <div className="absolute inset-0 opacity-[0.04]" style={{
+        backgroundImage: `linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px)`,
+        backgroundSize: '60px 60px',
+      }} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-36 sm:pb-44">
         <div className="max-w-5xl mx-auto text-center">
