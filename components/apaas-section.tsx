@@ -63,6 +63,21 @@ export function ApaasSection() {
               <span className="text-white/80">Partner</span>
             </p>
           </div>
+          
+          {/* Video Section */}
+          <div className="mt-10">
+            <video 
+              className="w-full max-w-3xl mx-auto rounded-2xl shadow-2xl border border-border"
+              controls
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="/videos/apaas-intro.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
 
         {/* Asset Protection as a Service */}
