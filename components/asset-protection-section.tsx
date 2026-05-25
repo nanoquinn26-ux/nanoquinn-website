@@ -627,7 +627,7 @@ export function AssetProtectionSection() {
             Product/Service Range
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#2DD4BF] to-[#22C55E] bg-clip-text text-transparent">Sustainable Nanotechnology</span>{" "}
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Sustainable Nanotechnology</span>{" "}
             <span className="text-foreground">Solutions</span>
           </h2>
           <p className="mt-4 sm:mt-6 text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">

@@ -52,8 +52,8 @@ export function TechnologySection() {
               Technology Excellence
             </span>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#2DD4BF] to-[#22C55E] bg-clip-text text-transparent">German Precision.</span><br />
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#2DD4BF] to-[#22C55E] bg-clip-text text-transparent">Indian Scale.</span><br />
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">German Precision.</span><br />
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Indian Scale.</span><br />
               <span className="text-background">Global Impact.</span>
             </h2>
             

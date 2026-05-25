@@ -8,7 +8,7 @@ export function CtaSection() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
             <span className="text-background">Own the Future of</span>{" "}
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#2DD4BF] to-[#22C55E] bg-clip-text text-transparent">Asset Protection</span>
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Asset Protection</span>
           </h2>
           <p className="text-base sm:text-xl text-background/60 mb-10 sm:mb-16 max-w-2xl mx-auto">
             Join the revolution in asset protection. Choose your path to partnership.

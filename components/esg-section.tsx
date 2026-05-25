@@ -71,7 +71,7 @@ export function EsgSection() {
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-balance mb-6">
             <span className="text-white">Built for the</span>{" "}
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#2DD4BF] to-[#22C55E] bg-clip-text text-transparent">Future of Compliance.</span>
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Future of Compliance.</span>
           </h2>
           <p className="text-base sm:text-xl text-white/60 max-w-3xl mx-auto leading-relaxed">
             NanoQuinn is the only asset protection platform where sustainability is not a feature — it is the foundation. Every application eliminates chemicals, protects people, and supports governance.
