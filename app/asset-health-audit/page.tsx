@@ -76,7 +76,7 @@ export default function AssetHealthAuditPage() {
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-balance">
               <span className="text-foreground">&quot;Asset Health&quot;</span>{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#1FA855] bg-clip-text text-transparent">Audit</span>
+              <span className="bg-gradient-to-r from-[#67E8F9] via-[#2DD4BF] to-[#22C55E] bg-clip-text text-transparent">Audit</span>
             </h1>
             <p className="text-xl font-semibold text-[#1FA855] mb-6">{auditContent.subtitle}</p>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">{auditContent.intro}</p>
