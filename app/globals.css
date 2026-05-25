@@ -4,76 +4,86 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* NanoQuinn DEP Theme - Navy, Green, White */
+  /* NanoQuinn Light Theme - White/Gray with Green accents */
   --background: #FFFFFF;
-  --foreground: #1A2332;
-  --card: #FFFFFF;
-  --card-foreground: #1A2332;
+  --foreground: #1E3A5F;
+  --card: #F8FAFC;
+  --card-foreground: #1E3A5F;
   --popover: #FFFFFF;
-  --popover-foreground: #1A2332;
-  --primary: #1A2332;
+  --popover-foreground: #1E3A5F;
+  --primary: #1E3A5F;
   --primary-foreground: #FFFFFF;
-  --secondary: #F5F7FA;
-  --secondary-foreground: #1A2332;
-  --muted: #F0F2F5;
-  --muted-foreground: #6B7280;
-  --accent: #25D366;
+  --secondary: #F1F5F9;
+  --secondary-foreground: #1E3A5F;
+  --muted: #F1F5F9;
+  --muted-foreground: #64748B;
+  --accent: #1FA855;
   --accent-foreground: #FFFFFF;
-  --green: #25D366;
-  --green-light: #4ADE80;
-  --green-dark: #16A34A;
-  --navy: #1A2332;
-  --navy-light: #2D3748;
-  --navy-dark: #0F1419;
+  --green: #1FA855;
+  --green-light: #34C66E;
+  --green-dark: #0E7A45;
+  --teal: #14B8A6;
+  --teal-light: #5EEAD4;
+  --navy: #1E3A5F;
+  --navy-light: #2D4A6F;
+  --navy-dark: #1E3A5F;
+  --ink: #1E3A5F;
+  --paper: #FFFFFF;
+  --paper-light: #F8FAFC;
   --coral: #FF6B35;
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
-  --border: #E5E7EB;
-  --input: #F3F4F6;
-  --ring: #25D366;
-  --chart-1: #25D366;
-  --chart-2: #1A2332;
+  --border: #E2E8F0;
+  --input: #F1F5F9;
+  --ring: #1FA855;
+  --chart-1: #1FA855;
+  --chart-2: #14B8A6;
   --chart-3: #FF6B35;
-  --chart-4: #3B82F6;
-  --chart-5: #8B5CF6;
+  --chart-4: #1E3A5F;
+  --chart-5: #64748B;
   --radius: 0.625rem;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #1A2332;
-  --sidebar-primary: #25D366;
+  --sidebar-foreground: #1E3A5F;
+  --sidebar-primary: #1FA855;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #F5F7FA;
-  --sidebar-accent-foreground: #1A2332;
-  --sidebar-border: #E5E7EB;
-  --sidebar-ring: #25D366;
+  --sidebar-accent: #F1F5F9;
+  --sidebar-accent-foreground: #1E3A5F;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #1FA855;
 }
 
 .dark {
-  --background: #1A2332;
-  --foreground: #F5F7FA;
-  --card: #2D3748;
-  --card-foreground: #F5F7FA;
-  --popover: #2D3748;
-  --popover-foreground: #F5F7FA;
-  --primary: #F5F7FA;
-  --primary-foreground: #1A2332;
-  --secondary: #2D3748;
-  --secondary-foreground: #F5F7FA;
-  --muted: #374151;
-  --muted-foreground: #9CA3AF;
-  --accent: #25D366;
+  --background: #1E3A5F;
+  --foreground: #F8FAFC;
+  --card: #2D4A6F;
+  --card-foreground: #F8FAFC;
+  --popover: #2D4A6F;
+  --popover-foreground: #F8FAFC;
+  --primary: #F8FAFC;
+  --primary-foreground: #1E3A5F;
+  --secondary: #1E3A5F;
+  --secondary-foreground: #F8FAFC;
+  --muted: #2D4A6F;
+  --muted-foreground: #94A3B8;
+  --accent: #1FA855;
   --accent-foreground: #FFFFFF;
-  --green: #25D366;
-  --green-light: #4ADE80;
-  --green-dark: #16A34A;
-  --navy: #1A2332;
-  --navy-light: #2D3748;
-  --navy-dark: #0F1419;
+  --green: #1FA855;
+  --green-light: #34C66E;
+  --green-dark: #0E7A45;
+  --teal: #14B8A6;
+  --teal-light: #5EEAD4;
+  --navy: #1E3A5F;
+  --navy-light: #2D4A6F;
+  --navy-dark: #1E3A5F;
+  --ink: #1E3A5F;
+  --paper: #FFFFFF;
+  --paper-light: #F8FAFC;
   --coral: #FF6B35;
   --destructive: #EF4444;
-  --destructive-foreground: #F5F7FA;
-  --border: #374151;
-  --input: #2D3748;
-  --ring: #25D366;
+  --destructive-foreground: #F8FAFC;
+  --border: #3D5A7F;
+  --input: #2D4A6F;
+  --ring: #1FA855;
 }
 
 @theme inline {
@@ -96,9 +106,14 @@
   --color-green: var(--green);
   --color-green-light: var(--green-light);
   --color-green-dark: var(--green-dark);
+  --color-teal: var(--teal);
+  --color-teal-light: var(--teal-light);
   --color-navy: var(--navy);
   --color-navy-light: var(--navy-light);
   --color-navy-dark: var(--navy-dark);
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-paper-light: var(--paper-light);
   --color-coral: var(--coral);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
@@ -145,6 +160,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+  .bg-grid-soft {
+    background-image: linear-gradient(rgba(30,58,95,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(30,58,95,.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .bg-grid-dark {
+    background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+    background-size: 40px 40px;
   }
 }
 

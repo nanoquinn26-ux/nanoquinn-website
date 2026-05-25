@@ -9,9 +9,9 @@ import { Menu, X } from "lucide-react"
 
 const navItems = [
   { label: "APaaS Model", href: "/apaas" },
+  { label: "Technology", href: "/technology" },
   { label: "Solutions", href: "/asset-protection" },
   { label: "Asset Health Audit", href: "/asset-health-audit" },
-  { label: "Technology", href: "/technology" },
   { label: "Industries", href: "/industries" },
   { label: "ESG", href: "/esg" },
   { label: "Contact", href: "/contact" },
@@ -59,8 +59,8 @@ export function Header() {
                   href={item.href}
                   className={`text-sm font-medium transition-colors ${
                     isActive
-                      ? "text-[#25D366] border-b-2 border-[#25D366] pb-0.5"
-                      : "text-foreground hover:text-[#25D366]"
+                      ? "text-[#1FA855] border-b-2 border-[#1FA855] pb-0.5"
+                      : "text-foreground hover:text-[#1FA855]"
                   }`}
                 >
                   {item.label}
@@ -75,7 +75,7 @@ export function Header() {
               href="https://wa.me/918608604817"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#25D366] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
+              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#1FA855] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
             >
               <WhatsAppIcon />
               Chat on WhatsApp
@@ -104,7 +104,7 @@ export function Header() {
                     href={item.href}
                     className={`text-base font-medium py-3 px-4 rounded-xl transition-colors ${
                       isActive
-                        ? "bg-[#25D366]/10 text-[#25D366]"
+                        ? "bg-[#1FA855]/10 text-[#1FA855]"
                         : "text-muted-foreground hover:text-foreground hover:bg-muted"
                     }`}
                   >
@@ -117,7 +117,7 @@ export function Header() {
                   href="https://wa.me/918608604817"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#25D366] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
+                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#1FA855] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
                 >
                   <WhatsAppIcon />
                   Chat on WhatsApp

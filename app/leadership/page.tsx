@@ -99,12 +99,12 @@ export default function LeadershipPage() {
       {/* Hero */}
       <div className="bg-foreground text-background pt-32 pb-20 sm:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Leadership
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-balance leading-tight mb-6">
             <span className="text-background">The Minds Behind</span>{" "}
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">NanoQuinn</span>
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn</span>
           </h1>
           <p className="text-base sm:text-xl text-background/70 max-w-2xl mx-auto leading-relaxed">
             Visionaries, builders, and strategists driving a global Asset Protection revolution.
@@ -118,11 +118,11 @@ export default function LeadershipPage() {
           {leaders.map((leader, idx) => (
             <div
               key={leader.name}
-              className="bg-background border border-border rounded-3xl overflow-hidden hover:border-[#25D366]/60 hover:shadow-lg transition-all duration-200"
+              className="bg-background border border-border rounded-3xl overflow-hidden hover:border-[#1FA855]/60 hover:shadow-lg transition-all duration-200"
             >
               {/* Top index strip */}
               <div className="bg-foreground px-8 py-3 flex items-center gap-3">
-                <span className="text-sm font-black uppercase tracking-widest" style={{ color: "#25D366" }}>
+                <span className="text-sm font-black uppercase tracking-widest" style={{ color: "#1FA855" }}>
                   {String(idx + 1).padStart(2, "0")}
                 </span>
                 <div className="h-px flex-1 bg-background/10" />
@@ -150,10 +150,10 @@ export default function LeadershipPage() {
                   ) : (
                     <div
                       className="w-full h-72 lg:h-80 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed"
-                      style={{ borderColor: "#25D366", backgroundColor: "#25D36610" }}
+                      style={{ borderColor: "#1FA855", backgroundColor: "#1FA85510" }}
                     >
-                      <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#25D36630" }} />
-                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#25D366" }}>
+                      <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#1FA85530" }} />
+                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#1FA855" }}>
                         Photo
                       </span>
                     </div>
@@ -171,7 +171,7 @@ export default function LeadershipPage() {
                       <span
                         key={tag}
                         className="px-4 py-2 rounded-full text-sm font-bold text-black text-center leading-snug"
-                        style={{ backgroundColor: "#25D366" }}
+                        style={{ backgroundColor: "#1FA855" }}
                       >
                         {tag}
                       </span>
@@ -186,7 +186,7 @@ export default function LeadershipPage() {
                       {leader.name === "Rajiv Sanghvi" && i === 0 ? (
                         <>
                           For 30 years, he has believed in creating{" "}
-                          <span className="font-black text-foreground" style={{ color: "#25D366" }}>
+                          <span className="font-black text-foreground" style={{ color: "#1FA855" }}>
                             Only Me, never Me Too.
                           </span>
                         </>
@@ -195,7 +195,7 @@ export default function LeadershipPage() {
                   ))}
 
                   {leader.statements.length > 0 && (
-                    <div className="my-2 border-l-4 pl-5 flex flex-col gap-2" style={{ borderColor: "#25D366" }}>
+                    <div className="my-2 border-l-4 pl-5 flex flex-col gap-2" style={{ borderColor: "#1FA855" }}>
                       {leader.statements.map((s, i) => (
                         <p key={i} className="font-bold text-foreground italic">{s}</p>
                       ))}
@@ -205,7 +205,7 @@ export default function LeadershipPage() {
                   <p className="text-muted-foreground leading-relaxed">{leader.closing}</p>
 
                   {leader.skills && (
-                    <p className="text-sm font-bold mt-2 pt-4 border-t border-border" style={{ color: "#25D366" }}>
+                    <p className="text-sm font-bold mt-2 pt-4 border-t border-border" style={{ color: "#1FA855" }}>
                       {leader.skills}
                     </p>
                   )}

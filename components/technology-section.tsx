@@ -48,12 +48,12 @@ export function TechnologySection() {
 
           {/* Content */}
           <div className="order-1 lg:order-2">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               Technology Excellence
             </span>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">German Precision.</span><br />
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Indian Scale.</span><br />
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">German Precision.</span><br />
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Indian Scale.</span><br />
               <span className="text-background">Global Impact.</span>
             </h2>
             
