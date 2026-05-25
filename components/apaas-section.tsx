@@ -92,7 +92,7 @@ export function ApaasSection() {
           <div className="bg-gradient-to-br from-[#1E3A5F] via-[#1E3A5F] to-[#1E3A5F] rounded-3xl p-10 sm:p-16 lg:p-20">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance text-white">
               NanoQuinn{" "}
-              <span className="bg-gradient-to-r from-[#34C66E] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">
                 APaaS™
               </span>{" "}
               Platform

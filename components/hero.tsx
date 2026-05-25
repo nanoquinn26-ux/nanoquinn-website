@@ -240,11 +240,11 @@ function APaaSPlatformAnimation() {
             }`}
           >
             <div className="inline-flex items-center gap-3 sm:gap-6 px-6 py-3 rounded-full bg-gradient-to-r from-[#1FA855]/20 to-[#1FA855]/20 border border-white/10">
-              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#14B8A6] to-[#34C66E] bg-clip-text text-transparent">PROTECT</span>
+              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">PROTECT</span>
               <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
               <span className="text-sm sm:text-base font-bold text-white">PRESERVE</span>
               <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
-              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#5EEAD4] to-[#22C55E] bg-clip-text text-transparent">PERFORM</span>
+              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">PERFORM</span>
             </div>
           </div>
         </div>
