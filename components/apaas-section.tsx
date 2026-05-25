@@ -160,8 +160,8 @@ export function ApaasSection() {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {managementPainPoints.map((pain, index) => (
-              <div key={index} className="flex items-center gap-3 bg-red-500/10 border border-red-500/30 rounded-xl p-4">
-                <pain.icon className="w-5 h-5 text-red-500 shrink-0" />
+<div key={index} className="flex items-center gap-3 bg-sky-500/10 border border-sky-500/30 rounded-xl p-4">
+<pain.icon className="w-5 h-5 text-sky-500 shrink-0" />
                 <span className="text-sm font-medium">{pain.text}</span>
               </div>
             ))}
@@ -178,15 +178,15 @@ export function ApaasSection() {
             
             <div className="grid md:grid-cols-2 gap-8">
               {/* Traditional */}
-              <div className="bg-background rounded-2xl p-6 border border-red-500/30">
-                <h3 className="text-lg font-bold text-red-500 mb-4 flex items-center gap-2">
+<div className="bg-background rounded-2xl p-6 border border-sky-500/30">
+<h3 className="text-lg font-bold text-sky-500 mb-4 flex items-center gap-2">
                   <XCircle className="w-5 h-5" />
                   Traditional Industries Operate With:
                 </h3>
                 <ul className="space-y-3">
                   {traditionalProblems.map((item, index) => (
                     <li key={index} className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-red-500 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-sky-500 shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -265,7 +265,7 @@ export function ApaasSection() {
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-10">
             {traditionalAccepted.map((item, index) => (
               <div key={index} className="flex items-center gap-2 bg-muted rounded-xl p-4 text-sm">
-                <XCircle className="w-4 h-4 text-red-500 shrink-0" />
+                <XCircle className="w-4 h-4 text-sky-500 shrink-0" />
                 {item}
               </div>
             ))}
@@ -278,8 +278,8 @@ export function ApaasSection() {
           <div className="bg-foreground text-background rounded-2xl p-8 text-center">
             <p className="text-lg text-background/70 mb-2">NanoQuinn APaaS™ introduces a shift from:</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-6">
-              <div className="bg-red-500/20 rounded-xl px-6 py-4">
-                <p className="text-red-400 font-semibold">{'"Frequent Temporary Maintenance"'}</p>
+<div className="bg-sky-500/20 rounded-xl px-6 py-4">
+<p className="text-sky-400 font-semibold">{'"Frequent Temporary Maintenance"'}</p>
               </div>
               <ArrowRight className="w-6 h-6 text-[#1FA855] rotate-90 sm:rotate-0" />
               <div className="bg-[#1FA855]/20 rounded-xl px-6 py-4">
