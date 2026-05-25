@@ -286,7 +286,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/20 bg-white/5 mb-8 sm:mb-10 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-[#1FA855] animate-pulse" />
-            <span className="text-xs sm:text-sm font-medium bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">WORLD&apos;s FIRST APAAS PLATFORM</span>
+            <span className="text-xs sm:text-sm font-medium text-white">WORLD&apos;s FIRST APAAS PLATFORM</span>
           </div>
 
           {/* Headline */}
@@ -298,8 +298,8 @@ export function Hero() {
 
           {/* Sub-headline */}
           <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
-            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#1FA855]/20 border border-[#1FA855]/40">
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Never Before</span>{" "}
+            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#22C55E]/30 border border-[#22C55E]/50">
+              <span className="text-white">Never Before</span>{" "}
               <span className="text-white">In Industrial History</span>
             </p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
