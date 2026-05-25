@@ -99,7 +99,7 @@ export function ApaasSection() {
             </h1>
             <p className="text-xl sm:text-2xl leading-relaxed font-medium">
               <span className="text-white/80">Your</span>{" "}
-              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent font-bold">
+              <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent font-bold">
                 360° Sustainable Maintenance & Asset Protection
               </span>{" "}
               <span className="text-white/80">Partner</span>
@@ -124,7 +124,7 @@ export function ApaasSection() {
           <div className="bg-foreground text-background rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
               <span className="text-background">One Partner.</span>{" "}
-              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Every Surface.</span>{" "}
+              <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">Every Surface.</span>{" "}
               <span className="text-background">Total Responsibility.</span>
             </h2>
             <p className="text-lg text-background/70 mb-10">Protecting:</p>
@@ -152,7 +152,7 @@ export function ApaasSection() {
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">
             <span className="text-foreground">Removing The</span>{" "}
-            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Biggest Pain Points</span>
+            <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">Biggest Pain Points</span>
           </h2>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
             NanoQuinn APaaS™ is designed to remove the biggest pain points faced by management:
@@ -172,7 +172,7 @@ export function ApaasSection() {
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
           <div className="bg-muted rounded-3xl p-8 sm:p-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">
-              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Massive Savings</span>{" "}
+              <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">Massive Savings</span>{" "}
               <span className="text-foreground">Advantage</span>
             </h2>
             
@@ -294,9 +294,9 @@ export function ApaasSection() {
           <div className="bg-muted rounded-3xl p-8 sm:p-12 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6">
             <span className="text-foreground">From</span>{" "}
-            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Temporary Maintenance</span>{" "}
+            <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">Temporary Maintenance</span>{" "}
             <span className="text-foreground">To</span>{" "}
-            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Long-Term Preservation</span>
+            <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">Long-Term Preservation</span>
           </h2>
             
             <p className="text-muted-foreground mb-8">NanoQuinn APaaS™ focuses on:</p>
@@ -331,7 +331,7 @@ export function ApaasSection() {
               NanoQuinn APaaS™
             </h2>
             <p className="text-xl sm:text-2xl font-bold">
-              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">
                 The Future Of Sustainable Asset Protection & 360° Maintenance Management.
               </span>
             </p>

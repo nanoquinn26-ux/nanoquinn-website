@@ -19,7 +19,7 @@ export default function ContactPage() {
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 text-balance">
               <span className="text-white">Let&apos;s</span>{" "}
-              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Protect Your Assets</span>{" "}
+              <span className="bg-gradient-to-r from-[#14B8A6] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">Protect Your Assets</span>{" "}
               <span className="text-white">Together</span>
             </h1>
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
