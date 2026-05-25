@@ -5,7 +5,8 @@ import { Button } from "@/components/ui/button"
 import { 
   ArrowRight, Shield, Leaf, Award, Search, Paintbrush, Settings, 
   Eye, BadgeCheck, Handshake, Building2, Factory, Container, 
-  PipetteIcon, Zap, Ship, Wind
+  PipetteIcon, Zap, Ship, Wind,
+  Train
 } from "lucide-react"
 
 const highlights = [
@@ -42,7 +43,7 @@ const protectedAreas = [
   { icon: Container, label: "Solar Plants" },
   { icon: PipetteIcon, label: "Chemical" },
   { icon: Zap, label: "Infrastructure" },
-  { icon: Ship, label: "Railways" },
+  { icon: Train, label: "Railways" },
   { icon: Wind, label: "Automotive" },
 ]
 
