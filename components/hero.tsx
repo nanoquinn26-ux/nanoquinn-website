@@ -298,7 +298,7 @@ export function Hero() {
 
           {/* Sub-headline */}
           <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
-            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#1FA855]/20 border border-[#1FA855]/40">
+            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#22C55E]/30 border border-[#22C55E]/50">
               <span className="text-white">Never Before</span>{" "}
               <span className="text-white">In Industrial History</span>
             </p>
