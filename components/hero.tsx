@@ -134,8 +134,8 @@ function APaaSPlatformAnimation() {
             </div>
 
             {/* Center - Animated Orbit */}
-            <div className="w-full lg:w-1/3 flex justify-center">
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80">
+            <div className="w-full lg:w-1/3 flex justify-center overflow-visible">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 overflow-visible">
                 {/* Orbit ring */}
                 <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/10 animate-[spin_30s_linear_infinite]" />
                 <div className="absolute inset-4 rounded-full border border-white/5" />
@@ -166,8 +166,8 @@ function APaaSPlatformAnimation() {
                         <item.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${isActive ? 'text-white' : 'text-white/60'}`} />
                       </div>
                       {isActive && (
-                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                          <span className="text-xs font-semibold text-white bg-black/50 px-2 py-1 rounded-full">
+                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap z-50">
+                          <span className="text-xs font-semibold text-white bg-[#1E3A5F]/90 px-3 py-1.5 rounded-full shadow-lg border border-white/20">
                             {item.label}
                           </span>
                         </div>
