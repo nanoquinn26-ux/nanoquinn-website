@@ -41,9 +41,9 @@ const protectedAreas = [
   { icon: Factory, label: "Industrial Plants" },
   { icon: Container, label: "Solar Plants" },
   { icon: PipetteIcon, label: "Chemical" },
-  { icon: Zap, label: "Power" },
-  { icon: Ship, label: "Marine" },
-  { icon: Wind, label: "Renewable" },
+  { icon: Zap, label: "Infrastructure" },
+  { icon: Ship, label: "Railways" },
+  { icon: Wind, label: "Automotive" },
 ]
 
 function APaaSPlatformAnimation() {
