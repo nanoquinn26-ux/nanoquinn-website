@@ -116,7 +116,7 @@ function APaaSPlatformAnimation() {
                   key={benefit}
                   className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-[#1FA855]/30"
                   style={{ 
-                    opacity: index <= activeOrbitIndex ? 1 : 0.4,
+                    opacity: index <= activeOrbitIndex ? 1 : 0.7,
                     transform: index === activeOrbitIndex % 6 ? 'translateX(4px)' : 'translateX(0)',
                     transition: 'all 0.5s ease-out'
                   }}
@@ -124,7 +124,7 @@ function APaaSPlatformAnimation() {
                   <div className="w-8 h-8 rounded-full bg-[#1FA855]/20 flex items-center justify-center shrink-0">
                     <Leaf className="w-4 h-4 text-[#1FA855]" />
                   </div>
-                  <span className="text-sm text-white/80 font-medium">{benefit}</span>
+                  <span className="text-sm text-white font-medium">{benefit}</span>
                 </div>
               ))}
             </div>
