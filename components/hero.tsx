@@ -16,12 +16,12 @@ const highlights = [
 
 // Orbiting service cycle items
 const orbitItems = [
-  { icon: Handshake, label: "One Partner", color: "#25D366" },
+  { icon: Handshake, label: "One Partner", color: "#1FA855" },
   { icon: Search, label: "Inspect", color: "#3B82F6" },
   { icon: Paintbrush, label: "Protect", color: "#10B981" },
   { icon: Settings, label: "Maintain", color: "#6366F1" },
   { icon: Eye, label: "Monitor", color: "#8B5CF6" },
-  { icon: BadgeCheck, label: "Warranty", color: "#25D366" },
+  { icon: BadgeCheck, label: "Warranty", color: "#1FA855" },
   { icon: Leaf, label: "Sustainable", color: "#22C55E" },
 ]
 
@@ -82,21 +82,21 @@ function APaaSPlatformAnimation() {
           <div 
             className="absolute -inset-[200%] animate-[spin_12s_linear_infinite]"
             style={{
-              background: `conic-gradient(from 0deg, transparent 0%, #25D366 5%, transparent 10%, #25D366 15%, transparent 20%, #25D366 25%, transparent 30%)`
+              background: `conic-gradient(from 0deg, transparent 0%, #1FA855 5%, transparent 10%, #1FA855 15%, transparent 20%, #1FA855 25%, transparent 30%)`
             }}
           />
-          <div className="absolute inset-[1px] rounded-3xl bg-[#1A2332]/95" />
+          <div className="absolute inset-[1px] rounded-3xl bg-[#0B2545]/95" />
         </div>
 
         <div className="relative p-6 sm:p-10">
           {/* Header */}
           <div className="text-center mb-8">
-            <p className="text-[#25D366] text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold mb-2">
+            <p className="text-[#1FA855] text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold mb-2">
               One Trusted Partner For
             </p>
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
               <span className="text-white">Complete</span>{" "}
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Asset Maintenance</span>
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Asset Maintenance</span>
             </h3>
           </div>
 
@@ -115,15 +115,15 @@ function APaaSPlatformAnimation() {
               ].map((benefit, index) => (
                 <div 
                   key={benefit}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-[#25D366]/30"
+                  className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-[#1FA855]/30"
                   style={{ 
                     opacity: index <= activeOrbitIndex ? 1 : 0.4,
                     transform: index === activeOrbitIndex % 6 ? 'translateX(4px)' : 'translateX(0)',
                     transition: 'all 0.5s ease-out'
                   }}
                 >
-                  <div className="w-8 h-8 rounded-full bg-[#25D366]/20 flex items-center justify-center shrink-0">
-                    <Leaf className="w-4 h-4 text-[#25D366]" />
+                  <div className="w-8 h-8 rounded-full bg-[#1FA855]/20 flex items-center justify-center shrink-0">
+                    <Leaf className="w-4 h-4 text-[#1FA855]" />
                   </div>
                   <span className="text-sm text-white/80 font-medium">{benefit}</span>
                 </div>
@@ -178,12 +178,12 @@ function APaaSPlatformAnimation() {
                   <div className="relative">
                     <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-gradient-to-br from-[#0A3D62] to-[#1A5276] flex items-center justify-center shadow-2xl border border-white/20">
                       <div className="text-center">
-                        <Shield className="w-10 h-10 sm:w-14 sm:h-14 text-[#25D366] mx-auto mb-1" />
+                        <Shield className="w-10 h-10 sm:w-14 sm:h-14 text-[#1FA855] mx-auto mb-1" />
                         <Leaf className="w-6 h-6 sm:w-8 sm:h-8 text-[#22C55E] mx-auto -mt-2" />
                       </div>
                     </div>
                     {/* Pulse ring */}
-                    <div className="absolute inset-0 rounded-2xl border-2 border-[#25D366]/50 animate-ping" style={{ animationDuration: '2s' }} />
+                    <div className="absolute inset-0 rounded-2xl border-2 border-[#1FA855]/50 animate-ping" style={{ animationDuration: '2s' }} />
                   </div>
                 </div>
               </div>
@@ -192,18 +192,18 @@ function APaaSPlatformAnimation() {
             {/* Right Side - Protected Areas */}
             <div className="w-full lg:w-1/3">
             <p className="text-xs text-white/50 uppercase tracking-wider mb-4 text-center lg:text-left">
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-semibold">Potential Areas</span> We Protect
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent font-semibold">Potential Areas</span> We Protect
             </p>
               <div className="grid grid-cols-4 lg:grid-cols-2 gap-2">
                 {protectedAreas.map((area, index) => (
                   <div 
                     key={area.label}
-                    className="flex flex-col items-center p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#25D366]/30 transition-all duration-300 group"
+                    className="flex flex-col items-center p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#1FA855]/30 transition-all duration-300 group"
                     style={{
                       animationDelay: `${index * 100}ms`
                     }}
                   >
-                    <area.icon className="w-5 h-5 text-[#25D366] mb-1 group-hover:scale-110 transition-transform" />
+                    <area.icon className="w-5 h-5 text-[#1FA855] mb-1 group-hover:scale-110 transition-transform" />
                     <span className="text-[10px] sm:text-xs text-white/70 text-center">{area.label}</span>
                   </div>
                 ))}
@@ -214,7 +214,7 @@ function APaaSPlatformAnimation() {
           {/* Asset Categories Bar */}
           <div className="mt-8 pt-6 border-t border-white/10">
             <p className="text-xs text-white/50 uppercase tracking-wider mb-4 text-center">
-              Works on <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-semibold">All Surfaces</span> & Assets
+              Works on <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent font-semibold">All Surfaces</span> & Assets
             </p>
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
               {assetCategories.map((category, index) => (
@@ -222,11 +222,11 @@ function APaaSPlatformAnimation() {
                   key={category.label}
                   className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border transition-all duration-500 ${
                     index < visibleCategories 
-                      ? 'bg-gradient-to-r from-[#25D366]/20 to-[#25D366]/10 border-[#25D366]/30 opacity-100 translate-y-0' 
+                      ? 'bg-gradient-to-r from-[#1FA855]/20 to-[#1FA855]/10 border-[#1FA855]/30 opacity-100 translate-y-0' 
                       : 'bg-white/5 border-white/10 opacity-0 translate-y-4'
                   }`}
                 >
-                  <category.icon className="w-4 h-4 text-[#25D366]" />
+                  <category.icon className="w-4 h-4 text-[#1FA855]" />
                   <span className="text-xs sm:text-sm font-medium text-white/80">{category.label}</span>
                 </div>
               ))}
@@ -239,12 +239,12 @@ function APaaSPlatformAnimation() {
               showTagline ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            <div className="inline-flex items-center gap-3 sm:gap-6 px-6 py-3 rounded-full bg-gradient-to-r from-[#25D366]/20 to-[#25D366]/20 border border-white/10">
-              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#67E8F9] to-[#4ADE80] bg-clip-text text-transparent">PROTECT</span>
+            <div className="inline-flex items-center gap-3 sm:gap-6 px-6 py-3 rounded-full bg-gradient-to-r from-[#1FA855]/20 to-[#1FA855]/20 border border-white/10">
+              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#7BC4F0] to-[#34C66E] bg-clip-text text-transparent">PROTECT</span>
               <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
               <span className="text-sm sm:text-base font-bold text-white">PRESERVE</span>
               <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
-              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">PERFORM</span>
+              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">PERFORM</span>
             </div>
           </div>
         </div>
@@ -255,7 +255,7 @@ function APaaSPlatformAnimation() {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#1A2332]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0B2545]">
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
@@ -266,38 +266,38 @@ export function Hero() {
       </div>
 
       {/* Accent Gradient Orbs - Gold & Aqua */}
-      <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[#25D366]/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#25D366]/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[#1FA855]/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#1FA855]/10 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-36 sm:pb-44">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/20 bg-white/5 mb-8 sm:mb-10 animate-fade-up">
-            <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
-            <span className="text-xs sm:text-sm font-medium bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">WORLD&apos;s FIRST APAAS PLATFORM</span>
+            <span className="w-2 h-2 rounded-full bg-[#1FA855] animate-pulse" />
+            <span className="text-xs sm:text-sm font-medium bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">WORLD&apos;s FIRST APAAS PLATFORM</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight text-balance mb-6 sm:mb-8 animate-fade-up delay-100">
             <span className="text-white">The End of</span>{" "}
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Asset Degradation</span><br />
+            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Asset Degradation</span><br />
             <span className="text-white">Has Begun.</span>
           </h1>
 
           {/* Sub-headline */}
           <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
-            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#25D366]/20 border border-[#25D366]/40">
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Never Before</span>{" "}
+            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#1FA855]/20 border border-[#1FA855]/40">
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Never Before</span>{" "}
               <span className="text-white">In Industrial History</span>
             </p>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
               An{" "}
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">End-to-End Asset Protection</span>{" "}
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">End-to-End Asset Protection</span>{" "}
               Platform
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed">
               Combining{" "}
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-semibold">Sustainable Nanotechnology</span>,<br className="hidden sm:block" />
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent font-semibold">Sustainable Nanotechnology</span>,<br className="hidden sm:block" />
               Lifecycle Preservation & Unconditional Warranty
             </p>
           </div>
@@ -306,8 +306,8 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-8 mb-10 sm:mb-12 animate-fade-up delay-300">
             {highlights.map((item) => (
               <div key={item.label} className="flex items-center gap-3 text-sm text-white/80 justify-center sm:justify-start">
-                <div className="w-8 h-8 rounded-full bg-[#25D366]/20 flex items-center justify-center shrink-0">
-                  <item.icon className="w-4 h-4 text-[#25D366]" />
+                <div className="w-8 h-8 rounded-full bg-[#1FA855]/20 flex items-center justify-center shrink-0">
+                  <item.icon className="w-4 h-4 text-[#1FA855]" />
                 </div>
                 <span className="font-medium">{item.label}</span>
               </div>
@@ -321,7 +321,7 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="w-full sm:w-auto text-base px-10 py-6 h-auto rounded-full bg-[#25D366] text-[#1A2332] hover:bg-[#4ADE80]">
+              <Button size="lg" className="w-full sm:w-auto text-base px-10 py-6 h-auto rounded-full bg-[#1FA855] text-[#0B2545] hover:bg-[#34C66E]">
                 Request Industrial Demo
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -337,7 +337,7 @@ export function Hero() {
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs text-white/50 uppercase tracking-wider">Scroll to explore</span>
             <div className="w-6 h-10 border-2 border-white/20 rounded-full flex items-start justify-center p-1">
-              <div className="w-1.5 h-3 bg-[#25D366] rounded-full animate-bounce" />
+              <div className="w-1.5 h-3 bg-[#1FA855] rounded-full animate-bounce" />
             </div>
           </div>
         </div>

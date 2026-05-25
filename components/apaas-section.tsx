@@ -89,17 +89,17 @@ export function ApaasSection() {
 
         {/* Hero Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
-          <div className="bg-gradient-to-br from-[#1A2332] via-[#1A2332] to-[#0F1419] rounded-3xl p-10 sm:p-16 lg:p-20">
+          <div className="bg-gradient-to-br from-[#0B2545] via-[#0B2545] to-[#06182E] rounded-3xl p-10 sm:p-16 lg:p-20">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance text-white">
               NanoQuinn{" "}
-              <span className="bg-gradient-to-r from-[#4ADE80] via-[#25D366] to-[#16A34A] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#34C66E] via-[#1FA855] to-[#0E7A45] bg-clip-text text-transparent">
                 APaaS™
               </span>{" "}
               Platform
             </h1>
             <p className="text-xl sm:text-2xl leading-relaxed font-medium">
               <span className="text-white/80">Your</span>{" "}
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent font-bold">
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent font-bold">
                 360° Sustainable Maintenance & Asset Protection
               </span>{" "}
               <span className="text-white/80">Partner</span>
@@ -124,7 +124,7 @@ export function ApaasSection() {
           <div className="bg-foreground text-background rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
               <span className="text-background">One Partner.</span>{" "}
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Every Surface.</span>{" "}
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Every Surface.</span>{" "}
               <span className="text-background">Total Responsibility.</span>
             </h2>
             <p className="text-lg text-background/70 mb-10">Protecting:</p>
@@ -132,8 +132,8 @@ export function ApaasSection() {
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
               {protectedAssets.map((asset, index) => (
                 <div key={index} className="flex flex-col items-center text-center p-4 bg-background/10 rounded-xl">
-                  <div className="w-12 h-12 rounded-xl bg-[#25D366]/20 flex items-center justify-center mb-3">
-                    <asset.icon className="w-6 h-6 text-[#25D366]" />
+                  <div className="w-12 h-12 rounded-xl bg-[#1FA855]/20 flex items-center justify-center mb-3">
+                    <asset.icon className="w-6 h-6 text-[#1FA855]" />
                   </div>
                   <span className="text-sm font-medium text-background/90">{asset.label}</span>
                 </div>
@@ -141,7 +141,7 @@ export function ApaasSection() {
             </div>
             
             <div className="mt-10 pt-8 border-t border-background/20">
-              <p className="text-xl sm:text-2xl font-bold text-[#25D366]">
+              <p className="text-xl sm:text-2xl font-bold text-[#1FA855]">
                 A 360° Maintenance Partner For Industry
               </p>
             </div>
@@ -152,7 +152,7 @@ export function ApaasSection() {
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">
             <span className="text-foreground">Removing The</span>{" "}
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Biggest Pain Points</span>
+            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Biggest Pain Points</span>
           </h2>
           <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
             NanoQuinn APaaS™ is designed to remove the biggest pain points faced by management:
@@ -172,7 +172,7 @@ export function ApaasSection() {
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
           <div className="bg-muted rounded-3xl p-8 sm:p-12">
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10">
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Massive Savings</span>{" "}
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Massive Savings</span>{" "}
               <span className="text-foreground">Advantage</span>
             </h2>
             
@@ -194,15 +194,15 @@ export function ApaasSection() {
               </div>
               
               {/* APaaS */}
-              <div className="bg-background rounded-2xl p-6 border border-[#25D366]/30">
-                <h3 className="text-lg font-bold text-[#25D366] mb-4 flex items-center gap-2">
+              <div className="bg-background rounded-2xl p-6 border border-[#1FA855]/30">
+                <h3 className="text-lg font-bold text-[#1FA855] mb-4 flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5" />
                   NanoQuinn APaaS™ Introduces:
                 </h3>
                 <ul className="space-y-3">
                   {apaasAdvantages.map((item, index) => (
                     <li key={index} className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0" />
                       {item}
                     </li>
                   ))}
@@ -210,7 +210,7 @@ export function ApaasSection() {
               </div>
             </div>
             
-            <div className="mt-10 bg-[#25D366] rounded-2xl p-6 text-center">
+            <div className="mt-10 bg-[#1FA855] rounded-2xl p-6 text-center">
               <p className="text-lg sm:text-xl font-bold text-white">
                 Result: Huge OPEX Savings + CAPEX Protection + Operational Peace Of Mind
               </p>
@@ -220,7 +220,7 @@ export function ApaasSection() {
 
         {/* Sustainability Section */}
         <div className="max-w-5xl mx-auto mb-20 sm:mb-28">
-          <span className="block text-center px-6 py-2 rounded-full bg-[#25D366] text-white text-sm font-bold mb-8 uppercase tracking-widest w-fit mx-auto">
+          <span className="block text-center px-6 py-2 rounded-full bg-[#1FA855] text-white text-sm font-bold mb-8 uppercase tracking-widest w-fit mx-auto">
             Sustainability At The Core
           </span>
           
@@ -239,12 +239,12 @@ export function ApaasSection() {
             </div>
             
             {/* Sustainable Alternative */}
-            <div className="bg-[#25D366]/10 border border-[#25D366]/30 rounded-2xl p-6">
-              <h3 className="text-lg font-bold text-[#25D366] mb-4">NanoQuinn Introduces:</h3>
+            <div className="bg-[#1FA855]/10 border border-[#1FA855]/30 rounded-2xl p-6">
+              <h3 className="text-lg font-bold text-[#1FA855] mb-4">NanoQuinn Introduces:</h3>
               <ul className="space-y-3">
                 {sustainableAlternatives.map((item, index) => (
                   <li key={index} className="flex items-center gap-3 text-sm text-foreground">
-                    <CheckCircle2 className="w-4 h-4 text-[#25D366] shrink-0" />
+                    <CheckCircle2 className="w-4 h-4 text-[#1FA855] shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -281,9 +281,9 @@ export function ApaasSection() {
               <div className="bg-red-500/20 rounded-xl px-6 py-4">
                 <p className="text-red-400 font-semibold">{'"Frequent Temporary Maintenance"'}</p>
               </div>
-              <ArrowRight className="w-6 h-6 text-[#25D366] rotate-90 sm:rotate-0" />
-              <div className="bg-[#25D366]/20 rounded-xl px-6 py-4">
-                <p className="text-[#25D366] font-semibold">{'"Long-Term Sustainable Asset Preservation"'}</p>
+              <ArrowRight className="w-6 h-6 text-[#1FA855] rotate-90 sm:rotate-0" />
+              <div className="bg-[#1FA855]/20 rounded-xl px-6 py-4">
+                <p className="text-[#1FA855] font-semibold">{'"Long-Term Sustainable Asset Preservation"'}</p>
               </div>
             </div>
           </div>
@@ -294,16 +294,16 @@ export function ApaasSection() {
           <div className="bg-muted rounded-3xl p-8 sm:p-12 text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6">
             <span className="text-foreground">From</span>{" "}
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Temporary Maintenance</span>{" "}
+            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Temporary Maintenance</span>{" "}
             <span className="text-foreground">To</span>{" "}
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Long-Term Preservation</span>
+            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Long-Term Preservation</span>
           </h2>
             
             <p className="text-muted-foreground mb-8">NanoQuinn APaaS™ focuses on:</p>
             
             <div className="flex flex-wrap justify-center gap-4 mb-10">
               {focusAreas.map((area, index) => (
-                <span key={index} className="px-6 py-3 bg-[#25D366] text-white rounded-full font-bold">
+                <span key={index} className="px-6 py-3 bg-[#1FA855] text-white rounded-full font-bold">
                   {area}
                 </span>
               ))}
@@ -314,8 +314,8 @@ export function ApaasSection() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {achievements.map((item, index) => (
                 <div key={index} className="flex items-center gap-3 bg-background rounded-xl p-4 shadow-sm">
-                  <div className="w-10 h-10 rounded-lg bg-[#25D366]/10 flex items-center justify-center shrink-0">
-                    <item.icon className="w-5 h-5 text-[#25D366]" />
+                  <div className="w-10 h-10 rounded-lg bg-[#1FA855]/10 flex items-center justify-center shrink-0">
+                    <item.icon className="w-5 h-5 text-[#1FA855]" />
                   </div>
                   <span className="text-sm font-bold">{item.text}</span>
                 </div>
@@ -326,12 +326,12 @@ export function ApaasSection() {
 
         {/* Final Statement */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-[#1A2332] to-[#0F1419] text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
+          <div className="bg-gradient-to-br from-[#0B2545] to-[#06182E] text-white rounded-3xl p-8 sm:p-12 lg:p-16 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6">
               NanoQuinn APaaS™
             </h2>
             <p className="text-xl sm:text-2xl font-bold">
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">
                 The Future Of Sustainable Asset Protection & 360° Maintenance Management.
               </span>
             </p>

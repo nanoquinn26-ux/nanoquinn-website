@@ -374,12 +374,12 @@ const esdFlooringContent = {
     {
       name: "ESD Flooring",
       description: "Controls static electricity and prevents electrostatic discharge. Ideal for sensitive electronics, clean rooms, pharma, semiconductor, labs, and precision manufacturing areas.",
-      color: "#25D366",
+      color: "#1FA855",
     },
     {
       name: "Dielectric Flooring",
       description: "Provides high electrical insulation and ensures operator safety in electrical areas, power rooms, HT/LT panels, substations, and transformer areas.",
-      color: "#25D366",
+      color: "#1FA855",
     },
   ],
   keyBenefits: [
@@ -623,11 +623,11 @@ export function AssetProtectionSection() {
 
         {/* Section Header */}
         <div className="text-center mb-10 sm:mb-16">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Product/Service Range
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance">
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Sustainable Nanotechnology</span>{" "}
+            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Sustainable Nanotechnology</span>{" "}
             <span className="text-foreground">Solutions</span>
           </h2>
           <p className="mt-4 sm:mt-6 text-base sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -642,7 +642,7 @@ export function AssetProtectionSection() {
           <div className="relative">
             <button
               onClick={toggleDropdown}
-              className={`flex items-center gap-1.5 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm transition-colors shadow-lg ${activeContent === "OEM" || activeContent === "Industrial" ? "bg-[#25D366] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
+              className={`flex items-center gap-1.5 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm transition-colors shadow-lg ${activeContent === "OEM" || activeContent === "Industrial" ? "bg-[#1FA855] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
             >
               <Shield className="w-4 h-4" />
               Rust &amp; Corrosion
@@ -662,7 +662,7 @@ export function AssetProtectionSection() {
                     className="w-full flex items-center justify-between px-5 py-4 hover:bg-muted transition-colors text-left border-b border-border"
                   >
                     <div className="flex items-center gap-3">
-                      <Factory className="w-4 h-4 text-[#25D366]" />
+                      <Factory className="w-4 h-4 text-[#1FA855]" />
                       <span className="font-medium text-foreground text-sm">OEM</span>
                     </div>
                     <ChevronRight className="w-4 h-4 text-muted-foreground" />
@@ -689,7 +689,7 @@ export function AssetProtectionSection() {
                     className="w-full flex items-center justify-between px-5 py-4 hover:bg-muted transition-colors text-left"
                   >
                     <div className="flex items-center gap-3">
-                      <Wrench className="w-4 h-4 text-[#25D366]" />
+                      <Wrench className="w-4 h-4 text-[#1FA855]" />
                       <span className="font-medium text-foreground text-sm">Industrial Maintenance</span>
                     </div>
                     <ChevronRight className="w-4 h-4 text-muted-foreground" />
@@ -714,7 +714,7 @@ export function AssetProtectionSection() {
             <button
               key={id}
               onClick={() => handleDirectClick(id)}
-              className={`flex items-center gap-1.5 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm transition-colors shadow-lg ${activeContent === id ? "bg-[#25D366] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
+              className={`flex items-center gap-1.5 px-3 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold text-xs sm:text-sm transition-colors shadow-lg ${activeContent === id ? "bg-[#1FA855] text-black" : "bg-foreground text-background hover:bg-foreground/90"}`}
             >
               <Icon className="w-4 h-4" />
               {label}
@@ -728,15 +728,15 @@ export function AssetProtectionSection() {
         {activeContent === "OEM" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">OEM</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">OEM</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{oemContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-3">{oemContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-3">{oemContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{oemContent.intro}</p>
             </div>
             <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 mb-10">
               {oemContent.variants.map((v) => (
                 <div key={v.number} className="rounded-3xl p-5 sm:p-8 bg-muted">
-                  <span className="text-4xl font-bold text-[#25D366] mb-4 block">{v.number}</span>
+                  <span className="text-4xl font-bold text-[#1FA855] mb-4 block">{v.number}</span>
                   <h4 className="text-xl font-bold mb-3">{v.title}</h4>
                   <p className="text-sm leading-relaxed text-muted-foreground">{v.description}</p>
                 </div>
@@ -744,19 +744,19 @@ export function AssetProtectionSection() {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="text-xl font-bold mb-2 text-[#25D366]">{oemContent.revolution.title}</h4>
+                <h4 className="text-xl font-bold mb-2 text-[#1FA855]">{oemContent.revolution.title}</h4>
                 <p className="text-background/70 text-sm mb-6">{oemContent.revolution.description}</p>
                 <ul className="space-y-3">
                   {oemContent.revolution.points.map((point, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-background/70">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {point}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="bg-black rounded-3xl p-8 flex items-center justify-center">
-                <p className="text-2xl sm:text-3xl font-black text-[#25D366] leading-snug text-balance text-center">{oemContent.footer}</p>
+                <p className="text-2xl sm:text-3xl font-black text-[#1FA855] leading-snug text-balance text-center">{oemContent.footer}</p>
               </div>
             </div>
           </div>
@@ -766,7 +766,7 @@ export function AssetProtectionSection() {
         {activeContent === "Industrial" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Industrial Maintenance</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Industrial Maintenance</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">{industrialContent.title}</h3>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{industrialContent.intro}</p>
             </div>
@@ -775,7 +775,7 @@ export function AssetProtectionSection() {
             <div className="grid md:grid-cols-3 gap-6 mb-10">
               {industrialContent.variants.map((v) => (
                 <div key={v.number} className={`rounded-3xl p-8 ${v.isHighlighted ? "bg-foreground text-background" : "bg-muted"}`}>
-                  <span className="text-4xl font-bold text-[#25D366] mb-4 block">{v.number}</span>
+                  <span className="text-4xl font-bold text-[#1FA855] mb-4 block">{v.number}</span>
                   <h4 className={`text-lg font-bold mb-3 ${v.isHighlighted ? "text-white" : "text-foreground"}`}>{v.title}</h4>
                   <p className={`text-sm leading-relaxed ${v.isHighlighted ? "text-background/70" : "text-muted-foreground"}`}>{v.description}</p>
                 </div>
@@ -783,11 +783,11 @@ export function AssetProtectionSection() {
             </div>
 
             {/* Eliminates */}
-            <div className="bg-[#25D366]/10 border border-[#25D366]/30 rounded-3xl p-8 mb-10">
+            <div className="bg-[#1FA855]/10 border border-[#1FA855]/30 rounded-3xl p-8 mb-10">
               <h4 className="text-lg font-bold text-foreground mb-4">Eliminates:</h4>
               <div className="flex flex-wrap gap-3">
                 {industrialContent.eliminates.map((item, i) => (
-                  <span key={i} className="px-4 py-2 rounded-full bg-foreground text-background text-sm font-medium line-through decoration-[#25D366] decoration-[3px]">{item}</span>
+                  <span key={i} className="px-4 py-2 rounded-full bg-foreground text-background text-sm font-medium line-through decoration-[#1FA855] decoration-[3px]">{item}</span>
                 ))}
               </div>
             </div>
@@ -796,30 +796,30 @@ export function AssetProtectionSection() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
-                  <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                   {industrialContent.system.title}
                 </h4>
                 <ol className="space-y-3">
                   {industrialContent.system.steps.map((step, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="w-6 h-6 rounded-full bg-[#25D366] text-black text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
+                      <span className="w-6 h-6 rounded-full bg-[#1FA855] text-black text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
                       {step}
                     </li>
                   ))}
                 </ol>
               </div>
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="text-xl font-bold mb-3 text-[#25D366]">{industrialContent.disruption.title}</h4>
+                <h4 className="text-xl font-bold mb-3 text-[#1FA855]">{industrialContent.disruption.title}</h4>
                 <p className="text-background/60 text-sm mb-6 leading-relaxed">{industrialContent.disruption.keyPoint}</p>
                 <ul className="space-y-3">
                   {industrialContent.disruption.points.map((point, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-background/70">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {point}
                     </li>
                   ))}
                 </ul>
-                <p className="mt-6 text-sm font-semibold text-[#25D366] italic">{industrialContent.footer}</p>
+                <p className="mt-6 text-sm font-semibold text-[#1FA855] italic">{industrialContent.footer}</p>
               </div>
             </div>
           </div>
@@ -829,9 +829,9 @@ export function AssetProtectionSection() {
         {activeContent === "Plastic" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Nanotech Plastic Protection</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Nanotech Plastic Protection</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{plasticContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{plasticContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{plasticContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto mb-3">{plasticContent.intro}</p>
               <p className="text-sm text-muted-foreground max-w-3xl mx-auto">{plasticContent.description}</p>
             </div>
@@ -840,11 +840,11 @@ export function AssetProtectionSection() {
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="text-xl font-bold mb-6 text-[#25D366]">{plasticContent.applications.title}</h4>
+                <h4 className="text-xl font-bold mb-6 text-[#1FA855]">{plasticContent.applications.title}</h4>
                 <ul className="space-y-4">
                   {plasticContent.applications.items.map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="w-6 h-6 rounded-full bg-[#25D366] text-black text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
+                      <span className="w-6 h-6 rounded-full bg-[#1FA855] text-black text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">{i + 1}</span>
                       <div>
                         <span className="font-semibold text-white text-sm">{item.label} — </span>
                         <span className="text-background/70 text-sm">{item.desc}</span>
@@ -855,20 +855,20 @@ export function AssetProtectionSection() {
               </div>
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
-                  <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                   {plasticContent.disruption.title}
                 </h4>
                 <ul className="space-y-3">
                   {plasticContent.disruption.points.map((pt, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {pt}
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <div className="bg-[#25D366]/10 border border-[#25D366]/30 rounded-3xl p-8 text-center">
+            <div className="bg-[#1FA855]/10 border border-[#1FA855]/30 rounded-3xl p-8 text-center">
               <p className="text-xl font-bold text-foreground italic">&ldquo;{plasticContent.footer}&rdquo;</p>
             </div>
           </div>
@@ -878,21 +878,21 @@ export function AssetProtectionSection() {
         {activeContent === "Solar" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Solar Nanotechnology</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Solar Nanotechnology</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{solarContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{solarContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{solarContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{solarContent.intro}</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
               {solarContent.benefits.map((b, i) => (
                 <div key={i} className="bg-foreground text-background rounded-3xl p-6">
-                  <span className="text-3xl font-bold text-[#25D366] mb-3 block">0{i + 1}</span>
+                  <span className="text-3xl font-bold text-[#1FA855] mb-3 block">0{i + 1}</span>
                   <h4 className="font-bold text-white mb-2">{b.title}</h4>
                   <p className="text-sm text-background/70 leading-relaxed">{b.desc}</p>
                 </div>
               ))}
             </div>
-            <div className="bg-[#25D366] rounded-3xl p-8 text-center">
+            <div className="bg-[#1FA855] rounded-3xl p-8 text-center">
               <p className="text-lg font-semibold text-black mb-2">{solarContent.footer}</p>
               <p className="text-2xl font-bold text-black">{solarContent.tagline}</p>
             </div>
@@ -903,15 +903,15 @@ export function AssetProtectionSection() {
         {activeContent === "Electrical" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">ElectroShield 5-in-1</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">ElectroShield 5-in-1</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{electricalContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{electricalContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{electricalContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto">{electricalContent.intro}</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
               {electricalContent.protections.map((p, i) => (
                 <div key={i} className={`rounded-3xl p-6 ${i < 2 ? "bg-foreground text-background" : "bg-muted"}`}>
-                  <span className={`text-4xl font-bold mb-3 block ${i < 2 ? "text-[#25D366]" : "text-[#25D366]"}`}>{p.number}</span>
+                  <span className={`text-4xl font-bold mb-3 block ${i < 2 ? "text-[#1FA855]" : "text-[#1FA855]"}`}>{p.number}</span>
                   <h4 className={`font-bold mb-2 ${i < 2 ? "text-white" : "text-foreground"}`}>{p.title}</h4>
                   <p className={`text-sm leading-relaxed ${i < 2 ? "text-background/70" : "text-muted-foreground"}`}>{p.desc}</p>
                 </div>
@@ -920,19 +920,19 @@ export function AssetProtectionSection() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
-                  <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                   Why It Is a Global Revolution
                 </h4>
                 <ul className="space-y-3">
                   {electricalContent.revolution.map((pt, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {pt}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#25D366]/10 border border-[#25D366]/30 rounded-3xl p-8 flex items-center">
+              <div className="bg-[#1FA855]/10 border border-[#1FA855]/30 rounded-3xl p-8 flex items-center">
                 <p className="text-lg font-semibold text-foreground leading-relaxed italic">&ldquo;{electricalContent.footer}&rdquo;</p>
               </div>
             </div>
@@ -943,18 +943,18 @@ export function AssetProtectionSection() {
         {activeContent === "Floor" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">FloorGuard™</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">FloorGuard™</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{floorContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{floorContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{floorContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{floorContent.intro}</p>
             </div>
             <div className="grid md:grid-cols-3 gap-8 mb-10">
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="font-bold text-[#25D366] mb-4">Applicable On</h4>
+                <h4 className="font-bold text-[#1FA855] mb-4">Applicable On</h4>
                 <ul className="space-y-2">
                   {floorContent.applications.map((a, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-background/70">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0" />
                       {a}
                     </li>
                   ))}
@@ -962,31 +962,31 @@ export function AssetProtectionSection() {
               </div>
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="font-bold mb-4 flex items-center gap-2">
-                  <span className="w-2 h-5 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-5 bg-[#1FA855] rounded-full inline-block" />
                   What FloorGuard™ Does
                 </h4>
                 <ul className="space-y-2">
                   {floorContent.benefits.map((b, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-1.5" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-1.5" />
                       {b}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="font-bold text-[#25D366] mb-4">Ideal For</h4>
+                <h4 className="font-bold text-[#1FA855] mb-4">Ideal For</h4>
                 <ul className="space-y-2">
                   {floorContent.industries.map((ind, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-background/70">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0" />
                       {ind}
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
-            <div className="bg-[#25D366] rounded-3xl p-8 text-center">
+            <div className="bg-[#1FA855] rounded-3xl p-8 text-center">
               <p className="text-xl font-bold text-black mb-1">{floorContent.footer}</p>
               <p className="text-base text-black/80">{floorContent.tagline}</p>
             </div>
@@ -997,15 +997,15 @@ export function AssetProtectionSection() {
         {activeContent === "Wall" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">WallGuard™</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">WallGuard™</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{wallContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{wallContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{wallContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{wallContent.intro}</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
               {wallContent.benefits.map((b, i) => (
                 <div key={i} className="bg-foreground text-background rounded-3xl p-6">
-                  <span className="text-3xl font-bold text-[#25D366] mb-3 block">0{i + 1}</span>
+                  <span className="text-3xl font-bold text-[#1FA855] mb-3 block">0{i + 1}</span>
                   <h4 className="font-bold text-white mb-2">{b.title}</h4>
                   <p className="text-sm text-background/70 leading-relaxed">{b.desc}</p>
                 </div>
@@ -1014,19 +1014,19 @@ export function AssetProtectionSection() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="font-bold mb-4 flex items-center gap-2">
-                  <span className="w-2 h-5 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-5 bg-[#1FA855] rounded-full inline-block" />
                   Applications
                 </h4>
                 <ul className="grid grid-cols-2 gap-2">
                   {wallContent.applications.map((a, i) => (
                     <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0" />
                       {a}
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-[#25D366] rounded-3xl p-8 flex flex-col justify-center">
+              <div className="bg-[#1FA855] rounded-3xl p-8 flex flex-col justify-center">
                 <p className="text-base font-semibold text-black mb-3">{wallContent.footer}</p>
                 <p className="text-xl font-bold text-black">{wallContent.tagline}</p>
               </div>
@@ -1038,18 +1038,18 @@ export function AssetProtectionSection() {
         {activeContent === "RustRemover" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Rust Remover</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Rust Remover</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{rustRemoverContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{rustRemoverContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{rustRemoverContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{rustRemoverContent.intro}</p>
             </div>
             <div className="grid md:grid-cols-2 gap-8 mb-10">
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="text-xl font-bold text-[#25D366] mb-6">Disruptive Value Proposition</h4>
+                <h4 className="text-xl font-bold text-[#1FA855] mb-6">Disruptive Value Proposition</h4>
                 <ul className="space-y-3">
                   {rustRemoverContent.points.map((pt, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-background/70">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {pt}
                     </li>
                   ))}
@@ -1066,7 +1066,7 @@ export function AssetProtectionSection() {
                 </div>
               </div>
             </div>
-            <div className="bg-[#25D366] rounded-3xl p-8 text-center">
+            <div className="bg-[#1FA855] rounded-3xl p-8 text-center">
               <p className="text-2xl font-bold text-black">{rustRemoverContent.tagline}</p>
             </div>
           </div>
@@ -1076,20 +1076,20 @@ export function AssetProtectionSection() {
         {activeContent === "Carpet" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Carpet &amp; Upholstery Protection</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Carpet &amp; Upholstery Protection</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">{carpetContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{carpetContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{carpetContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto">{carpetContent.intro}</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-10">
               {/* Protection Against */}
               <div className="bg-foreground text-background rounded-3xl p-8">
-                <h4 className="text-lg font-bold text-[#25D366] mb-5">Protection Against</h4>
+                <h4 className="text-lg font-bold text-[#1FA855] mb-5">Protection Against</h4>
                 <ul className="space-y-3">
                   {carpetContent.protectionAgainst.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-background/70">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {item}
                     </li>
                   ))}
@@ -1099,13 +1099,13 @@ export function AssetProtectionSection() {
               {/* Key Benefits */}
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="text-lg font-bold mb-5 flex items-center gap-2">
-                  <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                   Key Benefits
                 </h4>
                 <ul className="space-y-3">
                   {carpetContent.benefits.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {item}
                     </li>
                   ))}
@@ -1115,13 +1115,13 @@ export function AssetProtectionSection() {
               {/* Ideal For */}
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="text-lg font-bold mb-5 flex items-center gap-2">
-                  <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                   Ideal For
                 </h4>
                 <ul className="space-y-3">
                   {carpetContent.idealFor.map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0 mt-2" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0 mt-2" />
                       {item}
                     </li>
                   ))}
@@ -1129,12 +1129,12 @@ export function AssetProtectionSection() {
               </div>
             </div>
 
-            <div className="bg-[#25D366]/10 border border-[#25D366]/30 rounded-3xl p-8 mb-6 text-center">
+            <div className="bg-[#1FA855]/10 border border-[#1FA855]/30 rounded-3xl p-8 mb-6 text-center">
               <p className="text-base text-foreground mb-2">{carpetContent.closing}</p>
               <p className="text-sm text-muted-foreground">{carpetContent.description}</p>
             </div>
 
-            <div className="bg-[#25D366] rounded-3xl p-8 text-center">
+            <div className="bg-[#1FA855] rounded-3xl p-8 text-center">
               <p className="text-2xl font-bold text-black">{carpetContent.tagline}</p>
             </div>
           </div>
@@ -1144,9 +1144,9 @@ export function AssetProtectionSection() {
         {activeContent === "ESDFlooring" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Flooring Services</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Flooring Services</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{esdFlooringContent.title}</h3>
-              <p className="text-lg font-medium text-[#25D366] mb-4">{esdFlooringContent.subtitle}</p>
+              <p className="text-lg font-medium text-[#1FA855] mb-4">{esdFlooringContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{esdFlooringContent.intro}</p>
             </div>
 
@@ -1163,13 +1163,13 @@ export function AssetProtectionSection() {
             {/* Key Benefits Grid */}
             <div className="bg-muted rounded-3xl p-8 mb-10">
               <h4 className="text-lg font-bold mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                 Key Benefits
               </h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {esdFlooringContent.keyBenefits.map((benefit, i) => (
                   <div key={i} className="flex items-center gap-3 p-3 bg-background rounded-xl">
-                    <span className="w-2 h-2 rounded-full bg-[#25D366] shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-[#1FA855] shrink-0" />
                     <span className="text-sm font-medium">{benefit.title}</span>
                   </div>
                 ))}
@@ -1178,11 +1178,11 @@ export function AssetProtectionSection() {
 
             {/* Ideal For */}
             <div className="bg-foreground text-background rounded-3xl p-8 mb-10">
-              <h4 className="text-lg font-bold text-[#25D366] mb-6">Ideal For</h4>
+              <h4 className="text-lg font-bold text-[#1FA855] mb-6">Ideal For</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {esdFlooringContent.idealFor.map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-sm text-background/70">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#25D366] shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#1FA855] shrink-0" />
                     {item}
                   </div>
                 ))}
@@ -1190,7 +1190,7 @@ export function AssetProtectionSection() {
             </div>
 
             {/* APaaS Advantage */}
-            <div className="bg-gradient-to-r from-[#25D366] to-[#00897B] rounded-3xl p-8">
+            <div className="bg-gradient-to-r from-[#1FA855] to-[#00897B] rounded-3xl p-8">
               <p className="text-sm font-semibold text-white/80 uppercase tracking-wider mb-4">NanoQuinn APaaS Advantage</p>
               <div className="flex flex-wrap gap-3">
                 {esdFlooringContent.apaasAdvantage.map((item, i) => (
@@ -1206,7 +1206,7 @@ export function AssetProtectionSection() {
         {activeContent === "EpoxyPUFlooring" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Epoxy PU Flooring</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Epoxy PU Flooring</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{epoxyPUFlooringContent.title}</h3>
               <p className="text-lg font-medium text-[#1E88E5] mb-4">{epoxyPUFlooringContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{epoxyPUFlooringContent.intro}</p>
@@ -1281,7 +1281,7 @@ export function AssetProtectionSection() {
         {activeContent === "Waterproofing" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Waterproofing Service</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Waterproofing Service</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{waterproofingContent.title}</h3>
               <p className="text-lg font-medium text-[#0288D1] mb-4">{waterproofingContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{waterproofingContent.intro}</p>
@@ -1344,7 +1344,7 @@ export function AssetProtectionSection() {
         {activeContent === "SurfaceTolerantEpoxy" && (
           <div className="animate-fade-up">
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Surface Tolerant Epoxy</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">Surface Tolerant Epoxy</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-2">{surfaceTolerantEpoxyContent.title}</h3>
               <p className="text-lg font-medium text-[#2E7D32] mb-4">{surfaceTolerantEpoxyContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-2xl mx-auto">{surfaceTolerantEpoxyContent.intro}</p>
@@ -1426,9 +1426,9 @@ export function AssetProtectionSection() {
           <div className="animate-fade-up">
             {/* Header */}
             <div className="text-center mb-12">
-              <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">&quot;Asset Health&quot; Audit</span>
+              <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">&quot;Asset Health&quot; Audit</span>
               <h3 className="text-3xl sm:text-4xl font-bold tracking-tight mb-3">{auditContent.title}</h3>
-              <p className="text-lg font-semibold text-[#25D366] mb-4">{auditContent.subtitle}</p>
+              <p className="text-lg font-semibold text-[#1FA855] mb-4">{auditContent.subtitle}</p>
               <p className="text-base text-muted-foreground max-w-3xl mx-auto">{auditContent.intro}</p>
             </div>
 
@@ -1436,7 +1436,7 @@ export function AssetProtectionSection() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
               {auditContent.overview.map((item, i) => (
                 <div key={i} className="bg-foreground text-background rounded-3xl p-7">
-                  <h4 className="font-bold text-[#25D366] mb-2">{item.label}</h4>
+                  <h4 className="font-bold text-[#1FA855] mb-2">{item.label}</h4>
                   <p className="text-sm text-background/70 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
@@ -1445,13 +1445,13 @@ export function AssetProtectionSection() {
             {/* What We Audit */}
             <div className="mb-12">
               <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                 What We Audit
               </h4>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {auditContent.whatWeAudit.map((item, i) => (
                   <div key={i} className="bg-muted rounded-2xl p-6 flex items-start gap-4">
-                    <span className="w-8 h-8 rounded-full bg-[#25D366] text-black text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                    <span className="w-8 h-8 rounded-full bg-[#1FA855] text-black text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                     <div>
                       <p className="font-semibold text-foreground">{item.label}</p>
                       <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
@@ -1465,7 +1465,7 @@ export function AssetProtectionSection() {
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-muted rounded-3xl p-8">
                 <h4 className="text-lg font-bold mb-6 flex items-center gap-2">
-                  <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                  <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                   Who We Serve
                 </h4>
                 <ul className="space-y-4">
@@ -1481,12 +1481,12 @@ export function AssetProtectionSection() {
               <div className="flex flex-col gap-6">
                 {/* Methodology */}
                 <div className="bg-foreground text-background rounded-3xl p-8">
-                  <h4 className="text-lg font-bold text-[#25D366] mb-6">Audit Methodology</h4>
+                  <h4 className="text-lg font-bold text-[#1FA855] mb-6">Audit Methodology</h4>
                   <div className="flex items-center gap-2 flex-wrap">
                     {auditContent.methodology.map((step, i) => (
                       <div key={i} className="flex items-center gap-2">
-                        <span className="px-4 py-2 rounded-full bg-[#25D366] text-black text-sm font-bold">{step}</span>
-                        {i < auditContent.methodology.length - 1 && <ChevronRight className="w-4 h-4 text-[#25D366]" />}
+                        <span className="px-4 py-2 rounded-full bg-[#1FA855] text-black text-sm font-bold">{step}</span>
+                        {i < auditContent.methodology.length - 1 && <ChevronRight className="w-4 h-4 text-[#1FA855]" />}
                       </div>
                     ))}
                   </div>
@@ -1496,13 +1496,13 @@ export function AssetProtectionSection() {
                 {/* Deliverables */}
                 <div className="bg-muted rounded-3xl p-8">
                   <h4 className="text-lg font-bold mb-5 flex items-center gap-2">
-                    <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                    <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                     Audit Deliverables
                   </h4>
                   <ul className="space-y-2">
                     {auditContent.deliverables.map((d, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
-                        <span className="text-[#25D366] font-bold shrink-0">✔</span>
+                        <span className="text-[#1FA855] font-bold shrink-0">✔</span>
                         {d}
                       </li>
                     ))}
@@ -1514,7 +1514,7 @@ export function AssetProtectionSection() {
             {/* Objectives */}
             <div className="mb-12">
               <h4 className="text-xl font-bold mb-6 flex items-center gap-2">
-                <span className="w-2 h-6 bg-[#25D366] rounded-full inline-block" />
+                <span className="w-2 h-6 bg-[#1FA855] rounded-full inline-block" />
                 Audit Objectives
               </h4>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -1530,7 +1530,7 @@ export function AssetProtectionSection() {
             {/* CTA */}
             <div className="bg-foreground text-background rounded-3xl p-10">
               <div className="text-center mb-8">
-                <h4 className="text-2xl font-bold text-[#25D366] mb-3">{auditContent.cta.heading}</h4>
+                <h4 className="text-2xl font-bold text-[#1FA855] mb-3">{auditContent.cta.heading}</h4>
                 <p className="text-background/70 text-sm max-w-2xl mx-auto leading-relaxed">{auditContent.cta.sub}</p>
               </div>
               <div className="grid sm:grid-cols-3 gap-5 mb-8">
@@ -1546,7 +1546,7 @@ export function AssetProtectionSection() {
                   href="https://wa.me/918608604817"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#25D366] text-black font-semibold hover:bg-[#1ebe5d] transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#1FA855] text-black font-semibold hover:bg-[#1ebe5d] transition-colors"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>

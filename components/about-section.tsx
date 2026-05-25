@@ -40,12 +40,12 @@ export function AboutSection() {
       {/* Hero */}
       <div className="bg-foreground text-background py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             About NanoQuinn
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-balance leading-tight mb-8">
             <span className="text-background">Creating the Future of</span><br />
-            <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Asset Protection</span>
+            <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Asset Protection</span>
           </h1>
           <p className="text-lg sm:text-xl text-background/70 max-w-3xl mx-auto leading-relaxed">
             A next-generation innovation company redefining how the world protects, preserves, and maintains assets.
@@ -59,7 +59,7 @@ export function AboutSection() {
           <div>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground mb-6 leading-tight">
               <span className="text-foreground">Built on a Foundation of</span><br />
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent italic">&ldquo;Only Me&rdquo; Thinking</span>
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent italic">&ldquo;Only Me&rdquo; Thinking</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
               NanoQuinn is not here to compete in traditional markets — it is here to create entirely new categories through disruptive, sustainable technologies.
@@ -78,7 +78,7 @@ export function AboutSection() {
               &ldquo;This is not an incremental improvement. This is a shift from maintenance to preservation.&rdquo;
             </blockquote>
             <div className="border-t border-background/20 pt-6">
-              <p className="text-[#25D366] font-bold text-sm uppercase tracking-widest">NanoQuinn Vision</p>
+              <p className="text-[#1FA855] font-bold text-sm uppercase tracking-widest">NanoQuinn Vision</p>
               <p className="text-background/50 text-sm mt-1">Creating the Future of Asset Protection</p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export function AboutSection() {
       <div className="bg-muted py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               What We Stand For
             </span>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground text-balance">
@@ -100,10 +100,10 @@ export function AboutSection() {
             {pillars.map((pillar) => (
               <div
                 key={pillar.title}
-                className="bg-background border border-border rounded-2xl p-8 hover:border-[#25D366]/60 hover:shadow-md transition-all duration-200"
+                className="bg-background border border-border rounded-2xl p-8 hover:border-[#1FA855]/60 hover:shadow-md transition-all duration-200"
               >
-                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ backgroundColor: "#25D36620" }}>
-                  <pillar.icon className="w-6 h-6" style={{ color: "#25D366" }} />
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style={{ backgroundColor: "#1FA85520" }}>
+                  <pillar.icon className="w-6 h-6" style={{ color: "#1FA855" }} />
                 </div>
                 <h3 className="font-bold text-lg text-foreground mb-3">{pillar.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{pillar.desc}</p>
@@ -117,8 +117,8 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28 text-center">
         <p className="text-3xl sm:text-4xl lg:text-5xl font-black text-foreground text-balance leading-tight max-w-4xl mx-auto">
           Driven by a bold vision to protect{" "}
-          <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">every surface</span>,{" "}
-          <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">every asset</span>,{" "}
+          <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">every surface</span>,{" "}
+          <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">every asset</span>,{" "}
           in every country.
         </p>
       </div>

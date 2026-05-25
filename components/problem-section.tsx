@@ -20,7 +20,7 @@ export function ProblemSection() {
     <section className="py-20 sm:py-32 lg:py-40 bg-foreground text-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-20">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             The Problem
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">

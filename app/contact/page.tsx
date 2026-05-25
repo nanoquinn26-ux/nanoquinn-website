@@ -11,15 +11,15 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen pt-20">
       {/* Contact Hero */}
-      <section className="py-24 bg-[#1A2332]">
+      <section className="py-24 bg-[#0B2545]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#25D366] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               Get in Touch
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6 text-balance">
               <span className="text-white">Let&apos;s</span>{" "}
-              <span className="bg-gradient-to-r from-[#67E8F9] via-[#4ADE80] to-[#25D366] bg-clip-text text-transparent">Protect Your Assets</span>{" "}
+              <span className="bg-gradient-to-r from-[#7BC4F0] via-[#34C66E] to-[#1FA855] bg-clip-text text-transparent">Protect Your Assets</span>{" "}
               <span className="text-white">Together</span>
             </h1>
             <p className="text-xl text-white/70 max-w-2xl mx-auto leading-relaxed">
@@ -51,10 +51,10 @@ export default function ContactPage() {
               <a
                 key={item.label}
                 href={item.href}
-                className="flex flex-col items-center gap-4 p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 hover:border-[#25D366]/40 transition-all group"
+                className="flex flex-col items-center gap-4 p-8 bg-white/5 border border-white/10 rounded-3xl hover:bg-white/10 hover:border-[#1FA855]/40 transition-all group"
               >
-                <div className="w-14 h-14 rounded-2xl bg-[#25D366]/10 border border-[#25D366]/30 flex items-center justify-center group-hover:bg-[#25D366]/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-[#25D366]" />
+                <div className="w-14 h-14 rounded-2xl bg-[#1FA855]/10 border border-[#1FA855]/30 flex items-center justify-center group-hover:bg-[#1FA855]/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-[#1FA855]" />
                 </div>
                 <div className="text-center">
                   <p className="text-white/50 text-sm mb-1">{item.label}</p>
@@ -70,7 +70,7 @@ export default function ContactPage() {
               href="https://wa.me/918608604817"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#25D366] text-black text-lg font-semibold hover:bg-[#1ebe5d] transition-colors shadow-xl"
+              className="inline-flex items-center gap-3 px-10 py-5 rounded-full bg-[#1FA855] text-black text-lg font-semibold hover:bg-[#1ebe5d] transition-colors shadow-xl"
             >
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
