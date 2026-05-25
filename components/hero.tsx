@@ -134,8 +134,8 @@ function APaaSPlatformAnimation() {
             </div>
 
             {/* Center - Animated Orbit */}
-            <div className="w-full lg:w-1/3 flex justify-center overflow-visible">
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 overflow-visible">
+            <div className="w-full lg:w-1/3 flex justify-center overflow-visible py-8">
+              <div className="relative w-80 h-80 sm:w-96 sm:h-96 overflow-visible">
                 {/* Orbit ring */}
                 <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/10 animate-[spin_30s_linear_infinite]" />
                 <div className="absolute inset-4 rounded-full border border-white/5" />
@@ -154,7 +154,7 @@ function APaaSPlatformAnimation() {
                       style={{
                         left: '50%',
                         top: '50%',
-                        transform: `rotate(${angle + activeOrbitIndex * (360 / orbitItems.length)}deg) translateX(120px) rotate(-${angle + activeOrbitIndex * (360 / orbitItems.length)}deg)`,
+                        transform: `rotate(${angle + activeOrbitIndex * (360 / orbitItems.length)}deg) translateX(150px) rotate(-${angle + activeOrbitIndex * (360 / orbitItems.length)}deg)`,
                       }}
                     >
                       <div 
