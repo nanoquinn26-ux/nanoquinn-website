@@ -37,10 +37,10 @@ const assetCategories = [
 
 // Protected areas
 const protectedAreas = [
-  { icon: Building2, label: "Buildings" },
-  { icon: Factory, label: "Plants" },
-  { icon: Container, label: "Tanks" },
-  { icon: PipetteIcon, label: "Piping" },
+  { icon: Building2, label: "Pharmaceuticals" },
+  { icon: Factory, label: "Industrial Plants" },
+  { icon: Container, label: "Solar Plants" },
+  { icon: PipetteIcon, label: "Chemical" },
   { icon: Zap, label: "Power" },
   { icon: Ship, label: "Marine" },
   { icon: Wind, label: "Renewable" },
