@@ -33,7 +33,6 @@ const assetCategories = [
   { icon: PipetteIcon, label: "Polymers" },
   { icon: Shield, label: "Metallic" },
   { icon: Container, label: "Concrete" },
-  { icon: Paintbrush, label: "Coatings" },
 ]
 
 // Protected areas
