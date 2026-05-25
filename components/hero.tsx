@@ -255,7 +255,7 @@ function APaaSPlatformAnimation() {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1E3A5F] via-[#2D4A6F] to-[#1E3A5F] bg-grid-dark">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1E3A5F] via-[#14B8A6]/20 to-[#22C55E]/30 bg-grid-dark">
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
@@ -265,9 +265,10 @@ export function Hero() {
         }} />
       </div>
 
-      {/* Accent Gradient Orbs - Gold & Aqua */}
-      <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-[#1FA855]/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#1FA855]/10 rounded-full blur-3xl" />
+      {/* Blue to Green Gradient Orbs */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#1E3A5F] via-transparent to-[#22C55E]/20 pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-[600px] h-[600px] bg-[#22C55E]/15 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-[#14B8A6]/15 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-36 sm:pb-44">
         <div className="max-w-5xl mx-auto text-center">
