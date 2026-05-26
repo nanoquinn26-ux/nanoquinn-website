@@ -284,9 +284,8 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-36 sm:pb-44">
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-3 px-6 sm:px-8 py-3 rounded-full border border-white/15 bg-gradient-to-r from-[#17324D] via-[#1A3A56] to-[#1D4663] shadow-[inset_0_1px_1px_rgba(255,255,255,0.08)] mb-8 sm:mb-10 animate-fade-up">
-            <span className="w-2.5 h-2.5 rounded-full bg-[#22C55E]" />
-            <span className="text-xs sm:text-sm font-bold tracking-wide text-white uppercase">
+          <div className="inline-flex items-center justify-center px-8 sm:px-10 py-3 rounded-full bg-[#0E7A45] border border-[#1FA855] mb-8 sm:mb-10 animate-fade-up shadow-md uppercase tracking-[2px]">
+            <span className="text-xs sm:text-sm font-extrabold text-white">
               WORLD&apos;S FIRST APAAS PLATFORM
             </span>
           </div>
