@@ -9,10 +9,7 @@ import { Menu, X } from "lucide-react"
 
 const navItems = [
   { label: "APaaS Model", href: "/apaas" },
-  { label: "Technology", href: "/technology" },
   { label: "Solutions", href: "/asset-protection" },
-  { label: "Asset Health Audit", href: "/asset-health-audit" },
-  { label: "Industries", href: "/industries" },
   { label: "ESG", href: "/esg" },
   { label: "Contact", href: "/contact" },
 ]
@@ -57,9 +54,9 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-[12px] font-normal transition-opacity duration-200 hover:opacity-70 ${
+                  className={`text-[13px] font-normal transition-opacity duration-200 hover:opacity-70 ${
                     isActive
-                      ? "text-[#111111]"
+                      ? "text-[#3A3A3A]"
                       : "text-[#5A5A5A]"
                   }`}
                 >
@@ -73,7 +70,7 @@ export function Header() {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className="px-5 py-2 bg-[#111111] text-white text-[12px] font-medium rounded-[3px] transition-opacity duration-200 hover:opacity-70"
+              className="px-5 py-2 bg-[#3A3A3A] text-white text-[13px] font-medium rounded-[3px] transition-opacity duration-200 hover:opacity-70"
             >
               Get Started
             </Link>
@@ -85,7 +82,7 @@ export function Header() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-5 h-5 text-[#111111]" /> : <Menu className="w-5 h-5 text-[#111111]" />}
+            {isOpen ? <X className="w-5 h-5 text-[#3A3A3A]" /> : <Menu className="w-5 h-5 text-[#3A3A3A]" />}
           </button>
         </div>
 
@@ -99,10 +96,10 @@ export function Header() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-[14px] font-normal py-3 px-4 transition-opacity duration-200 hover:opacity-70 ${
+                    className={`text-[15px] font-normal py-3 px-4 transition-opacity duration-200 hover:opacity-70 ${
                       isActive
-                        ? "text-[#111111]"
-                        : "text-[#3A3A3A]"
+                        ? "text-[#3A3A3A]"
+                        : "text-[#5A5A5A]"
                     }`}
                   >
                     {item.label}
@@ -112,7 +109,7 @@ export function Header() {
               <div className="pt-4 mt-2 border-t border-[#E0E0E0]">
                 <Link
                   href="/contact"
-                  className="block w-full px-5 py-3 bg-[#111111] text-white text-[14px] font-medium rounded-[3px] text-center transition-opacity duration-200 hover:opacity-70"
+                  className="block w-full px-5 py-3 bg-[#3A3A3A] text-white text-[15px] font-medium rounded-[3px] text-center transition-opacity duration-200 hover:opacity-70"
                 >
                   Get Started
                 </Link>
