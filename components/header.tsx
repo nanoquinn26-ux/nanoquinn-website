@@ -34,18 +34,18 @@ export function Header() {
   }, [pathname])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-border shadow-sm">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#E0E0E0]">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex items-center justify-between h-16">
 
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/nanoquinn-logo.png"
               alt="NanoQuinn APaaS Platform"
-              width={200}
-              height={80}
-              className="h-16 w-auto object-contain"
+              width={160}
+              height={64}
+              className="h-10 w-auto object-contain"
             />
           </Link>
 
@@ -57,10 +57,10 @@ export function Header() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`text-sm font-medium transition-colors ${
+                  className={`text-[12px] font-normal transition-opacity duration-200 hover:opacity-70 ${
                     isActive
-                      ? "text-[#1FA855] border-b-2 border-[#1FA855] pb-0.5"
-                      : "text-foreground hover:text-[#1FA855]"
+                      ? "text-[#111111]"
+                      : "text-[#5A5A5A]"
                   }`}
                 >
                   {item.label}
@@ -70,58 +70,52 @@ export function Header() {
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a
-              href="https://wa.me/918608604817"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#1FA855] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
+          <div className="hidden lg:flex items-center">
+            <Link
+              href="/contact"
+              className="px-5 py-2 bg-[#111111] text-white text-[12px] font-medium rounded-[3px] transition-opacity duration-200 hover:opacity-70"
             >
-              <WhatsAppIcon />
-              Chat on WhatsApp
-            </a>
+              Get Started
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+            className="lg:hidden p-2 transition-opacity duration-200 hover:opacity-70"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-5 h-5 text-[#111111]" /> : <Menu className="w-5 h-5 text-[#111111]" />}
           </button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden py-6 border-t border-border bg-background">
-            <nav className="flex flex-col gap-2">
+          <div className="lg:hidden py-6 border-t border-[#E0E0E0] bg-white">
+            <nav className="flex flex-col gap-1">
               {navItems.map((item) => {
                 const isActive = pathname === item.href
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`text-base font-medium py-3 px-4 rounded-xl transition-colors ${
+                    className={`text-[14px] font-normal py-3 px-4 transition-opacity duration-200 hover:opacity-70 ${
                       isActive
-                        ? "bg-[#1FA855]/10 text-[#1FA855]"
-                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                        ? "text-[#111111]"
+                        : "text-[#3A3A3A]"
                     }`}
                   >
                     {item.label}
                   </Link>
                 )
               })}
-              <div className="flex flex-col gap-3 pt-6 border-t border-border mt-2">
-                <a
-                  href="https://wa.me/918608604817"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#1FA855] text-black text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
+              <div className="pt-4 mt-2 border-t border-[#E0E0E0]">
+                <Link
+                  href="/contact"
+                  className="block w-full px-5 py-3 bg-[#111111] text-white text-[14px] font-medium rounded-[3px] text-center transition-opacity duration-200 hover:opacity-70"
                 >
-                  <WhatsAppIcon />
-                  Chat on WhatsApp
-                </a>
+                  Get Started
+                </Link>
               </div>
             </nav>
           </div>

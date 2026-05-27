@@ -47,17 +47,17 @@ export function ApaasSection() {
 
         {/* Hero Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
-          <div className="bg-[#1E3A5F] rounded-3xl p-10 sm:p-16 lg:p-20">
+          <div className="bg-[#2D2D2D] rounded-3xl p-10 sm:p-16 lg:p-20">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold italic tracking-tight mb-6 text-balance text-white">
               NanoQuinn{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent not-italic">
+              <span className="text-[#111111] not-italic">
                 APaaS™
               </span>{" "}
               <span className="not-italic">Platform</span>
             </h1>
             <p className="text-xl sm:text-2xl leading-relaxed font-medium">
               <span className="text-white/80">Your</span>{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-bold">
+              <span className="text-[#111111] font-bold">
                 360° Sustainable Maintenance & Asset Protection
               </span>{" "}
               <span className="text-white/80">Partner</span>
@@ -83,7 +83,7 @@ export function ApaasSection() {
         {/* Asset Protection as a Service */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-foreground mb-6">
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Asset Protection</span> as a Service
+            <span className="text-[#111111]">Asset Protection</span> as a Service
           </h2>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
             A revolutionary and sustainable platform designed to protect, preserve, and maintain every asset and every surface through long-lasting global nanotechnology innovations combined with end-to-end execution responsibility.
@@ -94,17 +94,17 @@ export function ApaasSection() {
         <div className="mb-16 sm:mb-24">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-12">
             Salient Features of the{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">APaaS Platform</span>
+            <span className="text-[#111111]">APaaS Platform</span>
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {salientFeatures.map((feature, index) => (
               <div 
                 key={index} 
-                className="bg-card border border-border rounded-2xl p-6 hover:border-[#14B8A6]/50 transition-colors"
+                className="bg-card border border-border rounded-2xl p-6 hover:border-[#6B6B6B]/50 transition-colors"
               >
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#5EEAD4]/20 to-[#22C55E]/20 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-[#14B8A6]" />
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#9A9A9A]/20 to-[#3A3A3A]/20 flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-[#3A3A3A]" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-3">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
@@ -115,14 +115,14 @@ export function ApaasSection() {
 
         {/* APaaS Platform Vision */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-[#1E3A5F] to-[#2D4A6F] rounded-3xl p-8 sm:p-12 text-center">
+          <div className="bg-gradient-to-br from-[#2D2D2D] to-[#4A4A4A] rounded-3xl p-8 sm:p-12 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
-              <Shield className="w-4 h-4 text-[#14B8A6]" />
+              <Shield className="w-4 h-4 text-[#3A3A3A]" />
               <span className="text-sm font-medium text-white/80">APaaS Platform Vision</span>
             </div>
             <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
               NanoQuinn APaaS Platform is not just a product or coating model — it is a{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-bold">
+              <span className="text-[#111111] font-bold">
                 complete lifecycle responsibility platform
               </span>{" "}
               focused on preserving assets for years with sustainability, accountability, operational continuity, and massive long-term savings for management.

@@ -35,16 +35,16 @@ export function CareersSection() {
       {/* Hero */}
       <div className="bg-foreground text-background py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#3A3A3A] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Careers
           </span>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight text-balance mb-6">
             <span className="text-background">Build the Future of</span><br />
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Asset Protection</span>
+            <span className="text-[#111111]">Asset Protection</span>
           </h1>
           <p className="text-background/60 text-lg leading-relaxed max-w-2xl mx-auto">
             At NanoQuinn, we are not hiring for jobs.<br />
-            We are building a team of <span className="text-[#1FA855] font-semibold">category creators</span>.
+            We are building a team of <span className="text-[#111111] font-semibold">category creators</span>.
           </p>
           <p className="mt-4 text-background/50 text-base italic">
             If you believe in creating &ldquo;Only Me&rdquo; — not &ldquo;Me Too&rdquo;, you&apos;ll fit right in.
@@ -63,14 +63,14 @@ export function CareersSection() {
           <ul className="grid sm:grid-cols-2 gap-4">
             {whyItems.map((item) => (
               <li key={item} className="flex items-start gap-3 bg-muted rounded-xl p-4">
-                <span className="mt-1 w-2 h-2 rounded-full bg-[#1FA855] shrink-0" />
+                <span className="mt-1 w-2 h-2 rounded-full bg-[#111111] shrink-0" />
                 <p className="text-sm text-foreground leading-relaxed">{item}</p>
               </li>
             ))}
           </ul>
           <p className="mt-8 text-foreground font-bold text-lg">
             This is not incremental change.<br />
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">This is industrial transformation.</span>
+            <span className="text-[#111111]">This is industrial transformation.</span>
           </p>
         </div>
       </div>
@@ -81,9 +81,9 @@ export function CareersSection() {
           <h2 className="text-3xl sm:text-4xl font-black mb-4 text-foreground">Who We&apos;re Looking For</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
             {whoWeWant.map(({ icon: Icon, text }) => (
-              <div key={text} className="bg-background border border-border rounded-2xl p-5 flex items-start gap-4 hover:border-[#1FA855]/60 transition-colors">
-                <div className="w-9 h-9 rounded-full bg-[#1FA855]/10 flex items-center justify-center shrink-0">
-                  <Icon className="w-4 h-4 text-[#1FA855]" />
+              <div key={text} className="bg-background border border-border rounded-2xl p-5 flex items-start gap-4 hover:border-[#111111]/60 transition-colors">
+                <div className="w-9 h-9 rounded-full bg-[#111111]/10 flex items-center justify-center shrink-0">
+                  <Icon className="w-4 h-4 text-[#111111]" />
                 </div>
                 <p className="text-sm text-foreground leading-relaxed">{text}</p>
               </div>
@@ -102,9 +102,9 @@ export function CareersSection() {
           <h2 className="text-3xl sm:text-4xl font-black mb-8 text-foreground">What You&apos;ll Be Part Of</h2>
           <div className="grid sm:grid-cols-2 gap-4">
             {whatYoullBuild.map(({ icon: Icon, text }) => (
-              <div key={text} className="flex items-start gap-4 p-5 rounded-2xl border border-border hover:border-[#1FA855]/50 transition-colors">
-                <div className="w-9 h-9 rounded-full bg-[#1FA855]/10 flex items-center justify-center shrink-0">
-                  <Icon className="w-4 h-4 text-[#1FA855]" />
+              <div key={text} className="flex items-start gap-4 p-5 rounded-2xl border border-border hover:border-[#111111]/50 transition-colors">
+                <div className="w-9 h-9 rounded-full bg-[#111111]/10 flex items-center justify-center shrink-0">
+                  <Icon className="w-4 h-4 text-[#111111]" />
                 </div>
                 <p className="text-sm text-foreground leading-relaxed">{text}</p>
               </div>
@@ -120,7 +120,7 @@ export function CareersSection() {
           <div className="grid sm:grid-cols-2 gap-3">
             {culturePoints.map((point) => (
               <div key={point} className="flex items-center gap-3 bg-background rounded-xl px-5 py-4 border border-border">
-                <span className="w-2 h-2 rounded-full bg-[#1FA855] shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-[#111111] shrink-0" />
                 <p className="text-sm font-medium text-foreground">{point}</p>
               </div>
             ))}
@@ -143,14 +143,14 @@ export function CareersSection() {
           <p className="text-background/50 text-sm uppercase tracking-widest mb-4">Join Us</p>
           <h2 className="text-4xl sm:text-5xl font-black mb-4 text-balance">
             <span className="text-background">Careers That</span><br />
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Create Categories</span>
+            <span className="text-[#111111]">Create Categories</span>
           </h2>
           <p className="text-background/60 text-base mb-2 leading-relaxed">
             Be part of a company that is not entering an industry —<br />but building one.
           </p>
           <a
             href="mailto:hr@nanoquinn.com"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full bg-[#1FA855] text-black font-bold text-base hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full bg-[#3A3A3A] text-white font-bold text-base hover:opacity-90 transition-opacity"
           >
             hr@nanoquinn.com
             <ArrowRight className="w-4 h-4" />
