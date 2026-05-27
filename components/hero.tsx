@@ -291,29 +291,82 @@ export function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight text-balance mb-6 sm:mb-8 animate-fade-up delay-100">
-            <span className="text-white">The End of</span>{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Asset Degradation</span><br />
-            <span className="text-white">Has Begun.</span>
-          </h1>
+          {/* Headline */}
+<div className="animate-fade-up delay-100">
 
-          {/* Sub-headline */}
-          <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
-            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#22C55E]/30 border border-[#22C55E]/50">
-              <span className="text-white">Never Before</span>{" "}
-              <span className="text-white">In Industrial History</span>
-            </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
-              An{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">End-to-End Asset Protection</span>{" "}
-              Platform
-            </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed">
-              Combining{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-semibold">Sustainable Nanotechnology</span>,<br className="hidden sm:block" />
-              Lifecycle Preservation & Unconditional Warranty
-            </p>
-          </div>
+  <p className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-[#FFFFFF] text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+    THE WORLD&apos;S BIGGEST MAINTENANCE PROBLEM
+  </p>
+
+  <h1 className="text-4xl sm:text-6xl lg:text-8xl font-bold tracking-tight text-balance leading-[0.95] mb-8">
+    <span className="text-white">Assets Are</span>{" "}
+    <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">
+      Maintained
+    </span>
+    <span className="text-white">.</span>
+    <br />
+    <span className="text-white/70">But Not Protected.</span>
+  </h1>
+
+  <div className="max-w-5xl mx-auto space-y-6 text-center">
+
+    <p className="text-xl sm:text-2xl text-white/80 font-medium">
+      Assets Are Repaired. But Not Preserved.
+    </p>
+
+    <p className="text-base sm:text-lg lg:text-xl text-white/65 leading-relaxed max-w-4xl mx-auto">
+      Every year industries spend crores on maintenance, repairs, shutdowns,
+      manpower, repainting and replacement of deteriorating assets.
+      Yet the same assets continue to corrode, age and demand maintenance again.
+    </p>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 text-left">
+
+      {[
+        "Recurring Maintenance OPEX",
+        "Asset Deterioration & Degradation",
+        "Production Losses & Shutdowns",
+        "Premature Asset Replacement",
+        "Multiple Vendor Dependency",
+        "Environmental & Compliance Challenges",
+      ].map((item) => (
+        <div
+          key={item}
+          className="flex items-center gap-3 rounded-2xl border border-red-500/20 bg-red-500/10 px-5 py-4 backdrop-blur-sm"
+        >
+          <span className="text-red-400 text-lg">✕</span>
+          <span className="text-white/90 text-sm sm:text-base font-medium">
+            {item}
+          </span>
+        </div>
+      ))}
+
+    </div>
+
+    <div className="mt-16">
+
+      <p className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-[#FFFFFF] text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+        WHAT IF ASSETS COULD BE PRESERVED INSTEAD OF REPAIRED?
+      </p>
+
+      <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+        <span className="text-white">Welcome To</span>
+        <br />
+        <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">
+          NanoQuinn APaaS Platform
+        </span>
+      </h2>
+
+      <p className="text-lg sm:text-xl text-white/70 leading-relaxed max-w-4xl mx-auto">
+        A revolutionary AI-driven platform designed to Protect, Preserve,
+        Monitor, Audit and Take Responsibility for industrial assets through
+        globally certified sustainable technologies.
+      </p>
+
+    </div>
+
+  </div>
+</div>
 
           {/* Key Highlights */}
           <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-8 mb-10 sm:mb-12 animate-fade-up delay-300">
