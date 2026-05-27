@@ -189,8 +189,11 @@ export function Hero() {
       </div>
 
       {/* Section 5: Protection Technologies */}
-      <div className="py-20 px-8 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
+      <div 
+        className="py-20 px-8 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: "url('/images/renewable-energy-bg.png')" }}
+      >
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
             Certified Technologies
           </p>
