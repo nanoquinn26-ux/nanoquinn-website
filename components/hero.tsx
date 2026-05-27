@@ -1,8 +1,8 @@
 "use client"
 
-import { 
-  CheckCircle, ArrowRight, Shield, Award, 
-  Eye, BadgeCheck, Building2, Factory, Container, 
+import {
+  CheckCircle, ArrowRight, Shield, Award,
+  Eye, BadgeCheck, Building2, Factory, Container,
   PipetteIcon, Zap, SolarPanel, Wrench, Clock, Users, TrendingDown, AlertTriangle,
   Calendar
 } from "lucide-react"
@@ -68,9 +68,9 @@ const managementWants = [
 export function Hero() {
   return (
     <section className="bg-white">
-      
+
       {/* Section 1: Hero - The Problem */}
-      <div 
+      <div
         className="py-16 md:py-24 px-4 md:px-8 bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
       >
@@ -81,21 +81,21 @@ export function Hero() {
           </p>
 
           {/* H1 Hero */}
-          <h1 className="text-[36px] md:text-[56px] font-medium text-[#3A3A3A] leading-[1.15] mb-6">
+          <h1 className="text-[36px] md:text-[56px] font-extrabold text-[#3A3A3A] leading-[1.15] mb-6">
             Assets Are Maintained.<br />
             But Not Protected.
           </h1>
 
           {/* Body copy */}
           <p className="text-[18px] md:text-[20px] font-normal text-[#5A5A5A] leading-[1.6] max-w-2xl mx-auto mb-8 md:mb-10">
-            Every year industries spend crores on maintenance, painting, repairs, and replacement. 
+            Every year industries spend crores on maintenance, painting, repairs, and replacement.
             Yet assets continue to corrode, deteriorate, and demand maintenance again.
           </p>
 
           {/* Problems Grid */}
           <div className="flex flex-wrap justify-center gap-2 md:gap-3">
             {problems.map((problem) => (
-              <div 
+              <div
                 key={problem.label}
                 className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-[#3A3A3A] border border-[#3A3A3A] rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
               >
@@ -119,14 +119,14 @@ export function Hero() {
           <h2 className="text-[30px] md:text-[42px] font-medium text-[#3A3A3A] leading-[1.2] mb-3 md:mb-4">
             Welcome to NanoQuinn APaaS Platform
           </h2>
-          
+
           <p className="text-[15px] md:text-[17px] font-normal text-[#5A5A5A] mb-4 md:mb-6">
             Asset Protection as a Service
           </p>
 
           {/* Body copy */}
           <p className="text-[18px] md:text-[20px] font-normal text-[#5A5A5A] leading-[1.6] max-w-2xl mx-auto">
-            A platform designed to Protect, Preserve, Monitor, Audit, and Take Responsibility 
+            A platform designed to Protect, Preserve, Monitor, Audit, and Take Responsibility
             for industrial assets through globally certified sustainable technologies.
           </p>
         </div>
@@ -143,11 +143,11 @@ export function Hero() {
               One Platform. Every Asset.
             </h2>
           </div>
-          
+
           {/* Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
             {assetTypes.map((asset) => (
-              <div 
+              <div
                 key={asset.label}
                 className="flex flex-col items-center p-5 md:p-6 bg-[#F7F7F7] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
               >
@@ -172,7 +172,7 @@ export function Hero() {
               The NanoQuinn Difference
             </h2>
           </div>
-          
+
           <div className="grid md:grid-cols-2 gap-4">
             <div className="p-6 md:p-8 bg-white rounded-[6px] border border-[#E0E0E0]">
               <h3 className="text-[18px] md:text-[20px] font-medium text-[#3A3A3A] mb-3">Traditional Maintenance</h3>
@@ -187,13 +187,13 @@ export function Hero() {
       </div>
 
       {/* Section 5: Technology Innovations */}
-      <div 
+      <div
         className="py-16 md:py-24 px-4 md:px-8 bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/images/nanotech-bg.png')" }}
       >
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-[#1a1a1a]/60"></div>
-        
+
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <p className="text-[14px] md:text-[16px] font-medium text-white uppercase tracking-[0.2em] mb-4 md:mb-6">
             Certified Technologies
@@ -204,10 +204,10 @@ export function Hero() {
           <p className="text-[18px] md:text-[20px] font-normal text-white mb-8 md:mb-10">
             Long-lasting protection against:
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-2 md:gap-3">
             {protectionTech.map((tech) => (
-              <div 
+              <div
                 key={tech}
                 className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
               >
@@ -228,10 +228,10 @@ export function Hero() {
           <h2 className="text-[30px] md:text-[42px] font-medium text-[#3A3A3A] leading-[1.2] mb-8 md:mb-10">
             Warranty with Responsibility
           </h2>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 md:mb-10">
             {warrantyFeatures.map((feature) => (
-              <div 
+              <div
                 key={feature.label}
                 className="flex flex-col items-center p-5 md:p-6 bg-white rounded-[6px] border border-[#E0E0E0] transition-opacity duration-200 hover:opacity-70"
               >
@@ -242,7 +242,7 @@ export function Hero() {
               </div>
             ))}
           </div>
-          
+
           <p className="text-[18px] md:text-[20px] font-normal text-[#5A5A5A]">
             One Partner. One Platform. One Responsibility.
           </p>
@@ -260,7 +260,7 @@ export function Hero() {
               What Management Really Wants
             </h2>
           </div>
-          
+
           <div className="space-y-3 md:space-y-4">
             {managementWants.map((item) => (
               <div key={item.right} className="flex items-center justify-between gap-4 py-3 md:py-4 border-b border-[#E0E0E0] last:border-0">
@@ -282,10 +282,10 @@ export function Hero() {
           <h2 className="text-[30px] md:text-[42px] font-medium text-[#3A3A3A] leading-[1.2] mb-8 md:mb-10">
             The Outcome
           </h2>
-          
+
           <div className="flex flex-wrap justify-center gap-2 md:gap-3">
             {outcomes.map((outcome) => (
-              <div 
+              <div
                 key={outcome}
                 className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
               >
@@ -303,17 +303,17 @@ export function Hero() {
           <h2 className="text-[30px] md:text-[42px] font-medium text-[#3A3A3A] leading-[1.2] mb-3 md:mb-4">
             NanoQuinn APaaS Platform
           </h2>
-          
+
           <p className="text-[18px] md:text-[20px] font-normal text-[#5A5A5A] mb-6 md:mb-8">
             Protect. Preserve. Monitor. Audit. Take Responsibility.
           </p>
-          
+
           <a href="/contact">
             <button className="px-6 md:px-8 py-3 md:py-4 bg-[#3A3A3A] text-white text-[16px] md:text-[18px] font-medium rounded-[3px] transition-opacity duration-200 hover:opacity-70">
               Get Started
             </button>
           </a>
-          
+
           <p className="text-[15px] md:text-[17px] font-normal text-[#5A5A5A] mt-6">
             Every Asset. Every Surface. Every Year.
           </p>
