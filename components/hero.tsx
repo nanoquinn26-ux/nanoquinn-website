@@ -195,13 +195,13 @@ export function Hero() {
         <div className="absolute inset-0 bg-[#1a1a1a]/60"></div>
         
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <p className="text-[14px] md:text-[16px] font-medium text-white/80 uppercase tracking-[0.2em] mb-4 md:mb-6">
+          <p className="text-[14px] md:text-[16px] font-medium text-white uppercase tracking-[0.2em] mb-4 md:mb-6">
             Certified Technologies
           </p>
           <h2 className="text-[30px] md:text-[42px] font-medium text-white leading-[1.2] mb-3 md:mb-4">
             Technology Innovations
           </h2>
-          <p className="text-[18px] md:text-[20px] font-normal text-white/80 mb-8 md:mb-10">
+          <p className="text-[18px] md:text-[20px] font-normal text-white mb-8 md:mb-10">
             Long-lasting protection against:
           </p>
           
@@ -209,10 +209,10 @@ export function Hero() {
             {protectionTech.map((tech) => (
               <div 
                 key={tech}
-                className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-[6px] transition-opacity duration-200 hover:opacity-80"
+                className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
               >
-                <CheckCircle className="w-4 h-4 text-white" />
-                <span className="text-[15px] md:text-[17px] text-white">{tech}</span>
+                <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                <span className="text-[14px] md:text-[16px] font-medium text-white">{tech}</span>
               </div>
             ))}
           </div>
