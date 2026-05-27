@@ -72,7 +72,7 @@ export function Hero() {
       {/* Section 1: Hero - The Problem */}
       <div 
         className="py-20 px-8 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/images/hero-bg.png')" }}
+        style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
       >
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Eyebrow */}
@@ -191,7 +191,7 @@ export function Hero() {
       {/* Section 5: Protection Technologies */}
       <div 
         className="py-20 px-8 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/images/renewable-energy-bg.png')" }}
+        style={{ backgroundImage: "url('/images/renewable-energy-bg.webp')" }}
       >
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
