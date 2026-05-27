@@ -76,7 +76,7 @@ export function Hero() {
       >
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Eyebrow */}
-          <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
             The World&apos;s Biggest Maintenance Problem
           </p>
 
@@ -87,7 +87,7 @@ export function Hero() {
           </h1>
 
           {/* Body copy */}
-          <p className="text-[14px] font-normal text-[#6B6B6B] leading-[1.6] max-w-2xl mx-auto mb-10">
+          <p className="text-[14px] font-normal text-[#3A3A3A] leading-[1.6] max-w-2xl mx-auto mb-10">
             Every year industries spend crores on maintenance, painting, repairs, and replacement. 
             Yet assets continue to corrode, deteriorate, and demand maintenance again.
           </p>
@@ -100,7 +100,7 @@ export function Hero() {
                 className="flex items-center gap-2 px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
               >
                 <problem.icon className="w-4 h-4 text-[#3A3A3A]" />
-                <span className="text-[14px] text-[#6B6B6B]">{problem.label}</span>
+                <span className="text-[14px] text-[#3A3A3A]">{problem.label}</span>
               </div>
             ))}
           </div>
@@ -111,7 +111,7 @@ export function Hero() {
       <div className="py-20 px-8 bg-[#F7F7F7]">
         <div className="max-w-4xl mx-auto text-center">
           {/* Eyebrow */}
-          <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
             What If Assets Could Be Preserved?
           </p>
 
@@ -120,12 +120,12 @@ export function Hero() {
             Welcome to NanoQuinn APaaS Platform
           </h2>
           
-          <p className="text-[11px] font-normal text-[#8A8A8A] mb-6">
+          <p className="text-[11px] font-normal text-[#3A3A3A] mb-6">
             Asset Protection as a Service
           </p>
 
           {/* Body copy */}
-          <p className="text-[14px] font-normal text-[#6B6B6B] leading-[1.6] max-w-2xl mx-auto">
+          <p className="text-[14px] font-normal text-[#3A3A3A] leading-[1.6] max-w-2xl mx-auto">
             A platform designed to Protect, Preserve, Monitor, Audit, and Take Responsibility 
             for industrial assets through globally certified sustainable technologies.
           </p>
@@ -136,7 +136,7 @@ export function Hero() {
       <div className="py-20 px-8 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+            <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
               Comprehensive Coverage
             </p>
             <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2]">
@@ -155,7 +155,7 @@ export function Hero() {
                   <div className="w-10 h-10 rounded-[6px] bg-[#3A3A3A] flex items-center justify-center mb-3">
                     <asset.icon className="w-5 h-5 text-white" />
                   </div>
-                  <span className="text-[14px] font-normal text-[#6B6B6B] text-center">{asset.label}</span>
+                  <span className="text-[14px] font-normal text-[#3A3A3A] text-center">{asset.label}</span>
                 </div>
               ))}
             </div>
@@ -167,7 +167,7 @@ export function Hero() {
       <div className="py-20 px-8 bg-[#F7F7F7]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+            <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
               Protection First
             </p>
             <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2]">
@@ -178,11 +178,11 @@ export function Hero() {
           <div className="grid md:grid-cols-2 gap-[0.5px] bg-[#E8E8E8] rounded-[6px] p-[0.5px]">
             <div className="p-8 bg-white rounded-l-[6px]">
               <h3 className="text-[15px] font-medium text-[#111111] mb-3">Traditional Maintenance</h3>
-              <p className="text-[14px] font-normal text-[#6B6B6B]">Begins after damage occurs. Reactive. Repetitive.</p>
+              <p className="text-[14px] font-normal text-[#3A3A3A]">Begins after damage occurs. Reactive. Repetitive.</p>
             </div>
             <div className="p-8 bg-white rounded-r-[6px]">
               <h3 className="text-[15px] font-medium text-[#111111] mb-3">NanoQuinn Approach</h3>
-              <p className="text-[14px] font-normal text-[#6B6B6B]">Prevents deterioration before it starts. Proactive. Permanent.</p>
+              <p className="text-[14px] font-normal text-[#3A3A3A]">Prevents deterioration before it starts. Proactive. Permanent.</p>
             </div>
           </div>
         </div>
@@ -194,13 +194,13 @@ export function Hero() {
         style={{ backgroundImage: "url('/images/renewable-energy-bg.png')" }}
       >
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
             Certified Technologies
           </p>
           <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-4">
             Sustainable Protection
           </h2>
-          <p className="text-[14px] font-normal text-[#6B6B6B] mb-10">
+          <p className="text-[14px] font-normal text-[#3A3A3A] mb-10">
             Long-lasting protection against:
           </p>
           
@@ -211,7 +211,7 @@ export function Hero() {
                 className="flex items-center gap-2 px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
               >
                 <CheckCircle className="w-4 h-4 text-[#3A3A3A]" />
-                <span className="text-[14px] text-[#6B6B6B]">{tech}</span>
+                <span className="text-[14px] text-[#3A3A3A]">{tech}</span>
               </div>
             ))}
           </div>
@@ -221,7 +221,7 @@ export function Hero() {
       {/* Section 6: Warranty */}
       <div className="py-20 px-8 bg-[#F7F7F7]">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
             Accountability
           </p>
           <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-10">
@@ -237,12 +237,12 @@ export function Hero() {
                 <div className="w-10 h-10 rounded-[6px] bg-[#3A3A3A] flex items-center justify-center mb-3">
                   <feature.icon className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-[14px] font-normal text-[#6B6B6B] text-center">{feature.label}</span>
+                <span className="text-[14px] font-normal text-[#3A3A3A] text-center">{feature.label}</span>
               </div>
             ))}
           </div>
           
-          <p className="text-[14px] font-normal text-[#6B6B6B]">
+          <p className="text-[14px] font-normal text-[#3A3A3A]">
             One Partner. One Platform. One Responsibility.
           </p>
         </div>
@@ -252,7 +252,7 @@ export function Hero() {
       <div className="py-20 px-8 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+            <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
               Business Impact
             </p>
             <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2]">
@@ -263,7 +263,7 @@ export function Hero() {
           <div className="space-y-4">
             {managementWants.map((item) => (
               <div key={item.right} className="flex items-center justify-center gap-6 py-3 border-b border-[#E0E0E0] last:border-0">
-                <span className="text-[14px] text-[#9A9A9A] line-through w-40 text-right">{item.wrong}</span>
+                <span className="text-[14px] text-[#3A3A3A] line-through w-40 text-right">{item.wrong}</span>
                 <ArrowRight className="w-4 h-4 text-[#3A3A3A]" />
                 <span className="text-[14px] font-medium text-[#111111] w-40 text-left">{item.right}</span>
               </div>
@@ -275,7 +275,7 @@ export function Hero() {
       {/* Section 8: Outcomes */}
       <div className="py-20 px-8 bg-[#F7F7F7]">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[10px] font-medium text-[#9A9A9A] uppercase tracking-[0.2em] mb-6">
+          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
             Results
           </p>
           <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-10">
@@ -289,7 +289,7 @@ export function Hero() {
                 className="flex items-center gap-2 px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
               >
                 <CheckCircle className="w-4 h-4 text-[#3A3A3A]" />
-                <span className="text-[14px] text-[#6B6B6B]">{outcome}</span>
+                <span className="text-[14px] text-[#3A3A3A]">{outcome}</span>
               </div>
             ))}
           </div>
@@ -303,7 +303,7 @@ export function Hero() {
             NanoQuinn APaaS Platform
           </h2>
           
-          <p className="text-[14px] font-normal text-[#6B6B6B] mb-8">
+          <p className="text-[14px] font-normal text-[#3A3A3A] mb-8">
             Protect. Preserve. Monitor. Audit. Take Responsibility.
           </p>
           
@@ -313,7 +313,7 @@ export function Hero() {
             </button>
           </a>
           
-          <p className="text-[11px] font-normal text-[#8A8A8A] mt-6">
+          <p className="text-[11px] font-normal text-[#3A3A3A] mt-6">
             Every Asset. Every Surface. Every Year.
           </p>
         </div>

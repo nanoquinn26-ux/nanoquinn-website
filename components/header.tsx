@@ -60,7 +60,7 @@ export function Header() {
                   className={`text-[12px] font-normal transition-opacity duration-200 hover:opacity-70 ${
                     isActive
                       ? "text-[#111111]"
-                      : "text-[#A0A0A0]"
+                      : "text-[#5A5A5A]"
                   }`}
                 >
                   {item.label}
@@ -102,7 +102,7 @@ export function Header() {
                     className={`text-[14px] font-normal py-3 px-4 transition-opacity duration-200 hover:opacity-70 ${
                       isActive
                         ? "text-[#111111]"
-                        : "text-[#6B6B6B]"
+                        : "text-[#3A3A3A]"
                     }`}
                   >
                     {item.label}

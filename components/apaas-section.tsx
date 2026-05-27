@@ -104,7 +104,7 @@ export function ApaasSection() {
                 className="bg-card border border-border rounded-2xl p-6 hover:border-[#6B6B6B]/50 transition-colors"
               >
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#9A9A9A]/20 to-[#3A3A3A]/20 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-[#6B6B6B]" />
+                  <feature.icon className="w-6 h-6 text-[#3A3A3A]" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-3">{feature.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{feature.description}</p>
@@ -117,7 +117,7 @@ export function ApaasSection() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-[#2D2D2D] to-[#4A4A4A] rounded-3xl p-8 sm:p-12 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
-              <Shield className="w-4 h-4 text-[#6B6B6B]" />
+              <Shield className="w-4 h-4 text-[#3A3A3A]" />
               <span className="text-sm font-medium text-white/80">APaaS Platform Vision</span>
             </div>
             <p className="text-lg sm:text-xl text-white/90 leading-relaxed">
