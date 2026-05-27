@@ -134,7 +134,7 @@ export function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#0F2744] mb-8 sm:mb-10 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-[#22C55E] animate-pulse" />
-            <span className="text-xs sm:text-sm font-semibold text-[#22C55E] uppercase tracking-wider">The World&apos;s Biggest Maintenance Problem Is Simple</span>
+            <span className="text-xs sm:text-sm font-semibold text-[#ffffff] uppercase tracking-wider">The World&apos;s Biggest Maintenance Problem Is Simple</span>
           </div>
 
           {/* Headline */}
