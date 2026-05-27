@@ -25,12 +25,12 @@ export function IndustriesSection() {
     <section id="industries" className="py-20 sm:py-32 lg:py-40 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-20">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#3A3A3A] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Industry Solutions
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
             <span className="text-foreground">Built for</span>{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Every Critical Surface.</span>
+            <span className="text-[#111111]">Every Critical Surface.</span>
           </h2>
         </div>
 
@@ -75,7 +75,7 @@ export function IndustriesSection() {
         <div className="text-center">
           <p className="text-2xl lg:text-3xl font-bold text-foreground">
             If it has a surface,{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn can protect it.</span>
+            <span className="text-[#111111]">NanoQuinn can protect it.</span>
           </p>
         </div>
       </div>

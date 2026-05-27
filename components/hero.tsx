@@ -116,10 +116,10 @@ export function Hero() {
       <div className="absolute inset-0 bg-[#1A1A1A]" />
       
       {/* Green Gradient Glow on Right */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#22C55E]/25 via-[#14B8A6]/15 to-transparent" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#3A3A3A]/25 via-[#6B6B6B]/15 to-transparent" />
       
       {/* Light Blue Accent Glow */}
-      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#5EEAD4]/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-[#9A9A9A]/10 rounded-full blur-3xl" />
       
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.04]" style={{
@@ -132,17 +132,17 @@ export function Hero() {
         {/* Section 1: The Problem */}
         <div className="max-w-5xl mx-auto text-center mb-20">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#22C55E] mb-8 sm:mb-10 animate-fade-up">
-            <span className="w-2 h-2 rounded-full bg-[#14B8A6] animate-pulse" />
+          <div className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 rounded-full bg-[#3A3A3A] mb-8 sm:mb-10 animate-fade-up">
+            <span className="w-2 h-2 rounded-full bg-[#6B6B6B] animate-pulse" />
             <span className="text-xs sm:text-sm font-semibold text-[#ffffff] uppercase tracking-wider">The World&apos;s Biggest Maintenance Problem Is Simple</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance mb-6 sm:mb-8 animate-fade-up delay-100">
             <span className="text-white">Assets Are Maintained.</span>{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">But Not Protected.</span><br />
+            <span className="text-[#111111]">But Not Protected.</span><br />
             <span className="text-white">Assets Are Repaired.</span>{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">But Not Preserved.</span>
+            <span className="text-[#111111]">But Not Preserved.</span>
           </h1>
 
           {/* Problem Description */}
@@ -158,9 +158,9 @@ export function Hero() {
               {problems.map((problem) => (
                 <div 
                   key={problem.label}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/30"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-600/10 border border-gray-600/30"
                 >
-                  <XCircle className="w-4 h-4 text-sky-400" />
+                  <XCircle className="w-4 h-4 text-gray-500" />
                   <span className="text-sm text-white/80">{problem.label}</span>
                 </div>
               ))}
@@ -170,19 +170,19 @@ export function Hero() {
 
         {/* Section 2: The Solution */}
         <div className="max-w-5xl mx-auto text-center mb-20 py-16 border-t border-b border-white/10">
-          <p className="inline-block text-base sm:text-lg text-white font-semibold mb-6 uppercase tracking-wider px-6 py-3 rounded-full bg-[#0D9488]">
+          <p className="inline-block text-base sm:text-lg text-white font-semibold mb-6 uppercase tracking-wider px-6 py-3 rounded-full bg-[#3A3A3A]">
             What If Assets Could Be Preserved Instead Of Repaired?
           </p>
           
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
             Welcome to{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn APaaS Platform</span>
+            <span className="text-[#111111]">NanoQuinn APaaS Platform</span>
           </h2>
           <p className="text-lg text-white/60 mb-2">(Asset Protection as a Service)</p>
           
           <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed max-w-4xl mx-auto">
             A revolutionary AI-driven platform designed to{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-semibold">
+            <span className="text-[#111111] font-semibold">
               Protect, Preserve, Monitor, Audit, and Take Responsibility
             </span>{" "}
             for industrial assets through globally certified Zero to Low VOC sustainable technologies.
@@ -193,7 +193,7 @@ export function Hero() {
         <div className="max-w-6xl mx-auto mb-20">
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">One Platform.</span>{" "}
+              <span className="text-[#111111]">One Platform.</span>{" "}
               Every Asset. Every Surface.
             </h3>
             <p className="text-white/60">NanoQuinn provides 360° protection and preservation solutions for:</p>
@@ -203,9 +203,9 @@ export function Hero() {
             {assetTypes.map((asset) => (
               <div 
                 key={asset.label}
-                className="flex flex-col items-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#1FA855]/30 transition-all duration-300 group"
+                className="flex flex-col items-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#111111]/30 transition-all duration-300 group"
               >
-                <asset.icon className="w-8 h-8 text-[#1FA855] mb-3 group-hover:scale-110 transition-transform" />
+                <asset.icon className="w-8 h-8 text-[#111111] mb-3 group-hover:scale-110 transition-transform" />
                 <span className="text-sm text-white/80 text-center font-medium">{asset.label}</span>
               </div>
             ))}
@@ -216,18 +216,18 @@ export function Hero() {
         <div className="max-w-5xl mx-auto mb-20 bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 rounded-3xl p-8 sm:p-12">
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
-              The <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn Difference</span>
+              The <span className="text-[#111111]">NanoQuinn Difference</span>
             </h3>
             <p className="text-xl font-semibold text-white mb-2">Protection First. Maintenance Later.</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-2xl bg-sky-500/10 border border-sky-500/30">
-              <h4 className="text-lg font-bold text-sky-400 mb-4">Traditional Maintenance</h4>
+            <div className="p-6 rounded-2xl bg-gray-600/10 border border-gray-600/30">
+              <h4 className="text-lg font-bold text-gray-500 mb-4">Traditional Maintenance</h4>
               <p className="text-white/70">Begins after damage occurs.</p>
             </div>
-            <div className="p-6 rounded-2xl bg-[#1FA855]/10 border border-[#1FA855]/30">
-              <h4 className="text-lg font-bold text-[#1FA855] mb-4">NanoQuinn Approach</h4>
+            <div className="p-6 rounded-2xl bg-[#111111]/10 border border-[#111111]/30">
+              <h4 className="text-lg font-bold text-[#111111] mb-4">NanoQuinn Approach</h4>
               <p className="text-white/70">Prevents deterioration before it starts.</p>
             </div>
           </div>
@@ -235,7 +235,7 @@ export function Hero() {
           <p className="text-center text-white/70 mt-8 leading-relaxed">
             By combining world-leading protection technologies, skilled applicators, AI monitoring, annual audits, and long-term responsibility, 
             NanoQuinn transforms maintenance from a recurring expense into a{" "}
-            <span className="text-[#1FA855] font-semibold">strategic asset preservation program</span>.
+            <span className="text-[#111111] font-semibold">strategic asset preservation program</span>.
           </p>
         </div>
 
@@ -244,7 +244,7 @@ export function Hero() {
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
               World&apos;s Leading{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Sustainable Protection Technologies</span>
+              <span className="text-[#111111]">Sustainable Protection Technologies</span>
             </h3>
             <p className="text-white/60">NanoQuinn&apos;s certified innovations deliver long-lasting protection against:</p>
           </div>
@@ -253,16 +253,16 @@ export function Hero() {
             {protectionTech.map((tech) => (
               <div 
                 key={tech}
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1FA855]/10 border border-[#1FA855]/30"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#111111]/10 border border-[#111111]/30"
               >
-                <CheckCircle className="w-4 h-4 text-[#1FA855]" />
+                <CheckCircle className="w-4 h-4 text-[#111111]" />
                 <span className="text-sm text-white/80">{tech}</span>
               </div>
             ))}
           </div>
           
           <p className="text-center text-white/60 text-sm">
-            All through <span className="text-[#1FA855] font-semibold">Zero to Low VOC Sustainable Technologies</span> supporting ESG, EHS, and Net-Zero initiatives.
+            All through <span className="text-[#111111] font-semibold">Zero to Low VOC Sustainable Technologies</span> supporting ESG, EHS, and Net-Zero initiatives.
           </p>
         </div>
 
@@ -271,12 +271,12 @@ export function Hero() {
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
               Unconditional Warranty with{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Responsibility</span>
+              <span className="text-[#111111]">Responsibility</span>
             </h3>
             <div className="text-white/70 space-y-1 mb-6">
               <p>Most companies sell products.</p>
               <p>Some companies sell services.</p>
-              <p className="text-[#1FA855] font-bold text-lg">NanoQuinn Delivers Responsibility.</p>
+              <p className="text-[#111111] font-bold text-lg">NanoQuinn Delivers Responsibility.</p>
             </div>
           </div>
           
@@ -286,7 +286,7 @@ export function Hero() {
                 key={feature.label}
                 className="flex flex-col items-center p-4 rounded-xl bg-white/5 border border-white/10"
               >
-                <feature.icon className="w-6 h-6 text-[#1FA855] mb-2" />
+                <feature.icon className="w-6 h-6 text-[#111111] mb-2" />
                 <span className="text-xs text-white/70 text-center">{feature.label}</span>
               </div>
             ))}
@@ -294,13 +294,13 @@ export function Hero() {
           
           <div className="flex justify-center gap-8 text-center">
             <div>
-              <p className="text-[#1FA855] font-bold text-lg">One Partner.</p>
+              <p className="text-[#111111] font-bold text-lg">One Partner.</p>
             </div>
             <div>
-              <p className="text-[#1FA855] font-bold text-lg">One Platform.</p>
+              <p className="text-[#111111] font-bold text-lg">One Platform.</p>
             </div>
             <div>
-              <p className="text-[#1FA855] font-bold text-lg">One Responsibility.</p>
+              <p className="text-[#111111] font-bold text-lg">One Responsibility.</p>
             </div>
           </div>
         </div>
@@ -309,7 +309,7 @@ export function Hero() {
         <div className="max-w-5xl mx-auto mb-20">
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">AI-Driven</span>{" "}
+              <span className="text-[#111111]">AI-Driven</span>{" "}
               Asset Intelligence
             </h3>
             <p className="text-white/60">Every protected asset becomes digitally monitored. Track:</p>
@@ -319,9 +319,9 @@ export function Hero() {
             {aiFeatures.map((feature) => (
               <div 
                 key={feature}
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1FA855]/10 border border-[#1FA855]/30"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#111111]/10 border border-[#111111]/30"
               >
-                <CheckCircle className="w-4 h-4 text-[#1FA855]" />
+                <CheckCircle className="w-4 h-4 text-[#111111]" />
                 <span className="text-sm text-white/80">{feature}</span>
               </div>
             ))}
@@ -329,7 +329,7 @@ export function Hero() {
           
           <div className="text-center text-white/70">
             <p>The future of maintenance is not reactive.</p>
-            <p className="text-[#1FA855] font-bold text-xl mt-2">The future is predictive.</p>
+            <p className="text-[#111111] font-bold text-xl mt-2">The future is predictive.</p>
           </div>
         </div>
 
@@ -338,7 +338,7 @@ export function Hero() {
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
               Free Annual{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Asset Health Audits</span>
+              <span className="text-[#111111]">Asset Health Audits</span>
             </h3>
             <p className="text-white/60">Unlike traditional vendors who disappear after project completion, NanoQuinn remains engaged throughout the warranty period.</p>
           </div>
@@ -349,13 +349,13 @@ export function Hero() {
                 key={feature}
                 className="flex items-center gap-2 p-3 rounded-xl bg-white/5 border border-white/10"
               >
-                <CheckCircle className="w-4 h-4 text-[#1FA855] shrink-0" />
+                <CheckCircle className="w-4 h-4 text-[#111111] shrink-0" />
                 <span className="text-xs text-white/70">{feature}</span>
               </div>
             ))}
           </div>
           
-          <p className="text-center text-[#1FA855] font-semibold mt-8">
+          <p className="text-center text-[#111111] font-semibold mt-8">
             A complete lifecycle commitment to preserving your assets.
           </p>
         </div>
@@ -365,7 +365,7 @@ export function Hero() {
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
               What Management{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Really Wants</span>
+              <span className="text-[#111111]">Really Wants</span>
             </h3>
           </div>
           
@@ -375,8 +375,8 @@ export function Hero() {
                 <div className="flex items-center gap-2 text-white/50 line-through">
                   <span className="text-sm sm:text-base">Not {item.wrong}</span>
                 </div>
-                <ArrowRight className="w-5 h-5 text-[#1FA855]" />
-                <div className="flex items-center gap-2 text-[#1FA855] font-semibold">
+                <ArrowRight className="w-5 h-5 text-[#111111]" />
+                <div className="flex items-center gap-2 text-[#111111] font-semibold">
                   <span className="text-sm sm:text-base">{item.right}</span>
                 </div>
               </div>
@@ -389,7 +389,7 @@ export function Hero() {
           <div className="text-center mb-10">
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
               The{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Outcome</span>
+              <span className="text-[#111111]">Outcome</span>
             </h3>
           </div>
           
@@ -397,9 +397,9 @@ export function Hero() {
             {outcomes.map((outcome) => (
               <div 
                 key={outcome.label}
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1FA855]/10 border border-[#1FA855]/30"
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#111111]/10 border border-[#111111]/30"
               >
-                <outcome.icon className="w-4 h-4 text-[#1FA855]" />
+                <outcome.icon className="w-4 h-4 text-[#111111]" />
                 <span className="text-sm text-white/80">{outcome.label}</span>
               </div>
             ))}
@@ -410,26 +410,26 @@ export function Hero() {
         <div className="max-w-4xl mx-auto text-center bg-[#2D2D2D] rounded-3xl p-10 sm:p-16">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold italic tracking-tight mb-4 text-white">
             NanoQuinn{" "}
-            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent not-italic">
+            <span className="text-[#111111] not-italic">
               APaaS™
             </span>{" "}
             <span className="not-italic">Platform</span>
           </h3>
           
           <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-6">
-            <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Protect</span>
+            <span className="text-base sm:text-lg font-bold text-[#111111]">Protect</span>
             <span className="text-white/40">•</span>
             <span className="text-base sm:text-lg font-bold text-white">Preserve</span>
             <span className="text-white/40">•</span>
-            <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Monitor</span>
+            <span className="text-base sm:text-lg font-bold text-[#111111]">Monitor</span>
             <span className="text-white/40">•</span>
             <span className="text-base sm:text-lg font-bold text-white">Audit</span>
             <span className="text-white/40">•</span>
-            <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Take Responsibility</span>
+            <span className="text-base sm:text-lg font-bold text-[#111111]">Take Responsibility</span>
           </div>
           
           <p className="text-lg sm:text-xl text-white/80 mb-2">The Future Of Industrial Asset Protection & Preservation.</p>
-          <p className="text-[#1FA855] font-semibold">Every Asset. Every Surface. Every Year. With Responsibility.</p>
+          <p className="text-[#111111] font-semibold">Every Asset. Every Surface. Every Year. With Responsibility.</p>
           
           <div className="mt-8">
             <a
@@ -437,7 +437,7 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="text-base px-10 py-6 h-auto rounded-full bg-[#1FA855] text-white hover:bg-[#34C66E]">
+              <Button size="lg" className="text-base px-10 py-6 h-auto rounded-full bg-[#111111] text-white hover:bg-[#3A3A3A]">
                 Get Started Today
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
@@ -450,7 +450,7 @@ export function Hero() {
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs text-white/50 uppercase tracking-wider">Scroll to explore</span>
             <div className="w-6 h-10 border-2 border-white/20 rounded-full flex items-start justify-center p-1">
-              <div className="w-1.5 h-3 bg-[#1FA855] rounded-full animate-bounce" />
+              <div className="w-1.5 h-3 bg-[#111111] rounded-full animate-bounce" />
             </div>
           </div>
         </div>

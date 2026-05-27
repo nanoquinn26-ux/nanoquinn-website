@@ -59,8 +59,8 @@ export function Header() {
                   href={item.href}
                   className={`text-sm font-medium transition-colors ${
                     isActive
-                      ? "text-[#1FA855] border-b-2 border-[#1FA855] pb-0.5"
-                      : "text-foreground hover:text-[#1FA855]"
+                      ? "text-[#111111] border-b-2 border-[#111111] pb-0.5"
+                      : "text-foreground hover:text-[#111111]"
                   }`}
                 >
                   {item.label}
@@ -75,7 +75,7 @@ export function Header() {
               href="https://wa.me/918608604817"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#0D9488] text-white text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
+              className="inline-flex items-center gap-2 rounded-full px-6 py-2 bg-[#3A3A3A] text-white text-sm font-medium hover:bg-[#1ebe5d] transition-colors"
             >
               <WhatsAppIcon />
               Chat on WhatsApp
@@ -104,7 +104,7 @@ export function Header() {
                     href={item.href}
                     className={`text-base font-medium py-3 px-4 rounded-xl transition-colors ${
                       isActive
-                        ? "bg-[#1FA855]/10 text-[#1FA855]"
+                        ? "bg-[#111111]/10 text-[#111111]"
                         : "text-muted-foreground hover:text-foreground hover:bg-muted"
                     }`}
                   >
@@ -117,7 +117,7 @@ export function Header() {
                   href="https://wa.me/918608604817"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#0D9488] text-white text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
+                  className="inline-flex items-center gap-2 rounded-full px-6 py-3 bg-[#3A3A3A] text-white text-sm font-medium hover:bg-[#1ebe5d] transition-colors w-full justify-center"
                 >
                   <WhatsAppIcon />
                   Chat on WhatsApp

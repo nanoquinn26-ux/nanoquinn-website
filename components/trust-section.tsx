@@ -22,7 +22,7 @@ export function TrustSection() {
     <section className="py-32 lg:py-40 bg-muted">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#3A3A3A] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Trusted Partners
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
@@ -37,7 +37,7 @@ export function TrustSection() {
           {clients.map((client) => (
             <div
               key={client.name}
-              className="bg-background border border-border rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center gap-3 hover:border-[#1FA855]/60 hover:shadow-md transition-all duration-200 min-h-[160px] sm:min-h-[200px] overflow-hidden"
+              className="bg-background border border-border rounded-2xl p-4 sm:p-6 flex flex-col items-center justify-center gap-3 hover:border-[#111111]/60 hover:shadow-md transition-all duration-200 min-h-[160px] sm:min-h-[200px] overflow-hidden"
             >
               <div className="w-full flex items-center justify-center px-2">
                 <img
@@ -51,7 +51,7 @@ export function TrustSection() {
                     if (fallback) fallback.style.display = "flex"
                   }}
                 />
-                <div className="hidden w-12 h-12 rounded-full bg-[#1FA855] items-center justify-center shrink-0">
+                <div className="hidden w-12 h-12 rounded-full bg-[#111111] items-center justify-center shrink-0">
                   <span className="text-black font-bold text-lg">{client.name[0]}</span>
                 </div>
               </div>

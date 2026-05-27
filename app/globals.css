@@ -4,86 +4,73 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* NanoQuinn Premium Corporate Theme - Light Grey, Dark Grey, White */
+  /* NanoQuinn Premium Corporate - Monochromatic Palette */
+  /* No accent colours. Restraint is the premium signal. */
   --background: #FFFFFF;
-  --foreground: #1A1A1A;
-  --card: #F5F5F5;
-  --card-foreground: #1A1A1A;
+  --foreground: #111111;
+  --card: #FFFFFF;
+  --card-foreground: #111111;
   --popover: #FFFFFF;
-  --popover-foreground: #1A1A1A;
-  --primary: #2D2D2D;
+  --popover-foreground: #111111;
+  --primary: #111111;
   --primary-foreground: #FFFFFF;
-  --secondary: #F0F0F0;
-  --secondary-foreground: #1A1A1A;
-  --muted: #E8E8E8;
-  --muted-foreground: #6B6B6B;
-  --accent: #1FA855;
+  --secondary: #F7F7F7;
+  --secondary-foreground: #111111;
+  --muted: #F7F7F7;
+  --muted-foreground: #9A9A9A;
+  --accent: #3A3A3A;
   --accent-foreground: #FFFFFF;
-  --green: #1FA855;
-  --green-light: #34C66E;
-  --green-dark: #0E7A45;
-  --teal: #14B8A6;
-  --teal-light: #5EEAD4;
-  --dark-grey: #2D2D2D;
-  --medium-grey: #4A4A4A;
-  --light-grey: #F5F5F5;
-  --ink: #1A1A1A;
-  --paper: #FFFFFF;
-  --paper-light: #FAFAFA;
-  --coral: #FF6B35;
-  --destructive: #EF4444;
+  
+  /* Premium Grey Scale */
+  --black: #111111;
+  --dark-grey: #3A3A3A;
+  --body-grey: #6B6B6B;
+  --muted-grey: #9A9A9A;
+  --border-grey: #E0E0E0;
+  --light-surface: #F7F7F7;
+  --white: #FFFFFF;
+  
+  --destructive: #111111;
   --destructive-foreground: #FFFFFF;
   --border: #E0E0E0;
-  --input: #F5F5F5;
-  --ring: #1FA855;
-  --chart-1: #1FA855;
-  --chart-2: #14B8A6;
-  --chart-3: #FF6B35;
-  --chart-4: #2D2D2D;
-  --chart-5: #6B6B6B;
-  --radius: 0.625rem;
+  --input: #F7F7F7;
+  --ring: #111111;
+  --chart-1: #111111;
+  --chart-2: #3A3A3A;
+  --chart-3: #6B6B6B;
+  --chart-4: #9A9A9A;
+  --chart-5: #E0E0E0;
+  --radius: 0.5rem;
   --sidebar: #FFFFFF;
-  --sidebar-foreground: #1A1A1A;
-  --sidebar-primary: #1FA855;
+  --sidebar-foreground: #111111;
+  --sidebar-primary: #111111;
   --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-accent: #F5F5F5;
-  --sidebar-accent-foreground: #1A1A1A;
+  --sidebar-accent: #F7F7F7;
+  --sidebar-accent-foreground: #111111;
   --sidebar-border: #E0E0E0;
-  --sidebar-ring: #1FA855;
+  --sidebar-ring: #111111;
 }
 
 .dark {
-  --background: #1A1A1A;
-  --foreground: #F5F5F5;
-  --card: #2D2D2D;
-  --card-foreground: #F5F5F5;
-  --popover: #2D2D2D;
-  --popover-foreground: #F5F5F5;
-  --primary: #F5F5F5;
-  --primary-foreground: #1A1A1A;
-  --secondary: #2D2D2D;
-  --secondary-foreground: #F5F5F5;
-  --muted: #3D3D3D;
-  --muted-foreground: #A0A0A0;
-  --accent: #1FA855;
+  --background: #111111;
+  --foreground: #FFFFFF;
+  --card: #1A1A1A;
+  --card-foreground: #FFFFFF;
+  --popover: #1A1A1A;
+  --popover-foreground: #FFFFFF;
+  --primary: #FFFFFF;
+  --primary-foreground: #111111;
+  --secondary: #1A1A1A;
+  --secondary-foreground: #FFFFFF;
+  --muted: #3A3A3A;
+  --muted-foreground: #9A9A9A;
+  --accent: #3A3A3A;
   --accent-foreground: #FFFFFF;
-  --green: #1FA855;
-  --green-light: #34C66E;
-  --green-dark: #0E7A45;
-  --teal: #14B8A6;
-  --teal-light: #5EEAD4;
-  --dark-grey: #2D2D2D;
-  --medium-grey: #4A4A4A;
-  --light-grey: #F5F5F5;
-  --ink: #1A1A1A;
-  --paper: #FFFFFF;
-  --paper-light: #FAFAFA;
-  --coral: #FF6B35;
-  --destructive: #EF4444;
-  --destructive-foreground: #F5F5F5;
-  --border: #3D3D3D;
-  --input: #2D2D2D;
-  --ring: #1FA855;
+  --destructive: #FFFFFF;
+  --destructive-foreground: #111111;
+  --border: #3A3A3A;
+  --input: #1A1A1A;
+  --ring: #FFFFFF;
 }
 
 @theme inline {
@@ -103,18 +90,13 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --color-green: var(--green);
-  --color-green-light: var(--green-light);
-  --color-green-dark: var(--green-dark);
-  --color-teal: var(--teal);
-  --color-teal-light: var(--teal-light);
+  --color-black: var(--black);
   --color-dark-grey: var(--dark-grey);
-  --color-medium-grey: var(--medium-grey);
-  --color-light-grey: var(--light-grey);
-  --color-ink: var(--ink);
-  --color-paper: var(--paper);
-  --color-paper-light: var(--paper-light);
-  --color-coral: var(--coral);
+  --color-body-grey: var(--body-grey);
+  --color-muted-grey: var(--muted-grey);
+  --color-border-grey: var(--border-grey);
+  --color-light-surface: var(--light-surface);
+  --color-white: var(--white);
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
