@@ -186,19 +186,22 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Section 5: Protection Technologies */}
+      {/* Section 5: Technology Innovations */}
       <div 
         className="py-16 md:py-24 px-4 md:px-8 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/images/renewable-energy-bg.webp')" }}
+        style={{ backgroundImage: "url('/images/nanotech-bg.png')" }}
       >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-[#1a1a1a]/60"></div>
+        
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          <p className="text-[14px] md:text-[16px] font-medium text-[#5A5A5A] uppercase tracking-[0.2em] mb-4 md:mb-6">
+          <p className="text-[14px] md:text-[16px] font-medium text-white/80 uppercase tracking-[0.2em] mb-4 md:mb-6">
             Certified Technologies
           </p>
-          <h2 className="text-[30px] md:text-[42px] font-medium text-[#3A3A3A] leading-[1.2] mb-3 md:mb-4">
-            Sustainable Protection
+          <h2 className="text-[30px] md:text-[42px] font-medium text-white leading-[1.2] mb-3 md:mb-4">
+            Technology Innovations
           </h2>
-          <p className="text-[18px] md:text-[20px] font-normal text-[#5A5A5A] mb-8 md:mb-10">
+          <p className="text-[18px] md:text-[20px] font-normal text-white/80 mb-8 md:mb-10">
             Long-lasting protection against:
           </p>
           
@@ -206,10 +209,10 @@ export function Hero() {
             {protectionTech.map((tech) => (
               <div 
                 key={tech}
-                className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
+                className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-[6px] transition-opacity duration-200 hover:opacity-80"
               >
-                <CheckCircle className="w-4 h-4 text-[#5A5A5A]" />
-                <span className="text-[15px] md:text-[17px] text-[#5A5A5A]">{tech}</span>
+                <CheckCircle className="w-4 h-4 text-white" />
+                <span className="text-[15px] md:text-[17px] text-white">{tech}</span>
               </div>
             ))}
           </div>
