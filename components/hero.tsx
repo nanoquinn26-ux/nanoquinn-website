@@ -57,10 +57,12 @@ const warrantyFeatures = [
 
 // Management wants
 const managementWants = [
-  { wrong: "More Maintenance", right: "Less Maintenance" },
-  { wrong: "More Vendors", right: "One Partner" },
-  { wrong: "More Repairs", right: "Long-Term Preservation" },
-  { wrong: "More CAPEX", right: "Maximum Asset Life" },
+  { wrong: "Recurring OPEX", right: "Zero OPEX" },
+  { wrong: "Frequent CAPEX", right: "Deferred CAPEX" },
+  { wrong: "Asset Degradation", right: "Asset Protection & Preservation" },
+  { wrong: "Shutdowns", right: "Never" },
+  { wrong: "Environment Damage", right: "Sustainable" },
+  { wrong: "Conditional Warranty", right: "Unconditional Warranty & Responsibility" },
 ]
 
 export function Hero() {
