@@ -41,7 +41,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/nanoquinn-logo.png"
+              src="/images/nanoquinn-logo.webp"
               alt="NanoQuinn APaaS Platform"
               width={160}
               height={64}
