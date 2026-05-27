@@ -5,271 +5,113 @@ import { Button } from "@/components/ui/button"
 import { 
   ArrowRight, Shield, Leaf, Award, Search, Paintbrush, Settings, 
   Eye, BadgeCheck, Handshake, Building2, Factory, Container, 
-  PipetteIcon, Zap, Ship, Wind, Fuel,
-  Train,
-  Car,
-  SolarPanel
+  PipetteIcon, Zap, Ship, Wind, Fuel, Train, Car, SolarPanel,
+  XCircle, CheckCircle, Wrench, Clock, Users, TrendingDown, AlertTriangle,
+  Cpu, BarChart3, FileCheck, Calendar, Heart
 } from "lucide-react"
 
-const highlights = [
-  { icon: Shield, label: "Protection First. Maintenance Later." },
-  { icon: Leaf, label: "Zero to Low VOC | Sustainable" },
-  { icon: Award, label: "Unconditional Warranty with Responsibility" },
+// Problems list
+const problems = [
+  { icon: TrendingDown, label: "Recurring Maintenance OPEX" },
+  { icon: AlertTriangle, label: "Asset Deterioration & Degradation" },
+  { icon: Clock, label: "Production Losses & Shutdowns" },
+  { icon: Wrench, label: "Premature Asset Replacement" },
+  { icon: Users, label: "Multiple Vendor Dependency" },
+  { icon: Leaf, label: "Environmental & Compliance Challenges" },
+  { icon: TrendingDown, label: "Rising CAPEX Requirements" },
 ]
 
-// Orbiting service cycle items
-const orbitItems = [
-  { icon: Handshake, label: "One Partner", color: "#1FA855" },
-  { icon: Search, label: "Inspect", color: "#3B82F6" },
-  { icon: Paintbrush, label: "Protect", color: "#10B981" },
-  { icon: Settings, label: "Maintain", color: "#6366F1" },
-  { icon: Eye, label: "Monitor", color: "#8B5CF6" },
-  { icon: BadgeCheck, label: "Warranty", color: "#1FA855" },
-  { icon: Leaf, label: "Sustainable", color: "#22C55E" },
+// Outcomes list
+const outcomes = [
+  { icon: CheckCircle, label: "Reduced Maintenance OPEX" },
+  { icon: CheckCircle, label: "Deferred CAPEX" },
+  { icon: CheckCircle, label: "Longer Asset Life" },
+  { icon: CheckCircle, label: "Improved Reliability" },
+  { icon: CheckCircle, label: "Reduced Shutdowns" },
+  { icon: CheckCircle, label: "Improved Safety" },
+  { icon: CheckCircle, label: "Better ESG Performance" },
+  { icon: CheckCircle, label: "Sustainable Operations" },
+  { icon: Heart, label: "Complete Peace Of Mind" },
 ]
 
-// Asset categories
-const assetCategories = [
-  { icon: Building2, label: "Civil" },
-  { icon: Settings, label: "Mechanical" },
-  { icon: Zap, label: "Electrical" },
-  { icon: PipetteIcon, label: "Polymers" },
-  { icon: Shield, label: "Metallic" },
-  { icon: Container, label: "Concrete" },
+// Asset types
+const assetTypes = [
+  { icon: Settings, label: "Mechanical Assets" },
+  { icon: Building2, label: "Civil Structures" },
+  { icon: Zap, label: "Electrical & Electronics" },
+  { icon: SolarPanel, label: "Solar Assets" },
+  { icon: PipetteIcon, label: "Polymers & Plastics" },
+  { icon: Container, label: "Glass Surfaces" },
+  { icon: Factory, label: "Industrial Infrastructure" },
+  { icon: Wrench, label: "And Many More" },
 ]
 
-// Protected areas
-const protectedAreas = [
-  { icon: Building2, label: "Pharmaceuticals" },
-  { icon: Factory, label: "Industrial Plants" },
-  { icon: SolarPanel, label: "Solar Plants" },
-  { icon: PipetteIcon, label: "Chemical" },
-  { icon: Zap, label: "Infrastructure" },
-  { icon: Train, label: "Railways" },
-  { icon: Car, label: "Automotive" },
-   { icon: Fuel, label: "Oil & Gas" },
+// Protection technologies
+const protectionTech = [
+  "Corrosion",
+  "Moisture Ingress",
+  "UV Degradation",
+  "Chemical Exposure",
+  "Surface Contamination",
+  "Wear & Tear",
+  "Environmental Deterioration",
 ]
 
-function APaaSPlatformAnimation() {
-  const [activeOrbitIndex, setActiveOrbitIndex] = useState(0)
-  const [visibleCategories, setVisibleCategories] = useState(0)
-  const [showTagline, setShowTagline] = useState(false)
+// Warranty features
+const warrantyFeatures = [
+  { icon: Award, label: "Long-Term Warranty" },
+  { icon: BadgeCheck, label: "Performance Commitment" },
+  { icon: Paintbrush, label: "Skilled Application" },
+  { icon: Wrench, label: "Service Support" },
+  { icon: Eye, label: "Asset Monitoring" },
+  { icon: Calendar, label: "Annual Audits" },
+  { icon: Shield, label: "Accountability Throughout" },
+]
 
-  // Rotate through orbit items
+// AI features
+const aiFeatures = [
+  "Asset Health Status",
+  "Warranty Status",
+  "Service History",
+  "Audit Reports",
+  "Protection Performance",
+  "Remaining Asset Life",
+  "CAPEX Planning Opportunities",
+]
+
+// Audit features
+const auditFeatures = [
+  "Free Annual Asset Health Audits",
+  "Asset Condition Assessment",
+  "Risk Identification",
+  "Performance Verification",
+  "Warranty Compliance Review",
+  "Lifecycle Extension Recommendations",
+  "CAPEX Deferment Planning",
+  "ESG & Sustainability Reporting",
+]
+
+// Management wants
+const managementWants = [
+  { wrong: "More Maintenance", right: "Less Maintenance" },
+  { wrong: "More Vendors", right: "One Responsible Partner" },
+  { wrong: "More Repairs", right: "Long-Term Preservation" },
+  { wrong: "More CAPEX", right: "Maximum Asset Life" },
+  { wrong: "More Shutdowns", right: "Continuous Operations" },
+]
+
+export function Hero() {
+  const [activeSection, setActiveSection] = useState(0)
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveOrbitIndex((prev) => (prev + 1) % orbitItems.length)
-    }, 2000)
+      setActiveSection((prev) => (prev + 1) % 5)
+    }, 3000)
     return () => clearInterval(interval)
   }, [])
 
-  // Animate categories appearing
-  useEffect(() => {
-    if (visibleCategories < assetCategories.length) {
-      const timeout = setTimeout(() => {
-        setVisibleCategories((prev) => prev + 1)
-      }, 200)
-      return () => clearTimeout(timeout)
-    } else {
-      const timeout = setTimeout(() => setShowTagline(true), 500)
-      return () => clearTimeout(timeout)
-    }
-  }, [visibleCategories])
-
   return (
-    <div className="max-w-5xl mx-auto">
-      <div className="relative rounded-3xl bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 backdrop-blur-md overflow-hidden">
-        
-        {/* Animated border glow */}
-        <div className="absolute inset-0 rounded-3xl overflow-hidden">
-          <div 
-            className="absolute -inset-[200%] animate-[spin_12s_linear_infinite]"
-            style={{
-              background: `conic-gradient(from 0deg, transparent 0%, #1FA855 5%, transparent 10%, #1FA855 15%, transparent 20%, #1FA855 25%, transparent 30%)`
-            }}
-          />
-          <div className="absolute inset-[1px] rounded-3xl bg-gradient-to-br from-[#1E3A5F] to-[#2D4A6F]" />
-        </div>
-
-        <div className="relative p-6 sm:p-10">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <p className="text-[#1FA855] text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold mb-2">
-              One Platform. Every Asset. Every Surface.
-            </p>
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white">
-              <span className="text-white">The</span>{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn Difference</span>
-            </h3>
-          </div>
-
-          {/* Main Content - Orbit + Shield */}
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-            
-            {/* Left Side - Benefits List */}
-            <div className="w-full lg:w-1/3 space-y-3">
-              {[
-                "Reduced Maintenance OPEX",
-                "Deferred CAPEX",
-                "Longer Asset Life",
-                "Improved Reliability",
-                "Better ESG Performance",
-                "Complete Peace Of Mind"
-              ].map((benefit, index) => (
-                <div 
-                  key={benefit}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-white/5 border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-[#1FA855]/30"
-                  style={{ 
-                    opacity: index <= activeOrbitIndex ? 1 : 0.7,
-                    transform: index === activeOrbitIndex % 6 ? 'translateX(4px)' : 'translateX(0)',
-                    transition: 'all 0.5s ease-out'
-                  }}
-                >
-                  <div className="w-8 h-8 rounded-full bg-[#1FA855]/20 flex items-center justify-center shrink-0">
-                    <Leaf className="w-4 h-4 text-[#1FA855]" />
-                  </div>
-                  <span className="text-sm text-white font-medium">{benefit}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Center - Animated Orbit */}
-            <div className="w-full lg:w-1/3 flex justify-center overflow-visible py-8">
-              <div className="relative w-96 h-96 sm:w-[450px] sm:h-[450px] overflow-visible">
-                {/* Orbit ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/10 animate-[spin_30s_linear_infinite]" />
-                <div className="absolute inset-6 rounded-full border border-white/5" />
-                
-                {/* Orbiting items */}
-                {orbitItems.map((item, index) => {
-                  const angle = (index / orbitItems.length) * 360
-                  const rotatedAngle = (angle + activeOrbitIndex * (360 / orbitItems.length)) % 360
-                  const isActive = index === activeOrbitIndex
-                  // Determine if icon is in top half (label should go below) or bottom half (label should go above)
-                  const isInTopHalf = rotatedAngle > 180 && rotatedAngle < 360
-                  return (
-                    <div
-                      key={item.label}
-                      className="absolute transition-all duration-700"
-                      style={{
-                        left: '50%',
-                        top: '50%',
-                        transform: `rotate(${angle + activeOrbitIndex * (360 / orbitItems.length)}deg) translateX(180px) rotate(-${angle + activeOrbitIndex * (360 / orbitItems.length)}deg)`,
-                      }}
-                    >
-                      <div 
-                        className={`w-12 h-12 sm:w-14 sm:h-14 -ml-6 -mt-6 sm:-ml-7 sm:-mt-7 rounded-full flex items-center justify-center transition-all duration-500 ${
-                          isActive ? 'scale-125 shadow-lg' : 'scale-100'
-                        }`}
-                        style={{ 
-                          backgroundColor: isActive ? item.color : 'rgba(255,255,255,0.1)',
-                          boxShadow: isActive ? `0 0 30px ${item.color}50` : 'none'
-                        }}
-                      >
-                        <item.icon className={`w-5 h-5 sm:w-6 sm:h-6 ${isActive ? 'text-white' : 'text-white/60'}`} />
-                      </div>
-                      {isActive && (
-                        <div 
-                          className={`absolute left-1/2 -translate-x-1/2 whitespace-nowrap z-50 ${
-                            isInTopHalf ? 'top-full mt-2' : 'bottom-full mb-2'
-                          }`}
-                        >
-                          <span className="text-xs font-semibold text-white bg-[#1E3A5F]/90 px-3 py-1.5 rounded-full shadow-lg border border-white/20">
-                            {item.label}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                  )
-                })}
-
-                {/* Center Shield */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-gradient-to-br from-[#0A3D62] to-[#1A5276] flex items-center justify-center shadow-2xl border border-white/20">
-                      <div className="text-center">
-                        <Shield className="w-10 h-10 sm:w-14 sm:h-14 text-[#1FA855] mx-auto mb-1" />
-                        <Leaf className="w-6 h-6 sm:w-8 sm:h-8 text-[#22C55E] mx-auto -mt-2" />
-                      </div>
-                    </div>
-                    {/* Pulse ring */}
-                    <div className="absolute inset-0 rounded-2xl border-2 border-[#1FA855]/50 animate-ping" style={{ animationDuration: '2s' }} />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Side - Protected Areas */}
-            <div className="w-full lg:w-1/3">
-            <p className="text-xs text-white/50 uppercase tracking-wider mb-4 text-center lg:text-left">
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-semibold">Potential Areas</span> We Protect
-            </p>
-              <div className="grid grid-cols-4 lg:grid-cols-2 gap-2">
-                {protectedAreas.map((area, index) => (
-                  <div 
-                    key={area.label}
-                    className="flex flex-col items-center p-3 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#1FA855]/30 transition-all duration-300 group"
-                    style={{
-                      animationDelay: `${index * 100}ms`
-                    }}
-                  >
-                    <area.icon className="w-5 h-5 text-[#1FA855] mb-1 group-hover:scale-110 transition-transform" />
-                    <span className="text-[10px] sm:text-xs text-white/70 text-center">{area.label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Asset Categories Bar */}
-          <div className="mt-8 pt-6 border-t border-white/10">
-            <p className="text-xs text-white/50 uppercase tracking-wider mb-4 text-center">
-              Works on <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-semibold">All Surfaces</span> & Assets
-            </p>
-            <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
-              {assetCategories.map((category, index) => (
-                <div
-                  key={category.label}
-                  className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full border transition-all duration-500 ${
-                    index < visibleCategories 
-                      ? 'bg-gradient-to-r from-[#1FA855]/20 to-[#1FA855]/10 border-[#1FA855]/30 opacity-100 translate-y-0' 
-                      : 'bg-white/5 border-white/10 opacity-0 translate-y-4'
-                  }`}
-                >
-                  <category.icon className="w-4 h-4 text-[#1FA855]" />
-                  <span className="text-xs sm:text-sm font-medium text-white/80">{category.label}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Bottom Tagline */}
-          <div 
-            className={`mt-6 text-center transition-all duration-700 ${
-              showTagline ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-            }`}
-          >
-            <div className="inline-flex items-center gap-3 sm:gap-6 px-6 py-3 rounded-full bg-gradient-to-r from-[#1FA855]/20 to-[#1FA855]/20 border border-white/10">
-              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">PROTECT</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
-              <span className="text-sm sm:text-base font-bold text-white">PRESERVE</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
-              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">MONITOR</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
-              <span className="text-sm sm:text-base font-bold text-white">AUDIT</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-white/40" />
-              <span className="text-sm sm:text-base font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">RESPONSIBILITY</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export function Hero() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden">
       {/* Main Background - Dark Navy to Green Gradient */}
       <div className="absolute inset-0 bg-[#0F2744]" />
       
@@ -285,8 +127,10 @@ export function Hero() {
         backgroundSize: '60px 60px',
       }} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-36 sm:pb-44">
-        <div className="max-w-5xl mx-auto text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 pb-20">
+        
+        {/* Section 1: The Problem */}
+        <div className="max-w-5xl mx-auto text-center mb-20">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-white/20 bg-white/5 mb-8 sm:mb-10 animate-fade-up">
             <span className="w-2 h-2 rounded-full bg-[#1FA855] animate-pulse" />
@@ -301,40 +145,308 @@ export function Hero() {
             <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">But Not Preserved.</span>
           </h1>
 
-          {/* Sub-headline */}
-          <div className="max-w-3xl mx-auto mb-10 sm:mb-12 text-center animate-fade-up delay-200">
-            <p className="inline-block text-base sm:text-lg text-white font-semibold mb-4 uppercase tracking-wider px-6 py-2 rounded-full bg-[#22C55E]/30 border border-[#22C55E]/50">
-              <span className="text-white">What If Assets Could Be Preserved Instead Of Repaired?</span>
-            </p>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-5 leading-tight">
-              Welcome to{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn APaaS Platform</span>
-            </h2>
-            <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed">
-              A revolutionary AI-driven platform designed to{" "}
-              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-semibold">Protect, Preserve, Monitor, Audit & Take Responsibility</span>{" "}
-              for industrial assets through globally certified Zero to Low VOC sustainable technologies.
-            </p>
-          </div>
+          {/* Problem Description */}
+          <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed max-w-3xl mx-auto mb-10 animate-fade-up delay-200">
+            Every year industries spend crores on maintenance, painting, repairs, shutdowns, manpower, and replacement of deteriorating assets.
+            Yet the same assets continue to corrode, deteriorate, age, and demand maintenance again.
+          </p>
 
-          {/* Key Highlights */}
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-8 mb-10 sm:mb-12 animate-fade-up delay-300">
-            {highlights.map((item) => (
-              <div key={item.label} className="flex items-center gap-3 text-sm text-white/80 justify-center sm:justify-start">
-                <div className="w-8 h-8 rounded-full bg-[#1FA855]/20 flex items-center justify-center shrink-0">
-                  <item.icon className="w-4 h-4 text-[#1FA855]" />
+          {/* Problems Grid */}
+          <div className="mb-12 animate-fade-up delay-300">
+            <p className="text-sm text-white/50 uppercase tracking-wider mb-6">The result is an endless cycle of:</p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {problems.map((problem) => (
+                <div 
+                  key={problem.label}
+                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/30"
+                >
+                  <XCircle className="w-4 h-4 text-sky-400" />
+                  <span className="text-sm text-white/80">{problem.label}</span>
                 </div>
-                <span className="font-medium">{item.label}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Section 2: The Solution */}
+        <div className="max-w-5xl mx-auto text-center mb-20 py-16 border-t border-b border-white/10">
+          <p className="inline-block text-base sm:text-lg text-white font-semibold mb-6 uppercase tracking-wider px-6 py-2 rounded-full bg-[#22C55E]/30 border border-[#22C55E]/50">
+            What If Assets Could Be Preserved Instead Of Repaired?
+          </p>
+          
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
+            Welcome to{" "}
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn APaaS Platform</span>
+          </h2>
+          <p className="text-lg text-white/60 mb-2">(Asset Protection as a Service)</p>
+          
+          <p className="text-base sm:text-lg lg:text-xl text-white/70 leading-relaxed max-w-4xl mx-auto">
+            A revolutionary AI-driven platform designed to{" "}
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent font-semibold">
+              Protect, Preserve, Monitor, Audit, and Take Responsibility
+            </span>{" "}
+            for industrial assets through globally certified Zero to Low VOC sustainable technologies.
+          </p>
+        </div>
+
+        {/* Section 3: One Platform. Every Asset. Every Surface */}
+        <div className="max-w-6xl mx-auto mb-20">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">One Platform.</span>{" "}
+              Every Asset. Every Surface.
+            </h3>
+            <p className="text-white/60">NanoQuinn provides 360° protection and preservation solutions for:</p>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {assetTypes.map((asset) => (
+              <div 
+                key={asset.label}
+                className="flex flex-col items-center p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-[#1FA855]/30 transition-all duration-300 group"
+              >
+                <asset.icon className="w-8 h-8 text-[#1FA855] mb-3 group-hover:scale-110 transition-transform" />
+                <span className="text-sm text-white/80 text-center font-medium">{asset.label}</span>
               </div>
             ))}
           </div>
+        </div>
 
-          {/* APaaS Platform Visual Animation */}
-          <APaaSPlatformAnimation />
+        {/* Section 4: The NanoQuinn Difference */}
+        <div className="max-w-5xl mx-auto mb-20 bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 rounded-3xl p-8 sm:p-12">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              The <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">NanoQuinn Difference</span>
+            </h3>
+            <p className="text-xl font-semibold text-white mb-2">Protection First. Maintenance Later.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="p-6 rounded-2xl bg-sky-500/10 border border-sky-500/30">
+              <h4 className="text-lg font-bold text-sky-400 mb-4">Traditional Maintenance</h4>
+              <p className="text-white/70">Begins after damage occurs.</p>
+            </div>
+            <div className="p-6 rounded-2xl bg-[#1FA855]/10 border border-[#1FA855]/30">
+              <h4 className="text-lg font-bold text-[#1FA855] mb-4">NanoQuinn Approach</h4>
+              <p className="text-white/70">Prevents deterioration before it starts.</p>
+            </div>
+          </div>
+          
+          <p className="text-center text-white/70 mt-8 leading-relaxed">
+            By combining world-leading protection technologies, skilled applicators, AI monitoring, annual audits, and long-term responsibility, 
+            NanoQuinn transforms maintenance from a recurring expense into a{" "}
+            <span className="text-[#1FA855] font-semibold">strategic asset preservation program</span>.
+          </p>
+        </div>
+
+        {/* Section 5: Protection Technologies */}
+        <div className="max-w-5xl mx-auto mb-20">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              World&apos;s Leading{" "}
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Sustainable Protection Technologies</span>
+            </h3>
+            <p className="text-white/60">NanoQuinn&apos;s certified innovations deliver long-lasting protection against:</p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            {protectionTech.map((tech) => (
+              <div 
+                key={tech}
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1FA855]/10 border border-[#1FA855]/30"
+              >
+                <CheckCircle className="w-4 h-4 text-[#1FA855]" />
+                <span className="text-sm text-white/80">{tech}</span>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-center text-white/60 text-sm">
+            All through <span className="text-[#1FA855] font-semibold">Zero to Low VOC Sustainable Technologies</span> supporting ESG, EHS, and Net-Zero initiatives.
+          </p>
+        </div>
+
+        {/* Section 6: Warranty with Responsibility */}
+        <div className="max-w-5xl mx-auto mb-20 bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 rounded-3xl p-8 sm:p-12">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              Unconditional Warranty with{" "}
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Responsibility</span>
+            </h3>
+            <div className="text-white/70 space-y-1 mb-6">
+              <p>Most companies sell products.</p>
+              <p>Some companies sell services.</p>
+              <p className="text-[#1FA855] font-bold text-lg">NanoQuinn Delivers Responsibility.</p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+            {warrantyFeatures.map((feature) => (
+              <div 
+                key={feature.label}
+                className="flex flex-col items-center p-4 rounded-xl bg-white/5 border border-white/10"
+              >
+                <feature.icon className="w-6 h-6 text-[#1FA855] mb-2" />
+                <span className="text-xs text-white/70 text-center">{feature.label}</span>
+              </div>
+            ))}
+          </div>
+          
+          <div className="flex justify-center gap-8 text-center">
+            <div>
+              <p className="text-[#1FA855] font-bold text-lg">One Partner.</p>
+            </div>
+            <div>
+              <p className="text-[#1FA855] font-bold text-lg">One Platform.</p>
+            </div>
+            <div>
+              <p className="text-[#1FA855] font-bold text-lg">One Responsibility.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Section 7: AI-Driven Asset Intelligence */}
+        <div className="max-w-5xl mx-auto mb-20">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">AI-Driven</span>{" "}
+              Asset Intelligence
+            </h3>
+            <p className="text-white/60">Every protected asset becomes digitally monitored. Track:</p>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            {aiFeatures.map((feature) => (
+              <div 
+                key={feature}
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1FA855]/10 border border-[#1FA855]/30"
+              >
+                <CheckCircle className="w-4 h-4 text-[#1FA855]" />
+                <span className="text-sm text-white/80">{feature}</span>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center text-white/70">
+            <p>The future of maintenance is not reactive.</p>
+            <p className="text-[#1FA855] font-bold text-xl mt-2">The future is predictive.</p>
+          </div>
+        </div>
+
+        {/* Section 8: Free Annual Audits */}
+        <div className="max-w-5xl mx-auto mb-20 bg-gradient-to-br from-white/[0.06] to-white/[0.02] border border-white/10 rounded-3xl p-8 sm:p-12">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              Free Annual{" "}
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Asset Health Audits</span>
+            </h3>
+            <p className="text-white/60">Unlike traditional vendors who disappear after project completion, NanoQuinn remains engaged throughout the warranty period.</p>
+          </div>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            {auditFeatures.map((feature) => (
+              <div 
+                key={feature}
+                className="flex items-center gap-2 p-3 rounded-xl bg-white/5 border border-white/10"
+              >
+                <CheckCircle className="w-4 h-4 text-[#1FA855] shrink-0" />
+                <span className="text-xs text-white/70">{feature}</span>
+              </div>
+            ))}
+          </div>
+          
+          <p className="text-center text-[#1FA855] font-semibold mt-8">
+            A complete lifecycle commitment to preserving your assets.
+          </p>
+        </div>
+
+        {/* Section 9: What Management Really Wants */}
+        <div className="max-w-4xl mx-auto mb-20">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              What Management{" "}
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Really Wants</span>
+            </h3>
+          </div>
+          
+          <div className="space-y-4">
+            {managementWants.map((item) => (
+              <div key={item.right} className="flex items-center justify-center gap-4 sm:gap-8">
+                <div className="flex items-center gap-2 text-white/50 line-through">
+                  <span className="text-sm sm:text-base">Not {item.wrong}</span>
+                </div>
+                <ArrowRight className="w-5 h-5 text-[#1FA855]" />
+                <div className="flex items-center gap-2 text-[#1FA855] font-semibold">
+                  <span className="text-sm sm:text-base">{item.right}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Section 10: The Outcome */}
+        <div className="max-w-5xl mx-auto mb-20">
+          <div className="text-center mb-10">
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">
+              The{" "}
+              <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Outcome</span>
+            </h3>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-3">
+            {outcomes.map((outcome) => (
+              <div 
+                key={outcome.label}
+                className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1FA855]/10 border border-[#1FA855]/30"
+              >
+                <outcome.icon className="w-4 h-4 text-[#1FA855]" />
+                <span className="text-sm text-white/80">{outcome.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Final CTA Section */}
+        <div className="max-w-4xl mx-auto text-center bg-[#1E3A5F] rounded-3xl p-10 sm:p-16">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold italic tracking-tight mb-4 text-white">
+            NanoQuinn{" "}
+            <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent not-italic">
+              APaaS™
+            </span>{" "}
+            <span className="not-italic">Platform</span>
+          </h3>
+          
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-6">
+            <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Protect</span>
+            <span className="text-white/40">•</span>
+            <span className="text-base sm:text-lg font-bold text-white">Preserve</span>
+            <span className="text-white/40">•</span>
+            <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Monitor</span>
+            <span className="text-white/40">•</span>
+            <span className="text-base sm:text-lg font-bold text-white">Audit</span>
+            <span className="text-white/40">•</span>
+            <span className="text-base sm:text-lg font-bold bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent">Take Responsibility</span>
+          </div>
+          
+          <p className="text-lg sm:text-xl text-white/80 mb-2">The Future Of Industrial Asset Protection & Preservation.</p>
+          <p className="text-[#1FA855] font-semibold">Every Asset. Every Surface. Every Year. With Responsibility.</p>
+          
+          <div className="mt-8">
+            <a
+              href="https://wa.me/918608604817"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="text-base px-10 py-6 h-auto rounded-full bg-[#1FA855] text-white hover:bg-[#34C66E]">
+                Get Started Today
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </a>
+          </div>
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-fade-in delay-500">
+        <div className="mt-16 flex justify-center">
           <div className="flex flex-col items-center gap-2">
             <span className="text-xs text-white/50 uppercase tracking-wider">Scroll to explore</span>
             <div className="w-6 h-10 border-2 border-white/20 rounded-full flex items-start justify-center p-1">
