@@ -97,10 +97,10 @@ export function Hero() {
             {problems.map((problem) => (
               <div 
                 key={problem.label}
-                className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
+                className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-[#3A3A3A] border border-[#3A3A3A] rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
               >
-                <problem.icon className="w-4 h-4 text-[#5A5A5A]" />
-                <span className="text-[15px] md:text-[17px] text-[#5A5A5A]">{problem.label}</span>
+                <problem.icon className="w-4 h-4 md:w-5 md:h-5 text-white" />
+                <span className="text-[14px] md:text-[16px] font-medium text-white">{problem.label}</span>
               </div>
             ))}
           </div>
