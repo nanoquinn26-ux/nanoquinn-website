@@ -81,7 +81,7 @@ export function Hero() {
           </p>
 
           {/* H1 Hero */}
-          <h1 className="text-[36px] md:text-[56px] font-extrabold text-[#3A3A3A] leading-[1.15] mb-6">
+          <h1 className="text-[36px] md:text-[56px] font-medium text-[#3A3A3A] leading-[1.15] mb-6">
             Assets Are Maintained.<br />
             But Not Protected.
           </h1>
