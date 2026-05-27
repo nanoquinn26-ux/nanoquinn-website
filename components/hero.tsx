@@ -109,55 +109,73 @@ export function Hero() {
 
       {/* Section 2: The Solution */}
       <div className="py-20 px-8 bg-[#F7F7F7]">
-        <div className="max-w-4xl mx-auto text-center">
-          {/* Eyebrow */}
-          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
-            What If Assets Could Be Preserved?
-          </p>
-
-          {/* H2 Section Title */}
-          <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-4">
-            Welcome to NanoQuinn APaaS Platform
-          </h2>
-          
-          <p className="text-[11px] font-normal text-[#3A3A3A] mb-6">
-            Asset Protection as a Service
-          </p>
-
-          {/* Body copy */}
-          <p className="text-[14px] font-normal text-[#3A3A3A] leading-[1.6] max-w-2xl mx-auto">
-            A platform designed to Protect, Preserve, Monitor, Audit, and Take Responsibility 
-            for industrial assets through globally certified sustainable technologies.
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="order-2 md:order-1">
+              <img 
+                src="/images/corrosion-rust.jpg" 
+                alt="Corrosion and asset deterioration problem"
+                className="w-full h-auto rounded-[6px] border border-[#E0E0E0]"
+              />
+            </div>
+            
+            {/* Content */}
+            <div className="order-1 md:order-2">
+              <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
+                What If Assets Could Be Preserved?
+              </p>
+              <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-4">
+                Welcome to NanoQuinn APaaS Platform
+              </h2>
+              <p className="text-[11px] font-normal text-[#3A3A3A] mb-6">
+                Asset Protection as a Service
+              </p>
+              <p className="text-[14px] font-normal text-[#3A3A3A] leading-[1.6]">
+                A platform designed to Protect, Preserve, Monitor, Audit, and Take Responsibility 
+                for industrial assets through globally certified sustainable technologies.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Section 3: Asset Types */}
       <div className="py-20 px-8 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
-              Comprehensive Coverage
-            </p>
-            <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2]">
-              One Platform. Every Asset.
-            </h2>
-          </div>
-          
-          {/* Grid with 1px gap trick */}
-          <div className="bg-[#E8E8E8] rounded-[6px] p-[0.5px]">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-[0.5px]">
-              {assetTypes.map((asset) => (
-                <div 
-                  key={asset.label}
-                  className="flex flex-col items-center p-6 bg-white transition-opacity duration-200 hover:opacity-70 first:rounded-tl-[6px] last:rounded-br-[6px]"
-                >
-                  <div className="w-10 h-10 rounded-[6px] bg-[#3A3A3A] flex items-center justify-center mb-3">
-                    <asset.icon className="w-5 h-5 text-white" />
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            {/* Content */}
+            <div>
+              <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
+                Comprehensive Coverage
+              </p>
+              <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-8">
+                One Platform. Every Asset.
+              </h2>
+              
+              {/* Asset Grid */}
+              <div className="grid grid-cols-2 gap-4">
+                {assetTypes.map((asset) => (
+                  <div 
+                    key={asset.label}
+                    className="flex items-center gap-3 p-3 bg-[#F7F7F7] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
+                  >
+                    <div className="w-8 h-8 rounded-[4px] bg-[#3A3A3A] flex items-center justify-center flex-shrink-0">
+                      <asset.icon className="w-4 h-4 text-white" />
+                    </div>
+                    <span className="text-[13px] font-normal text-[#3A3A3A]">{asset.label}</span>
                   </div>
-                  <span className="text-[14px] font-normal text-[#3A3A3A] text-center">{asset.label}</span>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+            
+            {/* Image */}
+            <div>
+              <img 
+                src="/images/construction-safety.jpg" 
+                alt="Industrial construction and asset protection"
+                className="w-full h-auto rounded-[6px] border border-[#E0E0E0]"
+              />
             </div>
           </div>
         </div>
@@ -165,7 +183,7 @@ export function Hero() {
 
       {/* Section 4: The Difference */}
       <div className="py-20 px-8 bg-[#F7F7F7]">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
               Protection First
@@ -175,14 +193,29 @@ export function Hero() {
             </h2>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-[0.5px] bg-[#E8E8E8] rounded-[6px] p-[0.5px]">
-            <div className="p-8 bg-white rounded-l-[6px]">
-              <h3 className="text-[15px] font-medium text-[#111111] mb-3">Traditional Maintenance</h3>
-              <p className="text-[14px] font-normal text-[#3A3A3A]">Begins after damage occurs. Reactive. Repetitive.</p>
+          {/* Comparison Grid with Images */}
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-[6px] border border-[#E0E0E0] overflow-hidden">
+              <img 
+                src="/images/industrial-infrastructure.png" 
+                alt="Industrial pipeline infrastructure protection"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-[15px] font-medium text-[#111111] mb-2">NanoQuinn Approach</h3>
+                <p className="text-[14px] font-normal text-[#3A3A3A]">Prevents deterioration before it starts. Proactive. Permanent.</p>
+              </div>
             </div>
-            <div className="p-8 bg-white rounded-r-[6px]">
-              <h3 className="text-[15px] font-medium text-[#111111] mb-3">NanoQuinn Approach</h3>
-              <p className="text-[14px] font-normal text-[#3A3A3A]">Prevents deterioration before it starts. Proactive. Permanent.</p>
+            <div className="bg-white rounded-[6px] border border-[#E0E0E0] overflow-hidden">
+              <img 
+                src="/images/maintenance-professional.jpg" 
+                alt="Professional maintenance and care"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-[15px] font-medium text-[#111111] mb-2">Traditional Maintenance</h3>
+                <p className="text-[14px] font-normal text-[#3A3A3A]">Begins after damage occurs. Reactive. Repetitive.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -220,78 +253,118 @@ export function Hero() {
 
       {/* Section 6: Warranty */}
       <div className="py-20 px-8 bg-[#F7F7F7]">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
-            Accountability
-          </p>
-          <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-10">
-            Warranty with Responsibility
-          </h2>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-[0.5px] bg-[#E8E8E8] rounded-[6px] p-[0.5px] mb-10">
-            {warrantyFeatures.map((feature) => (
-              <div 
-                key={feature.label}
-                className="flex flex-col items-center p-6 bg-white transition-opacity duration-200 hover:opacity-70"
-              >
-                <div className="w-10 h-10 rounded-[6px] bg-[#3A3A3A] flex items-center justify-center mb-3">
-                  <feature.icon className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-[14px] font-normal text-[#3A3A3A] text-center">{feature.label}</span>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div>
+              <img 
+                src="/images/warranty-compliance.jpg" 
+                alt="Warranty documentation and compliance"
+                className="w-full h-auto rounded-[6px] border border-[#E0E0E0]"
+              />
+            </div>
+            
+            {/* Content */}
+            <div>
+              <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
+                Accountability
+              </p>
+              <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-8">
+                Warranty with Responsibility
+              </h2>
+              
+              <div className="grid grid-cols-2 gap-4 mb-8">
+                {warrantyFeatures.map((feature) => (
+                  <div 
+                    key={feature.label}
+                    className="flex items-center gap-3 p-4 bg-white rounded-[6px] border border-[#E0E0E0] transition-opacity duration-200 hover:opacity-70"
+                  >
+                    <div className="w-8 h-8 rounded-[4px] bg-[#3A3A3A] flex items-center justify-center flex-shrink-0">
+                      <feature.icon className="w-4 h-4 text-white" />
+                    </div>
+                    <span className="text-[12px] font-normal text-[#3A3A3A]">{feature.label}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+              
+              <p className="text-[14px] font-normal text-[#3A3A3A]">
+                One Partner. One Platform. One Responsibility.
+              </p>
+            </div>
           </div>
-          
-          <p className="text-[14px] font-normal text-[#3A3A3A]">
-            One Partner. One Platform. One Responsibility.
-          </p>
         </div>
       </div>
 
       {/* Section 7: What Management Wants */}
       <div className="py-20 px-8 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
-              Business Impact
-            </p>
-            <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2]">
-              What Management Really Wants
-            </h2>
-          </div>
-          
-          <div className="space-y-4">
-            {managementWants.map((item) => (
-              <div key={item.right} className="flex items-center justify-center gap-6 py-3 border-b border-[#E0E0E0] last:border-0">
-                <span className="text-[14px] text-[#3A3A3A] line-through w-40 text-right">{item.wrong}</span>
-                <ArrowRight className="w-4 h-4 text-[#3A3A3A]" />
-                <span className="text-[14px] font-medium text-[#111111] w-40 text-left">{item.right}</span>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <div>
+              <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
+                Business Impact
+              </p>
+              <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-8">
+                What Management Really Wants
+              </h2>
+              
+              <div className="space-y-4">
+                {managementWants.map((item) => (
+                  <div key={item.right} className="flex items-center gap-4 py-3 border-b border-[#E0E0E0] last:border-0">
+                    <span className="text-[14px] text-[#3A3A3A] line-through flex-1">{item.wrong}</span>
+                    <ArrowRight className="w-4 h-4 text-[#3A3A3A] flex-shrink-0" />
+                    <span className="text-[14px] font-medium text-[#111111] flex-1">{item.right}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+            
+            {/* Image */}
+            <div>
+              <img 
+                src="/images/financial-growth.jpg" 
+                alt="Financial growth and ROI"
+                className="w-full h-auto rounded-[6px] border border-[#E0E0E0]"
+              />
+            </div>
           </div>
         </div>
       </div>
 
       {/* Section 8: Outcomes */}
       <div className="py-20 px-8 bg-[#F7F7F7]">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
-            Results
-          </p>
-          <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-10">
-            The Outcome
-          </h2>
-          
-          <div className="flex flex-wrap justify-center gap-2">
-            {outcomes.map((outcome) => (
-              <div 
-                key={outcome}
-                className="flex items-center gap-2 px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
-              >
-                <CheckCircle className="w-4 h-4 text-[#3A3A3A]" />
-                <span className="text-[14px] text-[#3A3A3A]">{outcome}</span>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image */}
+            <div className="order-2 md:order-1">
+              <img 
+                src="/images/industrial-storage.jpg" 
+                alt="Industrial storage and infrastructure"
+                className="w-full h-auto rounded-[6px] border border-[#E0E0E0]"
+              />
+            </div>
+            
+            {/* Content */}
+            <div className="order-1 md:order-2">
+              <p className="text-[10px] font-medium text-[#3A3A3A] uppercase tracking-[0.2em] mb-6">
+                Results
+              </p>
+              <h2 className="text-[28px] font-medium text-[#111111] leading-[1.2] mb-10">
+                The Outcome
+              </h2>
+              
+              <div className="flex flex-wrap gap-2">
+                {outcomes.map((outcome) => (
+                  <div 
+                    key={outcome}
+                    className="flex items-center gap-2 px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
+                  >
+                    <CheckCircle className="w-4 h-4 text-[#3A3A3A]" />
+                    <span className="text-[14px] text-[#3A3A3A]">{outcome}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </div>
