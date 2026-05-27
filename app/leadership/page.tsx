@@ -61,8 +61,8 @@ const leaders = [
   {
     name: "Rajesh Dholakia",
     photo: "/team/rajesh-dholakia.jpeg",
-    role: "Director : Operations & NPD",
-    tags: ["Operations", "NPD", "Quality Leadership"],
+    role: "Director : Distribution & NPD",
+    tags: ["Distribution", "NPD", "Quality Leadership"],
     bio: [
       "Mr. Rajesh Dholakia brings senior leadership, deep operational expertise, and a strong conviction-led approach to both Operations and New Product Development (NPD).",
       "With a sharp focus on process excellence, quality enhancement, and execution discipline, he ensures that NanoQuinn's products and operations meet the highest standards of performance and reliability.",
