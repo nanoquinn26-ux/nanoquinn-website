@@ -47,7 +47,7 @@ export function ApaasSection() {
 
         {/* Hero Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 sm:mb-24">
-          <div className="bg-[#1E3A5F] rounded-3xl p-10 sm:p-16 lg:p-20">
+          <div className="bg-[#2D2D2D] rounded-3xl p-10 sm:p-16 lg:p-20">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold italic tracking-tight mb-6 text-balance text-white">
               NanoQuinn{" "}
               <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent not-italic">
@@ -115,7 +115,7 @@ export function ApaasSection() {
 
         {/* APaaS Platform Vision */}
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-[#1E3A5F] to-[#2D4A6F] rounded-3xl p-8 sm:p-12 text-center">
+          <div className="bg-gradient-to-br from-[#2D2D2D] to-[#4A4A4A] rounded-3xl p-8 sm:p-12 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-6">
               <Shield className="w-4 h-4 text-[#14B8A6]" />
               <span className="text-sm font-medium text-white/80">APaaS Platform Vision</span>

@@ -113,7 +113,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Main Background - Dark Navy to Green Gradient */}
-      <div className="absolute inset-0 bg-[#0F2744]" />
+      <div className="absolute inset-0 bg-[#1A1A1A]" />
       
       {/* Green Gradient Glow on Right */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-[#22C55E]/25 via-[#14B8A6]/15 to-transparent" />
@@ -407,7 +407,7 @@ export function Hero() {
         </div>
 
         {/* Final CTA Section */}
-        <div className="max-w-4xl mx-auto text-center bg-[#1E3A5F] rounded-3xl p-10 sm:p-16">
+        <div className="max-w-4xl mx-auto text-center bg-[#2D2D2D] rounded-3xl p-10 sm:p-16">
           <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold italic tracking-tight mb-4 text-white">
             NanoQuinn{" "}
             <span className="bg-gradient-to-r from-[#5EEAD4] via-[#14B8A6] to-[#22C55E] bg-clip-text text-transparent not-italic">

@@ -18,7 +18,7 @@ const esgPillars = [
   {
     letter: "S",
     label: "Social",
-    color: "bg-[#1E3A5F]",
+    color: "bg-[#2D2D2D]",
     textColor: "text-white",
     points: [
       "Eliminates hazardous chemical exposure for workers",
@@ -30,7 +30,7 @@ const esgPillars = [
   {
     letter: "G",
     label: "Governance",
-    color: "bg-white border border-[#1E3A5F]",
+    color: "bg-white border border-[#2D2D2D]",
     textColor: "text-black",
     points: [
       "Supports global ESG reporting frameworks",
@@ -61,7 +61,7 @@ const certifications = [
 
 export function EsgSection() {
   return (
-    <section id="esg" className="py-20 sm:py-32 lg:py-40 bg-[#1E3A5F] text-white overflow-hidden">
+    <section id="esg" className="py-20 sm:py-32 lg:py-40 bg-[#2D2D2D] text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
