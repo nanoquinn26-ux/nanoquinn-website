@@ -50,14 +50,14 @@ export function ApaasSection() {
           <div className="bg-[#2D2D2D] rounded-3xl p-10 sm:p-16 lg:p-20">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold italic tracking-tight mb-6 text-balance text-white">
               NanoQuinn{" "}
-              <span className="text-[#111111] not-italic">
+              <span className="text-[#ffffff] not-italic">
                 APaaS™
               </span>{" "}
               <span className="not-italic">Platform</span>
             </h1>
             <p className="text-xl sm:text-2xl leading-relaxed font-medium">
               <span className="text-white/80">Your</span>{" "}
-              <span className="text-[#111111] font-bold">
+              <span className="text-[#ffffff] font-bold">
                 360° Sustainable Maintenance & Asset Protection
               </span>{" "}
               <span className="text-white/80">Partner</span>
