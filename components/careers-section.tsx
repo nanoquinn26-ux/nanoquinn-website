@@ -35,7 +35,7 @@ export function CareersSection() {
       {/* Hero */}
       <div className="bg-foreground text-background py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Careers
           </span>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-tight text-balance mb-6">
@@ -150,7 +150,7 @@ export function CareersSection() {
           </p>
           <a
             href="mailto:hr@nanoquinn.com"
-            className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full bg-[#1FA855] text-black font-bold text-base hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 mt-8 px-8 py-4 rounded-full bg-[#0D9488] text-white font-bold text-base hover:opacity-90 transition-opacity"
           >
             hr@nanoquinn.com
             <ArrowRight className="w-4 h-4" />

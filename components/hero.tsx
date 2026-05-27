@@ -170,7 +170,7 @@ export function Hero() {
 
         {/* Section 2: The Solution */}
         <div className="max-w-5xl mx-auto text-center mb-20 py-16 border-t border-b border-white/10">
-          <p className="inline-block text-base sm:text-lg text-white font-semibold mb-6 uppercase tracking-wider px-6 py-2 rounded-full bg-[#22C55E]/30 border border-[#22C55E]/50">
+          <p className="inline-block text-base sm:text-lg text-white font-semibold mb-6 uppercase tracking-wider px-6 py-3 rounded-full bg-[#0D9488]">
             What If Assets Could Be Preserved Instead Of Repaired?
           </p>
           

@@ -40,7 +40,7 @@ export function AboutSection() {
       {/* Hero */}
       <div className="bg-foreground text-background py-24 lg:py-32">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             About NanoQuinn
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-balance leading-tight mb-8">
@@ -89,7 +89,7 @@ export function AboutSection() {
       <div className="bg-muted py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               What We Stand For
             </span>
             <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-foreground text-balance">

@@ -99,7 +99,7 @@ export default function LeadershipPage() {
       {/* Hero */}
       <div className="bg-foreground text-background pt-32 pb-20 sm:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             Leadership
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-balance leading-tight mb-6">

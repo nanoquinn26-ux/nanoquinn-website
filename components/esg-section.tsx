@@ -66,7 +66,7 @@ export function EsgSection() {
 
         {/* Header */}
         <div className="text-center mb-12 sm:mb-20">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             ESG &amp; EHS Leadership
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-balance mb-6">
@@ -130,7 +130,7 @@ export function EsgSection() {
             <ul className="space-y-4">
               {certifications.map((cert, i) => (
                 <li key={i} className="flex items-center gap-4 p-4 bg-white/5 rounded-xl">
-                  <span className="w-7 h-7 rounded-full bg-[#1FA855] text-black text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                  <span className="w-7 h-7 rounded-full bg-[#0D9488] text-white text-xs font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                   <span className="text-sm text-white/80 font-medium">{cert}</span>
                 </li>
               ))}

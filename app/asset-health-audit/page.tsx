@@ -71,7 +71,7 @@ export default function AssetHealthAuditPage() {
 
           {/* Header */}
           <div className="text-center mb-16">
-            <span className="inline-block px-10 py-4 rounded-full bg-[#1FA855] text-black text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+            <span className="inline-block px-10 py-4 rounded-full bg-[#0D9488] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
               &quot;Asset Health&quot; Audit
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-balance">
@@ -101,7 +101,7 @@ export default function AssetHealthAuditPage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {auditContent.whatWeAudit.map((item, i) => (
                 <div key={i} className="bg-muted rounded-2xl p-6 flex items-start gap-4">
-                  <span className="w-8 h-8 rounded-full bg-[#1FA855] text-black text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</span>
+                  <span className="w-8 h-8 rounded-full bg-[#0D9488] text-white text-sm font-bold flex items-center justify-center shrink-0">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-foreground">{item.label}</p>
                     <p className="text-sm text-muted-foreground mt-1">{item.desc}</p>
@@ -135,7 +135,7 @@ export default function AssetHealthAuditPage() {
                 <div className="flex items-center gap-2 flex-wrap">
                   {auditContent.methodology.map((step, i) => (
                     <div key={i} className="flex items-center gap-2">
-                      <span className="px-4 py-2 rounded-full bg-[#1FA855] text-black text-sm font-bold">{step}</span>
+                      <span className="px-4 py-2 rounded-full bg-[#0D9488] text-white text-sm font-bold">{step}</span>
                       {i < auditContent.methodology.length - 1 && <ChevronRight className="w-4 h-4 text-[#1FA855]" />}
                     </div>
                   ))}
@@ -198,7 +198,7 @@ export default function AssetHealthAuditPage() {
                 href="https://wa.me/918608604817"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#1FA855] text-black font-semibold hover:bg-[#1ebe5d] transition-colors"
+                className="inline-flex items-center gap-2 rounded-full px-10 py-4 bg-[#0D9488] text-white font-semibold hover:bg-[#1ebe5d] transition-colors"
               >
                 <WhatsAppIcon />
                 Request an Audit on WhatsApp
