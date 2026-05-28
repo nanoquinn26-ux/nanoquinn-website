@@ -72,7 +72,7 @@ export function Header() {
               href="/contact"
               className="px-5 py-2 bg-[#3A3A3A] text-white text-[13px] font-medium rounded-[3px] transition-opacity duration-200 hover:opacity-70"
             >
-              Get Started
+              Enquire Now
             </Link>
           </div>
 
@@ -110,7 +110,7 @@ export function Header() {
                   href="/contact"
                   className="block w-full px-5 py-3 bg-[#3A3A3A] text-white text-[15px] font-medium rounded-[3px] text-center transition-opacity duration-200 hover:opacity-70"
                 >
-                  Get Started
+                  Enquire Now
                 </Link>
               </div>
             </nav>
