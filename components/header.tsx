@@ -32,21 +32,20 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-[#E0E0E0]">
-  <div className="max-w-7xl mx-auto px-8">
-    <div className="flex items-center justify-between h-20">
-
-      {/* Logo */}
-      <Link href="/" className="flex items-center overflow-visible">
-        <Image
-          src="/images/nanoquinn-logo.webp"
-          alt="NanoQuinn APaaS Platform"
-          width={0}
-          height={0}
-          sizes="80vw"
-          priority
-          className="h-20 w-auto object-contain scale-[2.4]"
-        />
-      </Link>
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex items-center justify-between h-20">
+    
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/nanoquinn-logo.webp"
+              alt="NanoQuinn APaaS Platform"
+              width={220}
+              height={80}
+              priority
+              className="w-auto h-auto max-h-[72px] object-contain"
+            />
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
