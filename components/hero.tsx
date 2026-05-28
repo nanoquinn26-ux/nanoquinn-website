@@ -101,20 +101,21 @@ export function Hero() {
 
           
           {/* Problems Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {problems.map((problem) => (
-              <div
-                key={problem.label}
-                className="h-[64px] w-full bg-[#3A3A3A] border border-[#3A3A3A] rounded-[8px] shadow-md flex items-center justify-center gap-3 px-5 transition-opacity duration-200 hover:opacity-80"
-              >
-                <problem.icon className="w-5 h-5 text-white flex-shrink-0" />
-          
-                <span className="text-[15px] md:text-[16px] font-medium text-white text-center leading-none">
-                  {problem.label}
-                </span>
-              </div>
-            ))}
-          </div>
+          {/* Problems Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          {problems.map((problem) => (
+            <div
+              key={problem.label}
+              className="w-[320px] h-[68px] bg-[#3A3A3A] border border-[#3A3A3A] rounded-[8px] shadow-md flex items-center justify-center gap-3 px-6 mx-auto"
+            >
+              <problem.icon className="w-5 h-5 text-white flex-shrink-0" />
+        
+              <span className="text-[16px] font-medium text-white text-center whitespace-nowrap">
+                {problem.label}
+              </span>
+            </div>
+          ))}
+        </div>
 
 
 
