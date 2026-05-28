@@ -134,7 +134,7 @@ export function Hero() {
             ))}
           </div>
       </div>
-
+      </div>
 
       {/* Section 2: The Solution */}
       <div className="py-16 md:py-24 px-4 md:px-8 bg-[#F7F7F7]">
