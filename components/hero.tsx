@@ -115,7 +115,7 @@ export function Hero() {
               </div>
             ))}
           </div>
-
+      </div>
 
 
       {/* Section 2: The Solution */}
