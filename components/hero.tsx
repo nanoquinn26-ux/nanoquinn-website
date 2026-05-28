@@ -78,7 +78,7 @@ export function Hero() {
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Eyebrow */}
           <p className="text-[14px] md:text-[16px] font-medium text-[#5A5A5A] uppercase tracking-[0.2em] mb-4 md:mb-6">
-            The World&apos;s Biggest Maintenance Problem
+            The World&apos;s Biggest Maintenance Problem...
           </p>
 
           {/* H1 Hero */}
