@@ -10,11 +10,14 @@ import {
 // Problems list
 const problems = [
   { icon: TrendingDown, label: "Recurring Maintenance OPEX" },
+  { icon: TrendingDown, label: "Rising CAPEX" },
   { icon: AlertTriangle, label: "Asset Deterioration" },
-  { icon: Clock, label: "Production Losses" },
   { icon: Wrench, label: "Premature Replacement" },
   { icon: Users, label: "Multiple Vendors" },
-  { icon: TrendingDown, label: "Rising CAPEX" },
+  { icon: Clock, label: "Production Losses" },
+
+  
+  
 ]
 
 // Outcomes list
