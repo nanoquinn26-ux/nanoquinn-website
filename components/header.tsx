@@ -41,7 +41,7 @@ export function Header() {
               src="/images/nanoquinn-logo.webp"
               alt="NanoQuinn APaaS Platform"
               width={300}
-              height={96}
+              height={300}
               className="h-10 w-auto object-contain"
             />
           </Link>
