@@ -10,7 +10,7 @@ import { Menu, X } from "lucide-react"
 const navItems = [
   { label: "APaaS Platform", href: "/apaas" },
   { label: "Technology Innovations", href: "/asset-protection" },
-  { label: "Innovators ", href: "/app/leadership/page.tsx" },
+  { label: "Innovators", href: "/leadership" },
   { label: "Sustainability", href: "/esg" },
   { label: "Contact", href: "/contact" },
 ]
