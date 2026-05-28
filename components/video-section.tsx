@@ -3,7 +3,7 @@ export function VideoSection() {
     <section className="py-20 sm:py-32 bg-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-14">
-          <span className="inline-block px-10 py-4 rounded-full bg-[#3A3A3A] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
+          <span className="inline-block px-10 py-4 rounded-full bg-[#3A3A3A] text-[#ffffff] text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             See It in Action
           </span>
         </div>
