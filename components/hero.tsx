@@ -3,7 +3,7 @@
 import { 
   CheckCircle, ArrowRight, Shield, Award, 
   Eye, BadgeCheck, Building2, Factory, Container, 
-  PipetteIcon, Zap, SolarPanel, Wrench, Clock, Users, TrendingDown, AlertTriangle,Box,
+  PipetteIcon, Zap, SolarPanel, Wrench, Clock, Users, TrendingDown, AlertTriangle,Box,Infinity,Cog,
   Calendar
 } from "lucide-react"
 
@@ -34,10 +34,11 @@ const outcomes = [
 const assetTypes = [
   { icon: Building2, label: "Civil Structures" },
   { icon: Zap, label: "Electrical Systems" },
+  { icon: Cog, label: "Mechanical" },
   { icon: SolarPanel, label: "Solar Assets" },
   { icon: PipetteIcon, label: "Polymers" },
-  { icon: Box, label: "Glass Surfaces" },
   { icon: Factory, label: "Industrial Infrastructure" },
+  { icon: Infinity, label: "Endless" },
 ];
 
 
