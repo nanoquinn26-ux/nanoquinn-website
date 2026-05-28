@@ -239,14 +239,17 @@ export function Hero() {
             Long-lasting protection against:
           </p>
           
-          <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {protectionTech.map((tech) => (
-              <div 
+              <div
                 key={tech}
-                className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
+                className="w-[320px] h-[68px] mx-auto flex items-center justify-center gap-3 px-6 bg-white/20 backdrop-blur-sm border border-white/30 rounded-[8px] shadow-md"
               >
-                <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                <span className="text-[14px] md:text-[16px] font-medium text-white">{tech}</span>
+                <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
+          
+                <span className="text-[16px] font-medium text-white text-center whitespace-nowrap">
+                  {tech}
+                </span>
               </div>
             ))}
           </div>
