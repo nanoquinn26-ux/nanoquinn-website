@@ -42,7 +42,7 @@ export function Header() {
           alt="NanoQuinn APaaS Platform"
           width={0}
           height={0}
-          sizes="100vw"
+          sizes="80vw"
           priority
           className="h-20 w-auto object-contain scale-[2.4]"
         />
