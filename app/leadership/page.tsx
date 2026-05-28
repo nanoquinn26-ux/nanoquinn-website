@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Leadership | NanoQuinn",
+  title: "Innovators | NanoQuinn",
   description: "Meet the minds behind NanoQuinn — the leaders driving a global Asset Protection revolution.",
 }
 
@@ -35,7 +35,7 @@ const leaders = [
     bio: [
       "Senior business and operations leader with 34+ years of global experience across supply chain management, shipping & logistics, infrastructure projects, freight strategy, multimodal transportation, and large-scale industrial operations.",
       "Proven track record of leading complex global logistics ecosystems with multi-billion-dollar budgets across India, Africa, Europe, the Middle East, and Asia.",
-      "Held senior leadership positions with leading organizations including Reliance Industries, Reliance Retail, Dangote Industries, and Combi Lift GmbH, driving operational excellence, strategic sourcing, business growth, cost optimization, and end-to-end supply chain transformation.",
+      "Held senior Innovators positions with leading organizations including Reliance Industries, Reliance Retail, Dangote Industries, and Combi Lift GmbH, driving operational excellence, strategic sourcing, business growth, cost optimization, and end-to-end supply chain transformation.",
     ],
     statements: [],
     closing:
@@ -56,15 +56,15 @@ const leaders = [
     statements: [],
     closing:
       "Driven by purpose and growth, she contributes to building scalable, sustainable business opportunities with long-term value creation at the core.",
-    skills: "Sales Growth | Business Development | Strategic Partnerships | Execution Focused Leadership",
+    skills: "Sales Growth | Business Development | Strategic Partnerships | Execution Focused Innovators",
   },
   {
     name: "Rajesh Dholakia",
     photo: "/team/rajesh-dholakia.jpeg",
     role: "Director : Distribution & NPD",
-    tags: ["Distribution", "NPD", "Quality Leadership"],
+    tags: ["Distribution", "NPD", "Quality Innovators"],
     bio: [
-      "Mr. Rajesh Dholakia brings senior leadership, deep operational expertise, and a strong conviction-led approach to both Operations and New Product Development (NPD).",
+      "Mr. Rajesh Dholakia brings senior Innovators, deep operational expertise, and a strong conviction-led approach to both Operations and New Product Development (NPD).",
       "With a sharp focus on process excellence, quality enhancement, and execution discipline, he ensures that NanoQuinn's products and operations meet the highest standards of performance and reliability.",
       "Known for his persuasive character, mature judgment, and solution-oriented mindset, he combines operational depth with strategic thinking — bridging the gap between innovation and flawless delivery.",
       "His contribution extends across product, process, and people; he is instrumental in building a culture of operational credibility, quality ownership, and innovation-led growth.",
@@ -72,7 +72,7 @@ const leaders = [
     statements: [],
     closing:
       "Beyond NanoQuinn, he is equally passionate about advancing a healthier world through the benefits of protein and wellness — reflecting a broader commitment to performance, well-being, and purposeful impact.",
-    skills: "Operations Leadership | New Product Development | Quality Excellence | Process Execution",
+    skills: "Operations Innovators | New Product Development | Quality Excellence | Process Execution",
   },
   {
     name: "Punit Sanghvi",
@@ -82,16 +82,16 @@ const leaders = [
     bio: [
       "Mr. Punit Sanghvi is a seasoned entrepreneur with over 21 years of diverse, multi-industry experience, currently serving as Director at NanoQuinn. He plays a pivotal role in driving the company's strategic growth, spearheading sales, and building strong client relationships across sectors.",
       "His professional journey spans the financial ecosystem, with extensive involvement in investment advisory, business consulting, private equity, venture capital, and fundraising. A startup investor and marketer at heart, he brings a sharp eye for opportunity and scalable growth. He has also successfully led multiple automobile dealership ventures and partnered on landmark real estate projects with reputed developers.",
-      "Known for his curiosity and relentless pursuit of knowledge, Mr. Sanghvi actively explores emerging domains such as AI, marketing, and public relations. His forward-thinking approach and dynamic leadership continue to open new business frontiers.",
+      "Known for his curiosity and relentless pursuit of knowledge, Mr. Sanghvi actively explores emerging domains such as AI, marketing, and public relations. His forward-thinking approach and dynamic Innovators continue to open new business frontiers.",
     ],
     statements: [],
     closing:
       "With a vision to elevate NanoQuinn to global prominence, he remains committed to building a future driven by innovation, excellence, and impact.",
-    skills: "Strategic Growth | Sales Leadership | Investment Advisory | Business Development | Startup Ecosystem",
+    skills: "Strategic Growth | Sales Innovators | Investment Advisory | Business Development | Startup Ecosystem",
   },
 ]
 
-export default function LeadershipPage() {
+export default function InnovatorsPage() {
   return (
     <main className="min-h-screen bg-background">
       <Header />
@@ -100,7 +100,7 @@ export default function LeadershipPage() {
       <div className="bg-[#3A3A3A] text-white pt-32 pb-20 sm:pb-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-10 py-4 rounded-full bg-white text-[#3A3A3A] text-base font-bold mb-8 shadow-md uppercase tracking-widest">
-            Leadership
+            Innovators
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-balance leading-tight mb-6">
             <span className="text-white">The Minds Behind</span>{" "}
