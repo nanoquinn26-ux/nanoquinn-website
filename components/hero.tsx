@@ -3,7 +3,7 @@
 import { 
   CheckCircle, ArrowRight, Shield, Award, 
   Eye, BadgeCheck, Building2, Factory, Container, 
-  PipetteIcon, Zap, SolarPanel, Wrench, Clock, Users, TrendingDown, AlertTriangle,
+  PipetteIcon, Zap, SolarPanel, Wrench, Clock, Users, TrendingDown, AlertTriangle,Box,
   Calendar
 } from "lucide-react"
 
