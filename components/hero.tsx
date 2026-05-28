@@ -347,12 +347,12 @@ export function Hero() {
           
           <a href="/contact">
             <button className="px-6 md:px-8 py-3 md:py-4 bg-[#3A3A3A] text-white text-[16px] md:text-[18px] font-medium rounded-[3px] transition-opacity duration-200 hover:opacity-70">
-              Get Started
+              Enquire Now
             </button>
           </a>
           
           <p className="text-[15px] md:text-[17px] font-normal text-[#5A5A5A] mt-6">
-            Every Asset. Every Surface. Every Year.
+            Every Asset. Every Surface.
           </p>
         </div>
       </div>
