@@ -12,7 +12,7 @@ const navItems = [
   { label: "Technology Innovations", href: "/asset-protection" },
   { label: "Innovators", href: "/leadership" },
   { label: "Sustainability", href: "/esg" },
-  { label: "Contact", href: "/contact" },
+  { label: "Connect", href: "/Connect" },
 ]
 
 const WhatsAppIcon = () => (
@@ -70,7 +70,7 @@ export function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center">
             <Link
-              href="/contact"
+              href="/Connect"
               className="px-5 py-2 bg-[#3A3A3A] text-white text-[13px] font-medium rounded-[3px] transition-opacity duration-200 hover:opacity-70"
             >
               Enquire Now
@@ -108,7 +108,7 @@ export function Header() {
               })}
               <div className="pt-4 mt-2 border-t border-[#E0E0E0]">
                 <Link
-                  href="/contact"
+                  href="/Connect"
                   className="block w-full px-5 py-3 bg-[#3A3A3A] text-white text-[15px] font-medium rounded-[3px] text-center transition-opacity duration-200 hover:opacity-70"
                 >
                   Enquire Now
