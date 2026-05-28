@@ -97,10 +97,10 @@ export function Hero() {
             {problems.map((problem) => (
               <div
                 key={problem.label}
-                className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-[#3A3A3A] border border-[#3A3A3A] rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
+                className="flex items-center gap-2.5 px-5 py-3 bg-[#3A3A3A] border border-[#3A3A3A] rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80 min-w-[180px] justify-center"
               >
-                <problem.icon className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                <span className="text-[14px] md:text-[16px] font-medium text-white">{problem.label}</span>
+                <problem.icon className="w-5 h-5 text-white flex-shrink-0" />
+                <span className="text-[15px] font-medium text-white">{problem.label}</span>
               </div>
             ))}
           </div>
@@ -209,10 +209,10 @@ export function Hero() {
             {protectionTech.map((tech) => (
               <div
                 key={tech}
-                className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
+                className="flex items-center gap-2.5 px-5 py-3 bg-white/20 backdrop-blur-sm border border-white/30 rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80 min-w-[180px] justify-center"
               >
-                <CheckCircle className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                <span className="text-[14px] md:text-[16px] font-medium text-white">{tech}</span>
+                <CheckCircle className="w-5 h-5 text-white flex-shrink-0" />
+                <span className="text-[15px] font-medium text-white">{tech}</span>
               </div>
             ))}
           </div>
@@ -287,10 +287,10 @@ export function Hero() {
             {outcomes.map((outcome) => (
               <div
                 key={outcome}
-                className="flex items-center gap-2 px-3 md:px-4 py-2 bg-white border border-[#E0E0E0] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
+                className="flex items-center gap-2.5 px-5 py-3 bg-white border border-[#E0E0E0] rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-70 min-w-[180px] justify-center"
               >
-                <CheckCircle className="w-4 h-4 text-[#5A5A5A]" />
-                <span className="text-[15px] md:text-[17px] text-[#5A5A5A]">{outcome}</span>
+                <CheckCircle className="w-5 h-5 text-[#5A5A5A] flex-shrink-0" />
+                <span className="text-[15px] font-medium text-[#5A5A5A]">{outcome}</span>
               </div>
             ))}
           </div>

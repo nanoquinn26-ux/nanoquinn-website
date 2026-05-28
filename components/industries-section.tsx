@@ -38,7 +38,7 @@ export function IndustriesSection() {
           {/* B2B */}
           <div className="bg-muted rounded-3xl p-6 sm:p-10">
             <div className="flex items-center gap-4 mb-8">
-              <div className="px-4 py-2 bg-foreground text-background text-sm font-bold rounded-full">
+              <div className="px-5 py-3 bg-foreground text-background text-[15px] font-bold rounded-full">
                 B2B
               </div>
               <h3 className="text-2xl font-bold">Industrial Partners</h3>
@@ -56,7 +56,7 @@ export function IndustriesSection() {
           {/* B2G */}
           <div className="bg-muted rounded-3xl p-6 sm:p-10">
             <div className="flex items-center gap-4 mb-8">
-              <div className="px-4 py-2 bg-accent text-accent-foreground text-sm font-bold rounded-full">
+              <div className="px-5 py-3 bg-accent text-accent-foreground text-[15px] font-bold rounded-full">
                 B2G
               </div>
               <h3 className="text-2xl font-bold">Government & Infrastructure</h3>

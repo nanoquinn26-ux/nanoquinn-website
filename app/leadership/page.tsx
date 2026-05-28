@@ -170,7 +170,7 @@ export default function LeadershipPage() {
                     {leader.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-4 py-2.5 rounded-full text-sm font-bold text-white text-center leading-snug shadow-md"
+                        className="px-5 py-3 rounded-full text-[15px] font-bold text-white text-center leading-snug shadow-md"
                         style={{ backgroundColor: "#3A3A3A" }}
                       >
                         {tag}

@@ -135,7 +135,7 @@ export default function AssetHealthAuditPage() {
                 <div className="flex items-center gap-2 flex-wrap">
                   {auditContent.methodology.map((step, i) => (
                     <div key={i} className="flex items-center gap-2">
-                      <span className="px-4 py-2 rounded-full bg-[#3A3A3A] text-white text-sm font-bold">{step}</span>
+                      <span className="px-5 py-3 rounded-full bg-[#3A3A3A] text-white text-[15px] font-bold">{step}</span>
                       {i < auditContent.methodology.length - 1 && <ChevronRight className="w-4 h-4 text-[#111111]" />}
                     </div>
                   ))}

@@ -787,7 +787,7 @@ export function AssetProtectionSection() {
               <h4 className="text-lg font-bold text-foreground mb-4">Eliminates:</h4>
               <div className="flex flex-wrap gap-3">
                 {industrialContent.eliminates.map((item, i) => (
-                  <span key={i} className="px-4 py-2 rounded-full bg-foreground text-background text-sm font-medium line-through decoration-[#111111] decoration-[3px]">{item}</span>
+                  <span key={i} className="px-5 py-3 rounded-full bg-foreground text-background text-[15px] font-medium line-through decoration-[#3A3A3A] decoration-[3px]">{item}</span>
                 ))}
               </div>
             </div>
@@ -1194,7 +1194,7 @@ export function AssetProtectionSection() {
               <p className="text-sm font-semibold text-white/80 uppercase tracking-wider mb-4">NanoQuinn APaaS Advantage</p>
               <div className="flex flex-wrap gap-3">
                 {esdFlooringContent.apaasAdvantage.map((item, i) => (
-                  <span key={i} className="px-4 py-2 bg-white/20 rounded-full text-sm font-medium text-white">{item}</span>
+                  <span key={i} className="px-5 py-3 bg-white/20 rounded-full text-[15px] font-medium text-white">{item}</span>
                 ))}
               </div>
               <p className="mt-6 text-lg font-bold text-white">{esdFlooringContent.footer}</p>
@@ -1332,7 +1332,7 @@ export function AssetProtectionSection() {
             <div className="bg-gradient-to-r from-[#0288D1] to-[#01579B] rounded-3xl p-8 text-center">
               <div className="flex flex-wrap justify-center gap-3 mb-4">
                 {waterproofingContent.pillars.map((pillar, i) => (
-                  <span key={i} className="px-4 py-2 bg-white/20 rounded-full text-sm font-medium text-white">{pillar}</span>
+                  <span key={i} className="px-5 py-3 bg-white/20 rounded-full text-[15px] font-medium text-white">{pillar}</span>
                 ))}
               </div>
               <p className="text-lg font-bold text-white">{waterproofingContent.footer}</p>
@@ -1485,7 +1485,7 @@ export function AssetProtectionSection() {
                   <div className="flex items-center gap-2 flex-wrap">
                     {auditContent.methodology.map((step, i) => (
                       <div key={i} className="flex items-center gap-2">
-                        <span className="px-4 py-2 rounded-full bg-[#3A3A3A] text-white text-sm font-bold">{step}</span>
+                        <span className="px-5 py-3 rounded-full bg-[#3A3A3A] text-white text-[15px] font-bold">{step}</span>
                         {i < auditContent.methodology.length - 1 && <ChevronRight className="w-4 h-4 text-[#111111]" />}
                       </div>
                     ))}
