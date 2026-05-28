@@ -175,15 +175,20 @@ export function Hero() {
           
           {/* Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-            {assetTypes.map((asset) => (
-              <div 
+            {assetTypes.map((asset, index) => (
+              <div
                 key={asset.label}
-                className="flex flex-col items-center p-5 md:p-6 bg-[#F7F7F7] rounded-[6px] transition-opacity duration-200 hover:opacity-70"
+                className={`flex flex-col items-center p-5 md:p-6 bg-[#F7F7F7] rounded-[6px] transition-opacity duration-200 hover:opacity-70 ${
+                  index === 6 ? "md:col-start-2" : ""
+                }`}
               >
                 <div className="w-10 h-10 md:w-12 md:h-12 rounded-[6px] bg-[#5A5A5A] flex items-center justify-center mb-3">
                   <asset.icon className="w-5 h-5 md:w-6 md:h-6 text-white" />
                 </div>
-                <span className="text-[15px] md:text-[17px] font-normal text-[#5A5A5A] text-center">{asset.label}</span>
+          
+                <span className="text-[15px] md:text-[17px] font-normal text-[#5A5A5A] text-center">
+                  {asset.label}
+                </span>
               </div>
             ))}
           </div>
