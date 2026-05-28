@@ -300,10 +300,19 @@ export function Hero() {
           
           <div className="space-y-3 md:space-y-4">
             {managementWants.map((item) => (
-              <div key={item.right} className="flex items-center justify-between gap-4 py-3 md:py-4 border-b border-[#E0E0E0] last:border-0">
-                <span className="text-[16px] md:text-[18px] font-medium text-[#3A3A3A] flex-1 text-left">
+              <div
+                key={item.right}
+                className="flex items-center justify-between gap-4 py-3 md:py-4 border-b border-[#E0E0E0] last:border-0"
+              >
+                <span className="text-[16px] md:text-[18px] text-[#7A7A7A] line-through flex-1 text-left">
+                  {item.wrong}
+                </span>
+          
                 <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-[#5A5A5A] flex-shrink-0" />
-                <span className="text-[16px] md:text-[18px] font-medium text-[#3A3A3A] flex-1 text-right">{item.right}</span>
+          
+                <span className="text-[16px] md:text-[18px] font-medium text-[#3A3A3A] flex-1 text-left">
+                  {item.right}
+                </span>
               </div>
             ))}
           </div>
