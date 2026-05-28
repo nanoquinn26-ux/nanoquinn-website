@@ -12,7 +12,7 @@ const navItems = [
   { label: "Technology Innovations", href: "/asset-protection" },
   { label: "Innovators", href: "/leadership" },
   { label: "Sustainability", href: "/esg" },
-  { label: "Connect", href: "/Connect" },
+  { label: "Connect", href: "/contact" },
 ]
 
 const WhatsAppIcon = () => (
