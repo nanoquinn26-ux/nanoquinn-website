@@ -99,20 +99,24 @@ export function Hero() {
             maintenance again.
           </p>
 
+          
           {/* Problems Grid */}
-          <div className="flex flex-wrap justify-center gap-2 md:gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {problems.map((problem) => (
-              <div 
+              <div
                 key={problem.label}
-                className="flex items-center gap-2 px-4 md:px-5 py-2.5 md:py-3 bg-[#3A3A3A] border border-[#3A3A3A] rounded-[6px] shadow-md transition-opacity duration-200 hover:opacity-80"
+                className="h-[64px] w-full bg-[#3A3A3A] border border-[#3A3A3A] rounded-[8px] shadow-md flex items-center justify-center gap-3 px-5 transition-opacity duration-200 hover:opacity-80"
               >
-                <problem.icon className="w-4 h-4 md:w-5 md:h-5 text-white" />
-                <span className="text-[14px] md:text-[16px] font-medium text-white">{problem.label}</span>
+                <problem.icon className="w-5 h-5 text-white flex-shrink-0" />
+          
+                <span className="text-[15px] md:text-[16px] font-medium text-white text-center leading-none">
+                  {problem.label}
+                </span>
               </div>
             ))}
           </div>
-        </div>
-      </div>
+
+
 
       {/* Section 2: The Solution */}
       <div className="py-16 md:py-24 px-4 md:px-8 bg-[#F7F7F7]">
