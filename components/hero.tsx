@@ -322,9 +322,6 @@ export function Hero() {
       {/* Section 8: Outcomes */}
       <div className="py-16 md:py-24 px-4 md:px-8 bg-[#F7F7F7]">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[14px] md:text-[16px] font-medium text-[#5A5A5A] uppercase tracking-[0.2em] mb-4 md:mb-6">
-            Results
-          </p>
           <h2 className="text-[30px] md:text-[42px] font-medium text-[#3A3A3A] leading-[1.2] mb-8 md:mb-10">
             The Outcome
           </h2>
