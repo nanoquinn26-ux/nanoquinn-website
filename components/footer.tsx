@@ -8,7 +8,7 @@ const footerLinks = {
     { label: "Leadership", href: "/leadership" },
     { label: "Careers", href: "/careers" },
     { label: "Press", href: "#" },
-  ],
+  ]
 }
 
 const socialLinks = [
