@@ -9,13 +9,6 @@ const footerLinks = {
     { label: "Careers", href: "/careers" },
     { label: "Press", href: "#" },
   ],
-  solutions: [
-    { label: '"APaaS Model"', href: "/apaas" },
-    { label: "Product/Service Range", href: "/asset-protection" },
-    { label: "Technology", href: "/technology" },
-    { label: "Industries", href: "/industries" },
-    { label: "ESG Commitment", href: "/esg" },
-  ],
 }
 
 const socialLinks = [
