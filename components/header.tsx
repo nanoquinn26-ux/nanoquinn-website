@@ -40,8 +40,8 @@ export function Header() {
             <Image
               src="/images/nanoquinn-logo.webp"
               alt="NanoQuinn APaaS Platform"
-              width={160}
-              height={64}
+              width={300}
+              height={96}
               className="h-10 w-auto object-contain"
             />
           </Link>
