@@ -88,9 +88,12 @@ export function Hero() {
           </h1>
 
           {/* Body copy */}
-          <p className="text-[18px] md:text-[20px] font-normal text-[#5A5A5A] leading-[1.6] max-w-2xl mx-auto mb-8 md:mb-10">
-            Every year industries spend crores on maintenance, painting, repairs, and replacement. <br />
-            Yet assets continue to corrode, deteriorate, and demand maintenance again.
+          <p className="text-[18px] md:text-[20px] font-normal text-[#111111] leading-[1.8] max-w-2xl mx-auto mb-8 md:mb-10 bg-white/55 backdrop-blur-[2px] px-6 py-4 rounded-2xl shadow-sm">
+            Every year industries spend crores on maintenance, painting,
+            repairs, and replacement.
+            <br />
+            Yet assets continue to corrode, deteriorate, and demand
+            maintenance again.
           </p>
 
           {/* Problems Grid */}
