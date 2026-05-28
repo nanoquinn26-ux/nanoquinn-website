@@ -150,10 +150,10 @@ export default function LeadershipPage() {
                   ) : (
                     <div
                       className="w-full h-72 lg:h-80 rounded-2xl flex flex-col items-center justify-center border-2 border-dashed"
-                      style={{ borderColor: "#111111", backgroundColor: "#11111110" }}
+                      style={{ borderColor: "#3A3A3A", backgroundColor: "#3A3A3A10" }}
                     >
-                      <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#11111130" }} />
-                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#111111" }}>
+                      <div className="w-16 h-16 rounded-full mb-3" style={{ backgroundColor: "#3A3A3A30" }} />
+                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#3A3A3A" }}>
                         Photo
                       </span>
                     </div>

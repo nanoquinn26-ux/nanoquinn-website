@@ -30,7 +30,7 @@ export function IndustriesSection() {
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-balance">
             <span className="text-foreground">Built for</span>{" "}
-            <span className="text-[#111111]">Every Critical Surface.</span>
+            <span className="text-[#3A3A3A]">Every Critical Surface.</span>
           </h2>
         </div>
 
@@ -75,7 +75,7 @@ export function IndustriesSection() {
         <div className="text-center">
           <p className="text-2xl lg:text-3xl font-bold text-foreground">
             If it has a surface,{" "}
-            <span className="text-[#111111]">NanoQuinn can protect it.</span>
+            <span className="text-[#3A3A3A]">NanoQuinn can protect it.</span>
           </p>
         </div>
       </div>

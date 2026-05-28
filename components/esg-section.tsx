@@ -6,8 +6,8 @@ const esgPillars = [
   {
     letter: "E",
     label: "Environmental",
-    color: "bg-[#111111]",
-    textColor: "text-black",
+    color: "bg-white/10 border border-white/20",
+    textColor: "text-white",
     points: [
       "Zero VOC — eliminates solvent-based chemical coatings",
       "Plant-based biodegradable cleaning ecosystem",
@@ -30,8 +30,8 @@ const esgPillars = [
   {
     letter: "G",
     label: "Governance",
-    color: "bg-white border border-[#2D2D2D]",
-    textColor: "text-black",
+    color: "bg-white/10 border border-white/20",
+    textColor: "text-white",
     points: [
       "Supports global ESG reporting frameworks",
       "ISO 45001:2018 & ISO 9001:2015 certified | ",
@@ -71,7 +71,7 @@ export function EsgSection() {
           </span>
           <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight text-balance mb-6">
             <span className="text-white">Built for the</span>{" "}
-            <span className="text-[#111111]">Future of Compliance.</span>
+            <span className="text-white/60">Future of Compliance.</span>
           </h2>
           <p className="text-base sm:text-xl text-white/60 max-w-3xl mx-auto leading-relaxed">
             NanoQuinn is the only asset protection platform where sustainability is not a feature — it is the foundation. Every application eliminates chemicals, protects people, and supports governance.
@@ -92,7 +92,7 @@ export function EsgSection() {
               <div className="bg-white/5 border border-white/10 px-8 py-6 space-y-3 h-full">
                 {pillar.points.map((point, i) => (
                   <div key={i} className="flex items-start gap-3 text-sm text-white/70">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#111111] shrink-0 mt-1.5" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-white shrink-0 mt-1.5" />
                     {point}
                   </div>
                 ))}
@@ -103,12 +103,12 @@ export function EsgSection() {
 
         {/* EHS Features Grid */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center mb-10 text-[#111111]">EHS Compliance Built-In</h3>
+          <h3 className="text-2xl font-bold text-center mb-10 text-white">EHS Compliance Built-In</h3>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {ehsFeatures.map((item) => (
-              <div key={item.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-[#111111]/40 transition-all group">
-                <div className="w-12 h-12 rounded-xl bg-[#111111]/10 flex items-center justify-center mb-4 group-hover:bg-[#111111]/20 transition-colors">
-                  <item.icon className="w-6 h-6 text-[#111111]" />
+              <div key={item.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-white/30 transition-all group">
+                <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+                  <item.icon className="w-6 h-6 text-white" />
                 </div>
                 <p className="font-semibold text-white mb-1">{item.label}</p>
                 <p className="text-xs text-white/50">{item.sub}</p>
@@ -122,8 +122,8 @@ export function EsgSection() {
           {/* Certifications */}
           <div className="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-10">
             <div className="flex items-center gap-4 mb-8">
-              <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center">
-                <Award className="w-6 h-6 text-black" />
+              <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
+                <Award className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold">Certifications &amp; Compliance</h3>
             </div>
@@ -138,18 +138,18 @@ export function EsgSection() {
           </div>
 
           {/* Statement */}
-          <div className="bg-[#111111] rounded-3xl p-6 sm:p-10 flex flex-col justify-between">
+          <div className="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-10 flex flex-col justify-between">
             <div>
-              <Zap className="w-10 h-10 text-black mb-6" />
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-black leading-snug mb-6">
+              <Zap className="w-10 h-10 text-white mb-6" />
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-snug mb-6">
                 Not just protecting assets &mdash; protecting the planet.
               </h3>
-              <p className="text-black/70 text-lg leading-relaxed">
+              <p className="text-white/70 text-lg leading-relaxed">
                 Every NanoQuinn application eliminates a chemical product, prevents a maintenance cycle, and contributes to a cleaner, safer industrial world.
               </p>
             </div>
-            <div className="mt-10 pt-8 border-t border-black/20">
-              <p className="text-black font-bold text-sm uppercase tracking-wider">
+            <div className="mt-10 pt-8 border-t border-white/20">
+              <p className="text-white font-bold text-sm uppercase tracking-wider">
                 The future of industry is clean. NanoQuinn makes it possible.
               </p>
             </div>

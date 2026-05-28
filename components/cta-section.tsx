@@ -7,10 +7,10 @@ export function CtaSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight mb-6 sm:mb-8 text-balance">
-            <span className="text-background">Own the Future of</span>{" "}
-            <span className="text-[#111111]">Asset Protection</span>
+            <span className="text-white">Own the Future of</span>{" "}
+            <span className="text-white/60">Asset Protection</span>
           </h2>
-          <p className="text-base sm:text-xl text-background/60 mb-10 sm:mb-16 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-white/70 mb-10 sm:mb-16 max-w-2xl mx-auto">
             Join the revolution in asset protection. Choose your path to partnership.
           </p>
 
@@ -20,7 +20,7 @@ export function CtaSection() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-7 h-auto rounded-full bg-[#111111] text-foreground hover:bg-[#0E7A45]">
+              <Button size="lg" className="w-full sm:w-auto text-lg px-10 py-7 h-auto rounded-full bg-white text-[#3A3A3A] hover:bg-[#0E7A45] hover:text-white">
                 <Building2 className="w-5 h-5 mr-3" />
                 Book a B2B Demo
                 <ArrowRight className="w-5 h-5 ml-3" />
@@ -29,8 +29,8 @@ export function CtaSection() {
           </div>
 
           {/* Contact Info */}
-          <div className="mt-16 pt-8 border-t border-background/10 flex items-center justify-center gap-2">
-            <a href="mailto:business@nanoquinn.com" className="text-sm font-medium text-gold hover:underline tracking-wide">
+          <div className="mt-16 pt-8 border-t border-white/10 flex items-center justify-center gap-2">
+            <a href="mailto:business@nanoquinn.com" className="text-sm font-medium text-white hover:underline tracking-wide">
               business@nanoquinn.com
             </a>
           </div>
