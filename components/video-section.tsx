@@ -6,9 +6,6 @@ export function VideoSection() {
           <span className="inline-block px-10 py-4 rounded-full bg-[#3A3A3A] text-white text-base font-bold mb-8 shadow-md uppercase tracking-widest">
             See It in Action
           </span>
-          <h2 className="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-balance text-background">
-            NanoQuinn Technology, Demonstrated.
-          </h2>
         </div>
 
         <div className="w-full rounded-3xl overflow-hidden shadow-2xl border border-background/10">
