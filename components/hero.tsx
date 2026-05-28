@@ -281,7 +281,7 @@ export function Hero() {
           </div>
           
           <p className="text-[18px] md:text-[20px] font-normal text-[#5A5A5A]">
-            One Partner. One Platform. One Responsibility.
+            One Partner. One Platform. Total Responsibility.
           </p>
         </div>
       </div>
