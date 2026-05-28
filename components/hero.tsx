@@ -31,12 +31,12 @@ const outcomes = [
 const assetTypes = [
   { icon: Building2, label: "Civil Structures" },
   { icon: Zap, label: "Electrical Systems" },
-  { icon: Cog, label: "Mechanical" },
   { icon: SolarPanel, label: "Solar Assets" },
   { icon: PipetteIcon, label: "Polymers" },
+  { icon: Box, label: "Glass Surfaces" },
   { icon: Factory, label: "Industrial Infrastructure" },
-  { icon: Infinity, label: "Endless" },
-]
+];
+
 
 // Protection technologies
 const protectionTech = [
