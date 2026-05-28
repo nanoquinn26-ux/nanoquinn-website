@@ -9,7 +9,6 @@ const footerLinks = {
     { label: "Careers", href: "/careers" },
     { label: "Press", href: "#" },
   ],
-  
 }
 
 const socialLinks = [
@@ -22,6 +21,7 @@ export function Footer() {
     <footer className="bg-muted py-16 sm:py-20 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16">
+          
           {/* Brand */}
           <div className="col-span-1 sm:col-span-2 lg:col-span-1 mb-2 lg:mb-0">
             <Link href="/" className="flex items-center mb-6">
@@ -33,9 +33,11 @@ export function Footer() {
                 className="h-24 w-auto object-contain"
               />
             </Link>
+
             <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
               The world&apos;s first APaaS ecosystem for sustainable asset protection.
             </p>
+
             <div className="flex items-center gap-3">
               {socialLinks.map((social) => (
                 <a
@@ -52,26 +54,17 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Links */}
+          {/* Company Links */}
           <div>
             <h3 className="font-bold mb-5">Company</h3>
+
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="font-bold mb-5">Solutions</h3>
-            <ul className="space-y-3">
-              {footerLinks.solutions.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -85,11 +78,19 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} NanoQuinn. All rights reserved.
           </p>
+
           <div className="flex items-center gap-8">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+            <Link
+              href="#"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+
+            <Link
+              href="#"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
               Terms of Service
             </Link>
           </div>
